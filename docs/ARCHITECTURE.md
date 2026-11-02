@@ -70,7 +70,7 @@ camera). Unknown types or keys are rejected, so the AI can never make the globe 
 - **Serwist** (`@serwist/turbopack`) generates the service worker at build time.
 - **Flag emojis**: Windows can't draw them, so a 78 KB self-hosted flag font (Twemoji, CC BY 4.0) loads only
   where needed (`web/public/fonts/`).
-- Fonts (Manrope, Sora) are downloaded at build time by `next/font` and served from our own domain: no runtime
+- Fonts (Newsreader for headlines, Public Sans for everything else) are downloaded at build time by `next/font` and served from our own domain: no runtime
   requests to Google.
 
 ## The app (phone first)

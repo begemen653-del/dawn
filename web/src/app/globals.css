@@ -1,70 +1,31 @@
 @import "tailwindcss";
 
 /*
- * Dawn design tokens. Dark-first: a night sky warming into sunrise.
- * Accent gradient runs gold → coral → rose → violet.
+ * Dawn design tokens: a quiet pre-dawn instrument.
+ * Greyscale slate everywhere; one warm "first light" accent, used only for the sunrise line,
+ * progress and the story's location.
  */
 @theme {
   /* "Twemoji Country Flags" only contains flags; it is loaded on Windows by FlagPolyfill. */
-  --font-sans: "Twemoji Country Flags", var(--font-dawn-body), ui-sans-serif, system-ui, sans-serif;
-  --font-display:
-    "Twemoji Country Flags", var(--font-dawn-display), var(--font-dawn-body), ui-sans-serif, sans-serif;
+  --font-sans: "Twemoji Country Flags", var(--font-dawn-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-dawn-serif), ui-serif, Georgia, serif;
 
-  --color-night-950: #04060d;
-  --color-night-900: #070a16;
-  --color-night-800: #0d1226;
-  --color-night-700: #151b38;
-  --color-night-600: #232a4f;
+  --color-ground: #0f141b;
+  --color-surface: #171e27;
+  --color-raised: #1e2631;
+  --color-line: #273140;
+  --color-line-strong: #3a4656;
 
-  --color-ink: #eef1fb;
-  --color-ink-muted: #a9b0cc;
-  --color-ink-faint: #6e7596;
+  --color-ink: #e6e9ed;
+  --color-ink-muted: #98a2ae;
+  --color-ink-faint: #6b7583;
 
-  --color-dawn-gold: #ffd27a;
-  --color-dawn-coral: #ff9a62;
-  --color-dawn-rose: #ff5f8f;
-  --color-dawn-violet: #8b7bff;
-  --color-dawn-sky: #6cc6ff;
+  --color-accent: #e3b36a;
+  --color-alert: #e07a6f;
 
-  --color-alert: #ff6b6b;
-  --color-ok: #5ee0a0;
-
-  --radius-card: 1.25rem;
-  --radius-pill: 999px;
-
-  --shadow-glass: 0 1px 0 0 rgb(255 255 255 / 0.06) inset, 0 20px 50px -20px rgb(0 0 0 / 0.65);
-  --shadow-glow: 0 0 0 1px rgb(255 154 98 / 0.35), 0 8px 30px -6px rgb(255 95 143 / 0.45);
+  --radius-card: 0.875rem;
 
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
-
-  --animate-fade-up: fade-up 0.6s var(--ease-out-soft) both;
-  --animate-globe-spin: globe-spin 90s linear infinite;
-  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
-
-  @keyframes fade-up {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  @keyframes globe-spin {
-    to {
-      background-position: -200% 0;
-    }
-  }
-  @keyframes pulse-soft {
-    0%,
-    100% {
-      opacity: 0.55;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
 }
 
 @layer base {
@@ -80,35 +41,31 @@
 
   body {
     min-height: 100dvh;
-    background-color: var(--color-night-950);
-    background-image:
-      radial-gradient(120% 60% at 50% 120%, rgb(255 95 143 / 0.18), transparent 60%),
-      radial-gradient(80% 50% at 50% 110%, rgb(255 154 98 / 0.16), transparent 60%),
-      linear-gradient(180deg, var(--color-night-950) 0%, var(--color-night-900) 55%, #120f2a 100%);
-    background-attachment: fixed;
+    background-color: var(--color-ground);
     color: var(--color-ink);
     font-family: var(--font-sans);
+    font-feature-settings: "tnum" 0;
     -webkit-font-smoothing: antialiased;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-dawn-gold);
-    outline-offset: 3px;
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
     border-radius: 6px;
   }
 
   ::selection {
-    background: rgb(255 154 98 / 0.35);
+    background: rgb(227 179 106 / 0.3);
   }
 }
 
 @layer components {
-  .glass {
-    background: linear-gradient(180deg, rgb(255 255 255 / 0.08), rgb(255 255 255 / 0.03));
-    border: 1px solid rgb(255 255 255 / 0.1);
-    box-shadow: var(--shadow-glass);
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
+  /* Solid floating panel over the globe; a little translucency so the map still reads beneath. */
+  .surface {
+    background: rgb(23 30 39 / 0.9);
+    border: 1px solid var(--color-line);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .no-scrollbar {
@@ -117,37 +74,26 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-
-  .text-gradient-dawn {
-    background: linear-gradient(
-      90deg,
-      var(--color-dawn-gold),
-      var(--color-dawn-coral) 35%,
-      var(--color-dawn-rose) 65%,
-      var(--color-dawn-violet)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .bg-gradient-dawn {
-    background: linear-gradient(
-      90deg,
-      var(--color-dawn-gold),
-      var(--color-dawn-coral) 35%,
-      var(--color-dawn-rose) 65%,
-      var(--color-dawn-violet)
-    );
-  }
 }
 
-/* Reduced motion: no animations, instant transitions (the globe will cut instead of fly). */
+/* Shown only if the app's scripts never start (e.g. a blocked connection); needs no JavaScript. */
+@keyframes slow-load-hint {
+  to {
+    opacity: 1;
+  }
+}
+.slow-load-hint {
+  opacity: 0;
+  animation: slow-load-hint 0.4s ease 12s forwards;
+}
+
+/* Reduced motion: no animations, instant transitions (the globe cuts instead of flying). */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.001ms !important;
+    animation-delay: 0s !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;

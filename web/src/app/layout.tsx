@@ -1,13 +1,19 @@
 import { SerwistProvider } from "@serwist/turbopack/react";
 import type { Metadata, Viewport } from "next";
-import { Manrope, Sora } from "next/font/google";
+import { Newsreader, Public_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 import { FlagPolyfill } from "@/components/FlagPolyfill";
 import "./globals.css";
 
 // next/font downloads these at build time and serves them from our own domain: no runtime Google requests.
-const body = Manrope({ subsets: ["latin", "latin-ext"], variable: "--font-dawn-body", display: "swap" });
-const display = Sora({ subsets: ["latin", "latin-ext"], variable: "--font-dawn-display", display: "swap" });
+// Newsreader is a serif drawn for reading news on screens; Public Sans is a plain civic sans.
+const sans = Public_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-dawn-sans", display: "swap" });
+const serif = Newsreader({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-dawn-serif",
+  display: "swap",
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   applicationName: "Dawn",
@@ -25,14 +31,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#04060d",
+  themeColor: "#0f141b",
   colorScheme: "dark",
   viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { readonly children: ReactNode }) {
   return (
-    <html lang="en" dir="ltr" className={`${body.variable} ${display.variable}`}>
+    <html lang="en" dir="ltr" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <FlagPolyfill />
         <SerwistProvider swUrl="/serwist/sw.js">{children}</SerwistProvider>

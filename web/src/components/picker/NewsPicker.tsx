@@ -1,12 +1,12 @@
 "use client";
 
-import { countriesInRegion, REGIONS, type Country, type SelectableRegionId } from "@dawn/config";
-import { useDeferredValue, useMemo, useState } from "react";
+import { countriesInRegion, REGIONS, type SelectableRegionId } from "@dawn/config";
+import { useDeferredValue, useMemo, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
 import { Sheet } from "@/components/ui/Sheet";
 import { cn } from "@/lib/cn";
 import { usePreferences } from "@/lib/preferences";
-import { scopeInfo, searchCountries } from "@/lib/selection";
+import { scopeInfo, searchCountries, type Scope } from "@/lib/selection";
 import { SelectedList } from "./SelectedList";
 
 export interface NewsPickerProps {
@@ -16,8 +16,8 @@ export interface NewsPickerProps {
 }
 
 const SELECTABLE = REGIONS.filter((r) => r.id !== "global");
-/** Most important regions open first, the rest stay collapsed to keep the list short. */
-const OPEN_BY_DEFAULT = new Set<SelectableRegionId>(["europe", "asia", "north-america"]);
+/** The most important regions start expanded; the rest stay collapsed to keep the list short. */
+const OPEN_BY_DEFAULT = new Set<string>(["europe", "asia", "north-america"]);
 
 /** "Choose your news": regions and countries in any mix, Global always included and last. */
 export function NewsPicker({ open, firstRun, onDone }: NewsPickerProps) {
@@ -28,39 +28,34 @@ export function NewsPicker({ open, firstRun, onDone }: NewsPickerProps) {
 
   return (
     <Sheet open={open} onClose={onDone} title="Choose your news" size="tall">
-      <header className="flex items-start justify-between gap-3 px-5 pt-3 pb-3">
+      <header className="flex items-start justify-between gap-4 border-b border-line px-5 pt-3 pb-4">
         <div>
-          <h2 className="font-display text-xl font-semibold">
-            {firstRun ? "Welcome to Dawn" : "Choose your news"}
+          <h2 className="font-serif text-[1.6rem] leading-tight font-medium">
+            {firstRun ? "What should your brief cover?" : "Choose your news"}
           </h2>
-          <p className="mt-0.5 text-sm text-ink-muted">
-            {firstRun
-              ? "Pick the places you care about. Your brief plays them in order, then Global."
-              : "Tap to add or remove. Drag to change the order."}
+          <p className="mt-1 text-sm text-ink-muted">
+            Your chapters play in this order. Global news always comes last.
           </p>
         </div>
-        <Button variant="primary" onClick={onDone} className="shrink-0">
+        <Button variant="primary" onClick={onDone} className="mt-1 shrink-0">
           Done
         </Button>
       </header>
 
       <div className="no-scrollbar flex-1 overflow-y-auto overscroll-contain px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
-        <section aria-labelledby="order-heading" className="mb-5">
-          <h3
-            id="order-heading"
-            className="mb-2 text-xs font-semibold tracking-wider text-ink-faint uppercase"
-          >
-            Your brief, in order
+        <section aria-labelledby="order-heading" className="pt-4">
+          <h3 id="order-heading" className="mb-2 text-sm font-semibold">
+            Your brief
           </h3>
           <SelectedList />
         </section>
 
-        <div className="sticky top-0 z-10 -mx-5 mb-4 bg-night-900/95 px-5 py-2 backdrop-blur">
+        <div className="sticky top-0 z-10 -mx-5 mt-5 border-b border-line bg-surface px-5 py-3">
           <label className="relative block">
             <span className="sr-only">Search countries</span>
             <svg
               viewBox="0 0 24 24"
-              className="pointer-events-none absolute top-1/2 left-3.5 size-5 -translate-y-1/2 text-ink-faint"
+              className="pointer-events-none absolute top-1/2 left-3 size-[18px] -translate-y-1/2 text-ink-faint"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -75,57 +70,43 @@ export function NewsPicker({ open, firstRun, onDone }: NewsPickerProps) {
               onChange={(e) => {
                 setQuery(e.target.value);
               }}
-              placeholder="Search: Germany, Almanya, USA…"
+              placeholder="Search countries"
               autoComplete="off"
               enterKeyHint="search"
-              className="h-12 w-full rounded-2xl border border-white/10 bg-white/5 pr-4 pl-11 text-base text-ink placeholder:text-ink-faint focus:border-dawn-coral/60 focus:outline-none"
+              className="h-11 w-full rounded-lg border border-line-strong bg-ground pr-3 pl-10 text-base text-ink placeholder:text-ink-faint focus:border-ink-muted focus:outline-none"
             />
           </label>
         </div>
 
         {searching ? (
-          <section aria-label="Search results">
+          <section aria-label="Search results" className="pt-2">
             {results.length === 0 ? (
-              <p className="py-6 text-center text-sm text-ink-muted">No country matches “{deferredQuery}”.</p>
+              <p className="py-6 text-sm text-ink-muted">
+                No country matches “{deferredQuery}”. Try its English or local name.
+              </p>
             ) : (
-              <ul className="flex flex-col gap-1">
+              <ul className="divide-y divide-line">
                 {results.map((c) => (
-                  <CountryRow key={c.iso2} country={c} showRegion />
+                  <OptionRow key={c.iso2} scope={c.iso2} detail={scopeInfo(c.region).title} />
                 ))}
               </ul>
             )}
           </section>
         ) : (
           <>
-            <section aria-labelledby="regions-heading" className="mb-6">
-              <h3
-                id="regions-heading"
-                className="mb-2 text-xs font-semibold tracking-wider text-ink-faint uppercase"
-              >
-                Regions · top stories from the whole region
-              </h3>
-              <div className="grid grid-cols-2 gap-2">
+            <Group title="Regions" note="The most important stories from across a region.">
+              <ul className="divide-y divide-line">
                 {SELECTABLE.map((r) => (
-                  <RegionTile key={r.id} id={r.id as SelectableRegionId} blurb={r.blurb} />
+                  <OptionRow key={r.id} scope={r.id} detail={r.blurb} />
                 ))}
-              </div>
-            </section>
+              </ul>
+            </Group>
 
-            <section aria-labelledby="countries-heading">
-              <h3
-                id="countries-heading"
-                className="mb-2 text-xs font-semibold tracking-wider text-ink-faint uppercase"
-              >
-                Countries · stories about or from that country
-              </h3>
-              <div className="flex flex-col gap-2">
+            <Group title="Countries" note="Stories about, or reported from, one country.">
+              <div className="divide-y divide-line border-y border-line">
                 {SELECTABLE.map((r) => (
-                  <details
-                    key={r.id}
-                    open={OPEN_BY_DEFAULT.has(r.id as SelectableRegionId)}
-                    className="group rounded-2xl border border-white/10 bg-white/[0.03]"
-                  >
-                    <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-medium">
+                  <details key={r.id} open={OPEN_BY_DEFAULT.has(r.id)} className="group">
+                    <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-sm font-semibold">
                       {r.name}
                       <svg
                         viewBox="0 0 24 24"
@@ -138,15 +119,15 @@ export function NewsPicker({ open, firstRun, onDone }: NewsPickerProps) {
                         <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </summary>
-                    <ul className="flex flex-col gap-0.5 px-2 pb-2">
+                    <ul className="pb-2">
                       {countriesInRegion(r.id as SelectableRegionId).map((c) => (
-                        <CountryRow key={c.iso2} country={c} />
+                        <OptionRow key={c.iso2} scope={c.iso2} compact />
                       ))}
                     </ul>
                   </details>
                 ))}
               </div>
-            </section>
+            </Group>
           </>
         )}
       </div>
@@ -154,83 +135,76 @@ export function NewsPicker({ open, firstRun, onDone }: NewsPickerProps) {
   );
 }
 
-function RegionTile({ id, blurb }: { readonly id: SelectableRegionId; readonly blurb: string }) {
-  const selected = usePreferences((s) => s.selection.includes(id));
-  const toggle = usePreferences((s) => s.toggle);
-  const info = scopeInfo(id);
+function Group({
+  title,
+  note,
+  children,
+}: {
+  readonly title: string;
+  readonly note: string;
+  readonly children: ReactNode;
+}) {
   return (
-    <button
-      type="button"
-      aria-pressed={selected}
-      onClick={() => {
-        toggle(id);
-      }}
-      className={cn(
-        "flex min-h-20 flex-col items-start gap-1 rounded-2xl border p-3 text-left transition duration-200 active:scale-[0.98]",
-        selected
-          ? "border-dawn-coral/60 bg-dawn-coral/15 shadow-[var(--shadow-glow)]"
-          : "border-white/10 bg-white/[0.04] hover:bg-white/[0.08]",
-      )}
-    >
-      <span className="flex w-full items-center justify-between text-sm font-semibold">
-        <span>
-          <span aria-hidden>{info.flag}</span> {info.title}
-        </span>
-        <Check on={selected} />
-      </span>
-      <span className="text-xs leading-snug text-ink-faint">{blurb}</span>
-    </button>
+    <section className="pt-5">
+      <h3 className="text-sm font-semibold">{title}</h3>
+      <p className="mb-1 text-xs text-ink-faint">{note}</p>
+      {children}
+    </section>
   );
 }
 
-function CountryRow({
-  country,
-  showRegion = false,
+function OptionRow({
+  scope,
+  detail,
+  compact = false,
 }: {
-  readonly country: Country;
-  readonly showRegion?: boolean;
+  readonly scope: Scope;
+  readonly detail?: string;
+  readonly compact?: boolean;
 }) {
-  const selected = usePreferences((s) => s.selection.includes(country.iso2));
+  const selected = usePreferences((s) => s.selection.includes(scope));
   const toggle = usePreferences((s) => s.toggle);
+  const info = scopeInfo(scope);
   return (
     <li>
       <button
         type="button"
-        aria-pressed={selected}
+        role="checkbox"
+        aria-checked={selected}
         onClick={() => {
-          toggle(country.iso2);
+          toggle(scope);
         }}
         className={cn(
-          "flex min-h-12 w-full items-center gap-3 rounded-xl px-3 text-left transition",
-          selected ? "bg-dawn-coral/12" : "hover:bg-white/[0.06]",
+          "flex w-full items-center gap-3 text-left",
+          compact ? "min-h-11 py-1" : "min-h-14 py-2",
         )}
       >
-        <span className="w-6 text-center text-lg" aria-hidden>
-          {country.flag}
+        {info.flag !== "" && (
+          <span className="w-6 text-center text-lg leading-none" aria-hidden>
+            {info.flag}
+          </span>
+        )}
+        <span className="flex-1">
+          <span className="block text-[0.95rem] text-ink">{info.title}</span>
+          {detail !== undefined && <span className="block text-xs text-ink-faint">{detail}</span>}
         </span>
-        <span className="flex-1 text-sm">
-          {country.name}
-          {showRegion && (
-            <span className="ml-2 text-xs text-ink-faint">{scopeInfo(country.region).title}</span>
-          )}
-        </span>
-        <Check on={selected} />
+        <Checkbox checked={selected} />
       </button>
     </li>
   );
 }
 
-function Check({ on }: { readonly on: boolean }) {
+function Checkbox({ checked }: { readonly checked: boolean }) {
   return (
     <span
       aria-hidden
       className={cn(
-        "grid size-6 shrink-0 place-items-center rounded-full border transition",
-        on ? "bg-gradient-dawn border-transparent text-night-950" : "border-white/20",
+        "grid size-5 shrink-0 place-items-center rounded-[5px] border transition-colors",
+        checked ? "border-ink bg-ink text-ground" : "border-line-strong",
       )}
     >
-      {on && (
-        <svg viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="3">
+      {checked && (
+        <svg viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="3.2">
           <path d="M5 12.5l4.5 4.5L19 7.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       )}

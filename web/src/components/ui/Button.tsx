@@ -1,25 +1,24 @@
 import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "ghost" | "icon";
+type Variant = "primary" | "secondary" | "icon";
 
 const VARIANTS: Record<Variant, string> = {
-  primary:
-    "bg-gradient-dawn px-5 py-2.5 text-night-950 font-semibold shadow-[var(--shadow-glow)] hover:brightness-110",
-  ghost: "glass px-4 py-2 text-ink hover:bg-white/10",
-  icon: "glass size-12 justify-center text-ink hover:bg-white/10",
+  primary: "bg-ink px-5 py-2.5 font-semibold text-ground hover:bg-white",
+  secondary: "border border-line-strong px-4 py-2 text-ink hover:bg-raised",
+  icon: "size-11 justify-center border border-line-strong text-ink hover:bg-raised",
 };
 
 export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   readonly variant?: Variant;
 }
 
-export function Button({ variant = "ghost", className, type = "button", ...props }: ButtonProps) {
+export function Button({ variant = "secondary", className, type = "button", ...props }: ButtonProps) {
   return (
     <button
       type={type}
       className={cn(
-        "inline-flex items-center gap-2 rounded-[var(--radius-pill)] text-sm transition duration-200 ease-[var(--ease-out-soft)] active:scale-95 disabled:pointer-events-none disabled:opacity-40",
+        "inline-flex items-center gap-2 rounded-full text-sm transition-colors duration-150 disabled:pointer-events-none disabled:opacity-35",
         VARIANTS[variant],
         className,
       )}

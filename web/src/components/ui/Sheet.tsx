@@ -38,7 +38,7 @@ export function Sheet({ open, onClose, title, children, size = "auto", className
       {open && (
         <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
           <motion.div
-            className="absolute inset-0 bg-night-950/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/55"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -53,7 +53,7 @@ export function Sheet({ open, onClose, title, children, size = "auto", className
             aria-label={title}
             tabIndex={-1}
             className={cn(
-              "glass relative flex w-full max-w-xl flex-col overflow-hidden rounded-t-[1.75rem] bg-night-900/85 outline-none sm:rounded-[1.75rem]",
+              "relative flex w-full max-w-xl flex-col overflow-hidden rounded-t-2xl border-t border-line bg-surface outline-none sm:rounded-2xl sm:border",
               size === "tall" ? "h-[92dvh] sm:h-[85dvh]" : "max-h-[85dvh]",
               className,
             )}
@@ -63,7 +63,7 @@ export function Sheet({ open, onClose, title, children, size = "auto", className
             transition={reduce ? { duration: 0 } : { type: "spring", damping: 32, stiffness: 320 }}
           >
             <div
-              className="mx-auto mt-2.5 h-1 w-10 shrink-0 rounded-full bg-white/25 sm:hidden"
+              className="mx-auto mt-2.5 h-1 w-10 shrink-0 rounded-full bg-line-strong sm:hidden"
               aria-hidden
             />
             {children}

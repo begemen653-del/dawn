@@ -12,6 +12,7 @@
   },
   "scripts": {
     "dev": "npm run dev --workspace @dawn/web",
+    "dev:phone": "npm run dev:phone --workspace @dawn/web",
     "build": "npm run build --workspace @dawn/web",
     "lint": "eslint .",
     "typecheck": "npm run typecheck --workspaces --if-present",

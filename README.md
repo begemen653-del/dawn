@@ -16,15 +16,16 @@ Everything runs on free services. No accounts, no tracking.
 
 Open a terminal in the project folder (`C:\dev\Dawn`) and run:
 
-| What you want                                        | Command                                    |
-| ---------------------------------------------------- | ------------------------------------------ |
-| Install everything (first time, or after pulls)      | `npm install`                              |
-| Start the app on your PC                             | `npm run dev` → open http://localhost:3000 |
-| Make a fresh sample brief                            | `npm run pipeline:dry`                     |
-| Run every quality check (format, lint, types, tests) | `npm run check`                            |
-| Auto-format the code                                 | `npm run format`                           |
-| Build the production site                            | `npm run build`                            |
-| Rebuild the country list from Natural Earth          | `npm run countries`                        |
+| What you want                                        | Command                                           |
+| ---------------------------------------------------- | ------------------------------------------------- |
+| Install everything (first time, or after pulls)      | `npm install`                                     |
+| Start the app on your PC                             | `npm run dev` → open http://localhost:3000        |
+| Start it so your phone (same Wi-Fi) can open it      | `npm run dev:phone` → open http://YOUR-PC-IP:3000 |
+| Make a fresh sample brief                            | `npm run pipeline:dry`                            |
+| Run every quality check (format, lint, types, tests) | `npm run check`                                   |
+| Auto-format the code                                 | `npm run format`                                  |
+| Build the production site                            | `npm run build`                                   |
+| Rebuild the country list from Natural Earth          | `npm run countries`                               |
 
 ## Where things are
 

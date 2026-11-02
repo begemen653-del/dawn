@@ -29,24 +29,19 @@ export interface CanvasGlobeProps {
   readonly label: string;
 }
 
+/** One warm accent ("first light"); everything else on the globe is greyscale. */
+const ACCENT = "#e3b36a";
 const TONES = {
-  focus: "#ff9a62",
-  alert: "#ff5f8f",
-  neutral: "#8b7bff",
+  focus: ACCENT,
+  alert: "#e07a6f",
+  neutral: "#c3cbd5",
 } as const;
 
-const ARC_COLOR = "#ffd27a";
+const ARC_COLOR = "#e6e9ed";
 const IDLE_CAMERA: GlobeCamera = { lon: 15, lat: 25, k: 1 };
 
-interface Star {
-  readonly x: number;
-  readonly y: number;
-  readonly r: number;
-  readonly phase: number;
-}
-
 /**
- * Lightweight 2D canvas globe (d3-geo orthographic). It flies between stories and draws the
+ * Lightweight 2D canvas globe (d3-geo orthographic) in quiet greyscale. It flies between stories and draws the
  * scene directive: highlighted countries, areas, routes and pulsing markers.
  * It is also the low-power fallback for devices without good WebGL once the MapLibre
  * globe arrives in Milestone 6.
@@ -107,12 +102,6 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       });
 
     const font = getComputedStyle(document.body).fontFamily;
-    const stars: Star[] = Array.from({ length: 90 }, () => ({
-      x: Math.random(),
-      y: Math.random(),
-      r: Math.random() * 1.1 + 0.3,
-      phase: Math.random() * 6.28,
-    }));
 
     let width = 0;
     let height = 0;
@@ -170,12 +159,6 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, width, height);
 
-      for (const s of stars) {
-        const twinkle = reduced ? 0.4 : 0.25 + 0.3 * Math.abs(Math.sin(now / 1600 + s.phase));
-        ctx.fillStyle = `rgba(200,210,255,${twinkle})`;
-        ctx.fillRect(s.x * width, s.y * height, s.r, s.r);
-      }
-
       const projection = geoOrthographic()
         .translate([cx, cy])
         .scale(radius * cam.k)
@@ -190,25 +173,11 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       }
 
       const r = radius * cam.k;
-      // How much of the whole globe is on screen: 1 when fully visible, 0 when zoomed into a country.
-      const wholeGlobe = Math.min(1, Math.max(0, 1.7 - cam.k));
 
-      // Atmosphere halo outside the rim.
-      const halo = ctx.createRadialGradient(cx, cy, r * 0.96, cx, cy, r * 1.16);
-      halo.addColorStop(0, "rgba(64,190,255,0.5)");
-      halo.addColorStop(0.35, "rgba(64,190,255,0.16)");
-      halo.addColorStop(1, "rgba(64,190,255,0)");
-      ctx.fillStyle = halo;
-      ctx.beginPath();
-      ctx.arc(cx, cy, r * 1.16, 0, Math.PI * 2);
-      ctx.fill();
-
-      if (wholeGlobe > 0) drawOrbit("back", wholeGlobe, now);
-
-      // Ocean, lit from the upper left.
+      // Water, very slightly lit from the upper left.
       const ocean = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.4, r * 0.05, cx, cy, r);
-      ocean.addColorStop(0, "#0c3168");
-      ocean.addColorStop(1, "#020b22");
+      ocean.addColorStop(0, "#18222e");
+      ocean.addColorStop(1, "#0c1118");
       ctx.beginPath();
       path({ type: "Sphere" });
       ctx.fillStyle = ocean;
@@ -216,115 +185,77 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
 
       ctx.beginPath();
       path(geoGraticule10());
-      ctx.strokeStyle = "rgba(120,210,255,0.08)";
+      ctx.strokeStyle = "rgba(200,210,225,0.045)";
       ctx.lineWidth = 0.6;
       ctx.stroke();
 
       if (world) {
         ctx.beginPath();
         path(world.land);
-        ctx.fillStyle = "#1f80d0";
+        ctx.fillStyle = "#2a3441";
         ctx.fill();
         ctx.beginPath();
         path(world.borders);
-        ctx.strokeStyle = "rgba(2,16,44,0.6)";
+        ctx.strokeStyle = "rgba(12,17,24,0.75)";
         ctx.lineWidth = 0.7;
         ctx.stroke();
         ctx.beginPath();
         path(world.land);
-        ctx.strokeStyle = "rgba(150,225,255,0.85)";
-        ctx.lineWidth = 0.8;
+        ctx.strokeStyle = "rgba(150,163,180,0.5)";
+        ctx.lineWidth = 0.7;
         ctx.stroke();
       }
 
       drawNight();
 
-      // Edge darkening, then the glowing rim.
-      const limb = ctx.createRadialGradient(cx, cy, r * 0.62, cx, cy, r);
-      limb.addColorStop(0, "rgba(2,8,26,0)");
-      limb.addColorStop(1, "rgba(2,8,26,0.55)");
+      // Edge shading and a fine rim.
+      const limb = ctx.createRadialGradient(cx, cy, r * 0.6, cx, cy, r);
+      limb.addColorStop(0, "rgba(8,11,16,0)");
+      limb.addColorStop(1, "rgba(8,11,16,0.55)");
       ctx.beginPath();
       path({ type: "Sphere" });
       ctx.fillStyle = limb;
       ctx.fill();
-      ctx.save();
-      ctx.shadowColor = "rgba(80,200,255,0.95)";
-      ctx.shadowBlur = 26;
-      ctx.strokeStyle = "rgba(110,215,255,0.9)";
-      ctx.lineWidth = 2;
+      ctx.strokeStyle = "rgba(150,163,180,0.35)";
+      ctx.lineWidth = 1;
       ctx.stroke();
-      ctx.restore();
 
-      if (wholeGlobe > 0) drawOrbit("front", wholeGlobe, now);
+      const current = sceneRef.current;
+      if (current) drawScene(current, now);
 
-      /** Night side, a soft twilight edge, and the warm line where the sun is rising right now. */
+      /** Night side, a soft twilight edge, and the one warm line: where the sun is rising now. */
       function drawNight() {
         const night: [number, number] = [sun[0] + 180, -sun[1]];
         for (const [radiusDeg, alpha] of [
           [96, 0.1],
-          [90, 0.18],
-          [84, 0.18],
+          [90, 0.2],
+          [84, 0.2],
         ] as const) {
           ctx.beginPath();
           path(geoCircle().center(night).radius(radiusDeg)());
-          ctx.fillStyle = `rgba(1,4,16,${alpha})`;
+          ctx.fillStyle = `rgba(4,6,10,${alpha})`;
           ctx.fill();
         }
         const line = { type: "LineString" as const, coordinates: dawnLine(sun) };
         ctx.save();
         ctx.beginPath();
         path(line);
-        ctx.shadowColor = "#ff9a62";
-        ctx.shadowBlur = 18;
-        ctx.strokeStyle = "rgba(255,154,98,0.28)";
-        ctx.lineWidth = 9;
+        ctx.shadowColor = ACCENT;
+        ctx.shadowBlur = 10;
+        ctx.strokeStyle = "rgba(227,179,106,0.18)";
+        ctx.lineWidth = 6;
         ctx.stroke();
         ctx.restore();
         ctx.beginPath();
         path(line);
-        ctx.strokeStyle = "rgba(255,210,122,0.85)";
-        ctx.lineWidth = 1.4;
+        ctx.strokeStyle = "rgba(227,179,106,0.9)";
+        ctx.lineWidth = 1.2;
         ctx.stroke();
       }
-
-      /** A tilted orbit ring with a small satellite; the back half is drawn behind the globe. */
-      function drawOrbit(half: "back" | "front", strength: number, time: number) {
-        const rx = r * 1.38;
-        const ry = r * 0.42;
-        const tilt = -0.42;
-        const [start, end] = half === "back" ? [Math.PI, Math.PI * 2] : [0, Math.PI];
-        ctx.save();
-        ctx.translate(cx, cy);
-        ctx.rotate(tilt);
-        ctx.beginPath();
-        ctx.ellipse(0, 0, rx, ry, 0, start, end);
-        ctx.setLineDash([2, 5]);
-        ctx.strokeStyle = `rgba(140,220,255,${0.4 * strength})`;
-        ctx.lineWidth = 1;
-        ctx.stroke();
-        ctx.setLineDash([]);
-        const angle = reduced ? 1.9 : time / 1600;
-        const onThisHalf = half === "back" ? Math.sin(angle) < 0 : Math.sin(angle) >= 0;
-        if (onThisHalf) {
-          ctx.shadowColor = "#8fe3ff";
-          ctx.shadowBlur = 10;
-          ctx.fillStyle = `rgba(220,245,255,${strength})`;
-          ctx.beginPath();
-          ctx.arc(rx * Math.cos(angle), ry * Math.sin(angle), 2.6, 0, Math.PI * 2);
-          ctx.fill();
-        }
-        ctx.restore();
-      }
-
-      const current = sceneRef.current;
-      if (current) drawScene(current, now);
-
-      drawHud(cx, cy, cam, now);
 
       function drawScene(sceneToDraw: SceneDirective, time: number) {
         const holding = flightRef.current === null;
         const sinceHold = holding ? time - holdStartRef.current : 0;
-        const pulse = reduced ? 1 : 0.65 + 0.35 * Math.sin(time / 420);
 
         for (const el of sceneToDraw.elements) {
           if (el.type === "highlight" && world) {
@@ -334,14 +265,10 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
             const color = TONES[el.tone];
             ctx.beginPath();
             path(shape);
-            ctx.save();
-            ctx.shadowColor = color;
-            ctx.shadowBlur = 16 * pulse;
-            ctx.fillStyle = `${color}44`;
+            ctx.fillStyle = `${color}2e`;
             ctx.fill();
-            ctx.restore();
             ctx.strokeStyle = color;
-            ctx.lineWidth = 1.4;
+            ctx.lineWidth = 1.3;
             ctx.stroke();
           } else if (el.type === "area") {
             const color = TONES[el.tone];
@@ -351,11 +278,11 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
                 .center(el.center)
                 .radius(el.radiusKm / 111.32)(),
             );
-            ctx.fillStyle = `${color}26`;
+            ctx.fillStyle = `${color}1f`;
             ctx.fill();
-            ctx.setLineDash([5, 5]);
+            ctx.setLineDash([4, 4]);
             ctx.strokeStyle = color;
-            ctx.lineWidth = 1.2;
+            ctx.lineWidth = 1;
             ctx.stroke();
             ctx.setLineDash([]);
           }
@@ -372,10 +299,10 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
           if (coordinates.length < 2) continue;
           ctx.beginPath();
           path({ type: "LineString", coordinates });
-          ctx.setLineDash([7, 6]);
-          ctx.lineDashOffset = el.animated && !reduced ? -time / 60 : 0;
+          ctx.setLineDash([6, 5]);
+          ctx.lineDashOffset = el.animated && !reduced ? -time / 70 : 0;
           ctx.strokeStyle = ARC_COLOR;
-          ctx.lineWidth = 2;
+          ctx.lineWidth = 1.6;
           ctx.stroke();
           ctx.setLineDash([]);
           drawArrowHead(projection, coordinates);
@@ -398,8 +325,8 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         const angle = Math.atan2(pb[1] - pa[1], pb[0] - pa[0]);
         ctx.beginPath();
         ctx.moveTo(pb[0], pb[1]);
-        ctx.lineTo(pb[0] - 10 * Math.cos(angle - 0.45), pb[1] - 10 * Math.sin(angle - 0.45));
-        ctx.lineTo(pb[0] - 10 * Math.cos(angle + 0.45), pb[1] - 10 * Math.sin(angle + 0.45));
+        ctx.lineTo(pb[0] - 9 * Math.cos(angle - 0.45), pb[1] - 9 * Math.sin(angle - 0.45));
+        ctx.lineTo(pb[0] - 9 * Math.cos(angle + 0.45), pb[1] - 9 * Math.sin(angle + 0.45));
         ctx.closePath();
         ctx.fillStyle = ARC_COLOR;
         ctx.fill();
@@ -416,59 +343,34 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         const p = proj([at[0], at[1]]);
         if (!p) return;
         const [x, y] = p;
-        if (!reduced) {
-          const phase = ((time / 1000) % 1.2) / 1.2;
+        if (!reduced && primary) {
+          // One slow pulse on the main location; secondary places stay still.
+          const phase = ((time / 1000) % 2) / 2;
           ctx.beginPath();
-          ctx.arc(x, y, 5 + phase * (primary ? 26 : 16), 0, Math.PI * 2);
-          ctx.strokeStyle = `rgba(255,210,122,${0.85 * (1 - phase)})`;
-          ctx.lineWidth = 1.5;
+          ctx.arc(x, y, 5 + phase * 18, 0, Math.PI * 2);
+          ctx.strokeStyle = `rgba(227,179,106,${0.7 * (1 - phase)})`;
+          ctx.lineWidth = 1.2;
           ctx.stroke();
         }
         ctx.beginPath();
-        ctx.arc(x, y, primary ? 4.5 : 3.5, 0, Math.PI * 2);
-        ctx.fillStyle = "#fff";
+        ctx.arc(x, y, primary ? 4 : 3, 0, Math.PI * 2);
+        ctx.fillStyle = primary ? ACCENT : "#e6e9ed";
         ctx.fill();
-        ctx.beginPath();
-        ctx.arc(x, y, primary ? 8 : 6, 0, Math.PI * 2);
-        ctx.strokeStyle = TONES.focus;
-        ctx.lineWidth = 1.6;
+        ctx.strokeStyle = "#0f141b";
+        ctx.lineWidth = 1.5;
         ctx.stroke();
 
-        ctx.font = `600 ${primary ? 13 : 12}px ${font}`;
+        ctx.font = `${primary ? 600 : 500} ${primary ? 13 : 12}px ${font}`;
         const tw = ctx.measureText(text).width;
-        const lx = x + 13;
+        const lx = x + 11;
         const ly = y - 10;
-        ctx.fillStyle = "rgba(7,10,22,0.72)";
+        ctx.fillStyle = "rgba(15,20,27,0.85)";
         ctx.beginPath();
-        ctx.roundRect(lx - 6, ly - 2, tw + 12, 20, 10);
+        ctx.roundRect(lx - 6, ly - 1, tw + 12, 20, 4);
         ctx.fill();
-        ctx.fillStyle = "#eef1fb";
+        ctx.fillStyle = "#e6e9ed";
         ctx.textBaseline = "top";
-        ctx.fillText(text, lx, ly + 2);
-      }
-
-      function drawHud(x: number, y: number, c: GlobeCamera, time: number) {
-        const spin = reduced ? 0 : time / 2200;
-        ctx.setLineDash([3, 6]);
-        ctx.strokeStyle = "rgba(120,210,255,0.5)";
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.arc(x, y, 36, spin, spin + Math.PI * 2);
-        ctx.stroke();
-        ctx.setLineDash([]);
-        ctx.font = `500 10px ui-monospace, "SF Mono", Consolas, monospace`;
-        ctx.fillStyle = "rgba(190,200,240,0.7)";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "top";
-        const ns = c.lat >= 0 ? "N" : "S";
-        const ew = c.lon >= 0 ? "E" : "W";
-        const lon = ((((c.lon + 180) % 360) + 360) % 360) - 180;
-        ctx.fillText(
-          `${Math.abs(c.lat).toFixed(2)}°${ns}  ${Math.abs(lon).toFixed(2)}°${ew}  ·  ${c.k.toFixed(1)}×`,
-          x,
-          y + 44,
-        );
-        ctx.textAlign = "left";
+        ctx.fillText(text, lx, ly + 3);
       }
     };
 

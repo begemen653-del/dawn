@@ -55,20 +55,10 @@ export interface ScopeInfo {
   readonly flag: string;
 }
 
-const REGION_ICONS: Readonly<Record<RegionId, string>> = {
-  global: "🌍",
-  europe: "🇪🇺",
-  asia: "🌏",
-  "north-america": "🌎",
-  "south-america": "🌎",
-  "middle-east": "🕌",
-  africa: "🌍",
-  oceania: "🌏",
-};
-
 export function scopeInfo(scope: string): ScopeInfo {
   if (isRegionId(scope)) {
-    return { scope, kind: "region", title: getRegion(scope).name, flag: REGION_ICONS[scope] };
+    // Regions carry no icon; only countries show their flag.
+    return { scope, kind: "region", title: getRegion(scope).name, flag: "" };
   }
   const country = getCountry(scope);
   return { scope, kind: "country", title: country?.name ?? scope, flag: country?.flag ?? "📍" };

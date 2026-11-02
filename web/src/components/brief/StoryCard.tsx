@@ -3,83 +3,75 @@
 import type { StoryEvent } from "@dawn/pipeline/schema";
 import { motion, stagger, useReducedMotion, type Variants } from "motion/react";
 import { Badge } from "@/components/ui/Badge";
-import { GlassCard } from "@/components/ui/GlassCard";
+import { Surface } from "@/components/ui/Surface";
 
 const timeFormat = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit" });
 
 export interface StoryCardProps {
   readonly story: StoryEvent;
-  /** e.g. "Europe · story 1 of 2" */
-  readonly kicker: string;
+  readonly chapterTitle: string;
+  /** 1-based position and length of the chapter, for "1 of 2". */
+  readonly position: number;
+  readonly total: number;
   readonly onDeeper: () => void;
 }
 
 const container: Variants = {
   hidden: {},
-  shown: { transition: { delayChildren: stagger(0.12, { startDelay: 0.15 }) } },
+  shown: { transition: { delayChildren: stagger(0.1, { startDelay: 0.1 }) } },
 };
 const item: Variants = {
-  hidden: { opacity: 0, y: 8 },
-  shown: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
+  hidden: { opacity: 0 },
+  shown: { opacity: 1, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
 };
 
 /**
- * Compact explanation card that floats over the globe (top on phones, top-left on desktop).
- * Lines fade in one after another as the camera arrives. Details live in "Go deeper".
+ * Explanation card floating over the globe (top on phones, top-left on desktop).
+ * The text settles in as the camera arrives; details live in "Go deeper".
  */
-export function StoryCard({ story, kicker, onDeeper }: StoryCardProps) {
+export function StoryCard({ story, chapterTitle, position, total, onDeeper }: StoryCardProps) {
   const reduce = useReducedMotion() ?? false;
+  const places = story.locations.map((l) => l.name).join(", ");
   return (
-    <GlassCard className="bg-night-900/55 p-4" aria-live="polite">
-      <motion.div
-        className="flex flex-col gap-2"
-        variants={container}
-        initial={reduce ? "shown" : "hidden"}
-        animate="shown"
-      >
-        <motion.p
-          variants={item}
-          className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-faint"
-        >
-          <span className="font-semibold text-dawn-coral">{kicker}</span>
-          <span aria-hidden>·</span>
-          <time dateTime={story.time}>{timeFormat.format(new Date(story.time))}</time>
-          <span aria-hidden>·</span>
-          <span>{story.locations.map((l) => l.name).join(", ")}</span>
-          {story.developing && <Badge tone="developing">Developing</Badge>}
-        </motion.p>
+    <Surface className="px-4 pt-3.5 pb-3" aria-live="polite">
+      <motion.div variants={container} initial={reduce ? "shown" : "hidden"} animate="shown">
+        <motion.div variants={item} className="flex items-baseline justify-between gap-3 text-xs">
+          <span className="font-semibold text-ink">{chapterTitle}</span>
+          <span className="text-ink-faint tabular-nums">
+            {position} of {total}
+          </span>
+        </motion.div>
         <motion.h2
           variants={item}
-          className="font-display text-[1.15rem] leading-snug font-semibold text-balance"
+          className="mt-2 font-serif text-[1.35rem] leading-[1.2] font-medium text-balance text-ink"
         >
           {story.headline}
         </motion.h2>
-        <motion.p variants={item} className="text-[0.92rem] leading-relaxed text-ink-muted">
+        <motion.p variants={item} className="mt-1.5 text-xs text-ink-faint">
+          {places}, <time dateTime={story.time}>{timeFormat.format(new Date(story.time))}</time>
+          {story.developing && (
+            <span className="ml-2 align-middle">
+              <Badge tone="developing">Developing</Badge>
+            </span>
+          )}
+        </motion.p>
+        <motion.p variants={item} className="mt-2.5 text-[0.94rem] leading-relaxed text-ink-muted">
           {story.summary}
         </motion.p>
-        <motion.div variants={item} className="mt-1 flex items-center justify-between gap-2">
+        <motion.div
+          variants={item}
+          className="mt-3 flex items-center justify-between gap-3 border-t border-line pt-2.5"
+        >
           <button
             type="button"
             onClick={onDeeper}
-            className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-dawn-coral/50 bg-dawn-coral/15 px-4 text-sm font-medium text-ink transition active:scale-95"
+            className="-ml-1 min-h-10 rounded-lg px-1 text-sm font-semibold text-ink underline decoration-line-strong underline-offset-4 hover:decoration-ink"
           >
             Go deeper
-            <svg
-              viewBox="0 0 24 24"
-              className="size-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              aria-hidden
-            >
-              <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
           </button>
-          <span className="text-[0.68rem] tracking-wide text-[#c9c1ff]/80 uppercase">
-            AI summary · {story.sources.length} sources
-          </span>
+          <span className="text-xs text-ink-faint">AI summary of {story.sources.length} sources</span>
         </motion.div>
       </motion.div>
-    </GlassCard>
+    </Surface>
   );
 }

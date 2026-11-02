@@ -6,10 +6,9 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { CanvasGlobe, type GlobeFocus } from "@/components/globe/CanvasGlobe";
 import { NewsPicker } from "@/components/picker/NewsPicker";
-import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { GlassCard } from "@/components/ui/GlassCard";
 import { ProgressBar } from "@/components/ui/ProgressBar";
+import { Surface } from "@/components/ui/Surface";
 import { BriefLoadError, loadLatestBrief, type LoadedBrief } from "@/lib/brief";
 import { buildChapters, buildSlides, type Chapter } from "@/lib/chapters";
 import { cn } from "@/lib/cn";
@@ -170,14 +169,14 @@ export function BriefScreen() {
       : "Globe";
 
   return (
-    <div className="relative h-dvh overflow-hidden">
+    <div className="relative h-dvh overflow-hidden bg-ground">
       <div className="absolute inset-0">
         <CanvasGlobe scene={scene} focus={focus} reducedMotion={reduceMotion} label={globeLabel} />
       </div>
 
       {/* Overlays. pointer-events only on the actual controls so the globe stays visible. */}
       <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-7xl flex-col px-3 pt-[max(0.75rem,env(safe-area-inset-top))] pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-5">
-        <div ref={topRef} className="flex flex-col gap-2.5">
+        <div ref={topRef} className="flex flex-col gap-2">
           {slides.length > 0 && (
             <ProgressBar
               segments={slides.length}
@@ -187,27 +186,29 @@ export function BriefScreen() {
             />
           )}
 
-          <div className="pointer-events-auto flex items-center gap-2">
-            <nav aria-label="Chapters" className="no-scrollbar flex flex-1 gap-1.5 overflow-x-auto">
-              {chapters.map((c, i) => (
-                <button
-                  key={c.scope}
-                  type="button"
-                  aria-current={!atEnd && slide?.chapterIndex === i ? "step" : undefined}
-                  onClick={() => {
-                    jumpToChapter(i);
-                  }}
-                  className={cn(
-                    "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full border px-3 text-[0.8rem] backdrop-blur-md transition",
-                    !atEnd && slide?.chapterIndex === i
-                      ? "border-dawn-coral/60 bg-dawn-coral/20 text-ink"
-                      : "border-white/10 bg-night-900/50 text-ink-muted",
-                  )}
-                >
-                  <span aria-hidden>{c.flag}</span>
-                  {c.title}
-                </button>
-              ))}
+          <div className="pointer-events-auto flex items-center gap-1">
+            <nav aria-label="Chapters" className="no-scrollbar -ml-2 flex flex-1 overflow-x-auto">
+              {chapters.map((c, i) => {
+                const current = !atEnd && slide?.chapterIndex === i;
+                return (
+                  <button
+                    key={c.scope}
+                    type="button"
+                    aria-current={current ? "step" : undefined}
+                    onClick={() => {
+                      jumpToChapter(i);
+                    }}
+                    className={cn(
+                      "relative flex h-10 shrink-0 items-center gap-1.5 px-2 text-sm transition-colors",
+                      current ? "font-semibold text-ink" : "text-ink-faint hover:text-ink-muted",
+                    )}
+                  >
+                    {c.flag !== "" && <span aria-hidden>{c.flag}</span>}
+                    {c.title}
+                    {current && <span className="absolute inset-x-2 bottom-1 h-px bg-ink" aria-hidden />}
+                  </button>
+                );
+              })}
             </nav>
             <button
               type="button"
@@ -215,14 +216,14 @@ export function BriefScreen() {
               onClick={() => {
                 setPickerOpen(true);
               }}
-              className="grid size-10 shrink-0 place-items-center rounded-full border border-white/10 bg-night-900/50 text-ink backdrop-blur-md transition active:scale-95"
+              className="grid size-10 shrink-0 place-items-center rounded-full text-ink-muted hover:text-ink"
             >
               <svg
                 viewBox="0 0 24 24"
                 className="size-5"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="1.8"
                 aria-hidden
               >
                 <path d="M4 7h10M18 7h2M4 17h4M12 17h8" strokeLinecap="round" />
@@ -234,22 +235,25 @@ export function BriefScreen() {
 
           <div ref={cardRef} className="pointer-events-auto w-full lg:max-w-[25rem]">
             {load.kind === "loading" && (
-              <p className="animate-pulse-soft py-4 text-center text-sm text-ink-muted">
-                Loading your morning brief…
-              </p>
+              <div className="py-3 text-sm text-ink-muted" role="status">
+                <p>Loading today&apos;s brief…</p>
+                <p className="slow-load-hint mt-1 text-xs text-ink-faint">
+                  This is taking longer than usual. Check your connection, then reload the page.
+                </p>
+              </div>
             )}
             {load.kind === "error" && (
-              <GlassCard className="p-4 text-center" role="alert">
-                <p className="font-display">{load.message}</p>
+              <Surface className="p-4" role="alert">
+                <p className="font-serif text-lg">{load.message}</p>
                 <Button
                   className="mt-3"
                   onClick={() => {
                     window.location.reload();
                   }}
                 >
-                  Try again
+                  Reload
                 </Button>
-              </GlassCard>
+              </Surface>
             )}
             <AnimatePresence mode="wait" initial={false}>
               {slide && chapter && (
@@ -258,21 +262,23 @@ export function BriefScreen() {
                   initial={reduceMotion ? false : { opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={reduceMotion ? { opacity: 1 } : { opacity: 0 }}
-                  transition={{ duration: reduceMotion ? 0 : 0.25 }}
+                  transition={{ duration: reduceMotion ? 0 : 0.2 }}
                 >
                   {slide.story ? (
                     <StoryCard
                       story={slide.story}
-                      kicker={`${chapter.title} · ${slide.position + 1} of ${slide.chapterLength}`}
+                      chapterTitle={chapter.title}
+                      position={slide.position + 1}
+                      total={slide.chapterLength}
                       onDeeper={() => {
                         setDeeper(slide.story);
                       }}
                     />
                   ) : (
-                    <GlassCard className="bg-night-900/55 p-4">
-                      <p className="text-xs font-semibold text-dawn-coral">{chapter.title}</p>
-                      <p className="mt-1 text-sm text-ink-muted">{chapter.emptyReason}</p>
-                    </GlassCard>
+                    <Surface className="px-4 py-3.5">
+                      <p className="text-xs font-semibold">{chapter.title}</p>
+                      <p className="mt-1.5 text-sm text-ink-muted">{chapter.emptyReason}</p>
+                    </Surface>
                   )}
                 </motion.div>
               )}
@@ -282,25 +288,23 @@ export function BriefScreen() {
                   initial={reduceMotion ? false : { opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  <GlassCard className="bg-night-900/55 p-4">
-                    <p className="text-gradient-dawn font-display text-lg font-semibold">
-                      That&apos;s your brief ☀️
-                    </p>
-                    <p className="mt-3 text-xs font-semibold tracking-wider text-dawn-gold uppercase">
-                      {load.brief.index.learn.title}
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-                      {load.brief.index.learn.body}
-                    </p>
+                  <Surface className="px-4 pt-3.5 pb-4">
+                    <p className="font-serif text-[1.35rem] font-medium">You&apos;re up to date.</p>
+                    <div className="mt-3 border-t border-line pt-3">
+                      <p className="text-sm font-semibold">{load.brief.index.learn.title}</p>
+                      <p className="mt-1 text-[0.94rem] leading-relaxed text-ink-muted">
+                        {load.brief.index.learn.body}
+                      </p>
+                    </div>
                     <Button
-                      className="mt-3"
+                      className="mt-4"
                       onClick={() => {
                         setSlideIndex(0);
                       }}
                     >
-                      ↺ Start again
+                      Play again
                     </Button>
-                  </GlassCard>
+                  </Surface>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -309,40 +313,36 @@ export function BriefScreen() {
 
         <div className="flex-1" />
 
-        <div ref={bottomRef} className="flex flex-col gap-2.5">
+        <div ref={bottomRef} className="flex flex-col gap-3">
           {slide?.story && (
             <aside
               aria-label="Pictures"
-              className="no-scrollbar pointer-events-auto -mx-3 flex snap-x gap-2 overflow-x-auto px-3 lg:absolute lg:top-24 lg:right-5 lg:mx-0 lg:w-48 lg:flex-col lg:px-0"
+              className="no-scrollbar pointer-events-auto -mx-3 flex snap-x gap-2 overflow-x-auto px-3 lg:absolute lg:top-28 lg:right-5 lg:mx-0 lg:w-48 lg:flex-col lg:px-0"
             >
               {[0, 1].map((i) => (
-                <motion.div
-                  key={`${slide.story?.id ?? ""}-${i}`}
-                  initial={reduceMotion ? false : { opacity: 0, x: 24 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: reduceMotion ? 0 : 0.9 + i * 0.25, duration: 0.5 }}
-                  className="glass grid h-16 w-28 shrink-0 snap-start place-items-center rounded-2xl bg-night-900/50 p-2 text-center text-[0.68rem] text-ink-faint lg:h-28 lg:w-full"
+                <div
+                  key={i}
+                  className="grid h-16 w-28 shrink-0 snap-start place-items-center rounded-lg border border-dashed border-line-strong bg-ground/70 p-2 text-center text-[0.7rem] leading-snug text-ink-faint lg:h-28 lg:w-full"
                 >
-                  Licensed pictures arrive in Milestone 7
-                </motion.div>
+                  Licensed photo
+                </div>
               ))}
             </aside>
           )}
 
-          <div className="pointer-events-auto flex items-center justify-between gap-3">
-            <p className="w-24 text-[0.68rem] leading-tight text-ink-faint">
+          <div className="pointer-events-auto grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+            <p className="text-xs leading-tight text-ink-faint">
               {load.kind === "ready" && (
                 <>
-                  {load.brief.index.sample && (
-                    <span className="mb-0.5 block">
-                      <Badge tone="sample">Sample</Badge>
-                    </span>
-                  )}
-                  Updated {updatedFormat.format(new Date(load.brief.index.generatedAt))}
+                  {load.brief.index.sample ? "Sample data" : "Updated"}
+                  <br />
+                  <span className="tabular-nums">
+                    {updatedFormat.format(new Date(load.brief.index.generatedAt))}
+                  </span>
                 </>
               )}
             </p>
-            <div className="glass flex items-center gap-2 rounded-full bg-night-900/50 p-1.5">
+            <div className="flex items-center gap-3">
               <Button
                 variant="icon"
                 aria-label="Previous story"
@@ -355,7 +355,7 @@ export function BriefScreen() {
               </Button>
               <Button
                 variant="primary"
-                aria-label="Play brief (coming in Milestone 5)"
+                aria-label="Play brief (available in a later milestone)"
                 disabled
                 className="size-14 justify-center p-0"
               >
@@ -374,7 +374,7 @@ export function BriefScreen() {
                 </svg>
               </Button>
             </div>
-            <span className="w-24" aria-hidden />
+            <span aria-hidden />
           </div>
         </div>
       </div>
