@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-02",
-  "generatedAt": "2026-11-02T20:46:08.669Z",
+  "generatedAt": "2026-11-02T21:31:54.919Z",
   "events": [
     {
       "id": "sample-berlin-overview",
@@ -222,7 +222,7 @@
         "camera": {
           "lng": 6.143,
           "lat": 46.204,
-          "zoom": 3
+          "zoom": 1.5
         },
         "elements": [
           {

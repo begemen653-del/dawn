@@ -13,6 +13,7 @@ import {
 } from "d3-geo";
 import { useEffect, useRef } from "react";
 import { cameraAt, planFlight, zoomToScale, type Flight, type GlobeCamera } from "./camera";
+import { dawnLine, subsolarPoint } from "./sun";
 import { loadWorld, type WorldData } from "./world";
 
 export interface GlobeFocus {
@@ -130,6 +131,8 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
 
     let last = 0;
     let raf = 0;
+    let sun = subsolarPoint(new Date());
+    let sunUpdatedAt = 0;
 
     const updateCamera = (now: number, dt: number) => {
       const active = flightRef.current;
@@ -181,42 +184,136 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         .precision(0.6);
       const path = geoPath(projection, ctx);
 
-      // Ocean with a soft light from the upper left, plus atmosphere glow.
+      if (now - sunUpdatedAt > 1000) {
+        sun = subsolarPoint(new Date());
+        sunUpdatedAt = now;
+      }
+
       const r = radius * cam.k;
-      const ocean = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.4, r * 0.1, cx, cy, r);
-      ocean.addColorStop(0, "#14244a");
-      ocean.addColorStop(1, "#070d1f");
+      // How much of the whole globe is on screen: 1 when fully visible, 0 when zoomed into a country.
+      const wholeGlobe = Math.min(1, Math.max(0, 1.7 - cam.k));
+
+      // Atmosphere halo outside the rim.
+      const halo = ctx.createRadialGradient(cx, cy, r * 0.96, cx, cy, r * 1.16);
+      halo.addColorStop(0, "rgba(64,190,255,0.5)");
+      halo.addColorStop(0.35, "rgba(64,190,255,0.16)");
+      halo.addColorStop(1, "rgba(64,190,255,0)");
+      ctx.fillStyle = halo;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r * 1.16, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (wholeGlobe > 0) drawOrbit("back", wholeGlobe, now);
+
+      // Ocean, lit from the upper left.
+      const ocean = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.4, r * 0.05, cx, cy, r);
+      ocean.addColorStop(0, "#0c3168");
+      ocean.addColorStop(1, "#020b22");
       ctx.beginPath();
       path({ type: "Sphere" });
       ctx.fillStyle = ocean;
       ctx.fill();
-      ctx.save();
-      ctx.shadowColor = "rgba(139,123,255,0.7)";
-      ctx.shadowBlur = 28;
-      ctx.strokeStyle = "rgba(139,123,255,0.55)";
-      ctx.lineWidth = 1.2;
-      ctx.stroke();
-      ctx.restore();
 
       ctx.beginPath();
       path(geoGraticule10());
-      ctx.strokeStyle = "rgba(139,123,255,0.07)";
+      ctx.strokeStyle = "rgba(120,210,255,0.08)";
       ctx.lineWidth = 0.6;
       ctx.stroke();
 
       if (world) {
         ctx.beginPath();
         path(world.land);
-        ctx.fillStyle = "#1a2c58";
+        ctx.fillStyle = "#1f80d0";
         ctx.fill();
-        ctx.strokeStyle = "#2c4384";
-        ctx.lineWidth = 0.6;
-        ctx.stroke();
         ctx.beginPath();
         path(world.borders);
-        ctx.strokeStyle = "rgba(170,160,255,0.28)";
-        ctx.lineWidth = 0.6;
+        ctx.strokeStyle = "rgba(2,16,44,0.6)";
+        ctx.lineWidth = 0.7;
         ctx.stroke();
+        ctx.beginPath();
+        path(world.land);
+        ctx.strokeStyle = "rgba(150,225,255,0.85)";
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+      }
+
+      drawNight();
+
+      // Edge darkening, then the glowing rim.
+      const limb = ctx.createRadialGradient(cx, cy, r * 0.62, cx, cy, r);
+      limb.addColorStop(0, "rgba(2,8,26,0)");
+      limb.addColorStop(1, "rgba(2,8,26,0.55)");
+      ctx.beginPath();
+      path({ type: "Sphere" });
+      ctx.fillStyle = limb;
+      ctx.fill();
+      ctx.save();
+      ctx.shadowColor = "rgba(80,200,255,0.95)";
+      ctx.shadowBlur = 26;
+      ctx.strokeStyle = "rgba(110,215,255,0.9)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.restore();
+
+      if (wholeGlobe > 0) drawOrbit("front", wholeGlobe, now);
+
+      /** Night side, a soft twilight edge, and the warm line where the sun is rising right now. */
+      function drawNight() {
+        const night: [number, number] = [sun[0] + 180, -sun[1]];
+        for (const [radiusDeg, alpha] of [
+          [96, 0.1],
+          [90, 0.18],
+          [84, 0.18],
+        ] as const) {
+          ctx.beginPath();
+          path(geoCircle().center(night).radius(radiusDeg)());
+          ctx.fillStyle = `rgba(1,4,16,${alpha})`;
+          ctx.fill();
+        }
+        const line = { type: "LineString" as const, coordinates: dawnLine(sun) };
+        ctx.save();
+        ctx.beginPath();
+        path(line);
+        ctx.shadowColor = "#ff9a62";
+        ctx.shadowBlur = 18;
+        ctx.strokeStyle = "rgba(255,154,98,0.28)";
+        ctx.lineWidth = 9;
+        ctx.stroke();
+        ctx.restore();
+        ctx.beginPath();
+        path(line);
+        ctx.strokeStyle = "rgba(255,210,122,0.85)";
+        ctx.lineWidth = 1.4;
+        ctx.stroke();
+      }
+
+      /** A tilted orbit ring with a small satellite; the back half is drawn behind the globe. */
+      function drawOrbit(half: "back" | "front", strength: number, time: number) {
+        const rx = r * 1.38;
+        const ry = r * 0.42;
+        const tilt = -0.42;
+        const [start, end] = half === "back" ? [Math.PI, Math.PI * 2] : [0, Math.PI];
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(tilt);
+        ctx.beginPath();
+        ctx.ellipse(0, 0, rx, ry, 0, start, end);
+        ctx.setLineDash([2, 5]);
+        ctx.strokeStyle = `rgba(140,220,255,${0.4 * strength})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.setLineDash([]);
+        const angle = reduced ? 1.9 : time / 1600;
+        const onThisHalf = half === "back" ? Math.sin(angle) < 0 : Math.sin(angle) >= 0;
+        if (onThisHalf) {
+          ctx.shadowColor = "#8fe3ff";
+          ctx.shadowBlur = 10;
+          ctx.fillStyle = `rgba(220,245,255,${strength})`;
+          ctx.beginPath();
+          ctx.arc(rx * Math.cos(angle), ry * Math.sin(angle), 2.6, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.restore();
       }
 
       const current = sceneRef.current;
@@ -353,7 +450,7 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       function drawHud(x: number, y: number, c: GlobeCamera, time: number) {
         const spin = reduced ? 0 : time / 2200;
         ctx.setLineDash([3, 6]);
-        ctx.strokeStyle = "rgba(170,160,255,0.45)";
+        ctx.strokeStyle = "rgba(120,210,255,0.5)";
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.arc(x, y, 36, spin, spin + Math.PI * 2);

@@ -133,7 +133,7 @@ export const SAMPLE_EVENTS: StoryEvent[] = [
     importance: 90,
     countries: ["CH"],
     scene: {
-      camera: { lng: 6.143, lat: 46.204, zoom: 3 },
+      camera: { lng: 6.143, lat: 46.204, zoom: 1.5 },
       elements: [
         {
           type: "area",
