@@ -141,10 +141,13 @@ export function BriefScreen() {
       const bottom = bottomRef.current?.getBoundingClientRect();
       const card = cardRef.current?.getBoundingClientRect();
       const wide = window.innerWidth >= 1024;
+      const obstacles = [top, bottom, card]
+        .filter((r) => r !== undefined)
+        .map((r) => [r.left, r.top, r.width, r.height] as const);
       if (wide && card) {
-        setFocus({ x: (card.right + window.innerWidth) / 2, y: window.innerHeight / 2 });
+        setFocus({ x: (card.right + window.innerWidth) / 2, y: window.innerHeight / 2, obstacles });
       } else if (top && bottom) {
-        setFocus({ x: window.innerWidth / 2, y: (top.bottom + bottom.top) / 2 });
+        setFocus({ x: window.innerWidth / 2, y: (top.bottom + bottom.top) / 2, obstacles });
       }
     };
     measure();

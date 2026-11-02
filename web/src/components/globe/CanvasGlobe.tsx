@@ -1,6 +1,6 @@
 "use client";
 
-import { getCountry } from "@dawn/config";
+import { COUNTRIES, getCountry, type Country } from "@dawn/config";
 import type { SceneDirective } from "@dawn/pipeline/schema";
 import {
   geoCircle,
@@ -9,17 +9,27 @@ import {
   geoInterpolate,
   geoOrthographic,
   geoPath,
-  type GeoProjection,
+  type GeoPath,
 } from "d3-geo";
 import { useEffect, useRef } from "react";
 import { cameraAt, planFlight, zoomToScale, type Flight, type GlobeCamera } from "./camera";
 import { dawnLine, subsolarPoint } from "./sun";
-import { loadWorld, type WorldData } from "./world";
+import { loadPlaces, loadWorld, type CountryShape, type Place, type WorldData } from "./world";
+
+/** Country label positions by ISO numeric code, from the bundled catalog. */
+const COUNTRY_BY_NUMERIC = new Map<string, Country>(
+  COUNTRIES.flatMap((c) => (c.isoNumeric ? [[c.isoNumeric, c] as const] : [])),
+);
+
+/** Zoom (globe scale) from which the detailed 1:50m shapes replace the 1:110m ones. */
+const FINE_DETAIL_FROM = 1.6;
 
 export interface GlobeFocus {
   /** Where on screen (CSS px) the story's location should sit, between the overlays. */
   readonly x: number;
   readonly y: number;
+  /** Screen areas covered by cards and controls ([x, y, width, height]); map labels avoid them. */
+  readonly obstacles?: readonly (readonly [number, number, number, number])[];
 }
 
 export interface CanvasGlobeProps {
@@ -55,18 +65,21 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
   const flightRef = useRef<{ flight: Flight; start: number } | null>(null);
   const holdStartRef = useRef(0);
   const dirtyRef = useRef(true);
+  const cacheVersionRef = useRef(0);
 
   // Runs before the scene effect so a first scene already sees the right motion setting.
   useEffect(() => {
     focusRef.current = focus;
     reducedRef.current = reducedMotion;
     dirtyRef.current = true;
+    cacheVersionRef.current++;
   }, [focus, reducedMotion]);
 
   // New story: fly there (or cut, with reduced motion).
   useEffect(() => {
     sceneRef.current = scene;
     dirtyRef.current = true;
+    cacheVersionRef.current++;
     if (!scene) return;
     const target: GlobeCamera = {
       lon: scene.camera.lng,
@@ -89,16 +102,36 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
     if (!canvas || !context) return;
     const ctx: CanvasRenderingContext2D = context;
 
-    let world: WorldData | null = null;
+    // Coarse shapes first for a fast first frame, then detailed shapes and cities.
+    // Any of these may fail: the globe still works without them (sphere, markers, routes).
+    let coarse: WorldData | null = null;
+    let fine: WorldData | null = null;
+    let places: readonly Place[] = [];
     let disposed = false;
-    loadWorld()
+    const loaded = () => {
+      if (disposed) return;
+      dirtyRef.current = true;
+      cacheVersionRef.current++;
+    };
+    loadWorld("110m")
       .then((w) => {
-        if (disposed) return;
-        world = w;
-        dirtyRef.current = true;
+        coarse = w;
+        loaded();
       })
-      .catch(() => {
-        // The globe still works without land shapes (sphere, markers, routes).
+      .catch(() => undefined)
+      .finally(() => {
+        loadWorld("50m")
+          .then((w) => {
+            fine = w;
+            loaded();
+          })
+          .catch(() => undefined);
+        loadPlaces()
+          .then((p) => {
+            places = p;
+            loaded();
+          })
+          .catch(() => undefined);
       });
 
     const font = getComputedStyle(document.body).fontFamily;
@@ -113,6 +146,7 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       dirtyRef.current = true;
+      cacheVersionRef.current++;
     };
     resize();
     const observer = new ResizeObserver(resize);
@@ -122,6 +156,13 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
     let raf = 0;
     let sun = subsolarPoint(new Date());
     let sunUpdatedAt = 0;
+
+    // The detailed map is expensive (~20 ms on a PC), so while the camera holds still it is
+    // drawn once into this hidden canvas and reused every frame. Only the pulse and routes
+    // are redrawn live. During flights the light 1:110m map is drawn directly instead.
+    const cache = document.createElement("canvas");
+    const cacheContext = cache.getContext("2d");
+    let cacheKey = "";
 
     const updateCamera = (now: number, dt: number) => {
       const active = flightRef.current;
@@ -134,159 +175,286 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         }
         return;
       }
-      const current = sceneRef.current;
-      if (!current) {
+      if (!sceneRef.current && !reducedRef.current) {
         // Idle: slow spin while nothing is selected.
-        if (!reducedRef.current)
-          cameraRef.current = { ...cameraRef.current, lon: cameraRef.current.lon + dt * 0.004 };
-        return;
+        cameraRef.current = { ...cameraRef.current, lon: cameraRef.current.lon + dt * 0.004 };
       }
-      if (reducedRef.current) return;
-      // Gentle push-in while holding on a story.
-      const base = zoomToScale(current.camera.zoom);
-      const hold = Math.min(1, (now - holdStartRef.current) / 12000);
-      cameraRef.current = { lon: current.camera.lng, lat: current.camera.lat, k: base * (1 + 0.05 * hold) };
     };
 
     const draw = (now: number) => {
       const reduced = reducedRef.current;
       const cam = cameraRef.current;
-      const f = focusRef.current;
-      const cx = f?.x ?? width / 2;
-      const cy = f?.y ?? height / 2;
+      const focus = focusRef.current;
+      const cx = focus?.x ?? width / 2;
+      const cy = focus?.y ?? height / 2;
       const radius = Math.min(width, height) * 0.42;
-
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.clearRect(0, 0, width, height);
+      const r = radius * cam.k;
+      const center: [number, number] = [cam.lon, cam.lat];
+      const current = sceneRef.current;
+      const moving = flightRef.current !== null || current === null;
 
       const projection = geoOrthographic()
         .translate([cx, cy])
-        .scale(radius * cam.k)
+        .scale(r)
         .rotate([-cam.lon, -cam.lat])
         .clipAngle(90)
-        .precision(0.6);
-      const path = geoPath(projection, ctx);
+        .precision(moving ? 0.9 : 0.6);
 
       if (now - sunUpdatedAt > 1000) {
         sun = subsolarPoint(new Date());
         sunUpdatedAt = now;
       }
 
-      const r = radius * cam.k;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, width, height);
 
-      // Water, very slightly lit from the upper left.
-      const ocean = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.4, r * 0.05, cx, cy, r);
-      ocean.addColorStop(0, "#18222e");
-      ocean.addColorStop(1, "#0c1118");
-      ctx.beginPath();
-      path({ type: "Sphere" });
-      ctx.fillStyle = ocean;
-      ctx.fill();
+      if (moving || !cacheContext) {
+        drawMap(ctx, false);
+      } else {
+        const key = [
+          cacheVersionRef.current,
+          cam.lon.toFixed(5),
+          cam.lat.toFixed(5),
+          cam.k.toFixed(5),
+          cx,
+          cy,
+          width,
+          height,
+          dpr,
+          Math.floor(Date.now() / 60_000), // the night side moves; refresh once a minute
+        ].join("|");
+        if (key !== cacheKey) {
+          cache.width = canvas.width;
+          cache.height = canvas.height;
+          cacheContext.setTransform(dpr, 0, 0, dpr, 0, 0);
+          cacheContext.clearRect(0, 0, width, height);
+          drawMap(cacheContext, true);
+          cacheKey = key;
+        }
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.drawImage(cache, 0, 0);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      if (current) drawLive(current, now);
 
-      ctx.beginPath();
-      path(geoGraticule10());
-      ctx.strokeStyle = "rgba(200,210,225,0.045)";
-      ctx.lineWidth = 0.6;
-      ctx.stroke();
+      /** Everything that only changes when the camera moves: sea, land, night, highlights, labels. */
+      function drawMap(g: CanvasRenderingContext2D, settled: boolean) {
+        const path = geoPath(projection, g);
 
-      if (world) {
-        ctx.beginPath();
-        path(world.land);
-        ctx.fillStyle = "#2a3441";
-        ctx.fill();
-        ctx.beginPath();
-        path(world.borders);
-        ctx.strokeStyle = "rgba(12,17,24,0.75)";
-        ctx.lineWidth = 0.7;
-        ctx.stroke();
-        ctx.beginPath();
-        path(world.land);
-        ctx.strokeStyle = "rgba(150,163,180,0.5)";
-        ctx.lineWidth = 0.7;
-        ctx.stroke();
+        // Water, very slightly lit from the upper left.
+        const ocean = g.createRadialGradient(cx - r * 0.35, cy - r * 0.4, r * 0.05, cx, cy, r);
+        ocean.addColorStop(0, "#18222e");
+        ocean.addColorStop(1, "#0c1118");
+        g.beginPath();
+        path({ type: "Sphere" });
+        g.fillStyle = ocean;
+        g.fill();
+
+        g.beginPath();
+        path(geoGraticule10());
+        g.strokeStyle = "rgba(200,210,225,0.045)";
+        g.lineWidth = 0.6;
+        g.stroke();
+
+        const detailed = settled && cam.k >= FINE_DETAIL_FROM && fine !== null;
+        const world = detailed ? fine : (coarse ?? fine);
+        // Angular radius of the part of the globe that is on screen, to skip everything else.
+        const farthest = Math.max(
+          Math.hypot(cx, cy),
+          Math.hypot(width - cx, cy),
+          Math.hypot(cx, height - cy),
+          Math.hypot(width - cx, height - cy),
+        );
+        const visibleAngle = farthest >= r ? Math.PI / 2 : Math.asin(farthest / r) + 0.04;
+        const visibleShapes = world
+          ? world.shapes.filter((shape) => geoDistance(shape.center, center) - shape.radius < visibleAngle)
+          : [];
+
+        if (visibleShapes.length > 0) {
+          g.beginPath();
+          for (const shape of visibleShapes) path(shape.feature);
+          g.fillStyle = "#2a3441";
+          g.fill();
+          // Coasts and borders together; finer when zoomed in so detail doesn't turn into clutter.
+          g.strokeStyle = "rgba(150,163,180,0.42)";
+          g.lineWidth = detailed ? 0.6 : 0.7;
+          g.stroke();
+        }
+
+        drawNight(g, path);
+
+        // Edge shading and a fine rim.
+        const limb = g.createRadialGradient(cx, cy, r * 0.6, cx, cy, r);
+        limb.addColorStop(0, "rgba(8,11,16,0)");
+        limb.addColorStop(1, "rgba(8,11,16,0.55)");
+        g.beginPath();
+        path({ type: "Sphere" });
+        g.fillStyle = limb;
+        g.fill();
+        g.strokeStyle = "rgba(150,163,180,0.35)";
+        g.lineWidth = 1;
+        g.stroke();
+
+        if (current && world) drawRegions(g, path, current, world);
+        // Labels only once the camera has settled: names sliding past during a flight are noise.
+        if (settled) drawLabels(g, current, visibleShapes);
       }
 
-      drawNight();
-
-      // Edge shading and a fine rim.
-      const limb = ctx.createRadialGradient(cx, cy, r * 0.6, cx, cy, r);
-      limb.addColorStop(0, "rgba(8,11,16,0)");
-      limb.addColorStop(1, "rgba(8,11,16,0.55)");
-      ctx.beginPath();
-      path({ type: "Sphere" });
-      ctx.fillStyle = limb;
-      ctx.fill();
-      ctx.strokeStyle = "rgba(150,163,180,0.35)";
-      ctx.lineWidth = 1;
-      ctx.stroke();
-
-      const current = sceneRef.current;
-      if (current) drawScene(current, now);
-
       /** Night side, a soft twilight edge, and the one warm line: where the sun is rising now. */
-      function drawNight() {
+      function drawNight(g: CanvasRenderingContext2D, path: GeoPath) {
         const night: [number, number] = [sun[0] + 180, -sun[1]];
         for (const [radiusDeg, alpha] of [
           [96, 0.1],
           [90, 0.2],
           [84, 0.2],
         ] as const) {
-          ctx.beginPath();
+          g.beginPath();
           path(geoCircle().center(night).radius(radiusDeg)());
-          ctx.fillStyle = `rgba(4,6,10,${alpha})`;
-          ctx.fill();
+          g.fillStyle = `rgba(4,6,10,${alpha})`;
+          g.fill();
         }
         const line = { type: "LineString" as const, coordinates: dawnLine(sun) };
-        ctx.save();
-        ctx.beginPath();
+        g.save();
+        g.beginPath();
         path(line);
-        ctx.shadowColor = ACCENT;
-        ctx.shadowBlur = 10;
-        ctx.strokeStyle = "rgba(227,179,106,0.18)";
-        ctx.lineWidth = 6;
-        ctx.stroke();
-        ctx.restore();
-        ctx.beginPath();
+        g.shadowColor = ACCENT;
+        g.shadowBlur = 10;
+        g.strokeStyle = "rgba(227,179,106,0.18)";
+        g.lineWidth = 6;
+        g.stroke();
+        g.restore();
+        g.beginPath();
         path(line);
-        ctx.strokeStyle = "rgba(227,179,106,0.9)";
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
+        g.strokeStyle = "rgba(227,179,106,0.9)";
+        g.lineWidth = 1.2;
+        g.stroke();
       }
 
-      function drawScene(sceneToDraw: SceneDirective, time: number) {
-        const holding = flightRef.current === null;
-        const sinceHold = holding ? time - holdStartRef.current : 0;
-
+      /** Highlighted countries and shaded areas from the scene directive. */
+      function drawRegions(
+        g: CanvasRenderingContext2D,
+        path: GeoPath,
+        sceneToDraw: SceneDirective,
+        world: WorldData,
+      ) {
         for (const el of sceneToDraw.elements) {
-          if (el.type === "highlight" && world) {
+          if (el.type === "highlight") {
             const numeric = getCountry(el.country)?.isoNumeric;
-            const shape = numeric ? world.countries.get(numeric) : undefined;
+            const shape = numeric ? world.byId.get(numeric)?.feature : undefined;
             if (!shape) continue;
             const color = TONES[el.tone];
-            ctx.beginPath();
+            g.beginPath();
             path(shape);
-            ctx.fillStyle = `${color}2e`;
-            ctx.fill();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 1.3;
-            ctx.stroke();
+            g.fillStyle = `${color}2e`;
+            g.fill();
+            g.strokeStyle = color;
+            g.lineWidth = 1.3;
+            g.stroke();
           } else if (el.type === "area") {
             const color = TONES[el.tone];
-            ctx.beginPath();
+            g.beginPath();
             path(
               geoCircle()
                 .center(el.center)
                 .radius(el.radiusKm / 111.32)(),
             );
-            ctx.fillStyle = `${color}1f`;
-            ctx.fill();
-            ctx.setLineDash([4, 4]);
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-            ctx.setLineDash([]);
+            g.fillStyle = `${color}1f`;
+            g.fill();
+            g.setLineDash([4, 4]);
+            g.strokeStyle = color;
+            g.lineWidth = 1;
+            g.stroke();
+            g.setLineDash([]);
           }
         }
+      }
+
+      /**
+       * Country names and cities, revealed as the camera zooms in. Labels never overlap:
+       * more important ones are placed first, and anything that would collide is skipped.
+       */
+      function drawLabels(
+        g: CanvasRenderingContext2D,
+        sceneToDraw: SceneDirective | null,
+        visibleShapes: readonly CountryShape[],
+      ) {
+        const taken: [number, number, number, number][] = (focus?.obstacles ?? []).map(([x, y, w, h]) => [
+          x,
+          y,
+          w,
+          h,
+        ]);
+        const fits = (x: number, y: number, w: number, h: number) => {
+          if (x < 4 || y < 4 || x + w > width - 4 || y + h > height - 4) return false;
+          for (const [tx, ty, tw, th] of taken) {
+            if (x < tx + tw + 6 && x + w + 6 > tx && y < ty + th + 4 && y + h + 4 > ty) return false;
+          }
+          taken.push([x, y, w, h]);
+          return true;
+        };
+        const onFront = (lon: number, lat: number) => geoDistance([lon, lat], center) < Math.PI / 2 - 0.12;
+
+        // Keep room for the story's own markers, which are drawn on top.
+        const storyNames = new Set<string>();
+        for (const el of sceneToDraw?.elements ?? []) {
+          if (el.type !== "marker") continue;
+          storyNames.add(el.label.toLowerCase());
+          const p = projection([el.at[0], el.at[1]]);
+          if (p && onFront(el.at[0], el.at[1])) taken.push([p[0] - 6, p[1] - 12, 130, 24]);
+        }
+
+        g.textBaseline = "middle";
+
+        // Countries: named once they are large enough on screen to carry a label.
+        g.font = `500 11px ${font}`;
+        g.textAlign = "center";
+        const countries = visibleShapes
+          .map((shape) => ({ shape, country: COUNTRY_BY_NUMERIC.get(shape.id) }))
+          .filter((c) => c.country !== undefined && c.shape.radius * r > 34)
+          .sort((a, b) => b.shape.radius - a.shape.radius);
+        for (const { country } of countries) {
+          if (!country || !onFront(country.camera.lng, country.camera.lat)) continue;
+          const p = projection([country.camera.lng, country.camera.lat]);
+          if (!p) continue;
+          const name = country.name.replace(/ \(.*\)$/, "");
+          const w = g.measureText(name).width;
+          if (!fits(p[0] - w / 2, p[1] - 7, w, 14)) continue;
+          g.fillStyle = "rgba(152,162,174,0.7)";
+          g.fillText(name, p[0], p[1]);
+        }
+
+        // Cities: capitals and big cities first, smaller towns as the camera gets closer.
+        g.textAlign = "left";
+        if (cam.k < 2) return;
+        const maxRank = cam.k < 3 ? 1 : cam.k < 4.5 ? 3 : cam.k < 6.5 ? 4 : 6;
+        g.font = `400 11px ${font}`;
+        let shown = 0;
+        for (const [name, lon, lat, rank, capital] of places) {
+          if (shown >= 35) break;
+          if (rank > maxRank && !(capital === 1 && cam.k >= 2.6)) continue;
+          if (storyNames.has(name.toLowerCase()) || !onFront(lon, lat)) continue;
+          const p = projection([lon, lat]);
+          if (!p) continue;
+          const w = g.measureText(name).width;
+          if (!fits(p[0] - 3, p[1] - 7, w + 10, 14)) continue;
+          shown++;
+          g.fillStyle = "rgba(200,208,218,0.75)";
+          if (capital === 1) g.fillRect(p[0] - 2, p[1] - 2, 4, 4);
+          else {
+            g.beginPath();
+            g.arc(p[0], p[1], 1.6, 0, Math.PI * 2);
+            g.fill();
+          }
+          g.fillStyle = "rgba(200,208,218,0.72)";
+          g.fillText(name, p[0] + 6, p[1]);
+        }
+      }
+
+      /** Routes and markers: cheap, and animated, so drawn fresh every frame. */
+      function drawLive(sceneToDraw: SceneDirective, time: number) {
+        const path = geoPath(projection, ctx);
+        const holding = flightRef.current === null;
+        const sinceHold = holding ? time - holdStartRef.current : 0;
 
         for (const el of sceneToDraw.elements) {
           if (el.type !== "arc" || !holding) continue;
@@ -305,22 +473,22 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
           ctx.lineWidth = 1.6;
           ctx.stroke();
           ctx.setLineDash([]);
-          drawArrowHead(projection, coordinates);
+          drawArrowHead(coordinates);
         }
 
         for (const el of sceneToDraw.elements) {
-          if (el.type === "marker") drawMarker(projection, el.at, el.label, el.emphasis === "primary", time);
+          if (el.type === "marker") drawMarker(el.at, el.label, el.emphasis === "primary", time);
           else if (el.type === "timelineStep" && el.focus)
-            drawMarker(projection, el.focus, `${el.order}. ${el.label}`, false, time);
+            drawMarker(el.focus, `${el.order}. ${el.label}`, false, time);
         }
       }
 
-      function drawArrowHead(proj: GeoProjection, coordinates: [number, number][]) {
+      function drawArrowHead(coordinates: [number, number][]) {
         const a = coordinates.at(-2);
         const b = coordinates.at(-1);
         if (!a || !b) return;
-        const pa = proj(a);
-        const pb = proj(b);
+        const pa = projection(a);
+        const pb = projection(b);
         if (!pa || !pb) return;
         const angle = Math.atan2(pb[1] - pa[1], pb[0] - pa[0]);
         ctx.beginPath();
@@ -332,15 +500,9 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         ctx.fill();
       }
 
-      function drawMarker(
-        proj: GeoProjection,
-        at: readonly [number, number],
-        text: string,
-        primary: boolean,
-        time: number,
-      ) {
-        if (geoDistance([at[0], at[1]], [cam.lon, cam.lat]) > 1.5) return; // behind the globe
-        const p = proj([at[0], at[1]]);
+      function drawMarker(at: readonly [number, number], text: string, primary: boolean, time: number) {
+        if (geoDistance([at[0], at[1]], center) > 1.5) return; // behind the globe
+        const p = projection([at[0], at[1]]);
         if (!p) return;
         const [x, y] = p;
         if (!reduced && primary) {

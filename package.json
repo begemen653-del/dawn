@@ -22,7 +22,8 @@
     "countries": "tsx scripts/build-countries.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check:secrets": "tsx scripts/check-secrets.ts"
+    "check:secrets": "tsx scripts/check-secrets.ts",
+    "geo": "tsx scripts/build-geo.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
