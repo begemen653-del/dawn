@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "scope": "global",
+  "title": "Global",
+  "eventIds": [
+    "sample-global-overview",
+    "sample-berlin-overview"
+  ]
+}

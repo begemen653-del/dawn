@@ -1,0 +1,70 @@
+name: Nightly brief
+
+on:
+  # 04:30 Europe/Berlin. GitHub cron is UTC and has no time zones, so both
+  # entries run; the "Check Berlin time" step skips the one that isn't 04:xx in Berlin
+  # (CET in winter = UTC+1, CEST in summer = UTC+2).
+  schedule:
+    - cron: "30 2 * * *"
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry = sample data only"
+        type: choice
+        options: [dry]
+        default: dry
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly-brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check Berlin time
+        id: gate
+        run: |
+          hour=$(TZ=Europe/Berlin date +%H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$hour" != "04" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping: it is ${hour}:xx in Berlin, not 04:xx."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v7
+        if: steps.gate.outputs.run == 'true'
+
+      - uses: actions/setup-node@v7
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - if: steps.gate.outputs.run == 'true'
+        run: npm ci
+
+      # Milestone 1: dry run only (sample data, no network, no AI keys needed).
+      # Milestones 3–4 switch this to the live run and add the API key secrets.
+      - name: Build the brief
+        if: steps.gate.outputs.run == 'true'
+        run: npm run pipeline:dry
+
+      - name: Commit the new brief
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "dawn-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Nightly brief $(TZ=Europe/Berlin date +%F)"
+            git push
+          fi

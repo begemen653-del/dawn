@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "scope": "europe",
+  "title": "Europe",
+  "eventIds": [
+    "sample-berlin-overview",
+    "sample-istanbul-route"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "dawn",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "config",
+    "pipeline",
+    "web"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @dawn/web",
+    "build": "npm run build --workspace @dawn/web",
+    "lint": "eslint .",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run check:secrets",
+    "pipeline:dry": "npm run dry --workspace @dawn/pipeline",
+    "countries": "tsx scripts/build-countries.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:secrets": "tsx scripts/check-secrets.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^24.19.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.4",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}

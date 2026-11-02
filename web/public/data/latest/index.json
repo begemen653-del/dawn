@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T20:46:08.669Z",
+  "sample": true,
+  "scopes": [
+    {
+      "scope": "global",
+      "file": "playlists/global.json",
+      "count": 2
+    },
+    {
+      "scope": "europe",
+      "file": "playlists/europe.json",
+      "count": 2
+    },
+    {
+      "scope": "DE",
+      "file": "playlists/DE.json",
+      "count": 1
+    },
+    {
+      "scope": "TR",
+      "file": "playlists/TR.json",
+      "count": 1
+    }
+  ],
+  "learn": {
+    "title": "Learn something new (sample)",
+    "body": "Each day this card will teach one small fact connected to the news, such as what a central bank does or why a strait matters for shipping.",
+    "relatedEventId": "sample-istanbul-route"
+  }
+}

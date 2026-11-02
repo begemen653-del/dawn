@@ -1,0 +1,7 @@
+node_modules
+.cache
+web/.next
+web/out
+web/public
+config/countries.ts
+package-lock.json

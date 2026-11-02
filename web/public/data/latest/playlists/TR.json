@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "scope": "TR",
+  "title": "Türkiye (Turkey)",
+  "eventIds": [
+    "sample-istanbul-route"
+  ]
+}

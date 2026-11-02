@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# builds
+web/.next/
+web/out/
+web/public/serwist/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets — never commit
+.env
+.env.*
+!.env.example
+
+# caches / local
+.cache/
+pipeline/.cache/
+coverage/
+.vercel/
+.DS_Store
+Thumbs.db
+*.log

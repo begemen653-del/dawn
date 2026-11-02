@@ -1,0 +1,13 @@
+{
+  "name": "@dawn/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./*": "./*.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  }
+}

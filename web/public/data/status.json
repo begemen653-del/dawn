@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "mode": "dry",
+  "date": "2026-11-02",
+  "startedAt": "2026-11-02T20:46:08.669Z",
+  "finishedAt": "2026-11-02T20:46:08.738Z",
+  "counts": {
+    "articles": 0,
+    "events": 3,
+    "playlists": 4
+  },
+  "warnings": [
+    "Dry run: sample data only, no real news fetched."
+  ],
+  "errors": []
+}
