@@ -5,41 +5,114 @@ Runs in GitHub Actions (`.github/workflows/nightly.yml`) at about **04:30 Europe
 
 ## Stages
 
-| #   | Stage     | Folder                  | Status | What it does                                                                          |
-| --- | --------- | ----------------------- | ------ | ------------------------------------------------------------------------------------- |
-| 1   | Sources   | `pipeline/src/sources/` | M3     | GDELT (worldwide) + curated RSS per country; ETag caching, robots.txt, User-Agent     |
-| 2   | Normalize | `pipeline/src/sources/` | M3     | Map everything to the `Article` schema; dedupe by URL and near-identical title        |
-| 3   | Events    | `pipeline/src/events/`  | M3     | Cluster articles into events; rank by source count, outlet spread, recency            |
-| 4   | Playlists | `pipeline/src/run/`     | M3     | Assign events to regions/countries; 3–8 per chapter, honest empty chapters            |
-| 5   | AI        | `pipeline/src/ai/`      | M4     | Summary, why it matters, scene directive, deeper content, Learn card; grounding check |
-| 6   | Geo       | `pipeline/src/geo/`     | M6     | Place names → coordinates (bundled gazetteer first, cached Nominatim fallback)        |
-| 7   | Images    | `pipeline/src/images/`  | M7     | Licensed images only — see `IMAGES.md`                                                |
-| 8   | Write     | `pipeline/src/run/`     | M1 ✅  | Validate with zod, write atomically, write `status.json`                              |
+| #   | Stage     | Code                                                 | Status | What it does                                                                     |
+| --- | --------- | ---------------------------------------------------- | ------ | -------------------------------------------------------------------------------- |
+| 1   | Sources   | `pipeline/src/sources/`                              | M3 ✅  | GDELT bulk files + 34 curated feeds; robots.txt, User-Agent, ETag cache, retries |
+| 2   | Normalize | `sources/gkg.ts`, `sources/rss.ts`, `events/text.ts` | M3 ✅  | Clean headlines, canonical URLs, languages, countries, places, topics, names     |
+| 3   | Events    | `events/cluster.ts`                                  | M3 ✅  | Remove duplicates, group articles into events, merge across languages            |
+| 4   | Rank      | `events/rank.ts`                                     | M3 ✅  | Importance by independent coverage; sport/celebrity pushed down                  |
+| 5   | Chapters  | `events/assign.ts`                                   | M3 ✅  | Global, 7 regions, 232 countries; honest empty chapters                          |
+| 6   | AI        | `pipeline/src/ai/`                                   | M4     | Summary, why it matters, relevance check, scene, deeper content, Learn card      |
+| 7   | Geo       | `pipeline/src/geo/`                                  | M6     | Place names → coordinates (GDELT gives many already)                             |
+| 8   | Images    | `pipeline/src/images/`                               | M7     | Licensed images only — see `IMAGES.md`                                           |
+| 9   | Write     | `pipeline/src/run/`                                  | M1 ✅  | Validate with zod, write atomically, write `status.json`                         |
 
-Milestone 1 has only the **dry run**: `npm run pipeline:dry` writes a complete sample brief from
-`pipeline/fixtures/sample-brief.ts` with no network or AI calls.
+Commands:
+
+- `npm run pipeline:ingest` — real news → `pipeline/out/ingest.json` (input for the AI step), `report.md`
+  (readable top stories per chapter) and `status.json`. About 40–75 seconds on a PC.
+- `npm run pipeline:dry` — the sample brief the app shows until Milestone 4.
+
+## Sources
+
+### GDELT (worldwide backbone)
+
+GDELT's **Global Knowledge Graph** lists every news article it saw worldwide in 15-minute batches, with the
+headline, the places it mentions (with coordinates), topics, and the people and organisations named. Non-English
+outlets come in a separate batch whose tags GDELT has machine-translated (headlines stay in the original
+language). We read the free bulk files (`data.gdeltproject.org/gdeltv2/`): no key and no request limit.
+
+- **Sampling:** one batch per hour over the last 24 hours, English + translated (≈ 48 files, ≈ 290 MB download,
+  ≈ 70,000 articles). Big stories appear in many batches, so they're still found. Change with
+  `DAWN_GDELT_STEP_MINUTES` (15 = every batch) or turn off the translated batch with `DAWN_GDELT_TRANSLATED=0`.
+- **Not used:** GDELT's search API (DOC 2.0). It answers "Please limit requests to one every 5 seconds" whenever
+  it is busy, even with 20-second pauses (confirmed by others), so it can't be relied on nightly.
+- **Terms:** GDELT is free and open; it asks for a citation, which the Sources page (Milestone 8) will give.
+
+### Curated feeds (`config/sources.ts`)
+
+Hand-picked outlets for the priority places, ranked a little higher than GDELT-only coverage. Adding coverage
+for a country means adding one entry with its ISO2 code in `scopes`.
+
+| Scope                        | Feeds                                                                      |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| Global                       | BBC World, Guardian World, Al Jazeera, DW, France 24, NPR World            |
+| Tech / economy               | BBC Technology, Guardian Technology, Ars Technica, BBC & Guardian Business |
+| Europe                       | BBC Europe, Guardian Europe, DW Europe, Euronews, Politico Europe          |
+| Germany                      | Tagesschau, DW Germany                                                     |
+| Türkiye                      | Anadolu Agency (English), Hürriyet Daily News, TRT Haber, bianet           |
+| Asia                         | BBC Asia, The Hindu, South China Morning Post, NHK                         |
+| Americas                     | BBC US & Canada, NPR News, BBC Latin America                               |
+| Middle East, Africa, Oceania | BBC regional feeds, ABC News (Australia)                                   |
+
+Checked Nov 2026: every feed responds. robots.txt is checked on every run (with correct `*` and `$` matching)
+and a refusal skips that feed with a warning. Dropped: TRT World (no working English feed), CNA (its feed sits
+under `/api/`, which its robots.txt disallows).
+
+#### Feed terms
+
+We only read **headline, link and time**. Nothing from the article is stored or shown; the app shows our own AI
+summary and links to the original.
+
+| Outlet(s)    | What their terms say (checked Nov 2026)                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------ |
+| BBC          | Personal, non-commercial use; credit "BBC News" with a link (bbc.com/pages/terms-of-use §1, §12)       |
+| The Guardian | Personal, non-commercial use in a feed reader, under its terms of service (theguardian.com/help/feeds) |
+| NPR          | Personal, non-commercial use under its Terms of Use, content-feed section                              |
+| DW, others   | Public feeds; written terms not found or not reviewed yet — **to confirm**                             |
+
+**Open questions for you (not legal advice):**
+
+1. All of these allow _personal, non-commercial_ use. Dawn fits that only while it stays your private app. If it
+   is ever shared or made public, the feed list must be reviewed again.
+2. The BBC's terms also say you may not "pluck metadata" from its content or feeds. Reading headlines and links
+   in a personal reader is what feeds are for, but this sentence is unclear. If you want zero doubt, the BBC feeds
+   can be removed: GDELT still covers those stories.
+
+## How events are built
+
+1. **Duplicates:** the same URL, or the same headline on the same site, is kept once (curated copies win).
+2. **Site boilerplate:** words a site puts in most of its headlines ("– Haber Sitesi") are ignored, so they can't
+   glue unrelated stories together.
+3. **Grouping:** single pass; each article joins the most similar group (TF-IDF cosine ≥ 0.38 against the group's
+   centre, built from headline words plus GDELT's names and places) or starts a new one.
+4. **Merging:** groups describing the same event, including in different languages (linked by shared people,
+   organisations and places), are merged most-similar first, re-checking each merge so chains can't snowball.
+5. **Voices:** copies of one wire story on 70 local sites count as one voice.
+6. **Score (0–100):** distinct voices, curated outlets, languages and source countries; a little recency;
+   sport/celebrity ×0.6.
+7. **Chapters:** an event is "about" a country when at least half of its voices mention it. Regions use the home
+   region of those countries. Global needs independent coverage across languages/countries or by the curated
+   global outlets. Every chapter needs 2+ outlets per story; empty chapters say so.
+
+Known limits (handled in Milestone 4): GDELT's place tags are sometimes wrong (a US flood tagged Germany), so the AI
+step will confirm each story really concerns its chapter before it's shown.
 
 ## Reliability rules
 
-- One failing feed or AI provider must not stop the run: each source/provider is wrapped, failures go into
-  `status.json` warnings.
-- If the whole run fails, nothing is committed and the app keeps showing the previous brief with its "last
-  updated" time.
-- Runs are **idempotent**: re-running for the same day overwrites the same files with the same content.
-- GitHub emails the repo owner when a scheduled workflow fails (check _Settings → Notifications → Actions_ on
-  github.com is set to email you).
+- One failing feed, GDELT batch or AI provider never stops the run; it becomes a warning in `status.json`.
+  The run fails only if no source delivers anything.
+- If the run fails, nothing is committed and the app keeps the previous brief with its "last updated" time.
+- Runs are idempotent: the same inputs give the same output.
+- GitHub emails the repo owner when a scheduled workflow fails (check _Settings → Notifications → Actions_).
 
 ## Free-tier budget
 
-Filled in Milestones 3–4 after verifying each provider's current limits. Rough target: a few hundred events per
-day, one AI call batch per event, staying well under the free daily token/request limits, with a hard daily
-budget in code that stops AI calls before a limit is hit.
-
-| Resource                 | Free limit (to verify) | Our planned use               |
-| ------------------------ | ---------------------- | ----------------------------- |
-| GitHub Actions (private) | 2,000 min/month        | ~10 min/night ≈ 300 min/month |
-| Gemini (AI Studio)       | M4                     | M4                            |
-| Groq / OpenRouter free   | M4                     | M4                            |
-| GDELT DOC API            | M3                     | M3                            |
-| Nominatim                | 1 request/second max   | cached, rare                  |
-| Vercel Hobby             | M8                     | static + few functions        |
+| Resource                   | Free limit                  | Our use                             |
+| -------------------------- | --------------------------- | ----------------------------------- |
+| GitHub Actions (private)   | 2,000 min/month             | ~3–5 min/night ≈ 150 min/month (M3) |
+| GitHub Actions cache       | 10 GB per repo              | feed cache only, a few MB           |
+| GDELT bulk files           | free, no key, no rate limit | ≈ 290 MB/night                      |
+| Gemini / Groq / OpenRouter | verified in M4              | M4                                  |
+| Nominatim                  | 1 request/second max        | cached, rare (M6)                   |
+| Vercel Hobby               | verified in M8              | static site + a few functions       |

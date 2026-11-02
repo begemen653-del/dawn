@@ -54,4 +54,6 @@ export interface Country {
   readonly isoNumeric: string | null;
   /** Other names people search for: "USA", "Deutschland", "Türkiye", ... */
   readonly aliases: readonly string[];
+  /** FIPS 10-4 codes, which GDELT uses for countries ("GM" = Germany). Usually one. */
+  readonly fips: readonly string[];
 }

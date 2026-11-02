@@ -16,6 +16,7 @@ next-env.d.ts
 # caches / local
 .cache/
 pipeline/.cache/
+pipeline/out/
 coverage/
 .vercel/
 .DS_Store

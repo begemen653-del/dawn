@@ -50,8 +50,30 @@ jobs:
       - if: steps.gate.outputs.run == 'true'
         run: npm ci
 
-      # Milestone 1: dry run only (sample data, no network, no AI keys needed).
-      # Milestones 3–4 switch this to the live run and add the API key secrets.
+      # Feed ETags survive between nights, so unchanged feeds aren't downloaded again.
+      - name: Restore the feed cache
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/cache@v6
+        with:
+          path: .cache/http
+          key: feeds-${{ github.run_id }}
+          restore-keys: feeds-
+
+      # Milestone 3: real news → events → chapters. Writes pipeline/out/ (report only).
+      # Milestone 4 adds the AI step that turns these events into the app's brief.
+      - name: Gather and group the news
+        if: steps.gate.outputs.run == 'true'
+        run: npm run pipeline:ingest
+
+      - name: Save the ingestion report
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: ingest-report
+          path: pipeline/out/
+          retention-days: 7
+
+      # The app still shows sample data until Milestone 4.
       - name: Build the brief
         if: steps.gate.outputs.run == 'true'
         run: npm run pipeline:dry

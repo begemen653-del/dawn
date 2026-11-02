@@ -85,6 +85,15 @@ const NAME_OVERRIDES: Readonly<Record<string, string>> = {
   TR: "Türkiye (Turkey)",
 };
 
+/** GDELT country codes (FIPS 10-4) where Natural Earth has none or GDELT splits a territory. */
+const FIPS_OVERRIDES: Readonly<Record<string, readonly string[]>> = {
+  SS: ["OD"],
+  NO: ["NO"],
+  IL: ["IS"],
+  PS: ["WE", "GZ"],
+  AU: ["AS"],
+};
+
 /** Common short names and abbreviations Natural Earth doesn't list. */
 const MANUAL_ALIASES: Readonly<Record<string, readonly string[]>> = {
   US: ["USA", "US", "America", "United States of America"],
@@ -148,6 +157,7 @@ interface NeProperties {
   LABEL_Y: number;
   WIKIDATAID: string | null;
   ISO_N3_EH: string;
+  FIPS_10: string;
   [nameField: `NAME_${string}`]: string | null;
   NAME: string | null;
   NAME_LONG: string | null;
@@ -242,6 +252,7 @@ function toCountry(feature: NeFeature): Country {
     wikidata: p.WIKIDATAID ?? null,
     isoNumeric: /^\d{3}$/.test(p.ISO_N3_EH) ? p.ISO_N3_EH : null,
     aliases: aliasesFor(iso2, p),
+    fips: FIPS_OVERRIDES[iso2] ?? (/^[A-Z]{2}$/.test(p.FIPS_10) ? [p.FIPS_10] : []),
   };
 }
 

@@ -9,10 +9,13 @@
   },
   "scripts": {
     "dry": "tsx src/run/index.ts --dry",
-    "typecheck": "tsc -p ."
+    "typecheck": "tsc -p .",
+    "ingest": "tsx src/run/index.ts --ingest"
   },
   "dependencies": {
     "@dawn/config": "*",
+    "fast-xml-parser": "^5.11.2",
+    "fflate": "^0.8.3",
     "zod": "^4.6.7"
   }
 }
