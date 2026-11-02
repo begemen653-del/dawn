@@ -73,6 +73,18 @@ camera). Unknown types or keys are rejected, so the AI can never make the globe 
 - Fonts (Manrope, Sora) are downloaded at build time by `next/font` and served from our own domain: no runtime
   requests to Google.
 
+## The app (phone first)
+
+- **Layout:** the globe fills the whole screen. The story card floats at the top, a picture strip and the
+  controls at the bottom; the globe keeps the story's location centered in the free space between them. On
+  wide screens the card moves to the top-left and pictures to the right.
+- **Globe:** `web/src/components/globe/CanvasGlobe.tsx` is a lightweight 2D canvas globe (d3-geo, Natural
+  Earth 1:110m bundled in `web/public/geo/`). It flies between stories (great-circle path with a zoom-out arc)
+  and draws scene directives. In Milestone 6 the MapLibre globe adds deep zoom; this canvas globe stays as the
+  fallback when WebGL is missing or slow.
+- **Choose your news:** `web/src/components/picker/`. Selection and order live in `localStorage`
+  (`dawn.preferences`, versioned, validated on load). Global is implied and always played last.
+
 ## Privacy
 
 No accounts, analytics or tracking. Preferences (chapters, order, voice, streak) live only in the browser's local

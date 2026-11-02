@@ -85,6 +85,29 @@ const NAME_OVERRIDES: Readonly<Record<string, string>> = {
   TR: "Türkiye (Turkey)",
 };
 
+/** Common short names and abbreviations Natural Earth doesn't list. */
+const MANUAL_ALIASES: Readonly<Record<string, readonly string[]>> = {
+  US: ["USA", "US", "America", "United States of America"],
+  GB: ["UK", "Britain", "Great Britain", "England", "Scotland", "Wales", "Northern Ireland"],
+  AE: ["UAE", "Emirates", "Dubai", "Abu Dhabi"],
+  NL: ["Holland"],
+  CZ: ["Czech Republic", "Czechia"],
+  KR: ["Korea", "ROK"],
+  KP: ["DPRK"],
+  RU: ["Russian Federation"],
+  CN: ["PRC", "People's Republic of China"],
+  TW: ["ROC"],
+  TR: ["Turkey", "Türkiye", "Turkiye"],
+  CD: ["DRC", "Congo-Kinshasa"],
+  CG: ["Congo-Brazzaville"],
+  CI: ["Ivory Coast", "Côte d'Ivoire"],
+  MM: ["Burma"],
+  SZ: ["Swaziland"],
+  MK: ["Macedonia"],
+  PS: ["Palestine", "Gaza", "West Bank"],
+  VA: ["Holy See", "Vatican"],
+};
+
 const SUBREGION_TO_REGION: Readonly<Record<string, SelectableRegionId>> = {
   "Northern Europe": "europe",
   "Western Europe": "europe",
@@ -124,6 +147,12 @@ interface NeProperties {
   LABEL_X: number;
   LABEL_Y: number;
   WIKIDATAID: string | null;
+  ISO_N3_EH: string;
+  [nameField: `NAME_${string}`]: string | null;
+  NAME: string | null;
+  NAME_LONG: string | null;
+  FORMAL_EN: string | null;
+  ADMIN: string | null;
 }
 
 interface NeFeature {
@@ -211,7 +240,42 @@ function toCountry(feature: NeFeature): Country {
     languages,
     tier,
     wikidata: p.WIKIDATAID ?? null,
+    isoNumeric: /^\d{3}$/.test(p.ISO_N3_EH) ? p.ISO_N3_EH : null,
+    aliases: aliasesFor(iso2, p),
   };
+}
+
+/** Names in the languages Natural Earth provides, so "Deutschland" or "Türkei" find the right country. */
+const ALIAS_FIELDS = [
+  "NAME_LONG",
+  "FORMAL_EN",
+  "ADMIN",
+  "NAME",
+  "NAME_EN",
+  "NAME_DE",
+  "NAME_TR",
+  "NAME_FR",
+  "NAME_ES",
+  "NAME_IT",
+  "NAME_NL",
+  "NAME_PT",
+  "NAME_PL",
+  "NAME_SV",
+] as const;
+
+function aliasesFor(iso2: string, p: NeProperties): string[] {
+  const name = (NAME_OVERRIDES[iso2] ?? p.NAME_EN).toLowerCase();
+  const all = [...ALIAS_FIELDS.map((f) => p[f]), ...(MANUAL_ALIASES[iso2] ?? [])];
+  const seen = new Set<string>([name]);
+  const out: string[] = [];
+  for (const alias of all) {
+    if (typeof alias !== "string" || alias.trim() === "") continue;
+    const key = alias.trim().toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(alias.trim());
+  }
+  return out;
 }
 
 async function main(): Promise<void> {

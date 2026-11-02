@@ -1,5 +1,5 @@
-import { BriefPreview } from "@/components/brief/BriefPreview";
+import { BriefScreen } from "@/components/brief/BriefScreen";
 
 export default function HomePage() {
-  return <BriefPreview />;
+  return <BriefScreen />;
 }

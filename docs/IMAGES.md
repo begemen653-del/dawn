@@ -46,6 +46,7 @@ Tests: `pipeline/tests/license.test.ts`.
 | Asset                        | Source                                  | License                                      |
 | ---------------------------- | --------------------------------------- | -------------------------------------------- |
 | Country data (names, shapes) | Natural Earth                           | Public domain                                |
+| Globe shapes (1:110m)        | Natural Earth via world-atlas           | Data public domain; package ISC              |
 | Flag font (Windows only)     | Twemoji via country-flag-emoji-polyfill | Graphics CC BY 4.0 (Twitter, Inc.); code MIT |
 | App icons                    | Drawn for Dawn                          | Ours                                         |
 

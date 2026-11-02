@@ -50,4 +50,8 @@ export interface Country {
   readonly tier: Tier;
   /** Wikidata id, useful for image search later. */
   readonly wikidata: string | null;
+  /** ISO 3166-1 numeric code (e.g. "276"); matches the ids in the bundled world map. */
+  readonly isoNumeric: string | null;
+  /** Other names people search for: "USA", "Deutschland", "Türkiye", ... */
+  readonly aliases: readonly string[];
 }
