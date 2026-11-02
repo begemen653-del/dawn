@@ -66,3 +66,8 @@ export function getRegion(id: RegionId): Region {
   if (!region) throw new Error(`Unknown region: ${id}`);
   return region;
 }
+
+/** True for region ids ("europe", "global"), false for country codes. */
+export function isRegion(scope: string): scope is RegionId {
+  return byId.has(scope as RegionId);
+}

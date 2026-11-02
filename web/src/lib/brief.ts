@@ -4,7 +4,6 @@ import type { z } from "zod";
 export interface LoadedBrief {
   readonly index: DayIndex;
   readonly events: ReadonlyMap<string, StoryEvent>;
-  readonly playlists: readonly Playlist[];
 }
 
 export class BriefLoadError extends Error {
@@ -32,14 +31,27 @@ async function fetchJson<T>(path: string, schema: z.ZodType<T>, signal?: AbortSi
   return parsed.data;
 }
 
-/** Loads and validates the latest brief written by the pipeline. */
+/** Loads and validates the latest brief written by the pipeline (index and stories). */
 export async function loadLatestBrief(signal?: AbortSignal): Promise<LoadedBrief> {
   const [index, store] = await Promise.all([
     fetchJson("/data/latest/index.json", DayIndex, signal),
     fetchJson("/data/latest/events.json", EventStore, signal),
   ]);
-  const playlists = await Promise.all(
-    index.scopes.map((s) => fetchJson(`/data/latest/${s.file}`, Playlist, signal)),
+  return { index, events: new Map(store.events.map((e) => [e.id, e])) };
+}
+
+/**
+ * Loads only the chapters the reader chose (the brief has one file per region and country).
+ * A chapter that fails to load is skipped; it then shows as having no stories.
+ */
+export async function loadPlaylists(
+  index: DayIndex,
+  scopes: readonly string[],
+  signal?: AbortSignal,
+): Promise<Playlist[]> {
+  const files = index.scopes.filter((s) => scopes.includes(s.scope));
+  const results = await Promise.allSettled(
+    files.map((s) => fetchJson(`/data/latest/${s.file}`, Playlist, signal)),
   );
-  return { index, events: new Map(store.events.map((e) => [e.id, e])), playlists };
+  return results.flatMap((r) => (r.status === "fulfilled" ? [r.value] : []));
 }

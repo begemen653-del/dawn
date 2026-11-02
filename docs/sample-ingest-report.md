@@ -5,6 +5,7 @@ Events found: 49593. Events used in chapters (each summarized once by AI later):
 Chapters with stories: 182 of 240.
 
 Warnings (1):
+
 - GDELT batch 20261102224500.translation.gkg.csv.zip skipped: HTTP 404
 
 ## Global
@@ -391,4 +392,3 @@ Warnings (1):
    - [eleconomista.com.mx](https://eleconomista.com.mx/mercados/anthropic-reporta-ingresos-17-000-millones-dolares-3t-salida-bolsa-20261102-841731.html) Anthropic reporta ingresos de 17,000 millones de dólares en el 3T antes de su salida a Bolsa
    - [eleconomista.com.mx](https://eleconomista.com.mx/mercados/anthropic-captara-3-500-millones-dolares-japon-salida-bolsa-eu-20261102-841698.html) Anthropic captará hasta 3,500 millones de dólares en Japón para su salida a bolsa en EU
    - [df.cl](https://df.cl/mercados/bolsa-monedas/anthropic-preve-vender-hasta-us-3-500-millones-en-acciones-en-japon-para) Anthropic se prepara para su salida a bolsa en EEUU
-

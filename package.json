@@ -20,6 +20,8 @@
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run check:secrets",
     "pipeline:dry": "npm run dry --workspace @dawn/pipeline",
     "pipeline:ingest": "npm run ingest --workspace @dawn/pipeline",
+    "pipeline:live": "npm run live --workspace @dawn/pipeline",
+    "pipeline:mock": "npm run mock --workspace @dawn/pipeline",
     "countries": "tsx scripts/build-countries.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

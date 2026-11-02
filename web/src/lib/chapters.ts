@@ -1,5 +1,4 @@
-import type { StoryEvent } from "@dawn/pipeline/schema";
-import type { LoadedBrief } from "./brief";
+import type { Playlist, StoryEvent } from "@dawn/pipeline/schema";
 import { chapterOrder, scopeInfo, type Scope, type ScopeInfo } from "./selection";
 
 export interface Chapter extends ScopeInfo {
@@ -17,7 +16,11 @@ export interface Slide {
   readonly chapterLength: number;
 }
 
-type BriefData = Pick<LoadedBrief, "events" | "playlists"> & { readonly sample: boolean };
+interface BriefData {
+  readonly events: ReadonlyMap<string, StoryEvent>;
+  readonly playlists: readonly Playlist[];
+  readonly sample: boolean;
+}
 
 export function buildChapters(selection: readonly Scope[], brief: BriefData): Chapter[] {
   return chapterOrder(selection).map((scope) => {

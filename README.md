@@ -34,10 +34,36 @@ Open a terminal in the project folder (`C:\dev\Dawn`) and run:
 - `docs/ARCHITECTURE.md` — how it all fits together. `docs/PIPELINE.md` — the nightly job.
   `docs/IMAGES.md` — the strict picture license policy.
 
-## Secrets (API keys)
+## AI keys (free, no credit card)
 
-None are needed yet. From Milestone 4, free AI keys go **only** into GitHub → repo **Settings → Secrets and
-variables → Actions** — never into files in this folder. Step-by-step instructions will be added here then.
+Dawn's summaries are written by free AI services. You need at least one key; two gives a backup.
+
+**1. Create the keys**
+
+| Service                            | Where                               | Steps                                           |
+| ---------------------------------- | ----------------------------------- | ----------------------------------------------- |
+| Google Gemini (main)               | https://aistudio.google.com/apikey  | Sign in with Google → **Create API key** → copy |
+| Groq (backup)                      | https://console.groq.com/keys       | Sign up with email → **Create API Key** → copy  |
+| OpenRouter (optional, last resort) | https://openrouter.ai/settings/keys | Sign up → **Create Key** → copy                 |
+
+Never paste keys into chat, issues or code files.
+
+**2. Put them on GitHub (for the nightly run)**
+
+github.com → your `dawn` repo → **Settings** → **Secrets and variables** → **Actions** → **New repository
+secret**. Create one secret per key, named exactly `GEMINI_API_KEY`, `GROQ_API_KEY`, `OPENROUTER_API_KEY`.
+
+**3. Put them on your PC (to run it yourself)**
+
+In `C:\dev\Dawn`, copy `.env.example` to a new file named `.env.local`, open it in Notepad and paste each key
+after its `=`. This file is ignored by git, so it never leaves your PC. Then:
+
+| What you want                                | Command                 |
+| -------------------------------------------- | ----------------------- |
+| Build today's real brief (news + AI)         | `npm run pipeline:live` |
+| Test the whole flow with a fake AI (no keys) | `npm run pipeline:mock` |
+
+**Run it on GitHub now:** repo → **Actions** → **Nightly brief** → **Run workflow** → mode `live`.
 
 ## Coming later in this README
 

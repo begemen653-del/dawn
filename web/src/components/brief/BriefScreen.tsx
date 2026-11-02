@@ -1,7 +1,7 @@
 "use client";
 
 import { getCountry, getRegion, type CameraView } from "@dawn/config";
-import type { SceneDirective, StoryEvent } from "@dawn/pipeline/schema";
+import type { Playlist, SceneDirective, StoryEvent } from "@dawn/pipeline/schema";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { CanvasGlobe, type GlobeFocus } from "@/components/globe/CanvasGlobe";
@@ -9,11 +9,11 @@ import { NewsPicker } from "@/components/picker/NewsPicker";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Surface } from "@/components/ui/Surface";
-import { BriefLoadError, loadLatestBrief, type LoadedBrief } from "@/lib/brief";
+import { BriefLoadError, loadLatestBrief, loadPlaylists, type LoadedBrief } from "@/lib/brief";
 import { buildChapters, buildSlides, type Chapter } from "@/lib/chapters";
 import { cn } from "@/lib/cn";
 import { usePreferences } from "@/lib/preferences";
-import { isRegionId } from "@/lib/selection";
+import { chapterOrder, isRegionId } from "@/lib/selection";
 import { usePreferencesHydration } from "@/lib/use-preferences-hydration";
 import { DeeperSheet } from "./DeeperSheet";
 import { StoryCard } from "./StoryCard";
@@ -68,6 +68,23 @@ export function BriefScreen() {
     };
   }, []);
 
+  // Chapters are separate files; fetch only the ones the reader chose (and keep them).
+  const [playlists, setPlaylists] = useState<ReadonlyMap<string, Playlist>>(new Map());
+  const wantedKey = chapterOrder(selection).join(",");
+  useEffect(() => {
+    if (load.kind !== "ready") return;
+    const missing = wantedKey.split(",").filter((scope) => !playlists.has(scope));
+    if (missing.length === 0) return;
+    const controller = new AbortController();
+    void loadPlaylists(load.brief.index, missing, controller.signal).then((loaded) => {
+      if (controller.signal.aborted || loaded.length === 0) return;
+      setPlaylists((current) => new Map([...current, ...loaded.map((p) => [p.scope, p] as const)]));
+    });
+    return () => {
+      controller.abort();
+    };
+  }, [load, wantedKey, playlists]);
+
   // First run: open "Choose your news" once preferences are known.
   const showPicker = pickerOpen || (hydrated && !onboarded);
 
@@ -76,11 +93,11 @@ export function BriefScreen() {
       load.kind === "ready"
         ? buildChapters(selection, {
             events: load.brief.events,
-            playlists: load.brief.playlists,
+            playlists: [...playlists.values()],
             sample: load.brief.index.sample,
           })
         : [],
-    [load, selection],
+    [load, selection, playlists],
   );
   const slides = useMemo(() => buildSlides(chapters), [chapters]);
 

@@ -1,7 +1,9 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "types": ["node"]
+    "types": ["node"],
+    // DOM types for the article reader (Readability works on a parsed HTML document).
+    "lib": ["ES2023", "DOM"]
   },
   "include": ["src/**/*.ts", "tests/**/*.ts", "fixtures/**/*.ts"],
   "exclude": ["node_modules"]

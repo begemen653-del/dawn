@@ -20,11 +20,35 @@ export interface LlmResult<T> {
 }
 
 /**
- * Provider-agnostic LLM interface. Free-tier implementations (Gemini, Groq, OpenRouter)
- * arrive in Milestone 4. Implementations must validate output against `schema`
- * and throw on invalid JSON so the caller can retry or fall back.
+ * Provider-agnostic LLM interface. Implementations ask for JSON, validate it against `schema`
+ * and throw on invalid output so the caller can retry or fall back.
  */
 export interface LlmProvider {
   readonly name: string;
-  generateJson<T>(request: LlmRequest, schema: z.ZodType<T>, signal?: AbortSignal): Promise<LlmResult<T>>;
+  generateJson<T>(request: LlmRequest, schema: z.ZodType<T>): Promise<LlmResult<T>>;
+}
+
+/** The provider's free quota for this model is used up (for now); try another model. */
+export class QuotaError extends Error {
+  constructor(
+    message: string,
+    /** Seconds the provider asked us to wait, when it said so. */
+    readonly retryAfterSeconds?: number,
+  ) {
+    super(message);
+    this.name = "QuotaError";
+  }
+}
+
+/** The model answered, but not with valid JSON matching the schema. */
+export class InvalidOutputError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "InvalidOutputError";
+  }
+}
+
+/** Rough token estimate (~4 characters per token for English; a little higher for others). */
+export function estimateTokens(text: string): number {
+  return Math.ceil(text.length / 3.5);
 }

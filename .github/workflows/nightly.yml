@@ -10,10 +10,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "dry = sample data only"
+        description: "live = real news + AI (needs the API key secrets); ingest = report only; dry = sample data"
         type: choice
-        options: [dry]
-        default: dry
+        options: [live, ingest, dry]
+        default: live
 
 permissions:
   contents: write
@@ -25,7 +25,10 @@ concurrency:
 jobs:
   brief:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Reading ~1,600 articles plus paced AI calls on free tiers can take a while.
+    timeout-minutes: 75
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
     steps:
       - name: Check Berlin time
         id: gate
@@ -50,7 +53,7 @@ jobs:
       - if: steps.gate.outputs.run == 'true'
         run: npm ci
 
-      # Feed ETags survive between nights, so unchanged feeds aren't downloaded again.
+      # Feed ETags and robots.txt answers survive between nights.
       - name: Restore the feed cache
         if: steps.gate.outputs.run == 'true'
         uses: actions/cache@v6
@@ -59,27 +62,33 @@ jobs:
           key: feeds-${{ github.run_id }}
           restore-keys: feeds-
 
-      # Milestone 3: real news → events → chapters. Writes pipeline/out/ (report only).
-      # Milestone 4 adds the AI step that turns these events into the app's brief.
-      - name: Gather and group the news
+      # Real news → events → AI stories → web/public/data. If too few stories come out, the
+      # previous brief is kept and this step fails (GitHub then emails you).
+      - name: Build the brief
         if: steps.gate.outputs.run == 'true'
-        run: npm run pipeline:ingest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          case "$MODE" in
+            live) npm run pipeline:live ;;
+            ingest) npm run pipeline:ingest ;;
+            dry) npm run pipeline:dry ;;
+          esac
 
-      - name: Save the ingestion report
+      - name: Save the run report
         if: always() && steps.gate.outputs.run == 'true'
         uses: actions/upload-artifact@v7
         with:
-          name: ingest-report
-          path: pipeline/out/
+          name: brief-report
+          path: |
+            pipeline/out/
+            web/public/data/status.json
           retention-days: 7
 
-      # The app still shows sample data until Milestone 4.
-      - name: Build the brief
-        if: steps.gate.outputs.run == 'true'
-        run: npm run pipeline:dry
-
       - name: Commit the new brief
-        if: steps.gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true' && env.MODE != 'ingest'
         run: |
           git config user.name "dawn-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

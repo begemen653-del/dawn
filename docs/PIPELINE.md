@@ -12,7 +12,7 @@ Runs in GitHub Actions (`.github/workflows/nightly.yml`) at about **04:30 Europe
 | 3   | Events    | `events/cluster.ts`                                  | M3 ✅  | Remove duplicates, group articles into events, merge across languages            |
 | 4   | Rank      | `events/rank.ts`                                     | M3 ✅  | Importance by independent coverage; sport/celebrity pushed down                  |
 | 5   | Chapters  | `events/assign.ts`                                   | M3 ✅  | Global, 7 regions, 232 countries; honest empty chapters                          |
-| 6   | AI        | `pipeline/src/ai/`                                   | M4     | Summary, why it matters, relevance check, scene, deeper content, Learn card      |
+| 6   | AI        | `pipeline/src/ai/`, `run/brief.ts`                   | M4 ✅  | Summary, why it matters, relevance check, scene, deeper content, Learn card      |
 | 7   | Geo       | `pipeline/src/geo/`                                  | M6     | Place names → coordinates (GDELT gives many already)                             |
 | 8   | Images    | `pipeline/src/images/`                               | M7     | Licensed images only — see `IMAGES.md`                                           |
 | 9   | Write     | `pipeline/src/run/`                                  | M1 ✅  | Validate with zod, write atomically, write `status.json`                         |
@@ -21,7 +21,9 @@ Commands:
 
 - `npm run pipeline:ingest` — real news → `pipeline/out/ingest.json` (input for the AI step), `report.md`
   (readable top stories per chapter) and `status.json`. About 40–75 seconds on a PC.
-- `npm run pipeline:dry` — the sample brief the app shows until Milestone 4.
+- `npm run pipeline:live` — ingest + AI → the real brief in `web/public/data/latest/` (needs keys, see README).
+- `npm run pipeline:mock` — the same flow with a fake AI that reuses headlines (no keys; for testing).
+- `npm run pipeline:dry` — the old sample brief.
 
 ## Sources
 
@@ -97,6 +99,43 @@ summary and links to the original.
 
 Known limits (handled in Milestone 4): GDELT's place tags are sometimes wrong (a US flood tagged Germany), so the AI
 step will confirm each story really concerns its chapter before it's shown.
+
+## AI step (Milestone 4)
+
+1. **Order:** events are processed in chapter priority (Global → regions → big countries → others), so if the
+   daily budget runs out, only the least-viewed chapters get fewer stories.
+2. **Reading:** for each event, up to 3 source articles from different outlets (hand-picked and English first) are
+   read with Mozilla Readability, respecting robots.txt. Only a ~1,600-character excerpt is kept, in memory, as
+   input. It is never stored or shown. About 80% of articles are readable (the rest are paywalled or refuse);
+   for those the AI sees the headline only.
+3. **Writing:** ~6 events per request. The system prompt carries the accuracy rules (sources only, no invented
+   numbers/names/quotes, say when sources disagree, attribute claims, neutral, flag developing stories, own
+   words). "Go deeper" is written at the same time for Global, region and top big-country stories.
+4. **Checks:** every answer must match the schema (`ai/drafts.ts`) and pass the grounding check
+   (`ai/grounding.ts`): every number and quote must be in the sources, and at most one unknown name. Failing
+   stories are retried alone with the problems listed, then dropped.
+5. **Places:** the AI picks place ids and countries from candidate lists built from GDELT tags; the globe scene
+   (camera, markers, highlights, routes, areas) is built in code from our coordinates (`ai/scene.ts`), so it can
+   never invent a location.
+6. **Relevance:** a story stays in a country chapter only if the AI confirms it is really about that country.
+7. **Publishing:** stories and chapters are written first, the index last. With fewer than 10 stories the old
+   brief stays and the run fails (GitHub emails you).
+
+### Providers and free limits (checked Nov 2026)
+
+| Provider   | Models (in order, overridable by env)     | Free limits                                                                                                                                 |
+| ---------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Gemini     | 3.8 Flash, 3.5 Flash-Lite, 2.5 Flash-Lite | Per account, shown in AI Studio (Google no longer publishes them). EU users get the paid-tier data terms: inputs are not used for training. |
+| Groq       | Llama 4 Scout, Kimi K2, Llama 3.3 70B     | e.g. Scout 30 req/min, 30k tokens/min, 1,000 req/day, 500k tokens/day; each model has its own allowance                                     |
+| OpenRouter | Llama 3.3 70B (free)                      | 20 req/min, 50 req/day without buying credits                                                                                               |
+
+Each model is paced under its per-minute limits; a "429 / quota" answer moves to the next model for the rest of
+the run. A hard daily cap (`DAWN_AI_TOKEN_BUDGET`, default 1.5 M tokens) stops AI calls before free limits are
+exceeded. Expected nightly use: ~110 requests, ~0.9–1.3 M tokens, 10–35 minutes.
+
+**Go deeper split (proposal):** pre-written for Global, all regions and the top 3 stories of each big country
+(about 100–150 stories a night). Other stories show "more background will be written on request"; writing those
+on demand needs a small server function (Vercel, free) and is planned for Milestone 8.
 
 ## Reliability rules
 
