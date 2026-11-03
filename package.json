@@ -22,6 +22,7 @@
     "pipeline:ingest": "npm run ingest --workspace @dawn/pipeline",
     "pipeline:live": "npm run live --workspace @dawn/pipeline",
     "pipeline:mock": "npm run mock --workspace @dawn/pipeline",
+    "pipeline:check-ai": "npm run check-ai --workspace @dawn/pipeline",
     "countries": "tsx scripts/build-countries.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

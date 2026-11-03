@@ -151,7 +151,11 @@ export class OpenAiCompatibleProvider implements LlmProvider {
   ) {
     this.name = `${label}:${model}`;
     this.gate = new RateGate(limits);
+    // Groq's strict JSON mode rejects gpt-oss replies; for those we rely on our own JSON check.
+    this.reasoning = model.includes("gpt-oss");
   }
+
+  private readonly reasoning: boolean;
 
   async generateJson<T>(request: LlmRequest, schema: z.ZodType<T>): Promise<LlmResult<T>> {
     await this.gate.take(estimateTokens(request.system + request.prompt) + request.maxOutputTokens);
@@ -165,8 +169,10 @@ export class OpenAiCompatibleProvider implements LlmProvider {
           { role: "user", content: request.prompt },
         ],
         temperature: request.temperature ?? 0.2,
-        max_tokens: request.maxOutputTokens,
-        response_format: { type: "json_object" },
+        // Reasoning models (gpt-oss) think before answering: keep that short and leave room for it.
+        ...(this.reasoning
+          ? { reasoning_effort: "low", max_tokens: request.maxOutputTokens + 1500 }
+          : { max_tokens: request.maxOutputTokens, response_format: { type: "json_object" } }),
       },
       180_000,
     );

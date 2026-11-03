@@ -28,6 +28,8 @@ export interface BriefOptions {
   readonly now?: Date;
   /** Read article texts for the AI (off in tests). */
   readonly readTexts?: boolean;
+  /** Only the N most important events (for quick trials); default: all. */
+  readonly maxEvents?: number;
   /** Below this many stories the old brief is kept. */
   readonly minStories?: number;
   readonly log?: (message: string) => void;
@@ -142,7 +144,7 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
 
   const order = priorityOrder(options.chapters);
   const byId = new Map(options.events.map((e) => [e.id, e]));
-  const events = order.flatMap((id) => byId.get(id) ?? []);
+  const events = order.flatMap((id) => byId.get(id) ?? []).slice(0, options.maxEvents ?? Infinity);
   const texts =
     options.readTexts === false ? new Map<string, string>() : await readTexts(events, options.cacheDir, log);
 

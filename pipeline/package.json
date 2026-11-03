@@ -12,7 +12,8 @@
     "typecheck": "tsc -p .",
     "ingest": "tsx src/run/index.ts --ingest",
     "live": "tsx src/run/index.ts --live",
-    "mock": "tsx src/run/index.ts --mock"
+    "mock": "tsx src/run/index.ts --mock",
+    "check-ai": "tsx src/run/check-ai.ts"
   },
   "dependencies": {
     "@dawn/config": "*",

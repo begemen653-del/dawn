@@ -63,9 +63,19 @@ GO DEEPER (only when the event says "Deep: yes", otherwise set "deeper": null):
   timeline (only dates found in the sources; empty list if none), simpler (the story for a 12-year-old).
 - If the sources don't cover a part, write "The sources don't say." rather than guessing.
 
-OUTPUT: one JSON object: {"stories": [ ... one object per event, with the event's "id" ... ]}.
-Each story has: id, relevant, headline, summary, whyItMatters, topic (one of: ${TOPICS.join(", ")}),
-developing, countries, places, visual {kind, from?, to?, routeKind?, areaKm?}, deeper (object or null).`;
+OUTPUT: one JSON object with one story per event, using exactly these field names and types.
+topic is one of: ${TOPICS.join(", ")}. Leave out from/to/routeKind/areaKm when not used.
+keyPlayers is always a list (empty if the sources name nobody); timeline is always a list of {date, label}.
+{"stories": [
+  {"id": "ev-abc123", "relevant": true, "headline": "...", "summary": "...", "whyItMatters": "...",
+   "topic": "politics", "developing": false, "countries": ["DE"], "places": ["P1"],
+   "visual": {"kind": "point"},
+   "deeper": {"background": "...", "keyPlayers": [{"name": "...", "role": "..."}], "whatNext": "...",
+              "timeline": [{"date": "2 November", "label": "..."}], "simpler": "..."}},
+  {"id": "ev-def456", "relevant": true, "headline": "...", "summary": "...", "whyItMatters": "...",
+   "topic": "disaster", "developing": true, "countries": ["US", "CU"], "places": ["P2", "P1"],
+   "visual": {"kind": "route", "from": "P2", "to": "P1", "routeKind": "flight"}, "deeper": null}
+]}`;
 
 function countryLabel(iso2: string): string {
   return `${iso2} (${getCountry(iso2)?.name ?? iso2})`;

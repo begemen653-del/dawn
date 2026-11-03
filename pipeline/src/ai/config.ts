@@ -6,20 +6,17 @@ import type { LlmProvider } from "./provider";
  * Free-tier models, in order of preference. Model names and limits change often, so each list
  * can be overridden with an environment variable (comma-separated) without touching code.
  * Limits here are deliberately conservative; the chain also switches model on any 429.
+ * Checked with `npm run pipeline:check-ai` on 2026-11-03 (run it again when a model disappears).
  */
-const GEMINI_DEFAULT = ["gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash-lite"];
-const GROQ_DEFAULT = [
-  "meta-llama/llama-4-scout-17b-16e-instruct",
-  "moonshotai/kimi-k2-instruct",
-  "llama-3.3-70b-versatile",
-];
-const OPENROUTER_DEFAULT = ["meta-llama/llama-3.3-70b-instruct:free"];
+const GEMINI_DEFAULT = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-3.1-flash-lite"];
+const GROQ_DEFAULT = ["openai/gpt-oss-120b", "qwen/qwen3.8-27b", "openai/gpt-oss-20b"];
+const OPENROUTER_DEFAULT = ["google/gemma-4-31b-it:free"];
 
 const GEMINI_LIMITS: ModelLimits = { requestsPerMinute: 8, tokensPerMinute: 200_000 };
 const GROQ_LIMITS: Record<string, ModelLimits> = {
-  "meta-llama/llama-4-scout-17b-16e-instruct": { requestsPerMinute: 25, tokensPerMinute: 28_000 },
-  "moonshotai/kimi-k2-instruct": { requestsPerMinute: 25, tokensPerMinute: 9_500 },
-  "llama-3.3-70b-versatile": { requestsPerMinute: 25, tokensPerMinute: 11_500 },
+  "openai/gpt-oss-120b": { requestsPerMinute: 25, tokensPerMinute: 7_500 },
+  "qwen/qwen3.8-27b": { requestsPerMinute: 25, tokensPerMinute: 5_800 },
+  "openai/gpt-oss-20b": { requestsPerMinute: 25, tokensPerMinute: 7_500 },
 };
 const OPENROUTER_LIMITS: ModelLimits = { requestsPerMinute: 15, tokensPerMinute: 100_000 };
 
@@ -34,10 +31,23 @@ function list(value: string | undefined, fallback: readonly string[]): string[] 
 export interface AiSetup {
   readonly chain: FallbackChain;
   readonly providerNames: readonly string[];
+  /** The individual models, for health checks. */
+  readonly providers: readonly LlmProvider[];
 }
 
 /** Builds the provider chain from API keys in the environment (GitHub secrets or .env.local). */
-export function chainFromEnv(env: NodeJS.ProcessEnv, log?: (m: string) => void): AiSetup | null {
+export function chainFromEnv(rawEnv: NodeJS.ProcessEnv, log?: (m: string) => void): AiSetup | null {
+  // Keys pasted with a stray space or quotes still work.
+  const clean = (v: string | undefined) => {
+    const key = v?.trim().replace(/^["']|["']$/g, "");
+    return key === "" ? undefined : key;
+  };
+  const env: NodeJS.ProcessEnv = {
+    ...rawEnv,
+    GEMINI_API_KEY: clean(rawEnv.GEMINI_API_KEY),
+    GROQ_API_KEY: clean(rawEnv.GROQ_API_KEY),
+    OPENROUTER_API_KEY: clean(rawEnv.OPENROUTER_API_KEY),
+  };
   const providers: LlmProvider[] = [];
   if (env.GEMINI_API_KEY) {
     for (const model of list(env.DAWN_GEMINI_MODELS, GEMINI_DEFAULT)) {
@@ -77,5 +87,5 @@ export function chainFromEnv(env: NodeJS.ProcessEnv, log?: (m: string) => void):
     attemptsPerProvider: 2,
     ...(log ? { log } : {}),
   });
-  return { chain, providerNames: providers.map((p) => p.name) };
+  return { chain, providerNames: providers.map((p) => p.name), providers };
 }

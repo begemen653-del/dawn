@@ -50,6 +50,28 @@ async function ingest() {
   return result;
 }
 
+/**
+ * Node's built-in HTTP client (undici) can hit an internal assertion when a website sends a
+ * malformed reply; it fires outside any try/catch and would end the whole run. That one error is
+ * logged and ignored (the request still times out normally); anything else still stops the run.
+ */
+export function isUndiciParserCrash(error: unknown): boolean {
+  return (
+    error instanceof Error &&
+    (error as { code?: unknown }).code === "ERR_ASSERTION" &&
+    (error.stack ?? "").includes("undici")
+  );
+}
+
+process.on("uncaughtException", (error) => {
+  if (isUndiciParserCrash(error)) {
+    console.warn("Ignored a malformed reply from a website (Node HTTP client assertion).");
+    return;
+  }
+  console.error("Pipeline crashed:", error);
+  process.exit(1);
+});
+
 async function main(): Promise<void> {
   const local = join(ROOT, ".env.local");
   if (existsSync(local)) process.loadEnvFile(local);
@@ -100,6 +122,10 @@ async function main(): Promise<void> {
       outDir: WEB_DATA,
       cacheDir: CACHE_DIR,
       log,
+      // DAWN_AI_MAX_EVENTS=40 runs a quick trial on the most important events only.
+      ...(Number(process.env.DAWN_AI_MAX_EVENTS) > 0
+        ? { maxEvents: Number(process.env.DAWN_AI_MAX_EVENTS) }
+        : {}),
     });
     console.log(
       `Brief ${published ? "published" : "NOT published (kept the previous one)"} in ` +

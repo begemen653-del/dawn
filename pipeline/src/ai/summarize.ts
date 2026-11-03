@@ -21,8 +21,8 @@ export interface SummarizeOptions {
 }
 
 export const DEFAULT_SUMMARIZE: Omit<SummarizeOptions, "deep" | "texts"> = {
-  maxBatchTokens: 7_000,
-  maxBatchSize: 6,
+  maxBatchTokens: 4_500,
+  maxBatchSize: 4,
 };
 
 export interface SummarizeResult {
@@ -174,7 +174,8 @@ function batches(inputs: readonly EventInput[], maxTokens: number, maxSize: numb
 }
 
 const outputTokens = (batch: readonly EventInput[]) =>
-  batch.reduce((sum, e) => sum + (e.deep ? 900 : 380), 200);
+  // Generous: newer models may also spend part of this "thinking"; a cut-off answer is wasted.
+  batch.reduce((sum, e) => sum + (e.deep ? 1500 : 650), 600);
 
 /**
  * Summarizes events in priority order (most important chapters first, so a spent budget only
