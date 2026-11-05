@@ -79,7 +79,8 @@ export class GdeltSource implements NewsSource {
         for (const line of text.split("\n")) {
           if (line === "") continue;
           const article = parseGkgLine(line);
-          if (article && new Date(article.publishedAt) >= ctx.since) articles.push(article);
+          // A copy, so the kept fields don't hold the whole decoded batch (~20 MB each) in memory.
+          if (article && new Date(article.publishedAt) >= ctx.since) articles.push(structuredClone(article));
         }
       } catch (error) {
         failed++;

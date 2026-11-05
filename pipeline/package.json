@@ -8,11 +8,11 @@
     "./images/license": "./src/images/license.ts"
   },
   "scripts": {
-    "dry": "tsx src/run/index.ts --dry",
+    "dry": "node --max-old-space-size=2048 --import tsx src/run/index.ts --dry",
     "typecheck": "tsc -p .",
-    "ingest": "tsx src/run/index.ts --ingest",
-    "live": "tsx src/run/index.ts --live",
-    "mock": "tsx src/run/index.ts --mock",
+    "ingest": "node --max-old-space-size=2048 --import tsx src/run/index.ts --ingest",
+    "live": "node --max-old-space-size=2048 --import tsx src/run/index.ts --live",
+    "mock": "node --max-old-space-size=2048 --import tsx src/run/index.ts --mock",
     "check-ai": "tsx src/run/check-ai.ts"
   },
   "dependencies": {
