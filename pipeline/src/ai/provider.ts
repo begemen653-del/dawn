@@ -25,6 +25,8 @@ export interface LlmResult<T> {
  */
 export interface LlmProvider {
   readonly name: string;
+  /** Largest request (input + output tokens) this model accepts; bigger ones go to another model. */
+  readonly maxRequestTokens?: number;
   generateJson<T>(request: LlmRequest, schema: z.ZodType<T>): Promise<LlmResult<T>>;
 }
 

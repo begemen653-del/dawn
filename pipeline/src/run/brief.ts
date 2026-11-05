@@ -131,6 +131,17 @@ export function finalChapters(
   });
 }
 
+/** Groups a drop reason into a short, readable kind for the run status. */
+export function dropKind(reason: string): string {
+  if (reason === "not a clear news event") return "not news";
+  if (/number|quote|name|date/i.test(reason) && /not (found|in)|unknown|invented/i.test(reason))
+    return "failed the fact check";
+  if (/place|source|invalid story/i.test(reason)) return "incomplete";
+  if (/JSON|schema|empty reply|no answer|missing/i.test(reason)) return "bad AI format";
+  if (/quota|HTTP|too big|timeout|abort|fetch/i.test(reason)) return "AI unavailable";
+  return "other";
+}
+
 /**
  * Milestone 4: turns ingested events into the app's brief with AI, then publishes it to
  * web/public/data/latest. If too few stories come out, the previous brief stays in place.
@@ -155,7 +166,13 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
     log,
   });
   if (budgetHit) warnings.push("AI budget reached: some lower-priority chapters have fewer stories today.");
-  if (dropped.length > 0) warnings.push(`${dropped.length} events dropped (failed checks or not news).`);
+  for (const d of dropped) log(`Dropped ${d.id}: ${d.reason}`);
+  if (dropped.length > 0) {
+    const counts = new Map<string, number>();
+    for (const d of dropped) counts.set(dropKind(d.reason), (counts.get(dropKind(d.reason)) ?? 0) + 1);
+    const parts = [...counts].sort((a, b) => b[1] - a[1]).map(([kind, n]) => `${n} ${kind}`);
+    warnings.push(`${dropped.length} events dropped: ${parts.join(", ")}.`);
+  }
   log(`AI wrote ${stories.size} stories; ${dropped.length} dropped${budgetHit ? "; budget reached" : ""}`);
 
   const chapters = finalChapters(options.chapters, stories);

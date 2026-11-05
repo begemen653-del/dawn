@@ -20,9 +20,14 @@ export interface SummarizeOptions {
   readonly log?: (message: string) => void;
 }
 
+/**
+ * Batches are sized for Gemini (high per-minute token limit, limited requests per day), so a full
+ * run needs ~150 calls instead of ~700. Models that can't take a batch this big (Groq) are skipped
+ * for it; if only those are left, the batch's events are retried one at a time.
+ */
 export const DEFAULT_SUMMARIZE: Omit<SummarizeOptions, "deep" | "texts"> = {
-  maxBatchTokens: 4_500,
-  maxBatchSize: 4,
+  maxBatchTokens: 14_000,
+  maxBatchSize: 6,
 };
 
 export interface SummarizeResult {

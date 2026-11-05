@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { z } from "zod";
-import { BudgetExceededError, FallbackChain } from "../src/ai/chain";
+import { BudgetExceededError, FallbackChain, RequestTooLargeError } from "../src/ai/chain";
 import type { StoryDraft } from "../src/ai/drafts";
 import { checkGrounding } from "../src/ai/grounding";
 import { extractJson, RateGate } from "../src/ai/http-providers";
@@ -15,7 +15,7 @@ import { buildInput, summarizeEvents } from "../src/ai/summarize";
 import { buildChapters } from "../src/events/assign";
 import { clusterArticles } from "../src/events/cluster";
 import { scoreEvents } from "../src/events/rank";
-import { finalChapters, runBrief } from "../src/run/brief";
+import { dropKind, finalChapters, runBrief } from "../src/run/brief";
 import { DayIndex, EventStore, Playlist, type Article, type StoryEvent } from "../src/schema";
 import { excerpt, extractArticleText } from "../src/sources/article-text";
 
@@ -71,6 +71,15 @@ describe("grounding check", () => {
       checkGrounding(draft({ whyItMatters: "Governor Smithson and Senator Okonkwo will visit." }), evidence)
         .ok,
     ).toBe(false);
+  });
+
+  it("does not count generic titles, possessives, name variants or clock minutes", () => {
+    const ok = (whyItMatters: string) => checkGrounding(draft({ whyItMatters }), evidence).ok;
+    expect(ok("The Senate and the House of Representatives in Congress will debate it.")).toBe(true);
+    expect(ok("Florida's Governor said the Fort Lauderdale site will be cleared.")).toBe(true);
+    expect(ok("The Bavarian state of Bavaria offered help.")).toBe(true);
+    expect(ok("Officials will meet at 8:00 near Fort Lauderdale.")).toBe(false); // 8 is not in the sources
+    expect(ok("Officials said Smithson and Okonkwo of the Ministry will visit.")).toBe(false);
   });
 
   it("also checks Go deeper content", () => {
@@ -195,6 +204,30 @@ describe("provider plumbing", () => {
     );
     expect((await chain.generateJson(request, schema)).provider).toBe("b");
     expect(tries).toBe(2);
+  });
+
+  it("skips models that can't take a request this big", async () => {
+    const small = { ...fake("small", () => Promise.resolve({ ok: true })), maxRequestTokens: 5 };
+    const chain = new FallbackChain([small, fake("big", () => Promise.resolve({ ok: true }))], {
+      tokenBudget: 1000,
+      attemptsPerProvider: 1,
+      sleep: noSleep,
+    });
+    expect((await chain.generateJson(request, schema)).provider).toBe("big");
+    const onlySmall = new FallbackChain([small], {
+      tokenBudget: 1000,
+      attemptsPerProvider: 1,
+      sleep: noSleep,
+    });
+    await expect(onlySmall.generateJson(request, schema)).rejects.toThrow(RequestTooLargeError);
+  });
+
+  it("groups drop reasons for the run status", () => {
+    expect(dropKind("not a clear news event")).toBe("not news");
+    expect(dropKind('number "40" is not in the sources')).toBe("failed the fact check");
+    expect(dropKind("names not found in the sources: A, B")).toBe("failed the fact check");
+    expect(dropKind("no place to show on the globe")).toBe("incomplete");
+    expect(dropKind("Reply did not match the schema: x")).toBe("bad AI format");
   });
 
   it("stops at the daily token budget", async () => {

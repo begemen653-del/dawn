@@ -87,6 +87,7 @@ async function postJson(url: string, headers: Record<string, string>, body: unkn
 /** Google Gemini via the Gemini Developer API (Google AI Studio key). */
 export class GeminiProvider implements LlmProvider {
   readonly name: string;
+  readonly maxRequestTokens: number;
   private readonly gate: RateGate;
 
   constructor(
@@ -96,6 +97,7 @@ export class GeminiProvider implements LlmProvider {
   ) {
     this.name = `gemini:${model}`;
     this.gate = new RateGate(limits);
+    this.maxRequestTokens = limits.tokensPerMinute;
   }
 
   async generateJson<T>(request: LlmRequest, schema: z.ZodType<T>): Promise<LlmResult<T>> {
@@ -140,6 +142,7 @@ export class GeminiProvider implements LlmProvider {
 /** Any OpenAI-compatible chat API: used for Groq and OpenRouter. */
 export class OpenAiCompatibleProvider implements LlmProvider {
   readonly name: string;
+  readonly maxRequestTokens: number;
   private readonly gate: RateGate;
 
   constructor(
@@ -153,6 +156,8 @@ export class OpenAiCompatibleProvider implements LlmProvider {
     this.gate = new RateGate(limits);
     // Groq's strict JSON mode rejects gpt-oss replies; for those we rely on our own JSON check.
     this.reasoning = model.includes("gpt-oss");
+    // Groq refuses any single request above the per-minute token limit (reasoning room included).
+    this.maxRequestTokens = limits.tokensPerMinute - (this.reasoning ? 1500 : 0);
   }
 
   private readonly reasoning: boolean;

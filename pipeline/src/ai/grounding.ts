@@ -40,6 +40,23 @@ const COMMON_CAPITALS = new Set(
   ).split(" "),
 );
 
+/**
+ * Generic institution and role words. Sources are often in other languages ("Senado", "Bundestag"),
+ * so the English word can't be found there, yet it isn't a fact the model could invent.
+ */
+const GENERIC_TITLES = new Set(
+  (
+    "senate senator senators house congress congressional chamber deputies representatives representative " +
+    "party parties democratic democrat democrats republican republicans conservative conservatives labour " +
+    "liberal liberals socialist socialists greens governor governors mayor district university college " +
+    "ministry ministries minister-president chancellor premier economic economy affairs department council " +
+    "committee commission assembly national federal supreme republic kingdom city region regional province " +
+    "provincial county international foreign defence defense interior health finance justice education " +
+    "election elections opposition coalition cabinet agency authority authorities office secretary spokesperson " +
+    "spokesman spokeswoman embassy ambassador general military forces navy council's"
+  ).split(" "),
+);
+
 /** Everything the story may legitimately draw on: source headlines and excerpts. */
 export interface Evidence {
   readonly text: string;
@@ -57,6 +74,8 @@ function numbersIn(text: string, includeWords: boolean): Set<string> {
   const out = new Set<string>();
   for (const m of text.matchAll(/\d+(?:[.,]\d+)*/g)) {
     const raw = m[0];
+    // Clock minutes ("10:00", "14:30") restate a time, not a separate fact.
+    if (m.index > 0 && text[m.index - 1] === ":" && /^\d{2}$/.test(raw)) continue;
     out.add(raw.replace(/[.,](?=\d{3}\b)/g, ""));
     out.add(raw.replace(/,/g, "."));
     if (/^\d+$/.test(raw)) out.add(String(Number(raw))); // "02" in a date = "2"
@@ -76,9 +95,10 @@ function namesIn(text: string): string[] {
   for (const sentence of text.split(/(?<=[.!?:;])\s+|\n/)) {
     const words = sentence.split(/\s+/).slice(1);
     for (const raw of words) {
-      const w = raw.replace(/[^\p{L}'-]/gu, "");
+      const w = raw.replace(/[^\p{L}'-]/gu, "").replace(/['’]s$/u, "");
       if (w.length < 4 || !/^\p{Lu}/u.test(w)) continue;
-      if (COMMON_CAPITALS.has(w.toLowerCase())) continue;
+      const lower = w.toLowerCase();
+      if (COMMON_CAPITALS.has(lower) || GENERIC_TITLES.has(lower)) continue;
       out.push(w);
     }
   }
@@ -121,7 +141,12 @@ export function checkGrounding(draft: StoryDraft, evidence: Evidence): Grounding
       issues.push(`quote "${m[1] ?? ""}" is not in the sources`);
   }
 
-  const unknown = [...new Set(namesIn(writing))].filter((name) => !corpus.includes(fold(name)));
+  // Variants of one name ("Bavaria", "Bavarian") count once.
+  const stems = new Map<string, string>();
+  for (const name of namesIn(writing)) {
+    if (!corpus.includes(fold(name))) stems.set(fold(name).slice(0, 6), name);
+  }
+  const unknown = [...stems.values()];
   // One unfamiliar capitalized word is tolerated (translations of names, "Kremlin" vs "Kreml").
   if (unknown.length >= 2) issues.push(`names not found in the sources: ${unknown.slice(0, 5).join(", ")}`);
 

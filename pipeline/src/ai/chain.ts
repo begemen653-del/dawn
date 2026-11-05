@@ -16,6 +16,14 @@ export class BudgetExceededError extends Error {
   }
 }
 
+/** No remaining model accepts a request this big; split it up and try again. */
+export class RequestTooLargeError extends Error {
+  constructor(tokens: number) {
+    super(`Request of ~${tokens} tokens is too big for every remaining model`);
+    this.name = "RequestTooLargeError";
+  }
+}
+
 export interface ChainOptions {
   /** Hard cap on tokens (in + out) for the whole run, to stay inside the free tiers. */
   readonly tokenBudget: number;
@@ -55,10 +63,12 @@ export class FallbackChain implements LlmProvider {
     const estimate = estimateTokens(request.system + request.prompt) + request.maxOutputTokens;
     if (this.spent + estimate > this.options.tokenBudget) throw new BudgetExceededError();
     const sleep = this.options.sleep ?? defaultSleep;
-    let lastError: unknown = new Error("No AI provider is configured");
+    let lastError: unknown =
+      this.available > 0 ? new RequestTooLargeError(estimate) : new Error("No AI provider is configured");
 
     for (const provider of this.providers) {
       if (this.exhausted.has(provider.name)) continue;
+      if (provider.maxRequestTokens !== undefined && estimate > provider.maxRequestTokens) continue;
       for (let attempt = 0; attempt < this.options.attemptsPerProvider; attempt++) {
         if (attempt > 0) await sleep(1500 * 2 ** (attempt - 1));
         try {
