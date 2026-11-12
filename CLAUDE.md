@@ -12,29 +12,26 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 - Everything must stay free. Never put API keys in chat, code or git; they live in `.env.local` (git-ignored)
   and GitHub secrets.
 
-## Status (2026-11-05)
+## Status (2026-11-12)
 
-- M1–M3 approved and pushed. M4 (AI layer) is built and committed locally, NOT pushed, NOT yet approved.
-- Keys are in `.env.local` (Gemini, Groq, OpenRouter). `npm run pipeline:check-ai` shows which models work.
+- M1–M4 approved and pushed (M4 approved 2026-11-12). Next: M5 (offline caching / service worker).
+- Keys are in `.env.local` (Gemini, Groq, OpenRouter) and must also be GitHub secrets for the nightly run.
+  `npm run pipeline:check-ai` shows which models work.
 - Working models (checked 2026-11-03): gemini-3.5-flash-lite (often HTTP 503 "busy"), gemini-3.1-flash-lite,
   gemini-3.5-flash, Groq openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b.
-- Done 2026-11-05: batches of up to 6 events / 14k tokens (`DEFAULT_SUMMARIZE`); providers declare
-  `maxRequestTokens` and the chain skips models too small for a batch (Groq), events then retried alone; every
-  drop is logged (`Dropped <id>: <reason>`) and grouped in status warnings; fact check no longer flags generic
-  titles (Senate, Governor…), possessives, name variants, clock minutes; GDELT memory leak fixed (articles are
-  `structuredClone`d) and pipeline scripts run with a 2 GB heap cap (peak ~1.5 GB, was >3.6 GB → crash).
-- 40-event trial after the batching change: 29 written, 11 dropped (8 by the old fact check), 28 calls, ~9.5 min,
-  ~132k tokens. That trial brief is in `web/public/data` (uncommitted); the committed version is the sample brief.
-- Full run attempt 2026-11-05 stopped at batch 44/101: drive C: was full (owner freed space, ~15 GB free now).
-  A full run is ~101 batches + retries; reading ~1,570 article pages takes ~6 min.
+- Full live run 2026-11-12: 434 written, 134 dropped, ~1.5M tokens, AI budget reached. Fact check then relaxed
+  (nationalities, institution words, any spelling of a number). Repeated stories are merged after writing
+  (`pipeline/src/run/dedupe.ts`): 17 merged → 297 stories. That brief is committed in `web/public/data`.
+- Globe keeps fine (50m) shapes during flights when zoomed in; falls back to 110m for a flight if a frame takes
+  over 22 ms; labels fade in over 250 ms. Owner confirmed smooth on the phone.
+- Noted for M6: pins sometimes use a state centroid instead of the city (Nvidia → New York State, not NYC).
+- Planned after M4: optional local model (Ollama, ~3–4B for the GTX 1650 4 GB) as last fallback, laptop runs only.
 
-## Next steps (M4)
+## Next steps
 
-1. Owner chose to wait for the Gemini daily quota reset (~09:00 Berlin): run `npm run pipeline:live` in the
-   morning (~45 min, run in background; check free disk space first).
-2. Check the drop reasons in the log, then spot-check ~20 stories against their sources with the owner
-   (acceptance test), and show the real brief in the app at phone size.
-3. Then: owner adds the three keys as GitHub secrets (README "AI keys"), approve M4, push.
+1. Owner adds the three keys as GitHub secrets (README "AI keys") before the 04:30 Berlin nightly run;
+   then check the first nightly run on GitHub (Actions → Nightly brief).
+2. Start M5.
 
 ## Handy commands
 

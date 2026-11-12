@@ -1,10 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-02",
+  "date": "2026-11-12",
   "scope": "global",
   "title": "Global",
   "eventIds": [
-    "sample-global-overview",
-    "sample-berlin-overview"
+    "ev-f7aace471b74",
+    "ev-4134acf4fe93",
+    "ev-8b40e1d1f6ef",
+    "ev-2c24e81308d5",
+    "ev-d5f61955e1de",
+    "ev-33c7d7f29245",
+    "ev-e53766f09b10",
+    "ev-2b2d5256db0b"
   ]
 }

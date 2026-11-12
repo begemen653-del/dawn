@@ -1,33 +1,1212 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-02",
-  "generatedAt": "2026-11-02T21:31:54.919Z",
-  "sample": true,
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T16:31:36.175Z",
+  "sample": false,
   "scopes": [
     {
       "scope": "global",
       "file": "playlists/global.json",
-      "count": 2
+      "count": 8
     },
     {
       "scope": "europe",
       "file": "playlists/europe.json",
+      "count": 7
+    },
+    {
+      "scope": "asia",
+      "file": "playlists/asia.json",
+      "count": 5
+    },
+    {
+      "scope": "north-america",
+      "file": "playlists/north-america.json",
+      "count": 5
+    },
+    {
+      "scope": "south-america",
+      "file": "playlists/south-america.json",
+      "count": 4
+    },
+    {
+      "scope": "middle-east",
+      "file": "playlists/middle-east.json",
       "count": 2
+    },
+    {
+      "scope": "africa",
+      "file": "playlists/africa.json",
+      "count": 7
+    },
+    {
+      "scope": "oceania",
+      "file": "playlists/oceania.json",
+      "count": 2
+    },
+    {
+      "scope": "AF",
+      "file": "playlists/AF.json",
+      "count": 1
+    },
+    {
+      "scope": "AX",
+      "file": "playlists/AX.json",
+      "count": 0
+    },
+    {
+      "scope": "AL",
+      "file": "playlists/AL.json",
+      "count": 2
+    },
+    {
+      "scope": "DZ",
+      "file": "playlists/DZ.json",
+      "count": 2
+    },
+    {
+      "scope": "AS",
+      "file": "playlists/AS.json",
+      "count": 0
+    },
+    {
+      "scope": "AD",
+      "file": "playlists/AD.json",
+      "count": 3
+    },
+    {
+      "scope": "AO",
+      "file": "playlists/AO.json",
+      "count": 1
+    },
+    {
+      "scope": "AI",
+      "file": "playlists/AI.json",
+      "count": 0
+    },
+    {
+      "scope": "AG",
+      "file": "playlists/AG.json",
+      "count": 1
+    },
+    {
+      "scope": "AR",
+      "file": "playlists/AR.json",
+      "count": 3
+    },
+    {
+      "scope": "AM",
+      "file": "playlists/AM.json",
+      "count": 2
+    },
+    {
+      "scope": "AW",
+      "file": "playlists/AW.json",
+      "count": 1
+    },
+    {
+      "scope": "AU",
+      "file": "playlists/AU.json",
+      "count": 6
+    },
+    {
+      "scope": "AT",
+      "file": "playlists/AT.json",
+      "count": 2
+    },
+    {
+      "scope": "AZ",
+      "file": "playlists/AZ.json",
+      "count": 1
+    },
+    {
+      "scope": "BS",
+      "file": "playlists/BS.json",
+      "count": 3
+    },
+    {
+      "scope": "BH",
+      "file": "playlists/BH.json",
+      "count": 0
+    },
+    {
+      "scope": "BD",
+      "file": "playlists/BD.json",
+      "count": 0
+    },
+    {
+      "scope": "BB",
+      "file": "playlists/BB.json",
+      "count": 0
+    },
+    {
+      "scope": "BY",
+      "file": "playlists/BY.json",
+      "count": 1
+    },
+    {
+      "scope": "BE",
+      "file": "playlists/BE.json",
+      "count": 3
+    },
+    {
+      "scope": "BZ",
+      "file": "playlists/BZ.json",
+      "count": 0
+    },
+    {
+      "scope": "BJ",
+      "file": "playlists/BJ.json",
+      "count": 0
+    },
+    {
+      "scope": "BM",
+      "file": "playlists/BM.json",
+      "count": 2
+    },
+    {
+      "scope": "BT",
+      "file": "playlists/BT.json",
+      "count": 1
+    },
+    {
+      "scope": "BO",
+      "file": "playlists/BO.json",
+      "count": 3
+    },
+    {
+      "scope": "BA",
+      "file": "playlists/BA.json",
+      "count": 2
+    },
+    {
+      "scope": "BW",
+      "file": "playlists/BW.json",
+      "count": 0
+    },
+    {
+      "scope": "BR",
+      "file": "playlists/BR.json",
+      "count": 5
+    },
+    {
+      "scope": "IO",
+      "file": "playlists/IO.json",
+      "count": 0
+    },
+    {
+      "scope": "VG",
+      "file": "playlists/VG.json",
+      "count": 0
+    },
+    {
+      "scope": "BN",
+      "file": "playlists/BN.json",
+      "count": 0
+    },
+    {
+      "scope": "BG",
+      "file": "playlists/BG.json",
+      "count": 4
+    },
+    {
+      "scope": "BF",
+      "file": "playlists/BF.json",
+      "count": 2
+    },
+    {
+      "scope": "BI",
+      "file": "playlists/BI.json",
+      "count": 0
+    },
+    {
+      "scope": "KH",
+      "file": "playlists/KH.json",
+      "count": 4
+    },
+    {
+      "scope": "CM",
+      "file": "playlists/CM.json",
+      "count": 1
+    },
+    {
+      "scope": "CA",
+      "file": "playlists/CA.json",
+      "count": 2
+    },
+    {
+      "scope": "CV",
+      "file": "playlists/CV.json",
+      "count": 1
+    },
+    {
+      "scope": "KY",
+      "file": "playlists/KY.json",
+      "count": 0
+    },
+    {
+      "scope": "CF",
+      "file": "playlists/CF.json",
+      "count": 0
+    },
+    {
+      "scope": "TD",
+      "file": "playlists/TD.json",
+      "count": 0
+    },
+    {
+      "scope": "CL",
+      "file": "playlists/CL.json",
+      "count": 2
+    },
+    {
+      "scope": "CN",
+      "file": "playlists/CN.json",
+      "count": 3
+    },
+    {
+      "scope": "CO",
+      "file": "playlists/CO.json",
+      "count": 3
+    },
+    {
+      "scope": "KM",
+      "file": "playlists/KM.json",
+      "count": 0
+    },
+    {
+      "scope": "CK",
+      "file": "playlists/CK.json",
+      "count": 1
+    },
+    {
+      "scope": "CR",
+      "file": "playlists/CR.json",
+      "count": 1
+    },
+    {
+      "scope": "HR",
+      "file": "playlists/HR.json",
+      "count": 3
+    },
+    {
+      "scope": "CU",
+      "file": "playlists/CU.json",
+      "count": 2
+    },
+    {
+      "scope": "CW",
+      "file": "playlists/CW.json",
+      "count": 0
+    },
+    {
+      "scope": "CY",
+      "file": "playlists/CY.json",
+      "count": 2
+    },
+    {
+      "scope": "CZ",
+      "file": "playlists/CZ.json",
+      "count": 4
+    },
+    {
+      "scope": "DK",
+      "file": "playlists/DK.json",
+      "count": 3
+    },
+    {
+      "scope": "DJ",
+      "file": "playlists/DJ.json",
+      "count": 0
+    },
+    {
+      "scope": "DM",
+      "file": "playlists/DM.json",
+      "count": 0
+    },
+    {
+      "scope": "DO",
+      "file": "playlists/DO.json",
+      "count": 2
+    },
+    {
+      "scope": "CD",
+      "file": "playlists/CD.json",
+      "count": 1
+    },
+    {
+      "scope": "TL",
+      "file": "playlists/TL.json",
+      "count": 0
+    },
+    {
+      "scope": "EC",
+      "file": "playlists/EC.json",
+      "count": 4
+    },
+    {
+      "scope": "EG",
+      "file": "playlists/EG.json",
+      "count": 1
+    },
+    {
+      "scope": "SV",
+      "file": "playlists/SV.json",
+      "count": 0
+    },
+    {
+      "scope": "GQ",
+      "file": "playlists/GQ.json",
+      "count": 0
+    },
+    {
+      "scope": "ER",
+      "file": "playlists/ER.json",
+      "count": 0
+    },
+    {
+      "scope": "EE",
+      "file": "playlists/EE.json",
+      "count": 0
+    },
+    {
+      "scope": "SZ",
+      "file": "playlists/SZ.json",
+      "count": 0
+    },
+    {
+      "scope": "ET",
+      "file": "playlists/ET.json",
+      "count": 4
+    },
+    {
+      "scope": "FK",
+      "file": "playlists/FK.json",
+      "count": 0
+    },
+    {
+      "scope": "FO",
+      "file": "playlists/FO.json",
+      "count": 0
+    },
+    {
+      "scope": "FJ",
+      "file": "playlists/FJ.json",
+      "count": 0
+    },
+    {
+      "scope": "FI",
+      "file": "playlists/FI.json",
+      "count": 4
+    },
+    {
+      "scope": "FR",
+      "file": "playlists/FR.json",
+      "count": 5
+    },
+    {
+      "scope": "PF",
+      "file": "playlists/PF.json",
+      "count": 0
+    },
+    {
+      "scope": "GA",
+      "file": "playlists/GA.json",
+      "count": 0
+    },
+    {
+      "scope": "GM",
+      "file": "playlists/GM.json",
+      "count": 1
+    },
+    {
+      "scope": "GE",
+      "file": "playlists/GE.json",
+      "count": 1
     },
     {
       "scope": "DE",
       "file": "playlists/DE.json",
+      "count": 4
+    },
+    {
+      "scope": "GH",
+      "file": "playlists/GH.json",
+      "count": 4
+    },
+    {
+      "scope": "GR",
+      "file": "playlists/GR.json",
+      "count": 2
+    },
+    {
+      "scope": "GL",
+      "file": "playlists/GL.json",
+      "count": 2
+    },
+    {
+      "scope": "GD",
+      "file": "playlists/GD.json",
+      "count": 0
+    },
+    {
+      "scope": "GU",
+      "file": "playlists/GU.json",
+      "count": 0
+    },
+    {
+      "scope": "GT",
+      "file": "playlists/GT.json",
+      "count": 1
+    },
+    {
+      "scope": "GG",
+      "file": "playlists/GG.json",
+      "count": 0
+    },
+    {
+      "scope": "GN",
+      "file": "playlists/GN.json",
+      "count": 1
+    },
+    {
+      "scope": "GW",
+      "file": "playlists/GW.json",
+      "count": 1
+    },
+    {
+      "scope": "GY",
+      "file": "playlists/GY.json",
+      "count": 0
+    },
+    {
+      "scope": "HT",
+      "file": "playlists/HT.json",
+      "count": 1
+    },
+    {
+      "scope": "HN",
+      "file": "playlists/HN.json",
+      "count": 2
+    },
+    {
+      "scope": "HK",
+      "file": "playlists/HK.json",
+      "count": 3
+    },
+    {
+      "scope": "HU",
+      "file": "playlists/HU.json",
+      "count": 3
+    },
+    {
+      "scope": "IS",
+      "file": "playlists/IS.json",
+      "count": 2
+    },
+    {
+      "scope": "IN",
+      "file": "playlists/IN.json",
+      "count": 8
+    },
+    {
+      "scope": "ID",
+      "file": "playlists/ID.json",
+      "count": 2
+    },
+    {
+      "scope": "IR",
+      "file": "playlists/IR.json",
+      "count": 2
+    },
+    {
+      "scope": "IQ",
+      "file": "playlists/IQ.json",
+      "count": 2
+    },
+    {
+      "scope": "IE",
+      "file": "playlists/IE.json",
+      "count": 2
+    },
+    {
+      "scope": "IM",
+      "file": "playlists/IM.json",
+      "count": 0
+    },
+    {
+      "scope": "IL",
+      "file": "playlists/IL.json",
+      "count": 2
+    },
+    {
+      "scope": "IT",
+      "file": "playlists/IT.json",
+      "count": 5
+    },
+    {
+      "scope": "CI",
+      "file": "playlists/CI.json",
+      "count": 0
+    },
+    {
+      "scope": "JM",
+      "file": "playlists/JM.json",
+      "count": 1
+    },
+    {
+      "scope": "JP",
+      "file": "playlists/JP.json",
+      "count": 0
+    },
+    {
+      "scope": "JE",
+      "file": "playlists/JE.json",
+      "count": 0
+    },
+    {
+      "scope": "JO",
+      "file": "playlists/JO.json",
+      "count": 0
+    },
+    {
+      "scope": "KZ",
+      "file": "playlists/KZ.json",
+      "count": 2
+    },
+    {
+      "scope": "KE",
+      "file": "playlists/KE.json",
+      "count": 3
+    },
+    {
+      "scope": "KI",
+      "file": "playlists/KI.json",
+      "count": 0
+    },
+    {
+      "scope": "XK",
+      "file": "playlists/XK.json",
+      "count": 4
+    },
+    {
+      "scope": "KW",
+      "file": "playlists/KW.json",
+      "count": 1
+    },
+    {
+      "scope": "KG",
+      "file": "playlists/KG.json",
+      "count": 1
+    },
+    {
+      "scope": "LA",
+      "file": "playlists/LA.json",
+      "count": 0
+    },
+    {
+      "scope": "LV",
+      "file": "playlists/LV.json",
+      "count": 2
+    },
+    {
+      "scope": "LB",
+      "file": "playlists/LB.json",
+      "count": 0
+    },
+    {
+      "scope": "LS",
+      "file": "playlists/LS.json",
+      "count": 0
+    },
+    {
+      "scope": "LR",
+      "file": "playlists/LR.json",
+      "count": 0
+    },
+    {
+      "scope": "LY",
+      "file": "playlists/LY.json",
+      "count": 0
+    },
+    {
+      "scope": "LI",
+      "file": "playlists/LI.json",
+      "count": 0
+    },
+    {
+      "scope": "LT",
+      "file": "playlists/LT.json",
+      "count": 0
+    },
+    {
+      "scope": "LU",
+      "file": "playlists/LU.json",
+      "count": 1
+    },
+    {
+      "scope": "MO",
+      "file": "playlists/MO.json",
+      "count": 0
+    },
+    {
+      "scope": "MG",
+      "file": "playlists/MG.json",
+      "count": 1
+    },
+    {
+      "scope": "MW",
+      "file": "playlists/MW.json",
+      "count": 1
+    },
+    {
+      "scope": "MY",
+      "file": "playlists/MY.json",
+      "count": 2
+    },
+    {
+      "scope": "MV",
+      "file": "playlists/MV.json",
+      "count": 3
+    },
+    {
+      "scope": "ML",
+      "file": "playlists/ML.json",
+      "count": 2
+    },
+    {
+      "scope": "MT",
+      "file": "playlists/MT.json",
+      "count": 0
+    },
+    {
+      "scope": "MH",
+      "file": "playlists/MH.json",
+      "count": 1
+    },
+    {
+      "scope": "MR",
+      "file": "playlists/MR.json",
+      "count": 2
+    },
+    {
+      "scope": "MU",
+      "file": "playlists/MU.json",
+      "count": 0
+    },
+    {
+      "scope": "MX",
+      "file": "playlists/MX.json",
+      "count": 6
+    },
+    {
+      "scope": "FM",
+      "file": "playlists/FM.json",
+      "count": 0
+    },
+    {
+      "scope": "MD",
+      "file": "playlists/MD.json",
+      "count": 1
+    },
+    {
+      "scope": "MC",
+      "file": "playlists/MC.json",
+      "count": 0
+    },
+    {
+      "scope": "MN",
+      "file": "playlists/MN.json",
+      "count": 1
+    },
+    {
+      "scope": "ME",
+      "file": "playlists/ME.json",
+      "count": 1
+    },
+    {
+      "scope": "MS",
+      "file": "playlists/MS.json",
+      "count": 0
+    },
+    {
+      "scope": "MA",
+      "file": "playlists/MA.json",
+      "count": 1
+    },
+    {
+      "scope": "MZ",
+      "file": "playlists/MZ.json",
+      "count": 1
+    },
+    {
+      "scope": "MM",
+      "file": "playlists/MM.json",
+      "count": 1
+    },
+    {
+      "scope": "NA",
+      "file": "playlists/NA.json",
+      "count": 1
+    },
+    {
+      "scope": "NR",
+      "file": "playlists/NR.json",
+      "count": 1
+    },
+    {
+      "scope": "NP",
+      "file": "playlists/NP.json",
+      "count": 0
+    },
+    {
+      "scope": "NL",
+      "file": "playlists/NL.json",
+      "count": 7
+    },
+    {
+      "scope": "NC",
+      "file": "playlists/NC.json",
+      "count": 0
+    },
+    {
+      "scope": "NZ",
+      "file": "playlists/NZ.json",
+      "count": 2
+    },
+    {
+      "scope": "NI",
+      "file": "playlists/NI.json",
+      "count": 3
+    },
+    {
+      "scope": "NE",
+      "file": "playlists/NE.json",
+      "count": 3
+    },
+    {
+      "scope": "NG",
+      "file": "playlists/NG.json",
+      "count": 4
+    },
+    {
+      "scope": "NU",
+      "file": "playlists/NU.json",
+      "count": 0
+    },
+    {
+      "scope": "NF",
+      "file": "playlists/NF.json",
+      "count": 0
+    },
+    {
+      "scope": "KP",
+      "file": "playlists/KP.json",
+      "count": 1
+    },
+    {
+      "scope": "MK",
+      "file": "playlists/MK.json",
+      "count": 1
+    },
+    {
+      "scope": "MP",
+      "file": "playlists/MP.json",
+      "count": 0
+    },
+    {
+      "scope": "NO",
+      "file": "playlists/NO.json",
+      "count": 1
+    },
+    {
+      "scope": "OM",
+      "file": "playlists/OM.json",
+      "count": 2
+    },
+    {
+      "scope": "PK",
+      "file": "playlists/PK.json",
+      "count": 6
+    },
+    {
+      "scope": "PW",
+      "file": "playlists/PW.json",
+      "count": 1
+    },
+    {
+      "scope": "PS",
+      "file": "playlists/PS.json",
+      "count": 1
+    },
+    {
+      "scope": "PA",
+      "file": "playlists/PA.json",
+      "count": 2
+    },
+    {
+      "scope": "PG",
+      "file": "playlists/PG.json",
+      "count": 0
+    },
+    {
+      "scope": "PY",
+      "file": "playlists/PY.json",
+      "count": 4
+    },
+    {
+      "scope": "PE",
+      "file": "playlists/PE.json",
+      "count": 2
+    },
+    {
+      "scope": "PH",
+      "file": "playlists/PH.json",
+      "count": 1
+    },
+    {
+      "scope": "PL",
+      "file": "playlists/PL.json",
+      "count": 5
+    },
+    {
+      "scope": "PT",
+      "file": "playlists/PT.json",
+      "count": 5
+    },
+    {
+      "scope": "PR",
+      "file": "playlists/PR.json",
+      "count": 0
+    },
+    {
+      "scope": "QA",
+      "file": "playlists/QA.json",
+      "count": 0
+    },
+    {
+      "scope": "CG",
+      "file": "playlists/CG.json",
+      "count": 1
+    },
+    {
+      "scope": "RO",
+      "file": "playlists/RO.json",
+      "count": 5
+    },
+    {
+      "scope": "RU",
+      "file": "playlists/RU.json",
+      "count": 3
+    },
+    {
+      "scope": "RW",
+      "file": "playlists/RW.json",
+      "count": 0
+    },
+    {
+      "scope": "BL",
+      "file": "playlists/BL.json",
+      "count": 0
+    },
+    {
+      "scope": "SH",
+      "file": "playlists/SH.json",
+      "count": 0
+    },
+    {
+      "scope": "KN",
+      "file": "playlists/KN.json",
+      "count": 0
+    },
+    {
+      "scope": "LC",
+      "file": "playlists/LC.json",
+      "count": 0
+    },
+    {
+      "scope": "MF",
+      "file": "playlists/MF.json",
+      "count": 0
+    },
+    {
+      "scope": "PM",
+      "file": "playlists/PM.json",
+      "count": 0
+    },
+    {
+      "scope": "VC",
+      "file": "playlists/VC.json",
+      "count": 0
+    },
+    {
+      "scope": "WS",
+      "file": "playlists/WS.json",
+      "count": 1
+    },
+    {
+      "scope": "SM",
+      "file": "playlists/SM.json",
+      "count": 0
+    },
+    {
+      "scope": "ST",
+      "file": "playlists/ST.json",
+      "count": 0
+    },
+    {
+      "scope": "SA",
+      "file": "playlists/SA.json",
+      "count": 2
+    },
+    {
+      "scope": "SN",
+      "file": "playlists/SN.json",
+      "count": 3
+    },
+    {
+      "scope": "RS",
+      "file": "playlists/RS.json",
+      "count": 3
+    },
+    {
+      "scope": "SC",
+      "file": "playlists/SC.json",
+      "count": 1
+    },
+    {
+      "scope": "SL",
+      "file": "playlists/SL.json",
+      "count": 0
+    },
+    {
+      "scope": "SG",
+      "file": "playlists/SG.json",
+      "count": 2
+    },
+    {
+      "scope": "SX",
+      "file": "playlists/SX.json",
+      "count": 0
+    },
+    {
+      "scope": "SK",
+      "file": "playlists/SK.json",
+      "count": 3
+    },
+    {
+      "scope": "SI",
+      "file": "playlists/SI.json",
+      "count": 2
+    },
+    {
+      "scope": "SB",
+      "file": "playlists/SB.json",
+      "count": 1
+    },
+    {
+      "scope": "SO",
+      "file": "playlists/SO.json",
+      "count": 2
+    },
+    {
+      "scope": "ZA",
+      "file": "playlists/ZA.json",
+      "count": 2
+    },
+    {
+      "scope": "KR",
+      "file": "playlists/KR.json",
+      "count": 1
+    },
+    {
+      "scope": "SS",
+      "file": "playlists/SS.json",
+      "count": 0
+    },
+    {
+      "scope": "ES",
+      "file": "playlists/ES.json",
+      "count": 5
+    },
+    {
+      "scope": "LK",
+      "file": "playlists/LK.json",
+      "count": 3
+    },
+    {
+      "scope": "SD",
+      "file": "playlists/SD.json",
+      "count": 2
+    },
+    {
+      "scope": "SR",
+      "file": "playlists/SR.json",
+      "count": 0
+    },
+    {
+      "scope": "SE",
+      "file": "playlists/SE.json",
+      "count": 2
+    },
+    {
+      "scope": "CH",
+      "file": "playlists/CH.json",
+      "count": 2
+    },
+    {
+      "scope": "SY",
+      "file": "playlists/SY.json",
+      "count": 2
+    },
+    {
+      "scope": "TW",
+      "file": "playlists/TW.json",
+      "count": 3
+    },
+    {
+      "scope": "TJ",
+      "file": "playlists/TJ.json",
+      "count": 1
+    },
+    {
+      "scope": "TZ",
+      "file": "playlists/TZ.json",
+      "count": 0
+    },
+    {
+      "scope": "TH",
+      "file": "playlists/TH.json",
+      "count": 1
+    },
+    {
+      "scope": "TG",
+      "file": "playlists/TG.json",
+      "count": 1
+    },
+    {
+      "scope": "TO",
+      "file": "playlists/TO.json",
+      "count": 1
+    },
+    {
+      "scope": "TT",
+      "file": "playlists/TT.json",
+      "count": 0
+    },
+    {
+      "scope": "TN",
+      "file": "playlists/TN.json",
       "count": 1
     },
     {
       "scope": "TR",
       "file": "playlists/TR.json",
+      "count": 5
+    },
+    {
+      "scope": "TM",
+      "file": "playlists/TM.json",
+      "count": 0
+    },
+    {
+      "scope": "TC",
+      "file": "playlists/TC.json",
+      "count": 0
+    },
+    {
+      "scope": "TV",
+      "file": "playlists/TV.json",
+      "count": 0
+    },
+    {
+      "scope": "UG",
+      "file": "playlists/UG.json",
+      "count": 3
+    },
+    {
+      "scope": "UA",
+      "file": "playlists/UA.json",
+      "count": 2
+    },
+    {
+      "scope": "AE",
+      "file": "playlists/AE.json",
+      "count": 3
+    },
+    {
+      "scope": "GB",
+      "file": "playlists/GB.json",
+      "count": 7
+    },
+    {
+      "scope": "US",
+      "file": "playlists/US.json",
+      "count": 8
+    },
+    {
+      "scope": "VI",
+      "file": "playlists/VI.json",
+      "count": 0
+    },
+    {
+      "scope": "UY",
+      "file": "playlists/UY.json",
+      "count": 2
+    },
+    {
+      "scope": "UZ",
+      "file": "playlists/UZ.json",
       "count": 1
+    },
+    {
+      "scope": "VU",
+      "file": "playlists/VU.json",
+      "count": 0
+    },
+    {
+      "scope": "VA",
+      "file": "playlists/VA.json",
+      "count": 0
+    },
+    {
+      "scope": "VE",
+      "file": "playlists/VE.json",
+      "count": 2
+    },
+    {
+      "scope": "VN",
+      "file": "playlists/VN.json",
+      "count": 2
+    },
+    {
+      "scope": "WF",
+      "file": "playlists/WF.json",
+      "count": 0
+    },
+    {
+      "scope": "EH",
+      "file": "playlists/EH.json",
+      "count": 1
+    },
+    {
+      "scope": "YE",
+      "file": "playlists/YE.json",
+      "count": 1
+    },
+    {
+      "scope": "ZM",
+      "file": "playlists/ZM.json",
+      "count": 0
+    },
+    {
+      "scope": "ZW",
+      "file": "playlists/ZW.json",
+      "count": 3
     }
   ],
   "learn": {
-    "title": "Learn something new (sample)",
-    "body": "Each day this card will teach one small fact connected to the news, such as what a central bank does or why a strait matters for shipping.",
-    "relatedEventId": "sample-istanbul-route"
+    "title": "Learn something new",
+    "body": "Today's learning card could not be written. It will be back with tomorrow's brief."
   }
 }

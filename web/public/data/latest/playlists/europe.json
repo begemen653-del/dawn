@@ -1,10 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-02",
+  "date": "2026-11-12",
   "scope": "europe",
   "title": "Europe",
   "eventIds": [
-    "sample-berlin-overview",
-    "sample-istanbul-route"
+    "ev-4134acf4fe93",
+    "ev-d5f61955e1de",
+    "ev-2b2d5256db0b",
+    "ev-d14ddb8e578d",
+    "ev-275733d034ea",
+    "ev-e6aacbd50257",
+    "ev-ed0c0025002f"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "scope": "BO",
+  "title": "Bolivia",
+  "eventIds": [
+    "ev-bcda5420ff66",
+    "ev-371eb5ef74f1",
+    "ev-e27e03324d58"
+  ]
+}

@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
   "ok": true,
-  "mode": "dry",
-  "date": "2026-11-02",
-  "startedAt": "2026-11-02T21:31:54.919Z",
-  "finishedAt": "2026-11-02T21:31:54.984Z",
+  "mode": "live",
+  "date": "2026-11-12",
+  "startedAt": "2026-11-12T16:31:36.175Z",
+  "finishedAt": "2026-11-12T18:47:06.311Z",
   "counts": {
-    "articles": 0,
-    "events": 3,
-    "playlists": 4
+    "articles": 7576,
+    "events": 297,
+    "playlists": 240
   },
   "warnings": [
-    "Dry run: sample data only, no real news fetched."
+    "AI budget reached: some lower-priority chapters have fewer stories today.",
+    "134 events dropped: 103 failed the fact check, 31 not news."
   ],
   "errors": []
 }

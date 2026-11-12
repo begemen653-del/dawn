@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "scope": "CN",
+  "title": "China",
+  "eventIds": [
+    "ev-f7aace471b74",
+    "ev-469909077c73",
+    "ev-6d5d70d93a46"
+  ]
+}

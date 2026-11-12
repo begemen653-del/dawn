@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "scope": "north-america",
+  "title": "North America",
+  "eventIds": [
+    "ev-f7aace471b74",
+    "ev-8b40e1d1f6ef",
+    "ev-2c24e81308d5",
+    "ev-e6aacbd50257",
+    "ev-6d5d70d93a46"
+  ]
+}

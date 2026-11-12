@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-02",
+  "date": "2026-11-12",
   "scope": "DE",
   "title": "Germany",
   "eventIds": [
-    "sample-berlin-overview"
+    "ev-e340b394aeec",
+    "ev-a8b147d5880c",
+    "ev-7dd5e24b3f5e",
+    "ev-30e88d4ba835"
   ]
 }
