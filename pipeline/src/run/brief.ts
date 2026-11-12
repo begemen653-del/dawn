@@ -16,6 +16,7 @@ import {
 } from "../schema";
 import { readArticle } from "../sources/article-text";
 import { PoliteFetcher } from "../sources/http";
+import { mergeDuplicates } from "./dedupe";
 import { writeJson } from "./write";
 
 export interface BriefOptions {
@@ -175,9 +176,11 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
   }
   log(`AI wrote ${stories.size} stories; ${dropped.length} dropped${budgetHit ? "; budget reached" : ""}`);
 
-  const chapters = finalChapters(options.chapters, stories);
+  const deduped = mergeDuplicates(options.chapters, stories);
+  if (deduped.merged > 0) log(`Merged ${deduped.merged} repeated stories`);
+  const chapters = finalChapters(deduped.chapters, deduped.stories);
   const used = new Set(chapters.flatMap((c) => c.eventIds));
-  const published = [...stories.values()]
+  const published = [...deduped.stories.values()]
     .filter((s) => used.has(s.id))
     .sort((a, b) => b.importance - a.importance);
   const minStories = options.minStories ?? 10;
@@ -202,7 +205,7 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
   if (!status.ok) return { status, published: false, stories: published };
 
   const global = chapters.find((c) => c.scope === "global");
-  const top = (global?.eventIds ?? []).flatMap((id) => stories.get(id) ?? []);
+  const top = (global?.eventIds ?? []).flatMap((id) => deduped.stories.get(id) ?? []);
   const learn = await writeLearnCard(top.length > 0 ? top : published.slice(0, 6), options.llm);
 
   // Write stories and chapters first and the index last, so the app never sees an index that

@@ -24,6 +24,12 @@ const COUNTRY_BY_NUMERIC = new Map<string, Country>(
 /** Zoom (globe scale) from which the detailed 1:50m shapes replace the 1:110m ones. */
 const FINE_DETAIL_FROM = 1.6;
 
+/** A flight frame slower than this (ms) switches that flight to the light map, so slow phones never stutter. */
+const SLOW_FRAME_MS = 22;
+
+/** How long the settled map (labels, extra detail) fades in after the camera stops. */
+const SETTLE_FADE_MS = 250;
+
 export interface GlobeFocus {
   /** Where on screen (CSS px) the story's location should sit, between the overlays. */
   readonly x: number;
@@ -163,6 +169,8 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
     const cache = document.createElement("canvas");
     const cacheContext = cache.getContext("2d");
     let cacheKey = "";
+    // Flights draw the detailed map when zoomed in, unless this device proves too slow for it.
+    let lightFlight: object | null = null;
 
     const updateCamera = (now: number, dt: number) => {
       const active = flightRef.current;
@@ -191,14 +199,16 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       const r = radius * cam.k;
       const center: [number, number] = [cam.lon, cam.lat];
       const current = sceneRef.current;
-      const moving = flightRef.current !== null || current === null;
+      const flight = flightRef.current;
+      const moving = flight !== null || current === null;
+      const light = flight === null || lightFlight === flight.flight;
 
       const projection = geoOrthographic()
         .translate([cx, cy])
         .scale(r)
         .rotate([-cam.lon, -cam.lat])
         .clipAngle(90)
-        .precision(moving ? 0.9 : 0.6);
+        .precision(moving && light ? 0.9 : 0.6);
 
       if (now - sunUpdatedAt > 1000) {
         sun = subsolarPoint(new Date());
@@ -208,8 +218,11 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, width, height);
 
+      const fadeIn = reduced ? 1 : Math.min(1, (now - holdStartRef.current) / SETTLE_FADE_MS);
       if (moving || !cacheContext) {
-        drawMap(ctx, false);
+        const t0 = performance.now();
+        drawMap(ctx, false, !light);
+        if (flight && !light && performance.now() - t0 > SLOW_FRAME_MS) lightFlight = flight.flight;
       } else {
         const key = [
           cacheVersionRef.current,
@@ -228,17 +241,21 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
           cache.height = canvas.height;
           cacheContext.setTransform(dpr, 0, 0, dpr, 0, 0);
           cacheContext.clearRect(0, 0, width, height);
-          drawMap(cacheContext, true);
+          drawMap(cacheContext, true, true);
           cacheKey = key;
         }
+        // Just after landing, fade the settled map in over the flight's last frame instead of popping.
+        if (fadeIn < 1) drawMap(ctx, false, cam.k >= FINE_DETAIL_FROM);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.globalAlpha = fadeIn;
         ctx.drawImage(cache, 0, 0);
+        ctx.globalAlpha = 1;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
       if (current) drawLive(current, now);
 
       /** Everything that only changes when the camera moves: sea, land, night, highlights, labels. */
-      function drawMap(g: CanvasRenderingContext2D, settled: boolean) {
+      function drawMap(g: CanvasRenderingContext2D, settled: boolean, allowFine: boolean) {
         const path = geoPath(projection, g);
 
         // Water, very slightly lit from the upper left.
@@ -256,7 +273,7 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         g.lineWidth = 0.6;
         g.stroke();
 
-        const detailed = settled && cam.k >= FINE_DETAIL_FROM && fine !== null;
+        const detailed = allowFine && cam.k >= FINE_DETAIL_FROM && fine !== null;
         const world = detailed ? fine : (coarse ?? fine);
         // Angular radius of the part of the globe that is on screen, to skip everything else.
         const farthest = Math.max(
