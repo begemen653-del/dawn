@@ -82,6 +82,20 @@ describe("grounding check", () => {
     expect(ok("Officials said Smithson and Okonkwo of the Ministry will visit.")).toBe(false);
   });
 
+  it("does not count nationalities, common institution words, curly apostrophes or spaced thousands", () => {
+    const ok = (whyItMatters: string, text = evidence.text) =>
+      checkGrounding(draft({ whyItMatters }), { ...evidence, text }).ok;
+    // Seen as false drops in the 2026-11-12 full run.
+    expect(ok("The Estonian and Israeli Ministers met American and Kuwaiti envoys.")).toBe(true);
+    expect(ok("The World Bank and the Basketball Federation backed the Olympic Games bid.")).toBe(true);
+    expect(ok("Yemen’s Saudi‑led coalition and the Prize-winning Academy reacted.")).toBe(true);
+    expect(ok("Ships near the Strait of Hormuz were delayed.")).toBe(true);
+    expect(ok("About 120,000 people marched.", `${evidence.text} Rund 120 000 Menschen.`)).toBe(true);
+    expect(ok("About 2,500 people marched.", `${evidence.text} 2.5 thousand people.`)).toBe(true);
+    // Real names are still checked.
+    expect(ok("Officials said Smithson and Okonkwo of the World Bank will visit.")).toBe(false);
+  });
+
   it("also checks Go deeper content", () => {
     const deeper = {
       background: "It began in 1998.",
