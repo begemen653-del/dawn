@@ -1,12 +1,12 @@
 name: Nightly brief
 
 on:
-  # 04:30 Europe/Berlin. GitHub cron is UTC and has no time zones, so both
-  # entries run; the "Check Berlin time" step skips the one that isn't 04:xx in Berlin
-  # (CET in winter = UTC+1, CEST in summer = UTC+2).
+  # Aimed at 04:30 Europe/Berlin. GitHub cron is UTC and often starts hours late; the extra
+  # entries are backups, and the "Check Berlin time" step makes sure one brief is built a day.
   schedule:
     - cron: "30 2 * * *"
     - cron: "30 3 * * *"
+    - cron: "30 6 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -30,19 +30,27 @@ jobs:
     env:
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
     steps:
+      # GitHub often starts scheduled jobs hours late, so instead of demanding 04:xx this runs
+      # whenever it is past 04:00 in Berlin and today's brief isn't on main yet. Later triggers
+      # on the same day then find the new brief and skip.
+      - uses: actions/checkout@v7
+
       - name: Check Berlin time
         id: gate
         run: |
-          hour=$(TZ=Europe/Berlin date +%H)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$hour" != "04" ]; then
+          hour=$(TZ=Europe/Berlin date +%-H)
+          today=$(TZ=Europe/Berlin date +%F)
+          git fetch -q origin main
+          built=$(git show origin/main:web/public/data/status.json 2>/dev/null \
+            | grep -o '"date": *"[0-9-]*"' | grep -o '[0-9-]\{10\}' || true)
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$hour" -lt 4 ] || [ "$built" = "$today" ]; }; then
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping: it is ${hour}:xx in Berlin, not 04:xx."
+            echo "Skipping: Berlin time ${hour}:xx, brief on main is from ${built:-unknown}."
           else
+            # A queued run may have started from an older commit; build on the newest one.
+            git checkout -q origin/main
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
-
-      - uses: actions/checkout@v7
-        if: steps.gate.outputs.run == 'true'
 
       - uses: actions/setup-node@v7
         if: steps.gate.outputs.run == 'true'

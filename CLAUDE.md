@@ -32,6 +32,8 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 1. Owner adds the three keys as GitHub secrets (README "AI keys") before the 04:30 Berlin nightly run;
    then check the first nightly run on GitHub (Actions → Nightly brief).
 2. Start M5.
+3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
+   (free route, e.g. a Trusted Web Activity / Capacitor wrapper of the deployed app), not just "Add to Home screen".
 
 ## Handy commands
 
