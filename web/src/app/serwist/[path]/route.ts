@@ -15,10 +15,7 @@ export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } =
     { url: "/~offline", revision },
   ],
   // Serwist's default list plus the reading fonts (.woff2), so text looks the same offline.
-  globPatterns: [
-    ".next/static/**/*.{js,css,html,ico,png,svg,webp,json,webmanifest,woff2}",
-    "public/**/*",
-  ],
+  globPatterns: [".next/static/**/*.{js,css,html,ico,png,svg,webp,json,webmanifest,woff2}", "public/**/*"],
   globIgnores: ["public/data/**"],
   swSrc: "src/sw/sw.ts",
   useNativeEsbuild: true,
