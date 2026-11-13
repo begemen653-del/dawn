@@ -9,21 +9,35 @@ import { NewsPicker } from "@/components/picker/NewsPicker";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Surface } from "@/components/ui/Surface";
-import { BriefLoadError, loadLatestBrief, loadPlaylists, type LoadedBrief } from "@/lib/brief";
+import {
+  BriefLoadError,
+  briefAge,
+  downloadBrief,
+  loadPlaylists,
+  readSavedBrief,
+  type LoadedBrief,
+} from "@/lib/brief";
 import { buildChapters, buildSlides, type Chapter } from "@/lib/chapters";
 import { cn } from "@/lib/cn";
 import { usePreferences } from "@/lib/preferences";
 import { chapterOrder, isRegionId } from "@/lib/selection";
+import { useOnline } from "@/lib/use-online";
 import { usePreferencesHydration } from "@/lib/use-preferences-hydration";
 import { DeeperSheet } from "./DeeperSheet";
 import { StoryCard } from "./StoryCard";
+
+interface PlaylistState {
+  /** The brief these chapters belong to (its generatedAt). */
+  readonly brief: string;
+  readonly map: ReadonlyMap<string, Playlist>;
+  readonly tried: ReadonlySet<string>;
+}
+const NO_PLAYLISTS: PlaylistState = { brief: "", map: new Map(), tried: new Set() };
 
 type LoadState =
   | { readonly kind: "loading" }
   | { readonly kind: "error"; readonly message: string }
   | { readonly kind: "ready"; readonly brief: LoadedBrief };
-
-const updatedFormat = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit" });
 
 /** Scene for a chapter without stories: show the place itself. */
 function placeScene(chapter: Chapter): SceneDirective {
@@ -51,53 +65,113 @@ export function BriefScreen() {
   const [pickerOpen, setPickerOpen] = useState(false);
   const [deeper, setDeeper] = useState<StoryEvent | null>(null);
 
+  const [update, setUpdate] = useState<LoadedBrief | null>(null);
+  const online = useOnline();
+  // Read by the loader without restarting it: whether the reader has started, and what's on screen.
+  const startedReading = useRef(false);
+  const shown = useRef<LoadedBrief | null>(null);
+  const show = useCallback((brief: LoadedBrief) => {
+    shown.current = brief;
+    setLoad({ kind: "ready", brief });
+  }, []);
+
+  // 1. Show the brief saved on this phone at once. 2. Check online for a newer one and save it.
+  // A newer brief replaces the screen only if the reader hasn't started yet; otherwise it waits
+  // behind a "New brief" button. Checks again when the phone is back online or the app reopens.
+  const [checks, setChecks] = useState(0);
   useEffect(() => {
     const controller = new AbortController();
-    loadLatestBrief(controller.signal)
-      .then((brief) => {
-        setLoad({ kind: "ready", brief });
-      })
-      .catch((error: unknown) => {
+    void (async () => {
+      if (!shown.current) {
+        const saved = await readSavedBrief();
         if (controller.signal.aborted) return;
+        if (saved) show(saved);
+      }
+      const before = shown.current;
+      try {
+        const fresh = await downloadBrief(before?.index ?? null, controller.signal, {
+          onReady: (brief) => {
+            if (!shown.current) show(brief);
+          },
+        });
+        if (controller.signal.aborted || !fresh) return;
+        const sameBrief = shown.current?.index.generatedAt === fresh.index.generatedAt;
+        if (!before || sameBrief || !startedReading.current) {
+          show(fresh);
+          setUpdate(null);
+        } else {
+          setUpdate(fresh);
+        }
+      } catch (error: unknown) {
+        if (controller.signal.aborted || shown.current) return;
         const message =
           error instanceof BriefLoadError ? error.message : "Something went wrong loading the brief.";
         setLoad({ kind: "error", message });
-      });
+      }
+    })();
     return () => {
       controller.abort();
     };
+  }, [checks, show]);
+
+  useEffect(() => {
+    const recheck = () => {
+      if (document.visibilityState === "visible") setChecks((n) => n + 1);
+    };
+    window.addEventListener("online", recheck);
+    document.addEventListener("visibilitychange", recheck);
+    return () => {
+      window.removeEventListener("online", recheck);
+      document.removeEventListener("visibilitychange", recheck);
+    };
   }, []);
 
-  // Chapters are separate files; fetch only the ones the reader chose (and keep them).
-  const [playlists, setPlaylists] = useState<ReadonlyMap<string, Playlist>>(new Map());
+  // Chapters are separate files; load only the ones the reader chose (from the saved copy first).
+  // `tried` lists chapters whose file was asked for, loaded or not: until every chosen chapter is
+  // tried the brief shows "Loading", never a wrong "no news" card.
+  const briefId = load.kind === "ready" ? load.brief.index.generatedAt : "";
+  const [playlistState, setPlaylistState] = useState<PlaylistState>(NO_PLAYLISTS);
+  const current = playlistState.brief === briefId ? playlistState : NO_PLAYLISTS;
   const wantedKey = chapterOrder(selection).join(",");
+  const missingKey = wantedKey
+    .split(",")
+    .filter((scope) => !current.tried.has(scope))
+    .join(",");
+  const playlists = current.map;
   useEffect(() => {
-    if (load.kind !== "ready") return;
-    const missing = wantedKey.split(",").filter((scope) => !playlists.has(scope));
-    if (missing.length === 0) return;
+    if (load.kind !== "ready" || missingKey === "") return;
+    const missing = missingKey.split(",");
     const controller = new AbortController();
-    void loadPlaylists(load.brief.index, missing, controller.signal).then((loaded) => {
-      if (controller.signal.aborted || loaded.length === 0) return;
-      setPlaylists((current) => new Map([...current, ...loaded.map((p) => [p.scope, p] as const)]));
+    void loadPlaylists(load.brief, missing, controller.signal).then((loaded) => {
+      if (controller.signal.aborted) return;
+      setPlaylistState((prev) => {
+        const base = prev.brief === briefId ? prev : NO_PLAYLISTS;
+        return {
+          brief: briefId,
+          map: new Map([...base.map, ...loaded.map((p) => [p.scope, p] as const)]),
+          tried: new Set([...base.tried, ...missing]),
+        };
+      });
     });
     return () => {
       controller.abort();
     };
-  }, [load, wantedKey, playlists]);
+  }, [load, missingKey, briefId]);
+  const chaptersReady = load.kind === "ready" && missingKey === "";
 
   // First run: open "Choose your news" once preferences are known.
   const showPicker = pickerOpen || (hydrated && !onboarded);
 
   const chapters = useMemo(
     () =>
-      load.kind === "ready"
+      load.kind === "ready" && chaptersReady
         ? buildChapters(selection, {
             events: load.brief.events,
             playlists: [...playlists.values()],
             sample: load.brief.index.sample,
           })
         : [],
-    [load, selection, playlists],
+    [load, chaptersReady, selection, playlists],
   );
   const slides = useMemo(() => buildSlides(chapters), [chapters]);
 
@@ -114,6 +188,9 @@ export function BriefScreen() {
     },
     [selectionKey],
   );
+  useEffect(() => {
+    if (slideIndex > 0) startedReading.current = true;
+  }, [slideIndex]);
   const atEnd = slides.length > 0 && slideIndex >= slides.length;
   const slide = atEnd ? undefined : slides[Math.min(slideIndex, slides.length - 1)];
   const chapter = slide ? chapters[slide.chapterIndex] : undefined;
@@ -176,6 +253,22 @@ export function BriefScreen() {
       window.removeEventListener("resize", measure);
     };
   }, [load.kind]);
+
+  const showUpdate = () => {
+    if (!update) return;
+    show(update);
+    setUpdate(null);
+    startedReading.current = false;
+    setSlideIndex(0);
+  };
+
+  // "Today, 04:31" / "Yesterday, 04:31"; recomputed when the app is reopened (checks change).
+  const generatedAt = load.kind === "ready" ? load.brief.index.generatedAt : null;
+  const age = useMemo(
+    () => (generatedAt ? briefAge(generatedAt) : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- `checks` marks "the app was reopened"
+    [generatedAt, checks],
+  );
 
   const closePicker = () => {
     completeOnboarding();
@@ -253,8 +346,20 @@ export function BriefScreen() {
             </button>
           </div>
 
+          {update && (
+            <button
+              type="button"
+              onClick={showUpdate}
+              className="pointer-events-auto flex items-center gap-2 self-start rounded-full border border-accent/40 bg-ground/85 px-3.5 py-1.5 text-xs text-ink backdrop-blur"
+            >
+              <span className="size-1.5 rounded-full bg-accent" aria-hidden />
+              New brief ready
+              <span className="font-semibold text-accent">Show</span>
+            </button>
+          )}
+
           <div ref={cardRef} className="pointer-events-auto w-full lg:max-w-[25rem]">
-            {load.kind === "loading" && (
+            {(load.kind === "loading" || (load.kind === "ready" && !chaptersReady)) && (
               <div className="py-3 text-sm text-ink-muted" role="status">
                 <p>Loading today&apos;s brief…</p>
                 <p className="slow-load-hint mt-1 text-xs text-ink-faint">
@@ -352,13 +457,11 @@ export function BriefScreen() {
 
           <div className="pointer-events-auto grid grid-cols-[1fr_auto_1fr] items-center gap-3">
             <p className="text-xs leading-tight text-ink-faint">
-              {load.kind === "ready" && (
+              {age && load.kind === "ready" && (
                 <>
-                  {load.brief.index.sample ? "Sample data" : "Updated"}
+                  {load.brief.index.sample ? "Sample data" : online ? "Updated" : "Offline · saved"}
                   <br />
-                  <span className="tabular-nums">
-                    {updatedFormat.format(new Date(load.brief.index.generatedAt))}
-                  </span>
+                  <span className={cn("tabular-nums", !age.fresh && "text-accent")}>{age.label}</span>
                 </>
               )}
             </p>

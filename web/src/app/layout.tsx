@@ -41,7 +41,17 @@ export default function RootLayout({ children }: { readonly children: ReactNode 
     <html lang="en" dir="ltr" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <FlagPolyfill />
-        <SerwistProvider swUrl="/serwist/sw.js">{children}</SerwistProvider>
+        {/* /sw.js is copied to the site root after the build (scripts/copy-sw.mjs) so it can look
+            after the whole app. Off during development, where saved copies would hide code changes. */}
+        {/* reloadOnOnline off: the brief screen checks for a new brief itself when the connection
+            returns, without throwing the reader out of the story they're on. */}
+        <SerwistProvider
+          swUrl="/sw.js"
+          disable={process.env.NODE_ENV !== "production"}
+          reloadOnOnline={false}
+        >
+          {children}
+        </SerwistProvider>
       </body>
     </html>
   );

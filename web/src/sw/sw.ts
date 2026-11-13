@@ -1,9 +1,10 @@
 /**
- * Service worker: precaches the app shell and keeps it working offline.
- * Caching of the latest brief JSON is added in Milestone 5.
+ * Service worker: precaches the app shell (pages, code, map shapes, fonts) so Dawn opens offline.
+ * The brief's JSON files under /data/ always go to the network: the app keeps its own saved copy
+ * (src/lib/brief.ts) and decides when to swap in a new one.
  */
 import { defaultCache } from "@serwist/turbopack/worker";
-import { Serwist, type PrecacheEntry, type SerwistGlobalConfig } from "serwist";
+import { NetworkOnly, Serwist, type PrecacheEntry, type SerwistGlobalConfig } from "serwist";
 
 declare global {
   interface WorkerGlobalScope extends SerwistGlobalConfig {
@@ -18,7 +19,13 @@ const serwist = new Serwist({
   skipWaiting: true,
   clientsClaim: true,
   navigationPreload: true,
-  runtimeCaching: defaultCache,
+  runtimeCaching: [
+    {
+      matcher: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith("/data/"),
+      handler: new NetworkOnly(),
+    },
+    ...defaultCache,
+  ],
   fallbacks: {
     entries: [
       {

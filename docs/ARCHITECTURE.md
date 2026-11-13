@@ -67,7 +67,25 @@ camera). Unknown types or keys are rejected, so the AI can never make the globe 
 
 - **TypeScript 6.0** (not 7.0): `typescript-eslint` does not support TS 7 yet, and lint must pass.
 - **ESLint 9.39** (not 10): `eslint-config-next` depends on React/import plugins that don't support ESLint 10 yet.
-- **Serwist** (`@serwist/turbopack`) generates the service worker at build time.
+- **Serwist** (`@serwist/turbopack`) generates the service worker at build time; `web/scripts/copy-sw.mjs`
+  copies it to `/sw.js` so it controls the whole site on any static host (no `Service-Worker-Allowed` header
+  needed). It is off in `next dev`.
+
+## Offline (Milestone 5)
+
+- **The app** (pages, code, CSS, reading fonts, map shapes, flag font, icons) is precached by the service
+  worker on first visit and opens without a connection.
+- **The brief** is kept out of the precache. The app saves it itself in Cache Storage (`web/src/lib/brief.ts`):
+  one cache per brief, named `dawn-brief:<generatedAt>`, holding `events.json`, every chapter file and
+  `index.json` (written last, so a cache without it is an unfinished download and is ignored). After a new
+  brief is fully saved, older ones are deleted, so only one day (~1.5 MB) is ever kept.
+- **On open**, the saved brief shows at once; the app then checks the network. A newer brief replaces the
+  screen only if the reader hasn't moved past the first story, otherwise a "New brief ready · Show" button
+  appears. It checks again when the connection returns or the app comes back to the foreground.
+- **Age**: the bottom-left label reads "Today, 04:31" / "Yesterday, 04:31" (yesterday and older in the warm
+  accent) and "Offline · saved" when the device has no connection.
+- Cache Storage needs https or localhost, so offline can't be tried on the phone over `npm run dev:phone`
+  (plain http); it works once the app is deployed (M8).
 - **Flag emojis**: Windows can't draw them, so a 78 KB self-hosted flag font (Twemoji, CC BY 4.0) loads only
   where needed (`web/public/fonts/`).
 - Fonts (Newsreader for headlines, Public Sans for everything else) are downloaded at build time by `next/font` and served from our own domain: no runtime

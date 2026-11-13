@@ -12,9 +12,11 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 - Everything must stay free. Never put API keys in chat, code or git; they live in `.env.local` (git-ignored)
   and GitHub secrets.
 
-## Status (2026-11-12)
+## Status (2026-11-13)
 
-- M1–M4 approved and pushed (M4 approved 2026-11-12). Next: M5 (offline caching / service worker).
+- M1–M4 approved and pushed (M4 approved 2026-11-12). M5 (offline) built 2026-11-13, committed locally, NOT pushed,
+  NOT yet approved; see docs/ARCHITECTURE.md "Offline". Also local: nightly gate fix (GitHub starts
+  scheduled runs ~6 h late, the old 04:xx-only gate skipped every night; now runs if past 04:00 and no brief today).
 - Keys are in `.env.local` (Gemini, Groq, OpenRouter) and must also be GitHub secrets for the nightly run.
   `npm run pipeline:check-ai` shows which models work.
 - Working models (checked 2026-11-03): gemini-3.5-flash-lite (often HTTP 503 "busy"), gemini-3.1-flash-lite,
@@ -29,9 +31,8 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 
 ## Next steps
 
-1. Owner adds the three keys as GitHub secrets (README "AI keys") before the 04:30 Berlin nightly run;
-   then check the first nightly run on GitHub (Actions → Nightly brief).
-2. Start M5.
+1. Owner approves M5, then push (also ships the nightly gate fix). Check the next nightly run on GitHub.
+2. Then M6 (MapLibre map, geo fixes).
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
    (free route, e.g. a Trusted Web Activity / Capacitor wrapper of the deployed app), not just "Add to Home screen".
 
