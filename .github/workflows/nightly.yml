@@ -26,7 +26,7 @@ jobs:
   brief:
     runs-on: ubuntu-latest
     # Reading ~1,600 articles plus paced AI calls on free tiers can take a while.
-    timeout-minutes: 75
+    timeout-minutes: 95
     env:
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
     steps:
@@ -48,7 +48,8 @@ jobs:
             echo "Skipping: Berlin time ${hour}:xx, brief on main is from ${built:-unknown}."
           else
             # A queued run may have started from an older commit; build on the newest one.
-            git checkout -q origin/main
+            # -B: stay on a real "main" branch (a bare "origin/main" checkout has no branch to push).
+            git checkout -q -B main origin/main
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -105,5 +106,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Nightly brief $(TZ=Europe/Berlin date +%F)"
-            git push
+            # Someone may have pushed while the brief was being built: put the brief on top, then push.
+            git pull -q --rebase origin main
+            git push origin HEAD:main
           fi
