@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "HR",
   "title": "Croatia",
-  "eventIds": [
-    "ev-91414678f6d4",
-    "ev-aae383394556",
-    "ev-1f376ac680df"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Croatia in the last 24 hours."
 }

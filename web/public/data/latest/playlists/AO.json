@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "AO",
   "title": "Angola",
-  "eventIds": [
-    "ev-c316d36e912a"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Angola in the last 24 hours."
 }

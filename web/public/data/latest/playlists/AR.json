@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "AR",
   "title": "Argentina",
-  "eventIds": [
-    "ev-e53766f09b10",
-    "ev-6e49634d8d00",
-    "ev-0c23ec394298"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Argentina in the last 24 hours."
 }

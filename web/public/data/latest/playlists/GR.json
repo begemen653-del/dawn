@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "GR",
   "title": "Greece",
-  "eventIds": [
-    "ev-2ea3ac03d6f7",
-    "ev-af039da0ece8"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Greece in the last 24 hours."
 }

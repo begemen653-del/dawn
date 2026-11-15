@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "PS",
   "title": "Palestine",
-  "eventIds": [
-    "ev-2f9ef7c5e2ff"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Palestine in the last 24 hours."
 }

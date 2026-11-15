@@ -1,13 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "ES",
   "title": "Spain",
-  "eventIds": [
-    "ev-d14ddb8e578d",
-    "ev-ed0c0025002f",
-    "ev-8015ad6346aa",
-    "ev-4a88e5917ff7",
-    "ev-c7f2c87e2ad2"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Spain in the last 24 hours."
 }

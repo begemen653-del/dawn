@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "HK",
   "title": "Hong Kong",
-  "eventIds": [
-    "ev-bd5b2c5ffb65",
-    "ev-2069704430ed",
-    "ev-09d352186dbb"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Hong Kong in the last 24 hours."
 }

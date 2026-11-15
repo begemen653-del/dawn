@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "NG",
   "title": "Nigeria",
-  "eventIds": [
-    "ev-ffcda7e89508",
-    "ev-abb5690d0308",
-    "ev-ea081bc141af",
-    "ev-6dc57d330604"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Nigeria in the last 24 hours."
 }

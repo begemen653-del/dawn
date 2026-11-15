@@ -1,13 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "PL",
   "title": "Poland",
-  "eventIds": [
-    "ev-2b9f2662ede9",
-    "ev-3e8312f84717",
-    "ev-2fadc4a32190",
-    "ev-30ee02df78c8",
-    "ev-f83d6be599a1"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Poland in the last 24 hours."
 }

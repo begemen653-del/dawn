@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "GN",
   "title": "Guinea",
-  "eventIds": [
-    "ev-0247e5b6ef3b"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Guinea in the last 24 hours."
 }

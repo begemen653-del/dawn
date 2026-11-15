@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "BG",
   "title": "Bulgaria",
-  "eventIds": [
-    "ev-7c25fdd0efba",
-    "ev-0dfe6f67f090",
-    "ev-512aa4bc24ca",
-    "ev-0ac4839be0d5"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Bulgaria in the last 24 hours."
 }

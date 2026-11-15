@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "CR",
   "title": "Costa Rica",
-  "eventIds": [
-    "ev-70583d15285d"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Costa Rica in the last 24 hours."
 }

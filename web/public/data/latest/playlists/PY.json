@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "PY",
   "title": "Paraguay",
-  "eventIds": [
-    "ev-9ee24df6c2b7",
-    "ev-84a79daae992",
-    "ev-822fc8c27fa5",
-    "ev-f0b76875e8da"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Paraguay in the last 24 hours."
 }

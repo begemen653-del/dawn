@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "CZ",
   "title": "Czech Republic",
-  "eventIds": [
-    "ev-0dd29fa68515",
-    "ev-bd6401093369",
-    "ev-b6081e81ec35",
-    "ev-822ed5254161"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Czech Republic in the last 24 hours."
 }

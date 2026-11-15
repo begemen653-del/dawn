@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "DO",
   "title": "Dominican Republic",
-  "eventIds": [
-    "ev-a6bdf022a3ad",
-    "ev-069bbd64c144"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Dominican Republic in the last 24 hours."
 }

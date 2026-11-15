@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "MY",
   "title": "Malaysia",
-  "eventIds": [
-    "ev-dd773c23fbd3",
-    "ev-af35adba8f44"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Malaysia in the last 24 hours."
 }

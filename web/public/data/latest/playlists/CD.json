@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "CD",
   "title": "DR Congo",
-  "eventIds": [
-    "ev-5d2fc7ed7279"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about DR Congo in the last 24 hours."
 }

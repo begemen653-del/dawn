@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "ID",
   "title": "Indonesia",
-  "eventIds": [
-    "ev-a5c10ff55647",
-    "ev-8a71ed0a3c68"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Indonesia in the last 24 hours."
 }

@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "GH",
   "title": "Ghana",
-  "eventIds": [
-    "ev-4411f5f7e639",
-    "ev-a056fc733e70",
-    "ev-595b47550abf",
-    "ev-62d30998abbd"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Ghana in the last 24 hours."
 }

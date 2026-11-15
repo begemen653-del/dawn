@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "EG",
   "title": "Egypt",
-  "eventIds": [
-    "ev-5cdd43ed2211"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Egypt in the last 24 hours."
 }

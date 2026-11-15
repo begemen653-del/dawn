@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "SC",
   "title": "Seychelles",
-  "eventIds": [
-    "ev-3c46c5847a77"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Seychelles in the last 24 hours."
 }

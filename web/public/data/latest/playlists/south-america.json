@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "south-america",
   "title": "South America",
   "eventIds": [
-    "ev-e53766f09b10",
-    "ev-44934c9c7c7b",
-    "ev-9ee24df6c2b7",
-    "ev-6e49634d8d00"
+    "ev-171f51410c15",
+    "ev-50d389db31de",
+    "ev-701454324ca3",
+    "ev-f132f131cd20"
   ]
 }

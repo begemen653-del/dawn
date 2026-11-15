@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "LV",
   "title": "Latvia",
-  "eventIds": [
-    "ev-4d4d6dc47794",
-    "ev-25c7871248d7"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Latvia in the last 24 hours."
 }

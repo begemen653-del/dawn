@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "NI",
   "title": "Nicaragua",
-  "eventIds": [
-    "ev-e87a3d9225d3",
-    "ev-1562fd1a1a80",
-    "ev-512587c77db5"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Nicaragua in the last 24 hours."
 }

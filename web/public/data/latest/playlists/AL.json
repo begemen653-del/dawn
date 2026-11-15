@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "AL",
   "title": "Albania",
-  "eventIds": [
-    "ev-2b67e7d875f3",
-    "ev-e80640ba94e4"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Albania in the last 24 hours."
 }

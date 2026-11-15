@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "BA",
   "title": "Bosnia and Herzegovina",
-  "eventIds": [
-    "ev-def35109d710",
-    "ev-7870aac58ea5"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Bosnia and Herzegovina in the last 24 hours."
 }

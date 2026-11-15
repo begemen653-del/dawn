@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "CH",
   "title": "Switzerland",
   "eventIds": [
-    "ev-ad449fb839db",
-    "ev-aef62a27509e"
+    "ev-237e5a67a689"
   ]
 }

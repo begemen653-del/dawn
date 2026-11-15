@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "AE",
   "title": "United Arab Emirates",
-  "eventIds": [
-    "ev-983a28cb2aab",
-    "ev-c2f89c18f0e5",
-    "ev-adf220ddff94"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about United Arab Emirates in the last 24 hours."
 }

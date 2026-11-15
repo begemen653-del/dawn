@@ -1,16 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "IN",
   "title": "India",
   "eventIds": [
-    "ev-444fb3a464fb",
-    "ev-b673375354e1",
-    "ev-9da3a588c4e3",
-    "ev-aa6005c3ff34",
-    "ev-96bbf4308188",
-    "ev-e8b0eedf8a23",
-    "ev-0ade33a00efd",
-    "ev-dc3cc34ed444"
+    "ev-7e1200eb2b4b",
+    "ev-6aad9a9bd888",
+    "ev-b1b7c2a60922"
   ]
 }

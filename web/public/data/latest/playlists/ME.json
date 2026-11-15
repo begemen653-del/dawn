@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "ME",
   "title": "Montenegro",
-  "eventIds": [
-    "ev-5cbbfce8bb08"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Montenegro in the last 24 hours."
 }

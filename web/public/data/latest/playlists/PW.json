@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "scope": "PW",
   "title": "Palau",
-  "eventIds": [
-    "ev-a0f3549565f9"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Palau in the last 24 hours."
 }
