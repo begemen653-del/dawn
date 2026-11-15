@@ -18,6 +18,8 @@ import { runBrief } from "./brief";
 import { runDry } from "./dry";
 import { runIngest } from "./ingest";
 
+/** When this run started; the AI step works against a time limit counted from here. */
+const STARTED_AT = Date.now();
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const WEB_DATA = join(ROOT, "web", "public", "data");
 const OUT_DIR = join(ROOT, "pipeline", "out");
@@ -122,6 +124,9 @@ async function main(): Promise<void> {
       outDir: WEB_DATA,
       cacheDir: CACHE_DIR,
       log,
+      // GitHub stops the job after 95 minutes and throws everything away; stop starting AI calls
+      // well before that so what's written gets published. DAWN_TIME_LIMIT_MIN overrides it.
+      deadline: STARTED_AT + Number(process.env.DAWN_TIME_LIMIT_MIN ?? 75) * 60_000,
       // DAWN_AI_MAX_EVENTS=40 runs a quick trial on the most important events only.
       ...(Number(process.env.DAWN_AI_MAX_EVENTS) > 0
         ? { maxEvents: Number(process.env.DAWN_AI_MAX_EVENTS) }

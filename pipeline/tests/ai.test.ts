@@ -334,6 +334,21 @@ describe("summarizeEvents with a mock model", () => {
     expect(story?.aiGenerated).toBe(true);
   });
 
+  it("stops starting AI calls once the time limit has passed", async () => {
+    const { events } = germanEvents();
+    const result = await summarizeEvents(events, new MockLlmProvider(), {
+      deep: new Set(),
+      texts: new Map(),
+      maxBatchTokens: 7000,
+      maxBatchSize: 1,
+      deadline: Date.now() - 1,
+    });
+    expect(result.timeUp).toBe(true);
+    expect(result.stories.size).toBe(0);
+    expect(result.dropped.map((d) => d.reason)).toEqual(events.map(() => "out of time"));
+    expect(dropKind("out of time")).toBe("out of time");
+  });
+
   it("renders the candidate places and countries for the model", () => {
     const { events } = germanEvents();
     const e = events[0];

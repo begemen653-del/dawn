@@ -33,6 +33,8 @@ export interface BriefOptions {
   readonly maxEvents?: number;
   /** Below this many stories the old brief is kept. */
   readonly minStories?: number;
+  /** No new AI call starts after this time (ms since 1970); the stories written so far are published. */
+  readonly deadline?: number;
   readonly log?: (message: string) => void;
 }
 
@@ -135,6 +137,7 @@ export function finalChapters(
 /** Groups a drop reason into a short, readable kind for the run status. */
 export function dropKind(reason: string): string {
   if (reason === "not a clear news event") return "not news";
+  if (reason === "out of time") return "out of time";
   if (/number|quote|name|date/i.test(reason) && /not (found|in)|unknown|invented/i.test(reason))
     return "failed the fact check";
   if (/place|source|invalid story/i.test(reason)) return "incomplete";
@@ -160,12 +163,14 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
   const texts =
     options.readTexts === false ? new Map<string, string>() : await readTexts(events, options.cacheDir, log);
 
-  const { stories, dropped, budgetHit } = await summarizeEvents(events, options.llm, {
+  const { stories, dropped, budgetHit, timeUp } = await summarizeEvents(events, options.llm, {
     ...DEFAULT_SUMMARIZE,
+    ...(options.deadline === undefined ? {} : { deadline: options.deadline }),
     deep: deepSet(options.chapters),
     texts,
     log,
   });
+  if (timeUp) warnings.push("Time limit reached: some lower-priority chapters have fewer stories today.");
   if (budgetHit) warnings.push("AI budget reached: some lower-priority chapters have fewer stories today.");
   for (const d of dropped) log(`Dropped ${d.id}: ${d.reason}`);
   if (dropped.length > 0) {

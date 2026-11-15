@@ -17,6 +17,8 @@ export interface SummarizeOptions {
   /** Max estimated input tokens per request. */
   readonly maxBatchTokens: number;
   readonly maxBatchSize: number;
+  /** Time (ms since 1970) after which no new AI call starts; what's written so far is kept. */
+  readonly deadline?: number;
   readonly log?: (message: string) => void;
 }
 
@@ -34,6 +36,8 @@ export interface SummarizeResult {
   readonly stories: Map<string, StoryEvent>;
   readonly dropped: { readonly id: string; readonly reason: string }[];
   readonly budgetHit: boolean;
+  /** The deadline passed before every event was written. */
+  readonly timeUp: boolean;
 }
 
 /** Up to 5 sources from different outlets: readable ones and hand-picked outlets first. */
@@ -198,6 +202,14 @@ export async function summarizeEvents(
   const inputs = events.map((e) => buildInput(e, options.deep.has(e.id), options.texts));
   const inputById = new Map(inputs.map((i) => [i.id, i]));
   let budgetHit = false;
+  let timeUp = false;
+  const outOfTime = () => {
+    if (!timeUp && options.deadline !== undefined && Date.now() > options.deadline) {
+      timeUp = true;
+      options.log?.("Time limit reached: keeping the stories written so far.");
+    }
+    return timeUp;
+  };
 
   const accept = (draft: StoryDraft): string | null => {
     const e = byId.get(draft.id);
@@ -219,6 +231,10 @@ export async function summarizeEvents(
   const retryAlone: { input: EventInput; problem: string }[] = [];
   const all = batches(inputs, options.maxBatchTokens, options.maxBatchSize);
   for (const [i, batch] of all.entries()) {
+    if (outOfTime()) {
+      for (const input of batch) dropped.push({ id: input.id, reason: "out of time" });
+      continue;
+    }
     try {
       const { value, provider } = await llm.generateJson(
         { system: SYSTEM_PROMPT, prompt: batchPrompt(batch), maxOutputTokens: outputTokens(batch) },
@@ -248,6 +264,10 @@ export async function summarizeEvents(
   }
 
   for (const { input, problem } of budgetHit ? [] : retryAlone) {
+    if (outOfTime()) {
+      dropped.push({ id: input.id, reason: "out of time" });
+      continue;
+    }
     try {
       const { value } = await llm.generateJson(
         {
@@ -268,5 +288,5 @@ export async function summarizeEvents(
       dropped.push({ id: input.id, reason: error instanceof Error ? error.message : String(error) });
     }
   }
-  return { stories, dropped, budgetHit };
+  return { stories, dropped, budgetHit, timeUp };
 }
