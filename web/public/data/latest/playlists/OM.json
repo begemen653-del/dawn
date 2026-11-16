@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "OM",
   "title": "Oman",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Oman in the last 24 hours."
+  "eventIds": [
+    "ev-3e1d85794a09",
+    "ev-faa879b8e1c2"
+  ]
 }

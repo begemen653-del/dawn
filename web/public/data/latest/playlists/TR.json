@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "TR",
   "title": "Türkiye (Turkey)",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Türkiye (Turkey) in the last 24 hours."
+  "eventIds": [
+    "ev-7e187aa52d5b",
+    "ev-4ec7c4382a7b",
+    "ev-a2d185530df7",
+    "ev-8c2a72e80f92",
+    "ev-382208cc966f",
+    "ev-cfd998d2a283",
+    "ev-a7ac8b6eae3d"
+  ]
 }

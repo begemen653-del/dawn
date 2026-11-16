@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "IQ",
   "title": "Iraq",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Iraq in the last 24 hours."
+  "eventIds": [
+    "ev-a9f2fdfd5c52",
+    "ev-41c7339bc420"
+  ]
 }

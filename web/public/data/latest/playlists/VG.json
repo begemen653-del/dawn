@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "VG",
   "title": "British Virgin Islands",
-  "eventIds": [],
-  "emptyReason": "Almost no news about British Virgin Islands in the last 24 hours."
+  "eventIds": [
+    "ev-8983fddd6227"
+  ]
 }

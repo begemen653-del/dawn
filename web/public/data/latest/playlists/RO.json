@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "RO",
   "title": "Romania",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Romania in the last 24 hours."
+  "eventIds": [
+    "ev-f999aceeba04",
+    "ev-8cda7b798c7a",
+    "ev-07e53ecfa821",
+    "ev-8ca2661388e6",
+    "ev-e969f7b23ec5"
+  ]
 }

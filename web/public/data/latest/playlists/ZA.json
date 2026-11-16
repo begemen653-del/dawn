@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "ZA",
   "title": "South Africa",
-  "eventIds": [],
-  "emptyReason": "Almost no news about South Africa in the last 24 hours."
+  "eventIds": [
+    "ev-13f279b92ba3",
+    "ev-6437d2cc014f",
+    "ev-4452b4ab51e7",
+    "ev-89db92c2ed9d"
+  ]
 }

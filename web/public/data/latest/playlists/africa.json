@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "africa",
   "title": "Africa",
   "eventIds": [
-    "ev-2c6ac254c901",
-    "ev-2f59669ebbef",
-    "ev-2d984bef0d41"
+    "ev-200d5ec855cb",
+    "ev-0566c77eb2e1",
+    "ev-30efb0fb3a99"
   ]
 }

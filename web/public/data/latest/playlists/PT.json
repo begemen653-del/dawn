@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "PT",
   "title": "Portugal",
   "eventIds": [
-    "ev-2c6ac254c901"
+    "ev-200d5ec855cb",
+    "ev-da7d90a30b74"
   ]
 }

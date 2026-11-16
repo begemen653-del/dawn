@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "TL",
   "title": "East Timor",
-  "eventIds": [],
-  "emptyReason": "Almost no news about East Timor in the last 24 hours."
+  "eventIds": [
+    "ev-ccbfa5bd21d6"
+  ]
 }

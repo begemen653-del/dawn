@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "MD",
   "title": "Moldova",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Moldova in the last 24 hours."
+  "eventIds": [
+    "ev-bcfb31ef99de",
+    "ev-a5f368733702"
+  ]
 }

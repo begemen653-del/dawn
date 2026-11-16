@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "ok": true,
   "mode": "live",
-  "date": "2026-11-15",
-  "startedAt": "2026-11-15T17:09:31.539Z",
-  "finishedAt": "2026-11-15T17:40:52.586Z",
+  "date": "2026-11-16",
+  "startedAt": "2026-11-16T09:58:42.654Z",
+  "finishedAt": "2026-11-16T10:45:18.547Z",
   "counts": {
-    "articles": 4559,
-    "events": 34,
+    "articles": 4656,
+    "events": 331,
     "playlists": 240
   },
   "warnings": [
-    "496 events dropped: 481 other, 8 failed the fact check, 5 bad AI format, 1 not news, 1 AI unavailable."
+    "90 events dropped: 61 failed the fact check, 28 not news, 1 incomplete."
   ],
   "errors": []
 }

@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "LB",
   "title": "Lebanon",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Lebanon in the last 24 hours."
+  "eventIds": [
+    "ev-804204b6f728",
+    "ev-ebe22712bca7",
+    "ev-ab032fb869e2"
+  ]
 }

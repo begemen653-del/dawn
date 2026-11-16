@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "DE",
   "title": "Germany",
   "eventIds": [
-    "ev-1d6b29aeaa5f",
-    "ev-237e5a67a689"
+    "ev-f5d12b964e08",
+    "ev-275e87f07735",
+    "ev-da3ab6015a4f",
+    "ev-9d2e216ef2c6",
+    "ev-aa4c4daf757c",
+    "ev-996308c3824e"
   ]
 }

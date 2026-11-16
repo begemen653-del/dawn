@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "TH",
   "title": "Thailand",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Thailand in the last 24 hours."
+  "eventIds": [
+    "ev-af08a0194ffa",
+    "ev-2ed68d28eb78"
+  ]
 }

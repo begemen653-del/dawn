@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "PE",
   "title": "Peru",
   "eventIds": [
-    "ev-50d389db31de"
+    "ev-16a03657ad29",
+    "ev-edb0c7a161bb",
+    "ev-9e55285f55f6"
   ]
 }

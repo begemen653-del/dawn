@@ -1,9 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "BE",
   "title": "Belgium",
   "eventIds": [
-    "ev-baba404295b9"
+    "ev-b4c4baf14d3e",
+    "ev-5d0e6970c656",
+    "ev-5e5a0ce21c15",
+    "ev-14797e8332b7",
+    "ev-cd78f8039c63"
   ]
 }

@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "DK",
   "title": "Denmark",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Denmark in the last 24 hours."
+  "eventIds": [
+    "ev-c846316ba40c",
+    "ev-6f145462755c",
+    "ev-d713f8ab94ee",
+    "ev-4c72edd2b8c5"
+  ]
 }

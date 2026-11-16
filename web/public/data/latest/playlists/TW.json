@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "TW",
   "title": "Taiwan",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Taiwan in the last 24 hours."
+  "eventIds": [
+    "ev-3cc29a6c13e2",
+    "ev-2b8d38176f32",
+    "ev-85417e1b17f7",
+    "ev-844fe8c418fb"
+  ]
 }

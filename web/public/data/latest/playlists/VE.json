@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "VE",
   "title": "Venezuela",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Venezuela in the last 24 hours."
+  "eventIds": [
+    "ev-a7ac8b6eae3d",
+    "ev-d44b7795a38c",
+    "ev-bfee29e5d86c",
+    "ev-3b6a793dcdd6",
+    "ev-7a032e43deba"
+  ]
 }

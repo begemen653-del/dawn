@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "MT",
   "title": "Malta",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Malta in the last 24 hours."
+  "eventIds": [
+    "ev-6c601e4c4353"
+  ]
 }

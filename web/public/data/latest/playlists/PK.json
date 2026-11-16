@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "PK",
   "title": "Pakistan",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Pakistan in the last 24 hours."
+  "eventIds": [
+    "ev-ad18473757ff",
+    "ev-319c5cf673a4",
+    "ev-b4cd03c3e4b2",
+    "ev-57ecd0314f56",
+    "ev-ff6f07d6a6af",
+    "ev-a816fbd67215",
+    "ev-fd4630cfeb27"
+  ]
 }

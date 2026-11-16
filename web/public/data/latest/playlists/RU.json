@@ -1,10 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "RU",
   "title": "Russia",
   "eventIds": [
-    "ev-82c1ca8ea6db",
-    "ev-ffc65d096f97"
+    "ev-e69a6068b7be",
+    "ev-b62c9cffd991",
+    "ev-4b12ea7f58b0",
+    "ev-1bd4091eea33",
+    "ev-f0d81535ec60"
   ]
 }

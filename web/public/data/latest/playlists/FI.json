@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "FI",
   "title": "Finland",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Finland in the last 24 hours."
+  "eventIds": [
+    "ev-03ea940ae6ae",
+    "ev-068227464cab"
+  ]
 }

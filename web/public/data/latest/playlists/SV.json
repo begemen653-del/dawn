@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "SV",
   "title": "El Salvador",
-  "eventIds": [],
-  "emptyReason": "Almost no news about El Salvador in the last 24 hours."
+  "eventIds": [
+    "ev-6d0914591cbd"
+  ]
 }

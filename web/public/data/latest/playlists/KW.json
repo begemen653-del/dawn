@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "KW",
   "title": "Kuwait",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Kuwait in the last 24 hours."
+  "eventIds": [
+    "ev-93f6fc44890b"
+  ]
 }

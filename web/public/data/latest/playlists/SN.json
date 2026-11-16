@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "SN",
   "title": "Senegal",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Senegal in the last 24 hours."
+  "eventIds": [
+    "ev-1c8bd261c71a",
+    "ev-e00b4f5fc23b",
+    "ev-eeaca5bb3bce"
+  ]
 }

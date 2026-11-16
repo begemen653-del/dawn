@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "NZ",
   "title": "New Zealand",
   "eventIds": [
-    "ev-7e1200eb2b4b"
+    "ev-155f9d8ef4eb",
+    "ev-d7eb624180f3",
+    "ev-77ce66d5b86d",
+    "ev-384e9a9efcfd"
   ]
 }

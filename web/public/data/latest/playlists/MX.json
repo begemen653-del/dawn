@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "MX",
   "title": "Mexico",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Mexico in the last 24 hours."
+  "eventIds": [
+    "ev-44cf2bee4835",
+    "ev-4490590347ce",
+    "ev-aa8b372b0491"
+  ]
 }

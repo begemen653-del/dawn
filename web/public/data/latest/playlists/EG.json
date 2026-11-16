@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "EG",
   "title": "Egypt",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Egypt in the last 24 hours."
+  "eventIds": [
+    "ev-0d134980fe28",
+    "ev-c1c2e19a9c7c",
+    "ev-c086066bebcc",
+    "ev-c2f796203c76",
+    "ev-4a3f98137be4",
+    "ev-3d1c216abf95",
+    "ev-dbdf12d340b7"
+  ]
 }

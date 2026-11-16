@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "KH",
   "title": "Cambodia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Cambodia in the last 24 hours."
+  "eventIds": [
+    "ev-4d267c5b7bc0",
+    "ev-095b65ab62d8",
+    "ev-4e1d05741ea7"
+  ]
 }

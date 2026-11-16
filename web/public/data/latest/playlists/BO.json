@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "BO",
   "title": "Bolivia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Bolivia in the last 24 hours."
+  "eventIds": [
+    "ev-bfee29e5d86c"
+  ]
 }

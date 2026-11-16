@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "SA",
   "title": "Saudi Arabia",
   "eventIds": [
-    "ev-05134c979723"
+    "ev-28ad31616df4",
+    "ev-6efa30ff3f45",
+    "ev-4e3fdc4c0f8e"
   ]
 }

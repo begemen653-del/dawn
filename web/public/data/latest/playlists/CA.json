@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "CA",
   "title": "Canada",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Canada in the last 24 hours."
+  "eventIds": [
+    "ev-4d267c5b7bc0",
+    "ev-1b4767a0f6a2",
+    "ev-e763f082dfa4",
+    "ev-13be02aa4da0"
+  ]
 }

@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "UG",
   "title": "Uganda",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Uganda in the last 24 hours."
+  "eventIds": [
+    "ev-ff6f07d6a6af"
+  ]
 }

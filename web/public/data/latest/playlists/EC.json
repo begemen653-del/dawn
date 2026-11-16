@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "EC",
   "title": "Ecuador",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Ecuador in the last 24 hours."
+  "eventIds": [
+    "ev-f3604f5abd86",
+    "ev-6d0914591cbd",
+    "ev-ff78c59edc51",
+    "ev-ec5aeff4cfda"
+  ]
 }

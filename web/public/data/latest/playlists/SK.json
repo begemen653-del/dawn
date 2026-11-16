@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "SK",
   "title": "Slovakia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Slovakia in the last 24 hours."
+  "eventIds": [
+    "ev-5e582f2b820c",
+    "ev-aade412bbfff",
+    "ev-be5f66180d9c",
+    "ev-2d5c4675df80"
+  ]
 }

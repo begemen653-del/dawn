@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "scope": "LK",
   "title": "Sri Lanka",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Sri Lanka in the last 24 hours."
+  "eventIds": [
+    "ev-f21be393d1c1",
+    "ev-e90308d31eb9"
+  ]
 }
