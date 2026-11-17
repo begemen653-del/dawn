@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "VU",
   "title": "Vanuatu",
-  "eventIds": [
-    "ev-0731e87fe259"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Vanuatu in the last 24 hours."
 }

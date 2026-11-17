@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "GU",
   "title": "Guam",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Guam in the last 24 hours."
+  "eventIds": [
+    "ev-4ad571d7b2f4"
+  ]
 }

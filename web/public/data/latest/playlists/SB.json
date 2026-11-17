@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "SB",
   "title": "Solomon Islands",
-  "eventIds": [
-    "ev-3cc29a6c13e2"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Solomon Islands in the last 24 hours."
 }

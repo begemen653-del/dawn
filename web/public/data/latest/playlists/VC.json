@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "VC",
   "title": "Saint Vincent and the Grenadines",
-  "eventIds": [
-    "ev-6a0001e8a0f1"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Saint Vincent and the Grenadines in the last 24 hours."
 }

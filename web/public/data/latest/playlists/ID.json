@@ -1,14 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "ID",
   "title": "Indonesia",
   "eventIds": [
-    "ev-5cdebd40fbed",
-    "ev-8bbfe8128fb5",
-    "ev-59b361e25c58",
-    "ev-1b72f3bac6a1",
-    "ev-1c0abb22429d",
-    "ev-eaca0a94c263"
+    "ev-623ef9c2ec53",
+    "ev-bbdecf5480bc",
+    "ev-b45ea2bb41d9"
   ]
 }

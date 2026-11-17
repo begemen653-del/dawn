@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "LU",
   "title": "Luxembourg",
   "eventIds": [
-    "ev-75764eedec6f"
+    "ev-aa276e20686b",
+    "ev-c9bd464fc47a",
+    "ev-04c9db5c243f",
+    "ev-47be8065c983"
   ]
 }

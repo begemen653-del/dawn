@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "KE",
   "title": "Kenya",
   "eventIds": [
-    "ev-391bf921ef7d",
-    "ev-c12044ee302d",
-    "ev-4fcafdabc5e3",
-    "ev-09f3bc18e04b"
+    "ev-cbe5b69d0072",
+    "ev-40f78092f99e",
+    "ev-4bf64110d480"
   ]
 }

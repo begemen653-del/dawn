@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "TT",
   "title": "Trinidad and Tobago",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Trinidad and Tobago in the last 24 hours."
+  "eventIds": [
+    "ev-37370273a85f",
+    "ev-51e4c5abb2d3",
+    "ev-bb07bf0ca427"
+  ]
 }

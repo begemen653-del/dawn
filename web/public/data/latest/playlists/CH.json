@@ -1,10 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "CH",
   "title": "Switzerland",
   "eventIds": [
-    "ev-f950466b9e03",
-    "ev-5eb4e87cf0e1"
+    "ev-4f84a5d5babd",
+    "ev-7f81e41a5276",
+    "ev-0fdb901bc6da",
+    "ev-56b93b4035fd",
+    "ev-e1f7b1c75bc6"
   ]
 }

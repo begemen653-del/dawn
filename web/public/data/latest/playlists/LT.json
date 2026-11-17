@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "LT",
   "title": "Lithuania",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Lithuania in the last 24 hours."
+  "eventIds": [
+    "ev-242d5b12c010",
+    "ev-a50b2b6350e2"
+  ]
 }

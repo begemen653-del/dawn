@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "TG",
   "title": "Togo",
   "eventIds": [
-    "ev-30efb0fb3a99"
+    "ev-74815d54e161",
+    "ev-082d467b23b9"
   ]
 }

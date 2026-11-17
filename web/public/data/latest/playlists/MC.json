@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "MC",
   "title": "Monaco",
   "eventIds": [
-    "ev-946c991c3cfb",
-    "ev-026b6bfac0ee"
+    "ev-ebd68ef283e9"
   ]
 }

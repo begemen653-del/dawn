@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "TN",
   "title": "Tunisia",
   "eventIds": [
-    "ev-05809de20472",
-    "ev-44eed8d0b94c"
+    "ev-27608a09d99d",
+    "ev-84c8e803d7f4",
+    "ev-8b62bf8a03be"
   ]
 }

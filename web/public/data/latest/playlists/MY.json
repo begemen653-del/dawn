@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "MY",
   "title": "Malaysia",
   "eventIds": [
-    "ev-5cdebd40fbed",
-    "ev-4caac7a3b6df"
+    "ev-3174b36da505",
+    "ev-a8887c547504",
+    "ev-aa212f80ef94",
+    "ev-7dff0c8add26"
   ]
 }

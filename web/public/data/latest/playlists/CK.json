@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "CK",
   "title": "Cook Islands",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Cook Islands in the last 24 hours."
+  "eventIds": [
+    "ev-ac1ba0dfd75f",
+    "ev-caa8c75ef2dd"
+  ]
 }

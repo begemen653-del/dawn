@@ -1,11 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "NL",
   "title": "Netherlands",
   "eventIds": [
-    "ev-5c44d10517df",
-    "ev-566267fba27d",
-    "ev-20336b65a53f"
+    "ev-8f754fd0e0ea",
+    "ev-2f72560cc080",
+    "ev-d08eb17b6943",
+    "ev-26676edb5363",
+    "ev-ba8754b8b51c",
+    "ev-4e8a9da27383",
+    "ev-046d350a14d9"
   ]
 }

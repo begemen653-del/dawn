@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "MO",
   "title": "Macau",
   "eventIds": [
-    "ev-a6f1eae0ac47"
+    "ev-5aad559aa5c5",
+    "ev-eb6788844d5e",
+    "ev-f117bc0c4aaf"
   ]
 }

@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "ER",
   "title": "Eritrea",
-  "eventIds": [
-    "ev-314184f89331"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Eritrea in the last 24 hours."
 }

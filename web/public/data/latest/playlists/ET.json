@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "ET",
   "title": "Ethiopia",
   "eventIds": [
-    "ev-391bf921ef7d",
-    "ev-314184f89331"
+    "ev-cbe5b69d0072",
+    "ev-c52bc0ae2b01",
+    "ev-c080ae7b15e2",
+    "ev-e24693dbb9d4"
   ]
 }

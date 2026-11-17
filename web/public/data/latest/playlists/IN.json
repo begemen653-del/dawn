@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "scope": "IN",
   "title": "India",
   "eventIds": [
-    "ev-3778d3e5de18",
-    "ev-0d134980fe28",
-    "ev-633ff8b9b286",
-    "ev-48f3365b616d",
-    "ev-f898b47ae9fb",
-    "ev-e21001ccaa8d",
-    "ev-ae62db400416",
-    "ev-36476503ff3d"
+    "ev-a256976296e2",
+    "ev-dd4d57b2982c",
+    "ev-b890fbf02909",
+    "ev-1e3e6fa8194a",
+    "ev-6ee8df3d574d",
+    "ev-fc542d2048c1",
+    "ev-63db8bfd75bf",
+    "ev-368fd75be308"
   ]
 }
