@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "VA",
   "title": "Vatican City",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Vatican City in the last 24 hours."
+  "eventIds": [
+    "ev-58abf2777b2d",
+    "ev-d694d548c672"
+  ]
 }

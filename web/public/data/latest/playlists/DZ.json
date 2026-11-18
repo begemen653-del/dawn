@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "DZ",
   "title": "Algeria",
-  "eventIds": [
-    "ev-dbe9747d7b02",
-    "ev-27608a09d99d"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Algeria in the last 24 hours."
 }

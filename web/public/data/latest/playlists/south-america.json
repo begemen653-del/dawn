@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "south-america",
   "title": "South America",
   "eventIds": [
-    "ev-c4d926997825",
-    "ev-5d5a066a696e",
-    "ev-a6576a3ab710",
-    "ev-ee0292e2107b",
-    "ev-ae457b8d4f7e",
-    "ev-47e0cab3de02",
-    "ev-9b8688344467",
-    "ev-9188c70fa9b5"
+    "ev-6030dd54e9a2",
+    "ev-fab698e4f27c",
+    "ev-39c693119314",
+    "ev-52ec84c67f89",
+    "ev-7f4afa5f6c07",
+    "ev-cfa754ada549",
+    "ev-d7a3b341c56f"
   ]
 }

@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "KW",
   "title": "Kuwait",
   "eventIds": [
-    "ev-26f1bb069256"
+    "ev-bd539eddded8",
+    "ev-e53d77929239"
   ]
 }

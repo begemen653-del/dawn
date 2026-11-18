@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "CR",
   "title": "Costa Rica",
   "eventIds": [
-    "ev-7ce22ac81fd0"
+    "ev-a6588b39d1a2",
+    "ev-aa6591d085db"
   ]
 }

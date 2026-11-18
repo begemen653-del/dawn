@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "PF",
   "title": "French Polynesia",
-  "eventIds": [
-    "ev-caa8c75ef2dd"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about French Polynesia in the last 24 hours."
 }

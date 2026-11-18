@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "AE",
   "title": "United Arab Emirates",
   "eventIds": [
-    "ev-e95e4dd56631",
-    "ev-345d044cbc9a",
-    "ev-3282f1547983",
-    "ev-17f12efa9a24"
+    "ev-b3a341597da4",
+    "ev-03141cf6e98f",
+    "ev-d9130d6a59a2"
   ]
 }

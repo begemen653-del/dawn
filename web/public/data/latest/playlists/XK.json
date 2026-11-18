@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "XK",
   "title": "Kosovo",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Kosovo in the last 24 hours."
+  "eventIds": [
+    "ev-4515cf2d167f",
+    "ev-de5e279f68d8",
+    "ev-4f7ddd32ab1f",
+    "ev-ffff47522868",
+    "ev-c180bde2541a"
+  ]
 }

@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "GM",
   "title": "Gambia",
   "eventIds": [
-    "ev-2680f02cc957",
-    "ev-84c8e803d7f4",
-    "ev-4efce442aa8d",
-    "ev-e6f7bab9ddbc"
+    "ev-04c20e1445bf"
   ]
 }

@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "MR",
   "title": "Mauritania",
   "eventIds": [
-    "ev-ee7218ee7704",
-    "ev-2e4382407a5c",
-    "ev-e6f7bab9ddbc",
-    "ev-db7c4846f2af"
+    "ev-cdcc5bc6abd5"
   ]
 }

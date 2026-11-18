@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "BM",
   "title": "Bermuda",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Bermuda in the last 24 hours."
+  "eventIds": [
+    "ev-0b99acbdc474",
+    "ev-cca373c00de3",
+    "ev-91fec8db18ab",
+    "ev-13bafae44d0c",
+    "ev-aa6591d085db"
+  ]
 }

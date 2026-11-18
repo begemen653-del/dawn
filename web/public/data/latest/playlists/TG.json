@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "TG",
   "title": "Togo",
-  "eventIds": [
-    "ev-74815d54e161",
-    "ev-082d467b23b9"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Togo in the last 24 hours."
 }

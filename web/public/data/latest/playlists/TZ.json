@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "TZ",
   "title": "Tanzania",
   "eventIds": [
-    "ev-83071000acaa",
-    "ev-25040ce11103"
+    "ev-ae6479021c70",
+    "ev-02734dad15f2",
+    "ev-d781ce0e749b"
   ]
 }

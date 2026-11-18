@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "TO",
   "title": "Tonga",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Tonga in the last 24 hours."
+  "eventIds": [
+    "ev-2b7843aea78c"
+  ]
 }

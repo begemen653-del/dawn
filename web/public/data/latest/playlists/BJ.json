@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "BJ",
   "title": "Benin",
-  "eventIds": [
-    "ev-74815d54e161"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Benin in the last 24 hours."
 }

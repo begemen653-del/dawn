@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "JM",
   "title": "Jamaica",
-  "eventIds": [
-    "ev-951d1c0540ee",
-    "ev-aef35afe6540",
-    "ev-bb07bf0ca427",
-    "ev-ac016aacdd83"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Jamaica in the last 24 hours."
 }

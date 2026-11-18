@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "ST",
   "title": "São Tomé and Príncipe",
-  "eventIds": [
-    "ev-dc41a68f85de"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about São Tomé and Príncipe in the last 24 hours."
 }

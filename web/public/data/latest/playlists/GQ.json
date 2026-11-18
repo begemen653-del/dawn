@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "GQ",
   "title": "Equatorial Guinea",
-  "eventIds": [
-    "ev-72193b51590b"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Equatorial Guinea in the last 24 hours."
 }

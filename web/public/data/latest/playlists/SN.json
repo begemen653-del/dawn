@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "SN",
   "title": "Senegal",
   "eventIds": [
-    "ev-aa849e9fe8d9",
-    "ev-2037236c64ad",
-    "ev-1f9ea2b01e16",
-    "ev-7c783236a79d"
+    "ev-0c9235110507",
+    "ev-04c20e1445bf"
   ]
 }

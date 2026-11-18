@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "europe",
   "title": "Europe",
   "eventIds": [
-    "ev-3b4948d0fbba",
-    "ev-d722c19b89ce",
-    "ev-b4264bc3fe65",
-    "ev-7c6589b0c75b",
-    "ev-242d5b12c010"
+    "ev-85daa6f00aad",
+    "ev-17014ed89405",
+    "ev-5e9d06888653",
+    "ev-da9269156bf3",
+    "ev-a0f52346357f"
   ]
 }

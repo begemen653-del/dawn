@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "KG",
   "title": "Kyrgyzstan",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Kyrgyzstan in the last 24 hours."
+  "eventIds": [
+    "ev-5e14064b5fa2"
+  ]
 }

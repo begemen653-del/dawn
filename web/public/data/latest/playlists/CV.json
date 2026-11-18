@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "CV",
   "title": "Cape Verde",
-  "eventIds": [
-    "ev-c8a962f568a5"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Cape Verde in the last 24 hours."
 }

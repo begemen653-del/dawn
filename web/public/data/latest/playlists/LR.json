@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "LR",
   "title": "Liberia",
   "eventIds": [
-    "ev-951323387dd2"
+    "ev-b4fb31a454a3",
+    "ev-a5ef5b8eb404"
   ]
 }

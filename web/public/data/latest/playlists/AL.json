@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "AL",
   "title": "Albania",
   "eventIds": [
-    "ev-63aa3eaa00d6",
-    "ev-506d9e08b199",
-    "ev-290f030d0430"
+    "ev-4f7ddd32ab1f",
+    "ev-37963269d8a7"
   ]
 }

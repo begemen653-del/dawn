@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "QA",
   "title": "Qatar",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Qatar in the last 24 hours."
+  "eventIds": [
+    "ev-78653ab7029f"
+  ]
 }

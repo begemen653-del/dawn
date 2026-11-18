@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "PY",
   "title": "Paraguay",
   "eventIds": [
-    "ev-ee0292e2107b",
-    "ev-52fabaf38c3c"
+    "ev-e23d0bfc6393"
   ]
 }

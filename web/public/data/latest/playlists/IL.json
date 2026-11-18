@@ -1,13 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "IL",
   "title": "Israel",
   "eventIds": [
-    "ev-3f989656e486",
-    "ev-57cb1b656d42",
-    "ev-3fa2b83c57c8",
-    "ev-e3ebd890511d",
-    "ev-5ab2e060ee8d"
+    "ev-1c85b49af292",
+    "ev-a0f52346357f",
+    "ev-7dd21bc89499"
   ]
 }

@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "JO",
   "title": "Jordan",
   "eventIds": [
-    "ev-ccc7f23567fb"
+    "ev-3621d0cd7cb2",
+    "ev-073aa9a8cc01"
   ]
 }

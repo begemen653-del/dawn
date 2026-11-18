@@ -1,15 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "scope": "middle-east",
   "title": "Middle East",
   "eventIds": [
-    "ev-9ac0eabce611",
-    "ev-8d61141c52f4",
-    "ev-3f989656e486",
-    "ev-39fba1974148",
-    "ev-ccc7f23567fb",
-    "ev-8c4ef2cef422",
-    "ev-3ce05e58436a"
+    "ev-092a695bde27",
+    "ev-1c85b49af292",
+    "ev-a0f52346357f",
+    "ev-117e32c9e0ab"
   ]
 }
