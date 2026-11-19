@@ -5,6 +5,7 @@ import type { LlmProvider } from "../ai/provider";
 import { DEFAULT_SUMMARIZE, summarizeEvents } from "../ai/summarize";
 import type { ChapterPlan } from "../events/assign";
 import type { EventCluster } from "../events/types";
+import { addImages, type PhotoSource } from "../images/pick";
 import {
   DayIndex,
   EventStore,
@@ -35,6 +36,10 @@ export interface BriefOptions {
   readonly minStories?: number;
   /** No new AI call starts after this time (ms since 1970); the stories written so far are published. */
   readonly deadline?: number;
+  /** Licensed photos for the stories (Wikimedia Commons in live runs); none when left out. */
+  readonly images?: PhotoSource;
+  /** How long the photo search may take (ms); stories without photos still publish. */
+  readonly imageTimeMs?: number;
   readonly log?: (message: string) => void;
 }
 
@@ -185,7 +190,22 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
   if (deduped.merged > 0) log(`Merged ${deduped.merged} repeated stories`);
   const chapters = finalChapters(deduped.chapters, deduped.stories);
   const used = new Set(chapters.flatMap((c) => c.eventIds));
-  const published = [...deduped.stories.values()]
+  let storyMap: ReadonlyMap<string, StoryEvent> = deduped.stories;
+  if (options.images) {
+    const shown = new Map([...deduped.stories].filter(([id]) => used.has(id)));
+    const pictured = await addImages(shown, options.images, {
+      llm: options.llm,
+      log,
+      ...(options.imageTimeMs === undefined ? {} : { deadline: Date.now() + options.imageTimeMs }),
+    });
+    storyMap = new Map([...deduped.stories, ...pictured.stories]);
+    log(
+      `Photos: ${pictured.withImages} of ${shown.size} stories have licensed photos ` +
+        `(${pictured.eventPhotos} official photos of the event itself)`,
+    );
+    if (pictured.failures > 0) warnings.push(`${pictured.failures} image searches failed.`);
+  }
+  const published = [...storyMap.values()]
     .filter((s) => used.has(s.id))
     .sort((a, b) => b.importance - a.importance);
   const minStories = options.minStories ?? 10;
@@ -210,7 +230,7 @@ export async function runBrief(options: BriefOptions): Promise<BriefResult> {
   if (!status.ok) return { status, published: false, stories: published };
 
   const global = chapters.find((c) => c.scope === "global");
-  const top = (global?.eventIds ?? []).flatMap((id) => deduped.stories.get(id) ?? []);
+  const top = (global?.eventIds ?? []).flatMap((id) => storyMap.get(id) ?? []);
   const learn = await writeLearnCard(top.length > 0 ? top : published.slice(0, 6), options.llm);
 
   // Write stories and chapters first and the index last, so the app never sees an index that

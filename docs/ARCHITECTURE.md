@@ -105,6 +105,12 @@ camera). Unknown types or keys are rejected, so the AI can never make the globe 
     routes that draw themselves in after the camera arrives, and pins drawn as map layers so the map's own labels
     make room. The map code (~1 MB) loads only when used; its worker is copied to `public/maplibre/` by
     `scripts/copy-maplibre-worker.mjs` before `dev` and `build`.
+    Depth (Nov 2026, after "it looks flat"): relief shading from the free AWS "Terrain Tiles" elevation data
+    (raised 3D terrain was tried and dropped: it doubled downloads, so detail arrived late); the camera tilts as
+    it comes down (`pitchFor`: flat over the whole Earth, up to 40° at city level); the zoomed-out planet gets light and shadow (`.dawn-shade`, placed over the sphere
+    every frame); below zoom 5.5 continents, borders, country names and ~2,400 city names come from the
+    app's own data (`NAMES_UNTIL`), so the globe looks complete before any tile arrives; when zoomed out, so a fast flight never
+    shows an empty disc; outlines crossing the date line are unwrapped (`unwrapGeometry`) so no rings appear.
   - `CanvasGlobe.tsx`: the light 2D canvas globe (d3-geo) on bundled Natural Earth data in `web/public/geo/`
     (built by `npm run geo`). Used when there is no WebGL, when offline (map tiles need the network), when the map
     fails to load within 15 s, or after two flights below 22 fps; the choice sticks for the visit. `?globe=simple`

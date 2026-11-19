@@ -1,6 +1,6 @@
 "use client";
 
-import { getCountry } from "@dawn/config";
+import { COUNTRIES, getCountry } from "@dawn/config";
 import type { SceneDirective, SceneElement } from "@dawn/pipeline/schema";
 import type * as MapLibre from "maplibre-gl";
 import type { GeoJSONSource, Map as MapLibreMap, Marker } from "maplibre-gl";
@@ -8,16 +8,19 @@ import { useEffect, useRef } from "react";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { GlobeFocus } from "./CanvasGlobe";
 import { LABEL_LAYERS, mapStyle } from "./map-style";
-import { EMPTY, flightMs, paddingFor, partOfLine, sceneShapes } from "./scene-geo";
-import { loadWorld, type WorldData } from "./world";
+import { EMPTY, flightMs, paddingFor, partOfLine, sceneShapes, unwrapGeometry } from "./scene-geo";
+import { loadPlaces, loadWorld, type Place, type WorldData } from "./world";
 
 export interface MapGlobeProps {
   readonly scene: SceneDirective | null;
   readonly focus: GlobeFocus | null;
   readonly reducedMotion: boolean;
   readonly label: string;
-  /** The map can't run here (no WebGL, tiles unreachable) or runs too slowly: use the canvas globe. */
-  readonly onFail: (reason: string) => void;
+  /**
+   * The map can't run here (no WebGL, map code missing) or runs too slowly: use the canvas globe.
+   * `remember: false` = only for this page view (slowness and timeouts can be passing).
+   */
+  readonly onFail: (reason: string, remember?: boolean) => void;
 }
 
 const ACCENT = "#e3b36a";
@@ -30,8 +33,42 @@ const MAX_ZOOM = 9.5;
 /** Give up on the map if it hasn't drawn within this time (very slow device or network). */
 const LOAD_TIMEOUT_MS = 15_000;
 /** Average frame rate during flights below which the light canvas globe takes over. */
-const MIN_FLIGHT_FPS = 22;
+const MIN_FLIGHT_FPS = 15;
 const ARC_DRAW_MS = 1100;
+
+/**
+ * Camera tilt by zoom: straight down at the whole Earth, leaning in as it comes down to a city.
+ * Kept moderate: a steeper tilt shows more land up to the horizon, which all has to download.
+ */
+export function pitchFor(zoom: number): number {
+  if (zoom <= 3) return 0;
+  return Math.round(Math.min(40, (zoom - 3) * 11));
+}
+
+/**
+ * Light and shadow on the zoomed-out planet, like a lit sphere: a soft highlight towards the
+ * upper left and darker edges. Placed exactly over the globe every frame; gone when zoomed in.
+ */
+function updateShade(map: MapLibreMap, shade: HTMLDivElement) {
+  const zoom = map.getZoom();
+  const strength = Math.max(0, Math.min(1, (4.2 - zoom) / 1.2));
+  if (strength === 0) {
+    shade.style.opacity = "0";
+    return;
+  }
+  // MapLibre's globe: radius = world size / 2π / cos(latitude); the camera sits 1.5 screen heights
+  // away (its default 36.87° field of view).
+  const lat = Math.min(85, Math.abs(map.getCenter().lat));
+  const r = (512 * 2 ** zoom) / (2 * Math.PI) / Math.cos((lat * Math.PI) / 180);
+  const d = 1.5 * map.getCanvas().clientHeight;
+  // Apparent radius of a sphere of radius r seen from distance d + r with focal length d.
+  const radius = d * Math.tan(Math.asin(Math.min(0.999, r / (d + r))));
+  const c = map.project(map.getCenter());
+  shade.style.opacity = String(strength);
+  shade.style.width = `${radius * 2}px`;
+  shade.style.height = `${radius * 2}px`;
+  shade.style.transform = `translate(${c.x - radius}px, ${c.y - radius}px)`;
+}
 
 /**
  * The full globe (MapLibre GL, WebGL): real map tiles, deep zoom down to city level, borders
@@ -40,6 +77,7 @@ const ARC_DRAW_MS = 1100;
  */
 export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlobeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const shadeRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const readyRef = useRef(false);
   const worldRef = useRef<WorldData | null>(null);
@@ -95,8 +133,12 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
       }
       mapRef.current = map;
       timeout = window.setTimeout(() => {
-        if (!readyRef.current) onFailRef.current("the map took too long to load");
+        if (!readyRef.current && !document.hidden) onFailRef.current("the map took too long to load", false);
       }, LOAD_TIMEOUT_MS);
+
+      map.on("render", () => {
+        if (shadeRef.current) updateShade(map, shadeRef.current);
+      });
 
       map.on("error", (event) => {
         // Before the first draw any error (style, tiles, WebGL) means the map isn't usable here.
@@ -189,9 +231,22 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
         }
         // The credit starts as a small (i) button; tapping it shows the full line. (MapLibre only
         // folds it after the first drag, which never happens here because the map doesn't move by hand.)
-        container.querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");
+        // It reopens itself when the screen size changes (e.g. turning the phone), so fold it again then.
+        const foldCredit = () => {
+          const credit = container.querySelector(".maplibregl-ctrl-attrib");
+          credit?.classList.remove("maplibregl-compact-show");
+          credit?.removeAttribute("open");
+        };
+        foldCredit();
+        map.on("resize", foldCredit);
         readyRef.current = true;
         window.clearTimeout(timeout);
+        showBaseWorld();
+        loadPlaces()
+          .then((places) => {
+            if (!life.disposed) showBuiltInNames(places);
+          })
+          .catch(() => undefined);
         showScene(true);
       });
     })();
@@ -199,6 +254,7 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
     loadWorld("50m")
       .then((w) => {
         worldRef.current = w;
+        showBaseWorld();
         if (readyRef.current) drawShapes(false);
       })
       .catch(() => undefined);
@@ -216,6 +272,42 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
     // showScene/drawShapes only read refs.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  /** Built-in place names (countries, ~2,400 cities) for the zoomed-out globe: no download needed. */
+  function showBuiltInNames(places: readonly Place[]) {
+    const map = mapRef.current;
+    if (!map || !readyRef.current) return;
+    void map.getSource<GeoJSONSource>("names")?.setData({
+      type: "FeatureCollection",
+      features: [
+        ...COUNTRIES.map((c) => ({
+          type: "Feature" as const,
+          geometry: { type: "Point" as const, coordinates: [c.camera.lng, c.camera.lat] },
+          // Countries seen from far away (small camera zoom) are big: they win label overlaps.
+          properties: { kind: "country", name: c.name, rank: c.camera.zoom },
+        })),
+        ...places.map(([name, lon, lat, rank]) => ({
+          type: "Feature" as const,
+          geometry: { type: "Point" as const, coordinates: [lon, lat] },
+          properties: { kind: "city", name, rank },
+        })),
+      ],
+    });
+  }
+
+  /** Built-in land and borders under the tiles, so the zoomed-out globe is never a blank disc. */
+  function showBaseWorld() {
+    const map = mapRef.current;
+    const world = worldRef.current;
+    if (!map || !world) return;
+    void map.getSource<GeoJSONSource>("base")?.setData({
+      type: "FeatureCollection",
+      features: world.shapes.map((shape) => ({
+        ...shape.feature,
+        geometry: unwrapGeometry(shape.feature.geometry),
+      })),
+    });
+  }
 
   /** Highlights, areas and routes; routes draw themselves in once the camera has arrived. */
   function drawShapes(animateArcs: boolean) {
@@ -250,7 +342,7 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
   }
 
   /** Pins: dots and labels are map layers; only the main pin's slow pulse is an HTML element. */
-  function drawMarkers() {
+  function drawMarkers(pulse: boolean) {
     const map = mapRef.current;
     const MarkerClass = markerClassRef.current;
     for (const m of markersRef.current) m.remove();
@@ -273,7 +365,8 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
         properties: { label: el.label, primary: el.emphasis === "primary" },
       })),
     });
-    const main = pins.find((el) => el.emphasis === "primary");
+    // The pulse waits for the camera to arrive; mid-flight it would float at the planet's edge.
+    const main = pulse ? pins.find((el) => el.emphasis === "primary") : undefined;
     if (main) {
       // MapLibre positions the outer element with a transform, so the animation runs on an inner one.
       const holder = document.createElement("div");
@@ -292,7 +385,7 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
     const map = mapRef.current;
     const current = sceneRef.current;
     if (!map || !readyRef.current) return;
-    drawMarkers();
+    drawMarkers(reducedRef.current);
     if (!current) {
       drawShapes(false);
       return;
@@ -304,7 +397,8 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
       center: [current.camera.lng, current.camera.lat] as [number, number],
       zoom: Math.min(MAX_ZOOM, current.camera.zoom),
       bearing: 0,
-      pitch: 0,
+      // Close in, the camera tilts to look across the land instead of straight down.
+      pitch: pitchFor(Math.min(MAX_ZOOM, current.camera.zoom)),
       ...(padding ? { padding } : {}),
     };
     if (reducedRef.current) {
@@ -318,16 +412,29 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
     const from = map.getCenter();
     const duration = flightMs([from.lng, from.lat], target.center) * (first ? 0.8 : 1);
     let frames = 0;
+    let wasHidden = document.hidden;
     const count = () => frames++;
+    const onVisibility = () => {
+      wasHidden ||= document.hidden;
+    };
     map.on("render", count);
+    document.addEventListener("visibilitychange", onVisibility);
     const started = performance.now();
     map.once("moveend", () => {
       map.off("render", count);
-      if (sceneRef.current === current) drawShapes(true);
-      // Two slow flights in a row: this device is better off with the light canvas globe.
+      document.removeEventListener("visibilitychange", onVisibility);
+      if (sceneRef.current === current) {
+        drawShapes(true);
+        drawMarkers(true);
+      }
+      // Only a flight watched from start to end counts. A page that isn't on screen draws few or
+      // no frames (browsers pause it), which says nothing about the device's speed.
       const fps = (frames * 1000) / Math.max(1, performance.now() - started);
-      slowFlightsRef.current = fps < MIN_FLIGHT_FPS && !document.hidden ? slowFlightsRef.current + 1 : 0;
-      if (slowFlightsRef.current >= 2) onFailRef.current(`slow flights (${Math.round(fps)} fps)`);
+      const measured = !wasHidden && !document.hidden && frames >= 10;
+      if (!measured) return;
+      slowFlightsRef.current = fps < MIN_FLIGHT_FPS ? slowFlightsRef.current + 1 : 0;
+      // Three clearly stuttering flights in a row: this device is better off with the light globe.
+      if (slowFlightsRef.current >= 3) onFailRef.current(`slow flights (${Math.round(fps)} fps)`, false);
     });
     map.flyTo({ ...target, duration, curve: 1.5, essential: true });
   }
@@ -352,5 +459,10 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
     });
   }, [focus, reducedMotion]);
 
-  return <div ref={containerRef} role="img" aria-label={label} className="dawn-map h-full w-full" />;
+  return (
+    <div className="relative h-full w-full overflow-hidden">
+      <div ref={containerRef} role="img" aria-label={label} className="dawn-map h-full w-full" />
+      <div ref={shadeRef} aria-hidden className="dawn-shade" />
+    </div>
+  );
 }

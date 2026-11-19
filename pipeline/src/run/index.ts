@@ -14,6 +14,7 @@ import { MockLlmProvider } from "../ai/mock";
 import type { LlmProvider } from "../ai/provider";
 import { DEFAULT_GDELT_OPTIONS, GdeltSource } from "../sources/gdelt";
 import { RssSource } from "../sources/rss";
+import { CommonsImages } from "../images/commons";
 import { runBrief } from "./brief";
 import { runDry } from "./dry";
 import { runIngest } from "./ingest";
@@ -127,6 +128,9 @@ async function main(): Promise<void> {
       // GitHub stops the job after 95 minutes and throws everything away; stop starting AI calls
       // well before that so what's written gets published. DAWN_TIME_LIMIT_MIN overrides it.
       deadline: STARTED_AT + Number(process.env.DAWN_TIME_LIMIT_MIN ?? 75) * 60_000,
+      // Licensed photos from Wikimedia Commons, searched for at most 10 minutes after the AI step.
+      images: new CommonsImages({ cacheDir: CACHE_DIR }),
+      imageTimeMs: 10 * 60_000,
       // DAWN_AI_MAX_EVENTS=40 runs a quick trial on the most important events only.
       ...(Number(process.env.DAWN_AI_MAX_EVENTS) > 0
         ? { maxEvents: Number(process.env.DAWN_AI_MAX_EVENTS) }

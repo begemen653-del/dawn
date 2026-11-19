@@ -35,6 +35,30 @@ export function greatCircle(from: readonly [number, number], to: readonly [numbe
   return points;
 }
 
+function unwrapRing(ring: readonly number[][]): [number, number][] {
+  const out: [number, number][] = [];
+  for (const [lon = 0, lat = 0] of ring) {
+    const prev = out.at(-1);
+    let x = lon;
+    if (prev) while (x - prev[0] > 180) x -= 360;
+    if (prev) while (prev[0] - x > 180) x += 360;
+    out.push([x, lat]);
+  }
+  return out;
+}
+
+/**
+ * Countries crossing the date line (Russia, Fiji, the USA's Aleutians) jump from +180° to −180°
+ * inside one outline. A flat map hides that; on a globe the jump becomes a line right round the
+ * Earth. Keeping longitudes continuous (181° instead of −179°) removes those rings.
+ */
+export function unwrapGeometry(geometry: Geometry): Geometry {
+  if (geometry.type === "Polygon") return { ...geometry, coordinates: geometry.coordinates.map(unwrapRing) };
+  if (geometry.type === "MultiPolygon")
+    return { ...geometry, coordinates: geometry.coordinates.map((poly) => poly.map(unwrapRing)) };
+  return geometry;
+}
+
 /** The first `share` (0..1) of a line, for drawing a route in. */
 export function partOfLine(points: readonly [number, number][], share: number): [number, number][] {
   if (share >= 1) return [...points];
@@ -53,7 +77,7 @@ export function sceneShapes(scene: SceneDirective | null, world: WorldData | nul
       if (shape)
         fills.push({
           type: "Feature",
-          geometry: shape.feature.geometry,
+          geometry: unwrapGeometry(shape.feature.geometry),
           properties: { tone: el.tone, kind: "country" },
         });
     } else if (el.type === "area") {

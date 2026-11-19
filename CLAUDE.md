@@ -14,7 +14,12 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 
 ## Status (2026-11-19)
 
-- M1–M6 approved and pushed (M5 offline 2026-11-13; M6 globe 2026-11-19). Next: M7 (images).
+- M1–M7 approved and pushed (M5 offline 2026-11-13; M6 globe 2026-11-19; M7 photos 2026-11-19).
+- M7 (docs/IMAGES.md): official event photos (Kremlin, White House, EU, US gov… on Commons) + place photos,
+  AI keeps only fitting ones, else no photo. Also: Play button plays the brief; no false "slow" fallback.
+  Long flights: no 3D terrain (too many DEM downloads), pitch ≤ 40°, built-in borders + names below zoom 5.5
+  (`NAMES_UNTIL`) so the globe is never bare while tiles load. Owner confirmed it looks good on the phone.
+  Open questions for the owner in docs/IMAGES.md (hotlinking, contact in User-Agent).
 - M6: MapLibre globe on OpenFreeMap tiles (`globe/MapGlobe.tsx`,
   canvas globe kept as fallback, `?globe=simple`), gazetteer pins (`pipeline/src/geo/`). Nightlies 16–19 Nov ran fine.
   Pipeline pin fixes show from the next nightly brief.
@@ -38,8 +43,9 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 
 ## Next steps
 
-1. M7 (licensed images). Next.js updated to 16.4.6 on 2026-11-19 (npm audit clean).
-2. Check the next nightly brief pins NYC (not NY State) and has headline cities.
+1. Check the next nightly brief: photos added (log line "Photo check: …"), NYC pinned (not NY State),
+   headline cities. Next.js 16.4.6 (2026-11-19).
+2. Start M8 when the owner says so.
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
    (free route, e.g. a Trusted Web Activity / Capacitor wrapper of the deployed app), not just "Add to Home screen".
 

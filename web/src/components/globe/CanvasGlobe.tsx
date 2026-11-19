@@ -21,12 +21,6 @@ const COUNTRY_BY_NUMERIC = new Map<string, Country>(
   COUNTRIES.flatMap((c) => (c.isoNumeric ? [[c.isoNumeric, c] as const] : [])),
 );
 
-/** Zoom (globe scale) from which the detailed 1:50m shapes replace the 1:110m ones. */
-const FINE_DETAIL_FROM = 1.6;
-
-/** A flight frame slower than this (ms) switches that flight to the light map, so slow phones never stutter. */
-const SLOW_FRAME_MS = 22;
-
 /** How long the settled map (labels, extra detail) fades in after the camera stops. */
 const SETTLE_FADE_MS = 250;
 
@@ -165,12 +159,10 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
 
     // The detailed map is expensive (~20 ms on a PC), so while the camera holds still it is
     // drawn once into this hidden canvas and reused every frame. Only the pulse and routes
-    // are redrawn live. During flights the light 1:110m map is drawn directly instead.
+    // are redrawn live. During flights the detailed map is drawn directly, every frame.
     const cache = document.createElement("canvas");
     const cacheContext = cache.getContext("2d");
     let cacheKey = "";
-    // Flights draw the detailed map when zoomed in, unless this device proves too slow for it.
-    let lightFlight: object | null = null;
 
     const updateCamera = (now: number, dt: number) => {
       const active = flightRef.current;
@@ -201,14 +193,13 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
       const current = sceneRef.current;
       const flight = flightRef.current;
       const moving = flight !== null || current === null;
-      const light = flight === null || lightFlight === flight.flight;
 
       const projection = geoOrthographic()
         .translate([cx, cy])
         .scale(r)
         .rotate([-cam.lon, -cam.lat])
         .clipAngle(90)
-        .precision(moving && light ? 0.9 : 0.6);
+        .precision(0.6);
 
       if (now - sunUpdatedAt > 1000) {
         sun = subsolarPoint(new Date());
@@ -220,9 +211,8 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
 
       const fadeIn = reduced ? 1 : Math.min(1, (now - holdStartRef.current) / SETTLE_FADE_MS);
       if (moving || !cacheContext) {
-        const t0 = performance.now();
-        drawMap(ctx, false, !light);
-        if (flight && !light && performance.now() - t0 > SLOW_FRAME_MS) lightFlight = flight.flight;
+        // Always full detail, also while flying (the owner prefers detail over a lighter frame).
+        drawMap(ctx, false, true);
       } else {
         const key = [
           cacheVersionRef.current,
@@ -245,7 +235,7 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
           cacheKey = key;
         }
         // Just after landing, fade the settled map in over the flight's last frame instead of popping.
-        if (fadeIn < 1) drawMap(ctx, false, cam.k >= FINE_DETAIL_FROM);
+        if (fadeIn < 1) drawMap(ctx, false, true);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.globalAlpha = fadeIn;
         ctx.drawImage(cache, 0, 0);
@@ -273,7 +263,7 @@ export function CanvasGlobe({ scene, focus, reducedMotion, label }: CanvasGlobeP
         g.lineWidth = 0.6;
         g.stroke();
 
-        const detailed = allowFine && cam.k >= FINE_DETAIL_FROM && fine !== null;
+        const detailed = allowFine && fine !== null;
         const world = detailed ? fine : (coarse ?? fine);
         // Angular radius of the part of the globe that is on screen, to skip everything else.
         const farthest = Math.max(

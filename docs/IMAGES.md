@@ -1,7 +1,7 @@
 # Dawn — Image policy
 
-> Status: policy fixed in Milestone 1. Per-source terms are verified and filled in during **Milestone 7**.
-> Anything legally unclear will be raised with the owner instead of guessed.
+> Status: policy fixed in Milestone 1; Wikimedia Commons built and verified in **Milestone 7** (Nov 2026).
+> Anything legally unclear is raised with the owner instead of guessed (see "Open questions").
 
 ## The rule
 
@@ -51,16 +51,61 @@ Tests: `pipeline/tests/license.test.ts`.
 | Flag font (Windows only)     | Twemoji via country-flag-emoji-polyfill | Graphics CC BY 4.0 (Twitter, Inc.); code MIT |
 | App icons                    | Drawn for Dawn                          | Ours                                         |
 
-## Per-source terms (Milestone 7)
+## How photos are chosen (Milestone 7)
 
-| Source              | Terms link | Notes |
-| ------------------- | ---------- | ----- |
-| Wikimedia Commons   | TBD        |       |
-| Openverse           | TBD        |       |
-| NASA                | TBD        |       |
-| Copernicus/Sentinel | TBD        |       |
-| NASA GIBS           | TBD        |       |
-| US Gov / VOA        | TBD        |       |
-| EU Parliament       | TBD        |       |
-| EU Commission       | TBD        |       |
-| AI illustrations    | TBD        |       |
+Code: `pipeline/src/images/commons.ts` (one Commons file → allowed or rejected), `pipeline/src/images/pick.ts`
+(which photos go with which story), run after the AI step in `pipeline/src/run/brief.ts`. The owner's rule
+(Nov 2026): **real event photos where a free official source has one, a fitting photo where the AI confirms it,
+and no photo otherwise** (the globe already shows where the story happened).
+
+1. **Event photos (real photos of the event):** the newest Commons uploads naming the headline's people
+   ("Trump, Putin and Xi hold summit" → Trump Putin), taken within 3 days of the story, and **only from official
+   photographers** who publish under free licenses: the Kremlin ("President of Russia", CC BY 4.0), the White
+   House and other US government bodies (public domain), Ukraine's presidential office, EU institutions, NASA, …
+   (`OFFICIAL` in `commons.ts`). Random uploads claiming a free license are never used as event photos.
+2. **Place photos:** Commons **"Quality images"** geotagged within 12 km of the story's pin (searched by
+   position, not by name), or around the middle of a small country. No people, no nature close-ups, no
+   official event photos.
+3. **AI check:** the candidates' descriptions go to the AI with the story; it keeps at most 2 photos a reader
+   would clearly connect with the story, or none. Without the AI (quota used up), only an official recent photo
+   whose description names the headline's people is kept.
+4. **Labels:** a photo is shown as **"From the event"** only if the AI says it shows this event **and** it is an
+   official photo taken within 3 days. Everything else is **"Illustrative"** ("Illustrative image, not from the
+   event").
+5. **Always rejected:** licenses outside the allowlist (`verifyLicense`), files flagged non-free, files with extra
+   restrictions (personality, trademark, …), files without a named author unless public domain, small or upright
+   pictures.
+6. **Variety and fairness:** at most 2 photos per story; one photo on at most 3 stories.
+7. **Polite use:** one request at a time, at least 1.2 s apart, 60 s pause after "too many requests", `maxlag=5`;
+   place results cached 30 days, event searches 6 hours (`.cache/images`, kept between nightly runs); at most
+   10 minutes per run.
+
+In the app (`web/src/components/brief/Pictures.tsx`) each photo shows the whole picture (never cropped), its
+label, and the author and license as a caption; tapping it opens the full credit: author, license name linked
+to its terms, and a link to the file's Commons page. Photos already seen are kept offline for two weeks
+(`web/src/sw/sw.ts`).
+
+## Per-source terms
+
+| Source              | Terms checked                                                                                                                              | Status                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| Wikimedia Commons   | [Reusing content outside Wikimedia](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia), each file's own license | **In use.** Reuse allowed under each file's license with attribution; hotlinking is allowed but "not recommended" |
+| Wikimedia API       | [User-Agent policy](https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy), API usage guidelines             | In use; the policy asks for contact details in the User-Agent (see open questions)                                |
+| Openverse           | —                                                                                                                                          | Not used yet (anonymous limits are low; Commons covers places well)                                               |
+| NASA                | —                                                                                                                                          | Not used yet                                                                                                      |
+| Copernicus/Sentinel | —                                                                                                                                          | Not used yet                                                                                                      |
+| NASA GIBS           | —                                                                                                                                          | Not used yet                                                                                                      |
+| US Gov / VOA        | —                                                                                                                                          | Not used yet                                                                                                      |
+| EU Parliament       | —                                                                                                                                          | Not used yet                                                                                                      |
+| EU Commission       | —                                                                                                                                          | Not used yet                                                                                                      |
+| AI illustrations    | —                                                                                                                                          | Not used: no free provider found whose terms clearly allow this use                                               |
+| Elevation (globe)   | [Terrain Tiles attribution](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) (AWS Open Data)                              | In use: relief shading and 3D terrain; credited behind the (i) button                                             |
+| Map tiles (globe)   | [OpenFreeMap terms](https://openfreemap.org/tos/); © OpenMapTiles, © OpenStreetMap contributors                                            | In use (M6); credit behind the (i) button on the map                                                              |
+
+## Open questions for the owner
+
+- **Hotlinking:** Commons allows showing its thumbnails directly from its servers but calls it "not recommended"
+  (they prefer copies). Dawn's rule says hotlink, never re-host; copying Commons photos would also be allowed by
+  their licenses. Current choice: hotlink.
+- **Contact in the User-Agent:** Wikimedia asks automated tools to include a contact (website or email) and may
+  block tools without one. Dawn currently sends a generic name only.

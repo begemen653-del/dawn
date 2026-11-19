@@ -67,7 +67,9 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         uses: actions/cache@v6
         with:
-          path: .cache/http
+          path: |
+            .cache/http
+            .cache/images
           key: feeds-${{ github.run_id }}
           restore-keys: feeds-
 

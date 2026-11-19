@@ -107,6 +107,19 @@
   }
 }
 
+/* Light and shadow over the zoomed-out MapLibre globe (positioned by MapGlobe every frame). */
+.dawn-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 34% 28%, rgb(255 255 255 / 0.09), rgb(255 255 255 / 0) 42%),
+    radial-gradient(circle at 50% 50%, rgb(0 0 0 / 0) 55%, rgb(4 6 10 / 0.38) 86%, rgb(4 6 10 / 0.6) 100%);
+}
+
 /* Map credit (required by the tile licence), kept small and grey. */
 .dawn-map .maplibregl-ctrl-attrib {
   background: rgb(15 20 27 / 0.7);

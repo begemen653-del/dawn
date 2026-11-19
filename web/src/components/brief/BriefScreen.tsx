@@ -1,7 +1,7 @@
 "use client";
 
 import { getCountry, getRegion, type CameraView } from "@dawn/config";
-import type { Playlist, SceneDirective, StoryEvent } from "@dawn/pipeline/schema";
+import type { ImageAsset, Playlist, SceneDirective, StoryEvent } from "@dawn/pipeline/schema";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { GlobeFocus } from "@/components/globe/CanvasGlobe";
@@ -25,6 +25,7 @@ import { chapterOrder, isRegionId } from "@/lib/selection";
 import { useOnline } from "@/lib/use-online";
 import { usePreferencesHydration } from "@/lib/use-preferences-hydration";
 import { DeeperSheet } from "./DeeperSheet";
+import { PictureSheet, PictureStrip } from "./Pictures";
 import { StoryCard } from "./StoryCard";
 
 interface PlaylistState {
@@ -51,6 +52,13 @@ function placeScene(chapter: Chapter): SceneDirective {
   };
 }
 
+/** How long a story stays while playing: the camera's flight plus time to read it (~200 words a minute). */
+function storyDwellMs(story: StoryEvent | undefined): number {
+  if (!story) return 3500;
+  const words = `${story.headline} ${story.summary}`.split(/\s+/).length;
+  return Math.min(24_000, Math.max(8000, 2500 + (words / 3.3) * 1000));
+}
+
 /**
  * The brief: a full-screen globe with the story card floating on top and controls at the bottom.
  * Built for phones first; on wide screens the card moves to the top-left and pictures to the right.
@@ -65,6 +73,7 @@ export function BriefScreen() {
   const [load, setLoad] = useState<LoadState>({ kind: "loading" });
   const [pickerOpen, setPickerOpen] = useState(false);
   const [deeper, setDeeper] = useState<StoryEvent | null>(null);
+  const [picture, setPicture] = useState<ImageAsset | null>(null);
 
   const [update, setUpdate] = useState<LoadedBrief | null>(null);
   const online = useOnline();
@@ -214,7 +223,7 @@ export function BriefScreen() {
 
   // Keyboard: arrows move through the brief (when no sheet is open).
   useEffect(() => {
-    if (showPicker || deeper) return;
+    if (showPicker || deeper || picture) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") next();
       else if (e.key === "ArrowLeft") previous();
@@ -223,7 +232,47 @@ export function BriefScreen() {
     return () => {
       window.removeEventListener("keydown", onKey);
     };
-  }, [showPicker, deeper, next, previous]);
+  }, [showPicker, deeper, picture, next, previous]);
+
+  // Play: each story stays for its camera flight plus reading time, then the next one comes.
+  // Pauses while a sheet is open or the app is in the background; stops at the end.
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(1);
+  const progressRef = useRef(1);
+  const blocked = showPicker || deeper !== null || picture !== null;
+  const dwellMs = slide ? storyDwellMs(slide.story ?? undefined) : 0;
+  useEffect(() => {
+    // A new story starts its bar from zero while playing, and shows full when not.
+    progressRef.current = playing ? 0 : 1;
+    setProgress(progressRef.current);
+  }, [slideIndex, playing]);
+  useEffect(() => {
+    if (!playing || blocked || !slide) return;
+    let raf = 0;
+    let last = performance.now();
+    const tick = (now: number) => {
+      // Time only counts while the page is visible.
+      if (!document.hidden) progressRef.current += (now - last) / dwellMs;
+      last = now;
+      if (progressRef.current >= 1) {
+        progressRef.current = 1;
+        setProgress(1);
+        if (slideIndex + 1 >= slides.length) setPlaying(false);
+        next();
+        return;
+      }
+      setProgress(progressRef.current);
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => {
+      cancelAnimationFrame(raf);
+    };
+  }, [playing, blocked, slide, dwellMs, slideIndex, slides.length, next]);
+  const togglePlay = () => {
+    if (!playing && atEnd) setSlideIndex(0);
+    setPlaying((p) => !p);
+  };
 
   // Keep the story's location centered in the space between the card and the controls.
   const topRef = useRef<HTMLDivElement>(null);
@@ -295,7 +344,7 @@ export function BriefScreen() {
             <ProgressBar
               segments={slides.length}
               active={Math.min(slideIndex, slides.length - 1)}
-              progress={1}
+              progress={progress}
               label="Brief progress"
             />
           )}
@@ -440,19 +489,12 @@ export function BriefScreen() {
         <div className="flex-1" />
 
         <div ref={bottomRef} className="flex flex-col gap-3">
-          {slide?.story && (
+          {slide?.story && slide.story.images.length > 0 && (
             <aside
               aria-label="Pictures"
-              className="no-scrollbar pointer-events-auto -mx-3 flex snap-x gap-2 overflow-x-auto px-3 lg:absolute lg:top-28 lg:right-5 lg:mx-0 lg:w-48 lg:flex-col lg:px-0"
+              className="no-scrollbar pointer-events-auto -mx-3 flex snap-x gap-2 overflow-x-auto px-3 lg:absolute lg:top-28 lg:right-5 lg:mx-0 lg:w-52 lg:flex-col lg:px-0"
             >
-              {[0, 1].map((i) => (
-                <div
-                  key={i}
-                  className="grid h-16 w-28 shrink-0 snap-start place-items-center rounded-lg border border-dashed border-line-strong bg-ground/70 p-2 text-center text-[0.7rem] leading-snug text-ink-faint lg:h-28 lg:w-full"
-                >
-                  Licensed photo
-                </div>
-              ))}
+              <PictureStrip images={slide.story.images} onOpen={setPicture} />
             </aside>
           )}
 
@@ -479,12 +521,14 @@ export function BriefScreen() {
               </Button>
               <Button
                 variant="primary"
-                aria-label="Play brief (available in a later milestone)"
-                disabled
+                aria-label={playing ? "Pause brief" : "Play brief"}
+                aria-pressed={playing}
+                onClick={togglePlay}
+                disabled={slides.length === 0}
                 className="size-14 justify-center p-0"
               >
                 <svg viewBox="0 0 24 24" className="size-6" fill="currentColor" aria-hidden>
-                  <path d="M8 5v14l11-7z" />
+                  {playing ? <path d="M7 5h4v14H7zM13 5h4v14h-4z" /> : <path d="M8 5v14l11-7z" />}
                 </svg>
               </Button>
               <Button
@@ -504,6 +548,12 @@ export function BriefScreen() {
       </div>
 
       <NewsPicker open={showPicker} firstRun={!onboarded} onDone={closePicker} />
+      <PictureSheet
+        image={picture}
+        onClose={() => {
+          setPicture(null);
+        }}
+      />
       <DeeperSheet
         story={deeper}
         onClose={() => {

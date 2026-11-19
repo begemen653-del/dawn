@@ -31,7 +31,13 @@ function readFallback(): string | null {
   try {
     // ?globe=simple forces the light globe (handy for testing).
     if (new URLSearchParams(window.location.search).get("globe") === "simple") return "asked for";
-    return sessionStorage.getItem(FALLBACK_KEY);
+    const saved = sessionStorage.getItem(FALLBACK_KEY);
+    // Older versions also remembered slowness, which a hidden tab could fake; only real failures count.
+    if (saved?.startsWith("slow") || saved?.includes("too long")) {
+      sessionStorage.removeItem(FALLBACK_KEY);
+      return null;
+    }
+    return saved;
   } catch {
     return null;
   }
@@ -40,7 +46,8 @@ function readFallback(): string | null {
 /**
  * Picks the globe: the full MapLibre map (deep zoom, real place names) when the device has
  * WebGL and a connection, otherwise the light canvas globe, which works offline from bundled data.
- * If the map fails or stutters, it switches to the canvas globe for the rest of the visit.
+ * If the map can't run it switches to the canvas globe for the rest of the visit; if it clearly
+ * stutters, only for this page view.
  */
 export function Globe(props: GlobeProps) {
   const online = useOnline();
@@ -52,12 +59,14 @@ export function Globe(props: GlobeProps) {
     setFallback(readFallback() ?? (webglWorks() ? null : "no WebGL"));
   }, []);
 
-  const onFail = useCallback((reason: string) => {
+  const onFail = useCallback((reason: string, remember = true) => {
     console.info(`Dawn: using the simple globe (${reason}).`);
-    try {
-      sessionStorage.setItem(FALLBACK_KEY, reason);
-    } catch {
-      // Private mode: only this page view falls back.
+    if (remember) {
+      try {
+        sessionStorage.setItem(FALLBACK_KEY, reason);
+      } catch {
+        // Private mode: only this page view falls back.
+      }
     }
     setFallback(reason);
   }, []);

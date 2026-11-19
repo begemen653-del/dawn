@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { flightMs, greatCircle, paddingFor, partOfLine, sceneShapes } from "./scene-geo";
+import { pitchFor } from "./MapGlobe";
+import { flightMs, greatCircle, paddingFor, partOfLine, sceneShapes, unwrapGeometry } from "./scene-geo";
 import type { WorldData } from "./world";
 
 describe("map scene shapes", () => {
@@ -55,5 +56,28 @@ describe("map scene shapes", () => {
     );
     expect(shapes.fills.features.map((f) => String(f.properties?.kind))).toEqual(["country", "area"]);
     expect(shapes.arcs.features).toHaveLength(1);
+  });
+
+  it("keeps country outlines continuous across the date line", () => {
+    const chukotka = unwrapGeometry({
+      type: "Polygon",
+      coordinates: [
+        [
+          [179, 65],
+          [180, 66],
+          [-179, 66],
+          [-178, 65],
+          [179, 65],
+        ],
+      ],
+    });
+    const ring = chukotka.type === "Polygon" ? (chukotka.coordinates[0] ?? []) : [];
+    expect(ring.map((p) => p[0])).toEqual([179, 180, 181, 182, 179]);
+  });
+
+  it("tilts the camera only when it comes close", () => {
+    expect(pitchFor(1.5)).toBe(0);
+    expect(pitchFor(5)).toBe(22);
+    expect(pitchFor(9)).toBe(40);
   });
 });
