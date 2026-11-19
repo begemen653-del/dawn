@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T10:34:37.851Z",
+  "generatedAt": "2026-11-19T22:17:53.082Z",
   "events": [
     {
       "id": "ev-a162deb5fd02",
@@ -810,6 +810,302 @@
       }
     },
     {
+      "id": "ev-58a9770af1df",
+      "headline": "Italian journalist and writer Corrado Augias dies at 91",
+      "summary": "Corrado Augias, a prominent Italian journalist, writer, and television host, has died at the age of 91. Born in Rome in 1935, he had a long career with major Italian publications and hosted well-known cultural and investigative television programs.",
+      "whyItMatters": "His death marks the loss of a major figure in Italian cultural, journalistic, and television history.",
+      "topic": "culture",
+      "time": "2026-11-19T21:00:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Rome",
+          "at": [
+            12.4833,
+            41.9
+          ],
+          "country": "IT"
+        },
+        {
+          "name": "Paris",
+          "at": [
+            2.33333,
+            48.8667
+          ],
+          "country": "FR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "valledaostaglocal.it",
+          "title": "E' morto a 91 anni il giornalista e scrittore Corrado Augias",
+          "url": "https://valledaostaglocal.it/2026/11/19/leggi-notizia/argomenti/top-news-1/articolo/e-morto-a-91-anni-il-giornalista-e-scrittore-corrado-augias.html",
+          "publishedAt": "2026-11-19T12:00:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "cagliaripad.it",
+          "title": "Morto Corrado Augias, aveva 91 anni: addio al grande giornalista e intellettuale",
+          "url": "https://cagliaripad.it/681259/morto-corrado-augias-aveva-91-anni-addio-al-grande-giornalista-e-intellettuale",
+          "publishedAt": "2026-11-19T11:00:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "deejay.it",
+          "title": "Addio a Corrado Augias: il giornalista e scrittore aveva 91 anni",
+          "url": "https://deejay.it/articoli/corrado-augias-morte",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "secoloditalia.it",
+          "title": "È morto Corrado Augias, addio al giornalista e volto storico della Rai",
+          "url": "https://secoloditalia.it/2026/11/e-morto-corrado-augias-addio-al-giornalista-e-volto-storico-della-rai",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "today.it",
+          "title": "È morto Corrado Augias",
+          "url": "https://today.it/tv/news/e-morto-corrado-augias.html",
+          "publishedAt": "2026-11-19T11:00:00Z",
+          "language": "it"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 56,
+      "countries": [
+        "IT"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 12.4833,
+          "lat": 41.9,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IT",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              12.4833,
+              41.9
+            ],
+            "label": "Rome",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              2.33333,
+              48.8667
+            ],
+            "label": "Paris",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Augias built a long career working for major outlets such as L'Espresso, Panorama, and la Repubblica, and gained widespread fame for hosting thoughtful television programs like Telefono Giallo and La Torre di Babele.",
+        "keyPlayers": [
+          {
+            "name": "Corrado Augias",
+            "role": "Journalist, writer, and television host"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "26 January 1935",
+            "label": "Corrado Augias born in Rome"
+          },
+          {
+            "date": "19 November 2026",
+            "label": "Death of Corrado Augias at age 91"
+          }
+        ],
+        "simpler": "Corrado Augias, a very famous Italian journalist and television host who helped explain complex topics to the public, has died at 91."
+      }
+    },
+    {
+      "id": "ev-d7b7f3fa27bb",
+      "headline": "Thomas Markle deemed competent to face federal child abuse images case",
+      "summary": "An expert determined that Thomas Markle, the estranged father of the Duchess of Sussex, is mentally competent to face charges of possessing child sexual abuse material. Markle's defense lawyer did not contest the finding during a federal court appearance in Tampa, Florida.",
+      "whyItMatters": "The ruling allows the federal criminal case against the 82-year-old to move forward as legal proceedings continue.",
+      "topic": "society",
+      "time": "2026-11-19T22:05:18.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Tampa",
+          "at": [
+            -82.4584,
+            27.9475
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Sussex",
+          "at": [
+            -0.083333,
+            50.9167
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "California",
+          "at": [
+            -119.746,
+            36.17
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Thomas Markle, Meghan’s father, is competent to face child sex abuse images case",
+          "url": "https://theguardian.com/us-news/2026/nov/19/thomas-markle-mentally-competent",
+          "publishedAt": "2026-11-19T22:05:18.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "fox23.com",
+          "title": "Meghan Markle's father to face competency hearing in child sexual abuse material case",
+          "url": "https://fox23.com/news/nation-world/meghan-markles-duchess-of-sussex-father-thomas-to-face-mental-competency-hearing-in-child-sexual-abuse-material-case-tampa-florida-justice-department-fbi-agents-philippines-california",
+          "publishedAt": "2026-11-19T15:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "fox13news.com",
+          "title": "Meghan Markle's estranged father faces federal competency hearing in Tampa",
+          "url": "https://fox13news.com/news/meghan-markles-estranged-father-faces-federal-competency-hearing-tampa",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "mymotherlode.com",
+          "title": "Mental competency at issue in US criminal case against Meghan's father",
+          "url": "https://mymotherlode.com/news/state/11323094/mental-competency-at-issue-in-us-criminal-case-against-meghans-father.html",
+          "publishedAt": "2026-11-19T14:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "goskagit.com",
+          "title": "Thomas Markle, Meghan's father, is competent to face child sex abuse images case, expert says",
+          "url": "https://goskagit.com/news/nation/thomas-markle-meghans-father-is-competent-to-face-child-sex-abuse-images-case-expert-says/article_314df565-a725-54cd-b8e1-0a8badbdb84d.html",
+          "publishedAt": "2026-11-19T22:00:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 55.9,
+      "countries": [
+        "US",
+        "GB",
+        "PH"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -82.4584,
+          "lat": 27.9475,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "GB",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "PH",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -82.4584,
+              27.9475
+            ],
+            "label": "Tampa",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -0.083333,
+              50.9167
+            ],
+            "label": "Sussex",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -119.746,
+              36.17
+            ],
+            "label": "California",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The FBI investigated Markle after receiving reports in October about suspected material among his belongings in the Philippines, leading to a search of two storage units in California.",
+        "keyPlayers": [
+          {
+            "name": "Thomas Markle",
+            "role": "Defendant and estranged father of the Duchess of Sussex"
+          },
+          {
+            "name": "Dr Amie Gerodimos",
+            "role": "Mental health expert"
+          },
+          {
+            "name": "Lindsay S. Griffin",
+            "role": "Magistrate Judge"
+          }
+        ],
+        "whatNext": "The case will eventually shift from federal court in Tampa to a similar court in southern California.",
+        "timeline": [
+          {
+            "date": "6 November",
+            "label": "Markle arrested at a senior care center in Lakeland, Florida"
+          },
+          {
+            "date": "10 November",
+            "label": "Markle arrested again after cutting off his electronic ankle monitor"
+          },
+          {
+            "date": "19 November",
+            "label": "Deemed mentally competent during a hearing in Tampa"
+          }
+        ],
+        "simpler": "Thomas Markle, the father of Meghan, the Duchess of Sussex, was found mentally fit by an expert to face a criminal case in the US involving suspected illegal images."
+      }
+    },
+    {
       "id": "ev-a097f9f3e233",
       "headline": "Elon Musk says he feels pretty foolish over midterm election spending",
       "summary": "Billionaire Elon Musk stated during a conference appearance in Austin, Texas, that he feels pretty foolish for donating nearly half a billion dollars to back right-wing Republicans in recent U.S. midterm elections. Musk noted that his goal to have either the presidency, House, or Senate controlled by the opposing party failed, demonstrating that American elections are not solely decided by money.",
@@ -1101,6 +1397,136 @@
           }
         ],
         "simpler": "The United States and Venezuela signed an agreement to share intelligence and train together militarily, following leadership changes in Caracas."
+      }
+    },
+    {
+      "id": "ev-ec0949b63b7c",
+      "headline": "Susan Smith denied parole 32 years after drowning her sons",
+      "summary": "A South Carolina parole board has unanimously denied parole for Susan Smith, who is serving a life sentence for drowning her two young sons in 1994. Smith expressed remorse during the hearing, but the boys' father and the board opposed her release.",
+      "whyItMatters": "The high-profile case continues to evoke strong public emotion, with the board's decision ensuring that Smith remains in prison.",
+      "topic": "society",
+      "time": "2026-11-19T21:00:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "South Carolina",
+          "at": [
+            -80.9066,
+            33.8191
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Union County",
+          "at": [
+            -81.6332,
+            34.7001
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Susan Smith denied parole again 32 years after drowning her two sons",
+          "url": "https://bbc.co.uk/news/articles/ckdd1y09eqjmo",
+          "publishedAt": "2026-11-19T17:23:34.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "abc7news.com",
+          "title": "Susan Smith is denied parole again 32 years after drowning her sons in a South Carolina lake",
+          "url": "https://abc7news.com/post/susan-smith-is-denied-parole-32-years-drowning-sons-south-carolina-lake/20055722",
+          "publishedAt": "2026-11-19T18:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "nbcwashington.com",
+          "title": "Susan Smith denied parole again 32 years after drowning her sons",
+          "url": "https://nbcwashington.com/news/national-international/susan-smith-denied-parole-again-drowning-sons-south-carolina/4185631",
+          "publishedAt": "2026-11-19T19:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "ky3.com",
+          "title": "Susan Smith seeks parole again 32 years after drowning her sons in South Carolina",
+          "url": "https://ky3.com/2026/11/19/susan-smith-asks-parole-again-32-years-after-drowning-her-sons-south-carolina-lake",
+          "publishedAt": "2026-11-19T20:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wset.com",
+          "title": "LIVE: Susan Smith to seek parole again, 32 years after sons' murders in South Carolina",
+          "url": "https://wset.com/news/nation-world/susan-smith-second-parole-hearing-2026-south-carolina-sons-murder",
+          "publishedAt": "2026-11-19T17:00:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 53.6,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -80.9066,
+          "lat": 33.8191,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -80.9066,
+              33.8191
+            ],
+            "label": "South Carolina",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -81.6332,
+              34.7001
+            ],
+            "label": "Union County",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Susan Smith was convicted of murdering her 3-year-old and 14-month-old sons by strapping them into car seats and rolling her car into a lake in 1994.",
+        "keyPlayers": [
+          {
+            "name": "Susan Smith",
+            "role": "Inmate"
+          },
+          {
+            "name": "David Smith",
+            "role": "Father of the victims"
+          }
+        ],
+        "whatNext": "Smith can apply for parole again in two years.",
+        "timeline": [
+          {
+            "date": "1994",
+            "label": "Drowning of the two boys"
+          },
+          {
+            "date": "19 November 2026",
+            "label": "Second parole request denied by the board"
+          }
+        ],
+        "simpler": "A woman who killed her two young sons decades ago was refused early release by a parole board after objections from their father."
       }
     },
     {
@@ -2984,6 +3410,266 @@
           }
         ],
         "simpler": "Tennis player Carlos Alcaraz won his match against Daniil Medvedev in Turin to reach the semi-finals, even though he had to stop briefly for a leg injury."
+      }
+    },
+    {
+      "id": "ev-2676aa1d11f5",
+      "headline": "Court declares Myanmar responsible for genocide",
+      "summary": "The International Court of Justice concluded by majority that Myanmar committed genocide during a 2017 military offensive in the west of the country. Judges found that security forces acted with the intent to destroy a substantial part of the minority community, marking the first time the tribunal has declared a state responsible for genocide.",
+      "whyItMatters": "This landmark ruling obligates the state to investigate the crimes, compensate the victims, and facilitate the return of displaced people, offering hope to those affected.",
+      "topic": "conflict",
+      "time": "2026-11-19T20:00:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Rangoon",
+          "at": [
+            96.1561,
+            16.8053
+          ],
+          "country": "MM"
+        },
+        {
+          "name": "Myanmar",
+          "at": [
+            95.804,
+            21.574
+          ],
+          "country": "MM"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "ultimahora.es",
+          "title": "Fallo histórico: La CIJ declara a Birmania responsable de genocidio contra los rohinyás",
+          "url": "https://ultimahora.es/noticias/internacional/2026/11/19/2753125/fallo-historico-cij-declara-birmania-responsable-genocidio-contra-rohinyas.html",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "almomento.mx",
+          "title": "Histórico fallo: CIJ declara a Birmania responsable de genocidio contra los rohinyás - Almomento | Noticias, información nacional e internacional",
+          "url": "https://almomento.mx/cij-declara-a-birmania-responsable-de-genocidio-rohinya",
+          "publishedAt": "2026-11-19T17:00:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "diaridetarragona.com",
+          "title": "La Corte Internacional de Justicia responsabiliza a Birmania del genocidio rohinyá",
+          "url": "https://diaridetarragona.com/internacional/276175/corte-internacional-justicia-responsabiliza-birmania-genocidio-rohinya.html",
+          "publishedAt": "2026-11-19T19:00:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "semana.com",
+          "title": "La Corte Internacional de Justicia condena a Birmania por genocidio, en fallo histórico",
+          "url": "https://semana.com/mundo/articulo/birmania-cometio-un-genocidio-corte-internacional-de-justicia/202602",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "libertaddigital.com",
+          "title": "La Corte Internacional de Justicia condena a Birmania por genocidio contra la minoría rohingya",
+          "url": "https://libertaddigital.com/internacional/mundo/2026-11-19/la-corte-internacional-de-justicia-condena-a-birmania-por-genocidio-contra-la-minoria-rohingya-7494515",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 39.8,
+      "countries": [
+        "MM"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 96.1561,
+          "lat": 16.8053,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "MM",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              96.1561,
+              16.8053
+            ],
+            "label": "Rangoon",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The case concerns military offensives carried out by security forces in 2017 in the west of the country, which involved mass killings, sexual violence, and the destruction of villages.",
+        "keyPlayers": [
+          {
+            "name": "Yuji Iwasawa",
+            "role": "Judge President of the International Court of Justice"
+          },
+          {
+            "name": "Sayedul Karim",
+            "role": "Human rights defender"
+          }
+        ],
+        "whatNext": "The state is required to investigate the crimes, pay compensation to the victims, and make it easier for displaced people to return home.",
+        "timeline": [
+          {
+            "date": "19 November 2026",
+            "label": "The International Court of Justice issued its historic ruling."
+          }
+        ],
+        "simpler": "An international court has ruled for the first time that a country's government is responsible for genocide after finding that its military forces tried to destroy a minority group during a 2017 offensive."
+      }
+    },
+    {
+      "id": "ev-d22038a83f99",
+      "headline": "Odisha evacuates 72,000 people as Cyclone Akvan approaches",
+      "summary": "Authorities in India have evacuated 72,000 people and deployed emergency rescue teams as Severe Cyclonic Storm Akvan moves across the Bay of Bengal. The storm is predicted to cross the coast between Narsapur and Puri with winds up to 110 kilometers per hour.",
+      "whyItMatters": "The severe storm threatens coastal regions with extremely heavy rainfall and destructive winds, prompting massive emergency preparations to prevent casualties.",
+      "topic": "disaster",
+      "time": "2026-11-19T19:00:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Odisha",
+          "at": [
+            84.4167,
+            20.5
+          ],
+          "country": "IN"
+        },
+        {
+          "name": "Narsapur",
+          "at": [
+            78.1667,
+            19.1
+          ],
+          "country": "IN"
+        },
+        {
+          "name": "Gopalpur",
+          "at": [
+            87.8,
+            24.8333
+          ],
+          "country": "IN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "theindianawaaz.com",
+          "title": "Odisha evacuates 72,000 people as severe Cyclone Akvan approaches coast",
+          "url": "https://theindianawaaz.com/odisha-evacuates-72000-people-as-severe-cyclone-akvan-approaches-coast-2",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "avenuemail.in",
+          "title": "Cyclone Akvan nears Odisha; 72,000 moved to safety",
+          "url": "https://avenuemail.in/odisha-braces-cyclone-akvan-evacuation",
+          "publishedAt": "2026-11-19T12:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "webindia123.com",
+          "title": "NDRF deploys 31 teams in five states, one UT to tackle cyclone 'Akvan'",
+          "url": "https://news.webindia123.com/news/Articles/India/20261119/4521849.html",
+          "publishedAt": "2026-11-19T12:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "deccanchronicle.com",
+          "title": "Cyclone Akvan Most likely To Make landfall Close To Odisha's Gopalpur; Mass Evacuations Underway",
+          "url": "https://deccanchronicle.com/nation/cyclone-akvan-most-likely-to-make-landfall-close-to-odishas-gopalpur-mass-evacuations-underway-2005935",
+          "publishedAt": "2026-11-19T16:00:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aninews.in",
+          "title": "Cyclone Akvan to cross Andhra–Odisha coast by Nov 20 noon; Cuttack steps up preparedness",
+          "url": "https://aninews.in/news/national/general-news/cyclone-akvan-to-cross-andhra8211odisha-coast-by-nov-20-noon-cuttack-steps-up-preparedness20261119175236",
+          "publishedAt": "2026-11-19T13:00:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 39.3,
+      "countries": [
+        "IN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 84.4167,
+          "lat": 20.5,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IN",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              84.4167,
+              20.5
+            ],
+            "label": "Odisha",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              78.1667,
+              19.1
+            ],
+            "label": "Narsapur",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              87.8,
+              24.8333
+            ],
+            "label": "Gopalpur",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Severe Cyclonic Storm Akvan formed over the west-central Bay of Bengal and moved north-northwestward toward the coast.",
+        "keyPlayers": [
+          {
+            "name": "Anu Garg",
+            "role": "Odisha Chief Secretary"
+          },
+          {
+            "name": "Mohan Charan Majhi",
+            "role": "Odisha Chief Minister"
+          }
+        ],
+        "whatNext": "The cyclone is expected to cross the coast by noon tomorrow.",
+        "timeline": [
+          {
+            "date": "19 November 2026",
+            "label": "Mass evacuations and emergency preparations intensified"
+          }
+        ],
+        "simpler": "A dangerous storm named Cyclone Akvan is heading toward the coast of India, so authorities have evacuated tens of thousands of people to keep them safe."
       }
     },
     {
@@ -9869,94 +10555,6 @@
       "deeper": null
     },
     {
-      "id": "ev-e7b9a97b25e3",
-      "headline": "UK inflation rises to 3.6% in October",
-      "summary": "UK Consumer Prices Index inflation climbed to 3.6% in October, up from 3.5% in September. The Office for National Statistics attributed the fourth consecutive monthly rise to higher petrol, diesel, and tobacco costs.",
-      "whyItMatters": "The increase pushes inflation further away from the Bank of England's 2% target, creating additional pressure on household budgets.",
-      "topic": "economy",
-      "time": "2026-11-18T17:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "United Kingdom",
-          "at": [
-            -2.116,
-            54.403
-          ],
-          "country": "GB"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "halsteadgazette.co.uk",
-          "title": "Inflation hits 12-month high after further rise in petrol prices",
-          "url": "https://halsteadgazette.co.uk/news/national/26739309.inflation-hits-12-month-high-rise-petrol-prices",
-          "publishedAt": "2026-11-18T11:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "ledburyreporter.co.uk",
-          "title": "UK inflation rises to 3.6% as petrol and diesel costs climb",
-          "url": "https://ledburyreporter.co.uk/news/26739654.uk-inflation-rises-3-6-petrol-diesel-costs-climb",
-          "publishedAt": "2026-11-18T11:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "londonlovesbusiness.com",
-          "title": "UK inflation hits one-year high with warnings it could reach 5% next year",
-          "url": "https://londonlovesbusiness.com/uk-inflation-hits-one-year-high-with-warnings-it-could-reach-5-next-year",
-          "publishedAt": "2026-11-18T13:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "rte.ie",
-          "title": "UK inflation rises to 1-year high, markets trim rate bets",
-          "url": "https://rte.ie/news/business/2026/1118/1599633-uk-inflation-figures",
-          "publishedAt": "2026-11-18T11:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "birminghammail.co.uk",
-          "title": "UK inflation hits 12-month high as Birmingham cost of living link explained",
-          "url": "https://birminghammail.co.uk/news/midlands-news/uk-inflation-hits-12-month-34928043",
-          "publishedAt": "2026-11-18T12:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 28.8,
-      "countries": [
-        "GB"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -2.116,
-          "lat": 54.403,
-          "zoom": 5
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "GB",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -2.116,
-              54.403
-            ],
-            "label": "United Kingdom",
-            "emphasis": "primary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
       "id": "ev-d36e589088a7",
       "headline": "Vicenza parents convicted of manslaughter after son treated with Hamer method dies",
       "summary": "A court in Vicenza has sentenced the mother and father of 14-year-old Francesco Gianello to two years in prison each for manslaughter. The teenager died of bone cancer in early 2024 after his parents rejected conventional medical treatment in favor of the pseudoscientific 'Hamer method'.",
@@ -10306,94 +10904,6 @@
               39.345
             ],
             "label": "Türkiye (Turkey)",
-            "emphasis": "primary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-8b2d544c824d",
-      "headline": "Italy to invest 6 billion euros against hybrid warfare",
-      "summary": "Italian Defense Minister Guido Crosetto announced a 6 billion euro investment to combat hybrid and cognitive warfare. He stated that these funds will address threats like disinformation campaigns and the misuse of artificial intelligence to influence public opinion.",
-      "whyItMatters": "The government aims to protect national institutions and public trust from foreign influence and digital manipulation.",
-      "topic": "politics",
-      "time": "2026-11-19T06:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Rome",
-          "at": [
-            12.4833,
-            41.9
-          ],
-          "country": "IT"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "sanremonews.it",
-          "title": "Crosetto \"Sei miliardi per difenderci dalle minacce della guerra ibrida\"",
-          "url": "https://sanremonews.it/2026/11/18/leggi-notizia/argomenti/top-news/articolo/crosetto-sei-miliardi-per-difenderci-dalle-minacce-della-guerra-ibrida.html",
-          "publishedAt": "2026-11-18T11:15:00Z",
-          "language": "it"
-        },
-        {
-          "outlet": "dialessandria.it",
-          "title": "Il ministro Crosetto: \"Sei miliardi per difenderci dalle minacce della guerra ibrida\"",
-          "url": "https://dialessandria.it/attualita/crosetto-sei-miliardi-per-difenderci-dalle-minacce-della-guerra-ibrida/312050.html",
-          "publishedAt": "2026-11-18T14:15:00Z",
-          "language": "it"
-        },
-        {
-          "outlet": "zazoom.it",
-          "title": "Crosetto alla Camera Sei miliardi contro la guerra ibrida",
-          "url": "https://zazoom.it/2026-11-18/crosetto-alla-camera-sei-miliardi-contro-la-guerra-ibrida/19944045",
-          "publishedAt": "2026-11-18T13:15:00Z",
-          "language": "it"
-        },
-        {
-          "outlet": "spotandweb.it",
-          "title": "Crosetto: \"Contro minaccia ibrida risorse per oltre 6 miliardi nei prossimi anni\"",
-          "url": "https://spotandweb.it/news/935497/crosetto-contro-minaccia-ibrida-risorse-per-oltre-6-miliardi-nei-prossimi-anni.html",
-          "publishedAt": "2026-11-18T11:15:00Z",
-          "language": "it"
-        },
-        {
-          "outlet": "imolaoggi.it",
-          "title": "Crosetto: \"risorse per oltre 6 miliardi contro la guerra ibrida e cognitiva\" • Imola Oggi",
-          "url": "https://imolaoggi.it/2026/11/18/crosetto-risorse-per-oltre-6-miliardi-contro-la-guerra-ibrida-e-cognitiva",
-          "publishedAt": "2026-11-18T12:15:00Z",
-          "language": "it"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 28.5,
-      "countries": [
-        "IT"
-      ],
-      "scene": {
-        "camera": {
-          "lng": 12.4833,
-          "lat": 41.9,
-          "zoom": 5.6
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "IT",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              12.4833,
-              41.9
-            ],
-            "label": "Rome",
             "emphasis": "primary"
           }
         ]

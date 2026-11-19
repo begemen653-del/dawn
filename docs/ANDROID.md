@@ -46,7 +46,9 @@ Android only accepts an update if it is signed with the same key as the installe
 - The key is `%USERPROFILE%\.dawn\dawn-release.jks` on the owner's PC (never in git; `*.jks` is
   ignored). Its password is `DAWN_KEYSTORE_PASSWORD` in `.env.local`.
 - GitHub has copies as repository secrets `DAWN_KEYSTORE_BASE64` (the file, base64) and
-  `DAWN_KEYSTORE_PASSWORD`. Key alias: `dawn`.
+  `DAWN_KEYSTORE_PASSWORD`. Key alias: `dawn`. Set them from Git Bash
+  (`base64 -w0 <key file> | gh secret set DAWN_KEYSTORE_BASE64`): piping through Windows PowerShell 5
+  alters the text and the build then fails with "base64: invalid input".
 - **Back the key file and password up** (e.g. a USB stick or password manager). If both copies are lost, a
   new key works but the old app must be uninstalled first.
 

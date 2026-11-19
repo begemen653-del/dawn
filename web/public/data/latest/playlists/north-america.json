@@ -4,12 +4,13 @@
   "scope": "north-america",
   "title": "North America",
   "eventIds": [
+    "ev-d7b7f3fa27bb",
+    "ev-ec0949b63b7c",
     "ev-a162deb5fd02",
     "ev-34cb162de2b0",
     "ev-a097f9f3e233",
     "ev-602f2b4db75a",
     "ev-b9f8fcf0979e",
-    "ev-171ed5f50794",
-    "ev-079ceef59433"
+    "ev-171ed5f50794"
   ]
 }

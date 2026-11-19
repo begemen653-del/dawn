@@ -48,6 +48,9 @@ Read this first in a new session. The full spec is the user's master prompt (mil
    into release tag `android`, 06:30 local reminder, Sources & credits page. Owner chose Pages (no Vercel), 06:30,
    no Windows install. Signing key: %USERPROFILE%\.dawn\dawn-release.jks, password in .env.local, secrets
    DAWN_KEYSTORE_BASE64/PASSWORD. Remind the owner to back up the key.
+   2026-11-19: owner chose option 2: punctual 04:30 morning brief + small 18:00 evening update
+   (`pipeline:evening`, `run/evening.ts`, nightly.yml `kind` input), started by cron-job.org via a fine-grained
+   token (owner sets it up; docs/PIPELINE.md "When it runs"). First evening run: 49k tokens, 5 stories added.
 2. Check the next nightly brief: photos added (log line "Photo check: …"), NYC pinned (not NY State),
    headline cities, and that "Publish site" ran after it. Next.js 16.4.6 (2026-11-19).
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK

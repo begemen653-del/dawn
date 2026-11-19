@@ -15,7 +15,8 @@ import type { LlmProvider } from "../ai/provider";
 import { DEFAULT_GDELT_OPTIONS, GdeltSource } from "../sources/gdelt";
 import { RssSource } from "../sources/rss";
 import { CommonsImages } from "../images/commons";
-import { runBrief } from "./brief";
+import { berlinDate, runBrief } from "./brief";
+import { loadBrief, runEvening, windowSince } from "./evening";
 import { runDry } from "./dry";
 import { runIngest } from "./ingest";
 
@@ -30,7 +31,7 @@ const log = (m: string) => {
   console.log(m);
 };
 
-async function ingest() {
+async function ingest(windowHours?: number) {
   const step = Number(process.env.DAWN_GDELT_STEP_MINUTES ?? DEFAULT_GDELT_OPTIONS.stepMinutes);
   const gdelt = new GdeltSource({
     ...DEFAULT_GDELT_OPTIONS,
@@ -43,6 +44,7 @@ async function ingest() {
     outDir: OUT_DIR,
     cacheDir: CACHE_DIR,
     log,
+    ...(windowHours === undefined ? {} : { windowHours }),
   });
   const { status } = result;
   console.log(
@@ -74,6 +76,38 @@ process.on("uncaughtException", (error) => {
   console.error("Pipeline crashed:", error);
   process.exit(1);
 });
+
+/** Evening update: the biggest new stories since this morning's brief, added to it. */
+async function evening(llm: LlmProvider, report: () => string): Promise<void> {
+  const morning = await loadBrief(join(WEB_DATA, "latest"));
+  const today = berlinDate(new Date());
+  if (morning?.index.date !== today) {
+    console.log(`Evening update skipped: no brief for today (${today}) to add to.`);
+    return;
+  }
+  const ingested = await ingest(windowSince(morning.index.generatedAt, new Date()));
+  if (!ingested.status.ok) {
+    process.exitCode = 1;
+    return;
+  }
+  const result = await runEvening({
+    events: ingested.events,
+    chapters: ingested.chapters,
+    morning,
+    llm,
+    outDir: WEB_DATA,
+    cacheDir: CACHE_DIR,
+    log,
+    deadline: STARTED_AT + Number(process.env.DAWN_TIME_LIMIT_MIN ?? 30) * 60_000,
+    images: new CommonsImages({ cacheDir: CACHE_DIR }),
+    imageTimeMs: 4 * 60_000,
+  });
+  console.log(
+    result.published
+      ? `Evening update published: ${result.added} new stories. ${report()}`
+      : `Evening update: nothing new to add; the brief is unchanged. ${report()}`,
+  );
+}
 
 async function main(): Promise<void> {
   const local = join(ROOT, ".env.local");
@@ -111,6 +145,10 @@ async function main(): Promise<void> {
         [...setup.chain.usage.entries()]
           .map(([k, v]) => `${k} ${v.calls} calls/${v.tokens} tokens`)
           .join(", ");
+    }
+    if (process.argv.includes("--evening")) {
+      await evening(llm, report);
+      return;
     }
     const ingested = await ingest();
     if (!ingested.status.ok) {

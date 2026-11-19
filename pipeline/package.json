@@ -13,7 +13,8 @@
     "ingest": "node --max-old-space-size=2048 --import tsx src/run/index.ts --ingest",
     "live": "node --max-old-space-size=2048 --import tsx src/run/index.ts --live",
     "mock": "node --max-old-space-size=2048 --import tsx src/run/index.ts --mock",
-    "check-ai": "tsx src/run/check-ai.ts"
+    "check-ai": "tsx src/run/check-ai.ts",
+    "evening": "node --max-old-space-size=2048 --import tsx src/run/index.ts --live --evening"
   },
   "dependencies": {
     "@dawn/config": "*",

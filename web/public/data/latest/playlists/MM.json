@@ -3,6 +3,7 @@
   "date": "2026-11-19",
   "scope": "MM",
   "title": "Myanmar",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Myanmar in the last 24 hours."
+  "eventIds": [
+    "ev-2676aa1d11f5"
+  ]
 }

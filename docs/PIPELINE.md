@@ -153,6 +153,22 @@ Coordinates never come from the AI: it only picks from a candidate list built he
 - Stories pin cities and regions; a whole country is shown by its highlight, not by an extra pin. Cities get a
   deep zoom (~7.2), regions ~5.4.
 
+## When it runs: morning brief and evening update
+
+- **Morning brief, 04:30 Berlin:** the full brief from the last 24 hours (`npm run pipeline:live`), ready by
+  about 05:45. Uses most of the free daily AI allowance (~1–1.5 M tokens).
+- **Evening update, 18:00 Berlin:** `npm run pipeline:evening` (`run/evening.ts`) reads the news since the
+  morning brief, picks up to 16 important new events (Global, regions, big countries) whose articles weren't
+  already sources of a morning story, writes them, drops repeats of morning stories and adds up to 10 to the top
+  of their chapters (chapters stay at 8). Capped at 250k tokens and 30 minutes; the first real run (2026-11-19)
+  used 49k tokens and added 5 stories. Nothing changes if nothing is new or there is no brief for today.
+- **Punctual start:** GitHub's own schedule starts runs ~6–9 hours late (briefs landed 11:45–13:11), so an
+  outside timer on cron-job.org (free) starts the workflow at 04:30 (`kind: morning`) and 18:00
+  (`kind: evening`) through the GitHub API, with a fine-grained token that can only run this repo's
+  Actions. GitHub's schedule stays as a backup; the gate builds at most one morning brief a day.
+- **Free AI quota days:** Gemini's daily limits reset at 09:00 Berlin, so an evening update and the next
+  morning brief share one quota day; the evening cap keeps enough for the morning.
+
 ## Reliability rules
 
 - One failing feed, GDELT batch or AI provider never stops the run; it becomes a warning in `status.json`.

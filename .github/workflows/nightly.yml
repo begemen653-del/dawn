@@ -1,19 +1,30 @@
 name: Nightly brief
 
 on:
-  # Aimed at 04:30 Europe/Berlin. GitHub cron is UTC and often starts hours late; the extra
-  # entries are backups, and the "Check Berlin time" step makes sure one brief is built a day.
+  # The punctual start comes from an outside timer (cron-job.org) that calls "Run workflow" at
+  # 04:30 (kind: morning) and 18:00 (kind: evening) Berlin time; see docs/PIPELINE.md.
+  # GitHub's own schedule is only a backup: it often starts runs many hours late. The
+  # "Check Berlin time" step makes sure there is one morning brief a day.
   schedule:
     - cron: "30 2 * * *"
     - cron: "30 3 * * *"
     - cron: "30 6 * * *"
   workflow_dispatch:
     inputs:
+      kind:
+        description: "morning = the full daily brief; evening = add the biggest new stories since the morning"
+        type: choice
+        options: [morning, evening]
+        default: morning
       mode:
         description: "live = real news + AI (needs the API key secrets); ingest = report only; dry = sample data"
         type: choice
         options: [live, ingest, dry]
         default: live
+      force:
+        description: "Build the morning brief even if today's is already there"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,10 +40,12 @@ jobs:
     timeout-minutes: 95
     env:
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      KIND: ${{ github.event_name == 'workflow_dispatch' && inputs.kind || 'morning' }}
+      FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
     steps:
-      # GitHub often starts scheduled jobs hours late, so instead of demanding 04:xx this runs
-      # whenever it is past 04:00 in Berlin and today's brief isn't on main yet. Later triggers
-      # on the same day then find the new brief and skip.
+      # Morning: runs when it is past 04:00 in Berlin and today's brief isn't on main yet, so the
+      # timer and GitHub's late backups never build two briefs a day.
+      # Evening: runs only after 15:00 and only if today's brief is there to add to.
       - uses: actions/checkout@v7
 
       - name: Check Berlin time
@@ -43,14 +56,19 @@ jobs:
           git fetch -q origin main
           built=$(git show origin/main:web/public/data/status.json 2>/dev/null \
             | grep -o '"date": *"[0-9-]*"' | grep -o '[0-9-]\{10\}' || true)
-          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$hour" -lt 4 ] || [ "$built" = "$today" ]; }; then
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping: Berlin time ${hour}:xx, brief on main is from ${built:-unknown}."
+          run=true
+          if [ "$KIND" = "evening" ]; then
+            if [ "$hour" -lt 15 ] || [ "$built" != "$today" ]; then run=false; fi
+          elif [ "$FORCE" != "true" ] && { [ "$hour" -lt 4 ] || [ "$built" = "$today" ]; }; then
+            run=false
+          fi
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          if [ "$run" = "false" ]; then
+            echo "Skipping the $KIND run: Berlin time ${hour}:xx, brief on main is from ${built:-unknown}."
           else
             # A queued run may have started from an older commit; build on the newest one.
             # -B: stay on a real "main" branch (a bare "origin/main" checkout has no branch to push).
             git checkout -q -B main origin/main
-            echo "run=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/setup-node@v7
@@ -73,7 +91,7 @@ jobs:
           key: feeds-${{ github.run_id }}
           restore-keys: feeds-
 
-      # Real news → events → AI stories → web/public/data. If too few stories come out, the
+      # Real news â†’ events â†’ AI stories â†’ web/public/data. If too few stories come out, the
       # previous brief is kept and this step fails (GitHub then emails you).
       - name: Build the brief
         if: steps.gate.outputs.run == 'true'
@@ -83,7 +101,13 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           case "$MODE" in
-            live) npm run pipeline:live ;;
+            live)
+              if [ "$KIND" = "evening" ]; then
+                # A small update: at most ~250k AI tokens and 30 minutes.
+                DAWN_AI_TOKEN_BUDGET=250000 DAWN_TIME_LIMIT_MIN=30 npm run pipeline:evening
+              else
+                npm run pipeline:live
+              fi ;;
             ingest) npm run pipeline:ingest ;;
             dry) npm run pipeline:dry ;;
           esac
@@ -107,7 +131,11 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Nightly brief $(TZ=Europe/Berlin date +%F)"
+            if [ "$KIND" = "evening" ]; then
+              git commit -m "Evening update $(TZ=Europe/Berlin date +%F)"
+            else
+              git commit -m "Nightly brief $(TZ=Europe/Berlin date +%F)"
+            fi
             # Someone may have pushed while the brief was being built: put the brief on top, then push.
             git pull -q --rebase origin main
             git push origin HEAD:main

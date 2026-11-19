@@ -51,12 +51,12 @@ export interface BriefResult {
 
 const TOP_PER_TIER1_COUNTRY_DEEP = 3;
 
-function berlinDate(now: Date): string {
+export function berlinDate(now: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin" }).format(now);
 }
 
 /** Most-viewed chapters first: Global, regions, big countries, then everyone else. */
-function priorityOrder(chapters: readonly ChapterPlan[]): string[] {
+export function priorityOrder(chapters: readonly ChapterPlan[]): string[] {
   const rank = (scope: string) =>
     scope === "global" ? 0 : isRegion(scope) ? 1 : getCountry(scope)?.tier === 1 ? 2 : 3;
   const ordered = [...chapters].sort((a, b) => rank(a.scope) - rank(b.scope));
@@ -64,7 +64,7 @@ function priorityOrder(chapters: readonly ChapterPlan[]): string[] {
 }
 
 /** Events that get pre-written "Go deeper": Global, regions and the top of big-country chapters. */
-function deepSet(chapters: readonly ChapterPlan[]): Set<string> {
+export function deepSet(chapters: readonly ChapterPlan[]): Set<string> {
   const deep = new Set<string>();
   for (const c of chapters) {
     if (c.scope === "global" || isRegion(c.scope)) c.eventIds.forEach((id) => deep.add(id));
@@ -74,7 +74,7 @@ function deepSet(chapters: readonly ChapterPlan[]): Set<string> {
   return deep;
 }
 
-async function readTexts(
+export async function readTexts(
   events: readonly EventCluster[],
   cacheDir: string,
   log: (m: string) => void,

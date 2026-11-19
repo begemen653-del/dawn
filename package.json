@@ -28,7 +28,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check:secrets": "tsx scripts/check-secrets.ts",
-    "geo": "tsx scripts/build-geo.ts"
+    "geo": "tsx scripts/build-geo.ts",
+    "pipeline:evening": "npm run evening --workspace @dawn/pipeline"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
