@@ -50,7 +50,10 @@ jobs:
             echo "::error::The DAWN_KEYSTORE_BASE64 secret is missing (see docs/ANDROID.md)."; exit 1
           fi
           export DAWN_KEYSTORE_FILE="$RUNNER_TEMP/dawn-release.jks"
-          echo "$DAWN_KEYSTORE_BASE64" | base64 --decode > "$DAWN_KEYSTORE_FILE"
+          # Secrets saved from Windows can carry line endings (\r\n): drop them before use.
+          printf '%s' "$DAWN_KEYSTORE_BASE64" | tr -d '\r\n ' | base64 --decode > "$DAWN_KEYSTORE_FILE"
+          DAWN_KEYSTORE_PASSWORD="$(printf '%s' "$DAWN_KEYSTORE_PASSWORD" | tr -d '\r\n')"
+          export DAWN_KEYSTORE_PASSWORD
           chmod +x gradlew
           ./gradlew --no-daemon assembleRelease
           cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/Dawn.apk"
