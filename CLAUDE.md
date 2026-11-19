@@ -50,7 +50,11 @@ Read this first in a new session. The full spec is the user's master prompt (mil
    DAWN_KEYSTORE_BASE64/PASSWORD. Remind the owner to back up the key.
    2026-11-19: owner chose option 2: punctual 04:30 morning brief + small 18:00 evening update
    (`pipeline:evening`, `run/evening.ts`, nightly.yml `kind` input), started by cron-job.org via a fine-grained
-   token (owner sets it up; docs/PIPELINE.md "When it runs"). First evening run: 49k tokens, 5 stories added.
+   token (docs/PIPELINE.md "When it runs"). First evening run: 49k tokens, 5 stories added.
+   cron-job.org set up 2026-11-20: jobs "Dawn morning" (30 4 * * *) and "Dawn evening" (0 18 * * *), Europe/Berlin;
+   test dispatch reached GitHub (run 44635130303). Token in .env.local as DAWN_TIMER_TOKEN
+   (scripts/save-timer-token.ps1, copy-timer-token.ps1). cron-job.org "Test run" is bot-check blocked; test by
+   setting a near schedule instead. Check the first real 04:30 and 18:00 runs on 2026-11-20.
 2. Check the next nightly brief: photos added (log line "Photo check: …"), NYC pinned (not NY State),
    headline cities, and that "Publish site" ran after it. Next.js 16.4.6 (2026-11-19).
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
