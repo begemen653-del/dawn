@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "CM",
   "title": "Cameroon",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Cameroon in the last 24 hours."
+  "eventIds": [
+    "ev-1f01e5fb7c23",
+    "ev-53b31a57b7a6",
+    "ev-75c39a8f584a"
+  ]
 }

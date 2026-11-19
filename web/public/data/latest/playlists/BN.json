@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "BN",
   "title": "Brunei",
   "eventIds": [
-    "ev-77a9d2f5a7a5"
+    "ev-bedf00ab85ee",
+    "ev-7dd536530b8c"
   ]
 }

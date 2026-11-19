@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "BD",
   "title": "Bangladesh",
   "eventIds": [
-    "ev-d2b132bbb18f",
-    "ev-0229ca1fb2f2",
-    "ev-327bc7678a72",
-    "ev-45eb5ff60fa1",
-    "ev-f5cd4610454f"
+    "ev-0c8e62518f0f",
+    "ev-1d2ac362e35b",
+    "ev-c328b083757e",
+    "ev-09bd928de60d"
   ]
 }

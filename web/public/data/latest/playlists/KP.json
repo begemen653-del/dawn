@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "KP",
   "title": "North Korea",
-  "eventIds": [],
-  "emptyReason": "Almost no news about North Korea in the last 24 hours."
+  "eventIds": [
+    "ev-8b816bbe983f",
+    "ev-a87a48022105",
+    "ev-fcf5ffea9f5c"
+  ]
 }

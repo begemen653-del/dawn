@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "DJ",
   "title": "Djibouti",
   "eventIds": [
-    "ev-a1000a377289"
+    "ev-ec7b825fec0d",
+    "ev-1b31e17de718"
   ]
 }

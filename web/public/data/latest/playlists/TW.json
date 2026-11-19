@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "TW",
   "title": "Taiwan",
   "eventIds": [
-    "ev-d095e0e0f227",
-    "ev-61a2dcb217d6",
-    "ev-1594c202f64a"
+    "ev-88c710b7badd",
+    "ev-46092ba9c416",
+    "ev-d06ffe6b5483"
   ]
 }

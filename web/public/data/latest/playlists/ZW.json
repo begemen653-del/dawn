@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "ZW",
   "title": "Zimbabwe",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Zimbabwe in the last 24 hours."
+  "eventIds": [
+    "ev-1b31e17de718",
+    "ev-8e990129a607"
+  ]
 }

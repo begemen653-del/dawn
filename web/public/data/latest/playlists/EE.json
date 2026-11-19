@@ -1,10 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "EE",
   "title": "Estonia",
   "eventIds": [
-    "ev-50693c304456",
-    "ev-a2beb6731a7f"
+    "ev-d115dd12c7a0",
+    "ev-012170a9a0c5",
+    "ev-3765b78c37ee",
+    "ev-d114ecc7064a",
+    "ev-5e068fea9aca"
   ]
 }

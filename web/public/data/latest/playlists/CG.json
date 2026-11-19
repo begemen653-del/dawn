@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "CG",
   "title": "Republic of the Congo",
   "eventIds": [
-    "ev-de107af74f92"
+    "ev-1b632f24e17a",
+    "ev-4adcc85fbef5"
   ]
 }

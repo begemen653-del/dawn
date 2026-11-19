@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "HN",
   "title": "Honduras",
   "eventIds": [
-    "ev-cb635171d2e9",
-    "ev-95e8878b2b2b"
+    "ev-197c1dfeb11e",
+    "ev-8fd65a2dd15a",
+    "ev-66020235a6d2",
+    "ev-31a4f947d3df"
   ]
 }

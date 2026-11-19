@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "MN",
   "title": "Mongolia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Mongolia in the last 24 hours."
+  "eventIds": [
+    "ev-45e69e6169ce",
+    "ev-8743cf0ea2ff",
+    "ev-326fed34c997"
+  ]
 }

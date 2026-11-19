@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "SL",
   "title": "Sierra Leone",
   "eventIds": [
-    "ev-d2382dca28e7"
+    "ev-37359633ca31",
+    "ev-a9a13166a1da"
   ]
 }

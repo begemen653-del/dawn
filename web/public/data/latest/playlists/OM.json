@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "OM",
   "title": "Oman",
   "eventIds": [
-    "ev-117e32c9e0ab"
+    "ev-de2b630ca173",
+    "ev-01ed2afecc2e",
+    "ev-ff37bb1b635b"
   ]
 }

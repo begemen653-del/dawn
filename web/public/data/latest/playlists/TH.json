@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "TH",
   "title": "Thailand",
   "eventIds": [
-    "ev-2ef2c8be8adc",
-    "ev-c816db9094fe",
-    "ev-7d13f6adb6ee",
-    "ev-6c8c2e9deff3",
-    "ev-b2b90ad6dbb3"
+    "ev-9446cb764fb0",
+    "ev-a25d3023179f",
+    "ev-168594693a34",
+    "ev-f65894b7e0f0",
+    "ev-aa83ded4ceb9"
   ]
 }

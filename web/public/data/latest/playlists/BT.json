@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "BT",
   "title": "Bhutan",
-  "eventIds": [
-    "ev-7e52a6e3e2a9",
-    "ev-035c1414974c"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Bhutan in the last 24 hours."
 }

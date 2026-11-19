@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "KY",
   "title": "Cayman Islands",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Cayman Islands in the last 24 hours."
+  "eventIds": [
+    "ev-669983f38e51",
+    "ev-f27ae6fd718f"
+  ]
 }

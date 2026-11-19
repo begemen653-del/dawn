@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "PG",
   "title": "Papua New Guinea",
   "eventIds": [
-    "ev-4effa2a1d67e",
-    "ev-1103ad5dea3d"
+    "ev-c49f1182feba"
   ]
 }

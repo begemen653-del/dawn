@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "CY",
   "title": "Cyprus",
-  "eventIds": [
-    "ev-c6bbf1e7dd9c",
-    "ev-0a4dceb432cc"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Cyprus in the last 24 hours."
 }

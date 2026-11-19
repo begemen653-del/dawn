@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "GW",
   "title": "Guinea-Bissau",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Guinea-Bissau in the last 24 hours."
+  "eventIds": [
+    "ev-53b31a57b7a6"
+  ]
 }

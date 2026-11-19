@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "NU",
   "title": "Niue",
-  "eventIds": [
-    "ev-3309643cc01f"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Niue in the last 24 hours."
 }

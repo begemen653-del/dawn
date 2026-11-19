@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "BG",
   "title": "Bulgaria",
   "eventIds": [
-    "ev-29686f17a830",
-    "ev-b4fb31a454a3",
-    "ev-ff188d3e9c54",
-    "ev-2e848c04d996",
-    "ev-deb6ba6a6342"
+    "ev-a6ebfb9652ce",
+    "ev-06681f673295",
+    "ev-3d785a7b8763",
+    "ev-fe9b79bdb875"
   ]
 }

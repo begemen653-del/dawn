@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "scope": "NE",
   "title": "Niger",
-  "eventIds": [
-    "ev-1512fa3af386"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Niger in the last 24 hours."
 }
