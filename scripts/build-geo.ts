@@ -3,6 +3,7 @@
  *   countries-110m.json  whole-Earth view (world-atlas, Natural Earth 1:110m)
  *   countries-50m.json   zoomed-in view   (world-atlas, Natural Earth 1:50m)
  *   places.json          ~2,400 cities    (Natural Earth populated places, public domain)
+ *   pipeline/data/gazetteer.json  ~7,300 places the pipeline uses to pin stories on cities
  * Run with: npm run geo
  */
 import { existsSync } from "node:fs";
@@ -28,6 +29,7 @@ interface PlaceProperties {
   featurecla: string;
   iso_a2: string;
   pop_max: number;
+  nameascii: string;
 }
 
 async function loadPlaces(): Promise<PlaceProperties[]> {
@@ -64,6 +66,25 @@ async function main(): Promise<void> {
     ]);
   await writeFile(join(OUT, "places.json"), JSON.stringify(places), "utf8");
   console.log(`Wrote places.json with ${places.length} places`);
+
+  // The pipeline's gazetteer: every Natural Earth populated place, biggest first.
+  // [name, asciiName, lon, lat, iso2, population, rank (0 = world city … 10)]
+  const gazetteer = (await loadPlaces())
+    .filter((p) => p.featurecla !== "Scientific station" && /^[A-Z]{2}$/.test(p.iso_a2))
+    .sort((a, b) => b.pop_max - a.pop_max)
+    .map((p) => [
+      p.name,
+      p.nameascii === p.name ? "" : p.nameascii,
+      round(p.longitude),
+      round(p.latitude),
+      p.iso_a2,
+      p.pop_max,
+      p.scalerank,
+    ]);
+  const gazOut = join(ROOT, "pipeline", "data", "gazetteer.json");
+  await mkdir(dirname(gazOut), { recursive: true });
+  await writeFile(gazOut, JSON.stringify(gazetteer), "utf8");
+  console.log(`Wrote pipeline/data/gazetteer.json with ${gazetteer.length} places`);
 }
 
 main().catch((error: unknown) => {

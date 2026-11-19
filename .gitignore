@@ -5,6 +5,7 @@ node_modules/
 web/.next/
 web/out/
 web/public/serwist/
+web/public/maplibre/
 *.tsbuildinfo
 next-env.d.ts
 

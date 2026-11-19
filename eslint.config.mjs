@@ -12,6 +12,7 @@ export default defineConfig([
     "web/.next/**",
     "web/out/**",
     "web/public/serwist/**",
+    "web/public/maplibre/**",
     "web/next-env.d.ts",
   ]),
   js.configs.recommended,

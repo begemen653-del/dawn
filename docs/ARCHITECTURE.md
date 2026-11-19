@@ -96,12 +96,19 @@ camera). Unknown types or keys are rejected, so the AI can never make the globe 
 - **Layout:** the globe fills the whole screen. The story card floats at the top, a picture strip and the
   controls at the bottom; the globe keeps the story's location centered in the free space between them. On
   wide screens the card moves to the top-left and pictures to the right.
-- **Globe:** `web/src/components/globe/CanvasGlobe.tsx` is a 2D canvas globe (d3-geo) using bundled Natural
-  Earth data in `web/public/geo/` (built by `npm run geo`): 1:110m shapes for the whole Earth and during flights,
-  1:50m shapes plus ~2,400 cities once the camera settles. The settled map is drawn once into a hidden canvas and
-  reused every frame, so only the pulse and routes animate. Country and city labels appear by zoom level and never
-  overlap each other or the cards. In Milestone 6 the MapLibre globe adds deep zoom; this canvas globe stays as the
-  fallback when WebGL is missing or slow.
+- **Globe (Milestone 6):** `Globe.tsx` picks one of two globes.
+  - `MapGlobe.tsx`: the full globe (MapLibre GL 6, WebGL, globe projection) on free OpenFreeMap vector tiles
+    (OpenStreetMap data, no key, no request limit; the credit sits behind the small (i) button). It flies between
+    stories with `flyTo` (zooms out for far jumps, then dives in), down to city level (zoom ~7) with borders,
+    state lines and place names. The look is in `map-style.ts` (greyscale, one warm accent). Story shapes come
+    from `scene-geo.ts`: highlighted countries (bundled Natural Earth borders, faded out up close), shaded areas,
+    routes that draw themselves in after the camera arrives, and pins drawn as map layers so the map's own labels
+    make room. The map code (~1 MB) loads only when used; its worker is copied to `public/maplibre/` by
+    `scripts/copy-maplibre-worker.mjs` before `dev` and `build`.
+  - `CanvasGlobe.tsx`: the light 2D canvas globe (d3-geo) on bundled Natural Earth data in `web/public/geo/`
+    (built by `npm run geo`). Used when there is no WebGL, when offline (map tiles need the network), when the map
+    fails to load within 15 s, or after two flights below 22 fps; the choice sticks for the visit. `?globe=simple`
+    forces it.
 - **Choose your news:** `web/src/components/picker/`. Selection and order live in `localStorage`
   (`dawn.preferences`, versioned, validated on load). Global is implied and always played last.
 

@@ -13,7 +13,7 @@ Runs in GitHub Actions (`.github/workflows/nightly.yml`) at about **04:30 Europe
 | 4   | Rank      | `events/rank.ts`                                     | M3 ✅  | Importance by independent coverage; sport/celebrity pushed down                  |
 | 5   | Chapters  | `events/assign.ts`                                   | M3 ✅  | Global, 7 regions, 232 countries; honest empty chapters                          |
 | 6   | AI        | `pipeline/src/ai/`, `run/brief.ts`                   | M4 ✅  | Summary, why it matters, relevance check, scene, deeper content, Learn card      |
-| 7   | Geo       | `pipeline/src/geo/`                                  | M6     | Place names → coordinates (GDELT gives many already)                             |
+| 7   | Geo       | `pipeline/src/geo/`                                  | M6 ✅  | Bundled gazetteer: state pins snapped to their city, cities found in headlines   |
 | 8   | Images    | `pipeline/src/images/`                               | M7     | Licensed images only — see `IMAGES.md`                                           |
 | 9   | Write     | `pipeline/src/run/`                                  | M1 ✅  | Validate with zod, write atomically, write `status.json`                         |
 
@@ -137,6 +137,21 @@ exceeded. Expected nightly use: ~110 requests, ~0.9–1.3 M tokens, 10–35 minu
 (about 100–150 stories a night). Other stories show "more background will be written on request"; writing those
 on demand needs a small server function (Vercel, free) and is planned for Milestone 8.
 
+## Places on the globe (Milestone 6)
+
+Coordinates never come from the AI: it only picks from a candidate list built here (`ai/summarize.ts`,
+`geo/`).
+
+- GDELT gives most places with coordinates. GDELT often files a city under the state of the same name
+  ("New York" the state), which put pins in the state's middle. `geo/places.ts` moves such a pin to the city
+  when a city of that exact name with 500,000+ people exists in that country.
+- Events from RSS feeds come without places, so cities named in their headlines are added as candidates, using
+  the bundled gazetteer `pipeline/data/gazetteer.json` (~7,300 Natural Earth places, public domain, built by
+  `npm run geo`). Only cities of 100,000+ people (or well-known ones) in the event's own countries count, and
+  common words that are also city names ("Nice", "Mobile", "Reading") are skipped.
+- Stories pin cities and regions; a whole country is shown by its highlight, not by an extra pin. Cities get a
+  deep zoom (~7.2), regions ~5.4.
+
 ## Reliability rules
 
 - One failing feed, GDELT batch or AI provider never stops the run; it becomes a warning in `status.json`.
@@ -147,11 +162,11 @@ on demand needs a small server function (Vercel, free) and is planned for Milest
 
 ## Free-tier budget
 
-| Resource                   | Free limit                  | Our use                             |
-| -------------------------- | --------------------------- | ----------------------------------- |
-| GitHub Actions (private)   | 2,000 min/month             | ~3–5 min/night ≈ 150 min/month (M3) |
-| GitHub Actions cache       | 10 GB per repo              | feed cache only, a few MB           |
-| GDELT bulk files           | free, no key, no rate limit | ≈ 290 MB/night                      |
-| Gemini / Groq / OpenRouter | verified in M4              | M4                                  |
-| Nominatim                  | 1 request/second max        | cached, rare (M6)                   |
-| Vercel Hobby               | verified in M8              | static site + a few functions       |
+| Resource                   | Free limit                  | Our use                               |
+| -------------------------- | --------------------------- | ------------------------------------- |
+| GitHub Actions (private)   | 2,000 min/month             | ~3–5 min/night ≈ 150 min/month (M3)   |
+| GitHub Actions cache       | 10 GB per repo              | feed cache only, a few MB             |
+| GDELT bulk files           | free, no key, no rate limit | ≈ 290 MB/night                        |
+| Gemini / Groq / OpenRouter | verified in M4              | M4                                    |
+| Nominatim                  | 1 request/second max        | not needed so far (gazetteer + GDELT) |
+| Vercel Hobby               | verified in M8              | static site + a few functions         |

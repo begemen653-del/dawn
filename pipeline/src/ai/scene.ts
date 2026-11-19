@@ -4,7 +4,8 @@ import { SceneDirective, type SceneElement, type StoryEvent, type Topic } from "
 import type { StoryDraft } from "./drafts";
 import type { PlaceCandidate } from "./prompts";
 
-const ZOOM_BY_KIND = { city: 5.6, region: 4.6, country: 4 } as const;
+/** Deep zoom: a city fills the screen with its districts' names; a region shows its towns. */
+const ZOOM_BY_KIND = { city: 7.2, region: 5.4, country: 4 } as const;
 
 function shortName(name: string): string {
   return (name.split(",")[0] ?? name).trim().slice(0, 60);
@@ -88,7 +89,9 @@ export function buildScene(
     });
   }
 
-  const markerPlaces = chosen.length > 0 ? chosen : main && main.kind !== "country" ? [main] : [];
+  // Whole countries are shown by their highlight; pins are for cities and regions.
+  const precise = chosen.filter((p) => p.kind !== "country");
+  const markerPlaces = precise.length > 0 ? precise : main && main.kind !== "country" ? [main] : [];
   markerPlaces.slice(0, 3).forEach((p, i) => {
     elements.push({
       type: "marker",
@@ -99,7 +102,9 @@ export function buildScene(
     });
   });
 
-  const locations: StoryEvent["locations"] = (markerPlaces.length > 0 ? markerPlaces : main ? [main] : [])
+  // The story's place line still names every chosen place, countries included.
+  const named = chosen.length > 0 ? chosen : markerPlaces;
+  const locations: StoryEvent["locations"] = (named.length > 0 ? named : main ? [main] : [])
     .slice(0, 6)
     .map((p) => ({
       name: shortName(p.name),

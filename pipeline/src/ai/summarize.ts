@@ -1,6 +1,8 @@
 import { getCountry } from "@dawn/config";
 import type { EventCluster } from "../events/types";
-import { StoryEvent, type SourceLink } from "../schema";
+import { fold, gazetteer, type Gazetteer } from "../geo/gazetteer";
+import { placesFromHeadlines, snapRegionToCity } from "../geo/places";
+import { StoryEvent, type ArticlePlace, type SourceLink } from "../schema";
 import { BudgetExceededError } from "./chain";
 import { DraftBatch, type StoryDraft } from "./drafts";
 import { checkGrounding, evidenceNames } from "./grounding";
@@ -51,27 +53,32 @@ function pickSources(e: EventCluster, texts: ReadonlyMap<string, string>) {
     .slice(0, 5);
 }
 
-/** Candidate places: the event's most-mentioned precise places, plus its countries. */
-function placeCandidates(e: EventCluster): PlaceCandidate[] {
+/**
+ * Candidate places: the event's most-mentioned precise places (GDELT's, with states snapped to
+ * their big city, plus cities named in the headlines), then its countries.
+ */
+function placeCandidates(e: EventCluster, gaz: Gazetteer = gazetteer()): PlaceCandidate[] {
   const counts = new Map<string, { place: PlaceCandidate; count: number }>();
-  for (const a of e.articles) {
-    for (const p of a.places) {
-      if (p.kind === "country") continue;
-      const entry = counts.get(p.name);
-      if (entry) entry.count++;
-      else
-        counts.set(p.name, {
-          place: {
-            id: "",
-            name: p.name,
-            at: p.at,
-            kind: p.kind,
-            ...(p.country ? { country: p.country } : {}),
-          },
-          count: 1,
-        });
-    }
-  }
+  const add = (p: ArticlePlace) => {
+    if (p.kind === "country") return;
+    // "New York, United States" and "New York" from a headline are the same place.
+    const key = fold(p.name.split(",")[0] ?? p.name);
+    const entry = counts.get(key);
+    if (entry) entry.count++;
+    else
+      counts.set(key, {
+        place: { id: "", name: p.name, at: p.at, kind: p.kind, ...(p.country ? { country: p.country } : {}) },
+        count: 1,
+      });
+  };
+  for (const a of e.articles) for (const p of a.places) add(snapRegionToCity(p, gaz));
+  const titles = e.articles.map((a) => a.title);
+  for (const p of placesFromHeadlines(
+    titles,
+    e.countries.map((c) => c.iso2),
+    gaz,
+  ))
+    add(p);
   const precise = [...counts.values()]
     .sort((a, b) => b.count - a.count)
     .slice(0, 6)

@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "dawn-phone",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:phone"],
+      "port": 3000
     }
   ]
 }

@@ -87,6 +87,39 @@
   animation: slow-load-hint 0.4s ease 12s forwards;
 }
 
+/* The main pin's slow pulse on the MapLibre globe (dots and labels are drawn by the map). */
+.dawn-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  border: 1.2px solid var(--color-accent);
+  pointer-events: none;
+  animation: dawn-pulse 2.4s ease-out infinite;
+}
+@keyframes dawn-pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  to {
+    transform: scale(4.5);
+    opacity: 0;
+  }
+}
+
+/* Map credit (required by the tile licence), kept small and grey. */
+.dawn-map .maplibregl-ctrl-attrib {
+  background: rgb(15 20 27 / 0.7);
+  color: var(--color-ink-faint);
+  font-size: 10px;
+}
+.dawn-map .maplibregl-ctrl-attrib a {
+  color: var(--color-ink-muted);
+}
+.dawn-map .maplibregl-ctrl-attrib-button {
+  filter: invert(0.75);
+}
+
 /* Reduced motion: no animations, instant transitions (the globe cuts instead of flying). */
 @media (prefers-reduced-motion: reduce) {
   *,

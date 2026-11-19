@@ -4,7 +4,8 @@ import { getCountry, getRegion, type CameraView } from "@dawn/config";
 import type { Playlist, SceneDirective, StoryEvent } from "@dawn/pipeline/schema";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import { CanvasGlobe, type GlobeFocus } from "@/components/globe/CanvasGlobe";
+import type { GlobeFocus } from "@/components/globe/CanvasGlobe";
+import { Globe } from "@/components/globe/Globe";
 import { NewsPicker } from "@/components/picker/NewsPicker";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -284,7 +285,7 @@ export function BriefScreen() {
   return (
     <div className="relative h-dvh overflow-hidden bg-ground">
       <div className="absolute inset-0">
-        <CanvasGlobe scene={scene} focus={focus} reducedMotion={reduceMotion} label={globeLabel} />
+        <Globe scene={scene} focus={focus} reducedMotion={reduceMotion} label={globeLabel} />
       </div>
 
       {/* Overlays. pointer-events only on the actual controls so the globe stays visible. */}
