@@ -17,8 +17,7 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 - M1–M6 approved and pushed (M5 offline 2026-11-13; M6 globe 2026-11-19). Next: M7 (images).
 - M6: MapLibre globe on OpenFreeMap tiles (`globe/MapGlobe.tsx`,
   canvas globe kept as fallback, `?globe=simple`), gazetteer pins (`pipeline/src/geo/`). Nightlies 16–19 Nov ran fine.
-  Pipeline pin fixes show from the next nightly brief. Next.js 16.4.4 has a known security
-  advisory (16.4.6 out): update after M6.
+  Pipeline pin fixes show from the next nightly brief.
 - Nightly gate fixed 2026-11-13: GitHub starts scheduled runs ~6 h late, so the job now runs if it is past 04:00
   Berlin and today's brief is not on main yet (the old 04:xx-only gate skipped every night).
 - 2026-11-15: repo made PUBLIC (free unlimited Actions minutes); history rewritten to the noreply email
@@ -39,7 +38,7 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 
 ## Next steps
 
-1. Update Next.js (security advisory), then M7 (licensed images).
+1. M7 (licensed images). Next.js updated to 16.4.6 on 2026-11-19 (npm audit clean).
 2. Check the next nightly brief pins NYC (not NY State) and has headline cities.
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
    (free route, e.g. a Trusted Web Activity / Capacitor wrapper of the deployed app), not just "Add to Home screen".
