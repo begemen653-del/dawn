@@ -55,13 +55,14 @@ so a damaged file shows a friendly error instead of a broken page.
 The **scene directive** is a closed, strict union (`marker`, `highlight`, `arc`, `area`, `timelineStep`, plus a
 camera). Unknown types or keys are rejected, so the AI can never make the globe do something unplanned.
 
-## Hosting: Vercel Hobby (free)
+## Hosting: GitHub Pages (free)
 
-- The repo is **private**; GitHub Pages on a private repo needs a paid GitHub plan. Vercel Hobby deploys private
-  repos for free (personal, non-commercial use).
-- Every nightly commit redeploys the site automatically.
-- Vercel Functions on the same free plan can serve lazy "Go deeper" content later (limits verified in
-  Milestone 4 before relying on them).
+- The repo is public (since 2026-11-15), so GitHub Pages is free: https://begemen653-del.github.io/dawn/.
+- `pages.yml` publishes after every push and after every nightly brief. The site lives in the `/dawn`
+  folder; see [ANDROID.md](ANDROID.md) for how paths handle that.
+- Purely static: no server functions. "Go deeper" text that wasn't pre-written stays "written on request"
+  for now (on-demand writing would need a server with the AI keys).
+- The Android app (Capacitor) opens this site; see [ANDROID.md](ANDROID.md).
 
 ## Tooling decisions
 

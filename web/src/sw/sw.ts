@@ -22,6 +22,9 @@ declare global {
 
 declare const self: ServiceWorkerGlobalScope;
 
+/** The app's folder: "/dawn/" on GitHub Pages, "/" locally (the worker sits at its top). */
+const BASE = new URL(self.registration.scope).pathname;
+
 const serwist = new Serwist({
   precacheEntries: self.__SW_MANIFEST ?? [],
   skipWaiting: true,
@@ -29,7 +32,7 @@ const serwist = new Serwist({
   navigationPreload: true,
   runtimeCaching: [
     {
-      matcher: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith("/data/"),
+      matcher: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith(`${BASE}data/`),
       handler: new NetworkOnly(),
     },
     // Story photos from Wikimedia: keep the ones already seen so they also show offline.
@@ -47,7 +50,7 @@ const serwist = new Serwist({
   fallbacks: {
     entries: [
       {
-        url: "/~offline",
+        url: `${BASE}~offline/`,
         matcher({ request }) {
           return request.destination === "document";
         },

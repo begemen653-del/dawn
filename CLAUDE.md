@@ -43,9 +43,13 @@ Read this first in a new session. The full spec is the user's master prompt (mil
 
 ## Next steps
 
-1. Check the next nightly brief: photos added (log line "Photo check: …"), NYC pinned (not NY State),
-   headline cities. Next.js 16.4.6 (2026-11-19).
-2. Start M8 when the owner says so.
+1. M8 built and pushed for the phone test 2026-11-19, NOT yet approved (docs/ANDROID.md): site on GitHub Pages
+   https://begemen653-del.github.io/dawn/ (`pages.yml`, base path `/dawn`), Capacitor APK built by `android.yml`
+   into release tag `android`, 06:30 local reminder, Sources & credits page. Owner chose Pages (no Vercel), 06:30,
+   no Windows install. Signing key: %USERPROFILE%\.dawn\dawn-release.jks, password in .env.local, secrets
+   DAWN_KEYSTORE_BASE64/PASSWORD. Remind the owner to back up the key.
+2. Check the next nightly brief: photos added (log line "Photo check: …"), NYC pinned (not NY State),
+   headline cities, and that "Publish site" ran after it. Next.js 16.4.6 (2026-11-19).
 3. Owner's choice (2026-11-12): no hosting/install before M8. At M8, deliver an installable Android APK
    (free route, e.g. a Trusted Web Activity / Capacitor wrapper of the deployed app), not just "Add to Home screen".
 

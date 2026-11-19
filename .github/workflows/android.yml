@@ -1,0 +1,69 @@
+name: Android app
+
+# Builds the Dawn APK and attaches it to the "android" release:
+# https://github.com/begemen653-del/dawn/releases/tag/android
+# The app shows the published site, so it only needs rebuilding when the Android shell changes.
+on:
+  push:
+    branches: [main]
+    paths: ["android-app/**", ".github/workflows/android.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+      - run: npm ci
+      - name: Copy the app shell into the Android project
+        run: npx cap sync android
+        working-directory: android-app
+
+      - name: Build the signed APK
+        working-directory: android-app/android
+        env:
+          DAWN_KEYSTORE_BASE64: ${{ secrets.DAWN_KEYSTORE_BASE64 }}
+          DAWN_KEYSTORE_PASSWORD: ${{ secrets.DAWN_KEYSTORE_PASSWORD }}
+          DAWN_KEY_ALIAS: dawn
+          # Grows with every build, so Android accepts each APK as an update.
+          DAWN_VERSION_CODE: ${{ github.run_number }}
+          DAWN_VERSION_NAME: 1.0.${{ github.run_number }}
+        run: |
+          if [ -z "$DAWN_KEYSTORE_BASE64" ]; then
+            echo "::error::The DAWN_KEYSTORE_BASE64 secret is missing (see docs/ANDROID.md)."; exit 1
+          fi
+          export DAWN_KEYSTORE_FILE="$RUNNER_TEMP/dawn-release.jks"
+          echo "$DAWN_KEYSTORE_BASE64" | base64 --decode > "$DAWN_KEYSTORE_FILE"
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease
+          cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/Dawn.apk"
+          rm -f "$DAWN_KEYSTORE_FILE"
+
+      - name: Publish the APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="Dawn for Android, version 1.0.${{ github.run_number }}. On the phone: download Dawn.apk, open it, allow installing from this source once."
+          if gh release view android >/dev/null 2>&1; then
+            gh release upload android "$RUNNER_TEMP/Dawn.apk" --clobber
+            gh release edit android --notes "$notes"
+          else
+            gh release create android "$RUNNER_TEMP/Dawn.apk" --title "Dawn for Android" --notes "$notes" --latest
+          fi

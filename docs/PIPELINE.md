@@ -135,7 +135,8 @@ exceeded. Expected nightly use: ~110 requests, ~0.9–1.3 M tokens, 10–35 minu
 
 **Go deeper split (proposal):** pre-written for Global, all regions and the top 3 stories of each big country
 (about 100–150 stories a night). Other stories show "more background will be written on request"; writing those
-on demand needs a small server function (Vercel, free) and is planned for Milestone 8.
+on demand would need a small server function holding the AI keys; Dawn is a static site on GitHub Pages, so this
+is not built (an option for later).
 
 ## Places on the globe (Milestone 6)
 
@@ -169,4 +170,4 @@ Coordinates never come from the AI: it only picks from a candidate list built he
 | GDELT bulk files           | free, no key, no rate limit | ≈ 290 MB/night                        |
 | Gemini / Groq / OpenRouter | verified in M4              | M4                                    |
 | Nominatim                  | 1 request/second max        | not needed so far (gazetteer + GDELT) |
-| Vercel Hobby               | verified in M8              | static site + a few functions         |
+| GitHub Pages (public repo) | 1 GB site, 100 GB/month     | ~10 MB site, a few MB/day             |

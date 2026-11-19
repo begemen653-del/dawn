@@ -1,5 +1,6 @@
 import { DayIndex, EventStore, Playlist, type StoryEvent } from "@dawn/pipeline/schema";
 import type { z } from "zod";
+import { withBase } from "./base-path";
 
 /**
  * Loading and saving the brief.
@@ -11,7 +12,7 @@ import type { z } from "zod";
  * - once a new brief is fully saved, older ones are deleted (only one day is ever kept).
  */
 
-const DATA = "/data/latest";
+const DATA = withBase("/data/latest");
 const CACHE_PREFIX = "dawn-brief:";
 const DOWNLOADS_AT_ONCE = 6;
 

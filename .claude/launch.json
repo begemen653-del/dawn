@@ -12,6 +12,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev:phone"],
       "port": 3000
+    },
+    {
+      "name": "dawn-pages",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["web/scripts/serve-pages.mjs"],
+      "port": 4173
     }
   ]
 }

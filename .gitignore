@@ -23,3 +23,7 @@ coverage/
 .DS_Store
 Thumbs.db
 *.log
+
+# Android signing keys - never commit
+*.jks
+*.keystore

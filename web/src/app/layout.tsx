@@ -3,6 +3,8 @@ import type { Metadata, Viewport } from "next";
 import { Newsreader, Public_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 import { FlagPolyfill } from "@/components/FlagPolyfill";
+import { MorningReminder } from "@/components/MorningReminder";
+import { withBase } from "@/lib/base-path";
 import "./globals.css";
 
 // next/font downloads these at build time and serves them from our own domain: no runtime Google requests.
@@ -23,10 +25,10 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
   icons: {
     icon: [
-      { url: "/icons/icon.svg", type: "image/svg+xml" },
-      { url: "/icons/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: withBase("/icons/icon.svg"), type: "image/svg+xml" },
+      { url: withBase("/icons/favicon-32.png"), sizes: "32x32", type: "image/png" },
     ],
-    apple: "/icons/apple-touch-icon.png",
+    apple: withBase("/icons/apple-touch-icon.png"),
   },
 };
 
@@ -41,12 +43,14 @@ export default function RootLayout({ children }: { readonly children: ReactNode 
     <html lang="en" dir="ltr" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <FlagPolyfill />
+        <MorningReminder />
         {/* /sw.js is copied to the site root after the build (scripts/copy-sw.mjs) so it can look
             after the whole app. Off during development, where saved copies would hide code changes. */}
         {/* reloadOnOnline off: the brief screen checks for a new brief itself when the connection
             returns, without throwing the reader out of the story they're on. */}
         <SerwistProvider
-          swUrl="/sw.js"
+          swUrl={withBase("/sw.js")}
+          options={{ scope: withBase("/") }}
           disable={process.env.NODE_ENV !== "production"}
           reloadOnOnline={false}
         >

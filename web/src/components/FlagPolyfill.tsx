@@ -2,6 +2,7 @@
 
 import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 import { useEffect } from "react";
+import { withBase } from "@/lib/base-path";
 
 /**
  * Windows doesn't draw flag emojis (it shows "DE" instead of 🇩🇪).
@@ -9,7 +10,7 @@ import { useEffect } from "react";
  */
 export function FlagPolyfill() {
   useEffect(() => {
-    polyfillCountryFlagEmojis("Twemoji Country Flags", "/fonts/TwemojiCountryFlags.woff2");
+    polyfillCountryFlagEmojis("Twemoji Country Flags", withBase("/fonts/TwemojiCountryFlags.woff2"));
   }, []);
   return null;
 }

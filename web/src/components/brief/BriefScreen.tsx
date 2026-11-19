@@ -6,6 +6,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { GlobeFocus } from "@/components/globe/CanvasGlobe";
 import { Globe } from "@/components/globe/Globe";
+import Link from "next/link";
 import { NewsPicker } from "@/components/picker/NewsPicker";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -542,7 +543,13 @@ export function BriefScreen() {
                 </svg>
               </Button>
             </div>
-            <span aria-hidden />
+            <Link
+              href="/sources"
+              prefetch={false}
+              className="justify-self-end text-xs text-ink-faint underline-offset-2 hover:text-ink hover:underline"
+            >
+              Sources
+            </Link>
           </div>
         </div>
       </div>

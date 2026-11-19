@@ -2,6 +2,7 @@ import { geoBounds, geoCentroid, geoDistance } from "d3-geo";
 import type { Feature } from "geojson";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
+import { withBase } from "../../lib/base-path";
 
 export type Detail = "110m" | "50m";
 
@@ -49,7 +50,7 @@ function toShape(f: Feature): CountryShape {
 export function loadWorld(detail: Detail): Promise<WorldData> {
   let promise = pending.get(detail);
   if (!promise) {
-    promise = fetch(`/geo/countries-${detail}.json`)
+    promise = fetch(withBase(`/geo/countries-${detail}.json`))
       .then(async (res) => {
         if (!res.ok) throw new Error(`World map HTTP ${res.status}`);
         const topo = (await res.json()) as WorldTopology;
@@ -69,7 +70,7 @@ let placesPending: Promise<readonly Place[]> | null = null;
 
 /** ~2,400 cities from Natural Earth, most important first. */
 export function loadPlaces(): Promise<readonly Place[]> {
-  placesPending ??= fetch("/geo/places.json")
+  placesPending ??= fetch(withBase("/geo/places.json"))
     .then(async (res) => {
       if (!res.ok) throw new Error(`Places HTTP ${res.status}`);
       return (await res.json()) as Place[];

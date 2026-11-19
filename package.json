@@ -5,7 +5,8 @@
   "workspaces": [
     "config",
     "pipeline",
-    "web"
+    "web",
+    "android-app"
   ],
   "engines": {
     "node": ">=24"

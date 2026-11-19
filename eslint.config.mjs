@@ -11,6 +11,7 @@ export default defineConfig([
     "coverage/**",
     "web/.next/**",
     "web/out/**",
+    "android-app/android/**",
     "web/public/serwist/**",
     "web/public/maplibre/**",
     "web/next-env.d.ts",
@@ -32,7 +33,7 @@ export default defineConfig([
     extends: [tseslint.configs.disableTypeChecked],
   },
   {
-    files: ["scripts/**", "pipeline/**", "config/**", "*.ts", "*.mjs"],
+    files: ["scripts/**", "pipeline/**", "config/**", "android-app/**", "web/scripts/**", "*.ts", "*.mjs"],
     languageOptions: { globals: globals.node },
   },
   {

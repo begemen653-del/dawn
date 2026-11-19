@@ -65,6 +65,9 @@ after its `=`. This file is ignored by git, so it never leaves your PC. Then:
 
 **Run it on GitHub now:** repo → **Actions** → **Nightly brief** → **Run workflow** → mode `live`.
 
-## Coming later in this README
+## Using Dawn
 
-Deploying to Vercel, installing the app on Android and Windows, and the morning notification (Milestone 8).
+- **Website:** https://begemen653-del.github.io/dawn/ (updated after every nightly brief).
+- **Android app:** download `Dawn.apk` from https://github.com/begemen653-del/dawn/releases/tag/android and
+  install it; it reminds you at 06:30 each morning. Details and the signing key: [docs/ANDROID.md](docs/ANDROID.md).
+- **Sources & credits:** the “Sources” link at the bottom right of the app.

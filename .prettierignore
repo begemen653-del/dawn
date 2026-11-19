@@ -6,3 +6,4 @@ web/public
 config/countries.ts
 package-lock.json
 pipeline/data/
+android-app/android/

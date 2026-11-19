@@ -10,6 +10,7 @@ import type { GlobeFocus } from "./CanvasGlobe";
 import { LABEL_LAYERS, mapStyle } from "./map-style";
 import { EMPTY, flightMs, paddingFor, partOfLine, sceneShapes, unwrapGeometry } from "./scene-geo";
 import { loadPlaces, loadWorld, type Place, type WorldData } from "./world";
+import { withBase } from "../../lib/base-path";
 
 export interface MapGlobeProps {
   readonly scene: SceneDirective | null;
@@ -111,7 +112,7 @@ export function MapGlobe({ scene, focus, reducedMotion, label, onFail }: MapGlob
         return;
       }
       if (life.disposed) return;
-      maplibre.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
+      maplibre.setWorkerUrl(withBase("/maplibre/maplibre-gl-worker.mjs"));
       markerClassRef.current = maplibre.Marker;
 
       let map: MapLibreMap;
