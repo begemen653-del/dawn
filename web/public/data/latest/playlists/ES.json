@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "ES",
   "title": "Spain",
   "eventIds": [
-    "ev-79ef3f0c9e9c",
-    "ev-59a3273e0056",
-    "ev-f131ed82a1f0",
-    "ev-20adae58825d",
-    "ev-019f626badb7",
-    "ev-357d3a9a6048",
-    "ev-e1ab4436ccd1"
+    "ev-b49f0be8d3a7",
+    "ev-785ed87c8537",
+    "ev-ce9cc95f2800",
+    "ev-f3524cfcf26b",
+    "ev-b61ced46f59b",
+    "ev-732c85a138eb",
+    "ev-071fd6b28dd5"
   ]
 }

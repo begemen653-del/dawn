@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "HU",
   "title": "Hungary",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Hungary in the last 24 hours."
+  "eventIds": [
+    "ev-8d5f8cf23e3e",
+    "ev-33a486a75100",
+    "ev-7cb8a6d7a8a5",
+    "ev-ed7bfa6adf83",
+    "ev-24b7da18523e"
+  ]
 }

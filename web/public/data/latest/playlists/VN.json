@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "VN",
   "title": "Vietnam",
   "eventIds": [
-    "ev-8170c2ad5b7c",
-    "ev-dbb4df5c14d1"
+    "ev-1a026daf5f00",
+    "ev-08a6e35168ec",
+    "ev-23abc9b93c35",
+    "ev-5cb486b413df"
   ]
 }

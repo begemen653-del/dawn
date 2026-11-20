@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "BI",
   "title": "Burundi",
-  "eventIds": [
-    "ev-7d4ed633d1b4"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Burundi in the last 24 hours."
 }

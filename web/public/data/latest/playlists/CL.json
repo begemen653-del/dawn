@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "CL",
   "title": "Chile",
   "eventIds": [
-    "ev-a42194e8968a",
-    "ev-358d10f087d6",
-    "ev-4786856bc939",
-    "ev-bca36517ff31",
-    "ev-c2662161bab3"
+    "ev-914d589ea8fd",
+    "ev-8a68280f7a17",
+    "ev-849f884a628d",
+    "ev-ddfdfe2b74f3"
   ]
 }

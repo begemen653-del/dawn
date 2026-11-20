@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "MM",
   "title": "Myanmar",
   "eventIds": [
-    "ev-2676aa1d11f5"
+    "ev-6e1a80d5b30a",
+    "ev-645e5b490e7e"
   ]
 }

@@ -1,11 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "JM",
   "title": "Jamaica",
   "eventIds": [
-    "ev-a2c9d8cdcf1f",
-    "ev-8bfa0752b809",
-    "ev-e4495be11757"
+    "ev-8bfa0752b809"
   ]
 }

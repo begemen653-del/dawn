@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "FM",
   "title": "Micronesia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Micronesia in the last 24 hours."
+  "eventIds": [
+    "ev-69b69004cbe1"
+  ]
 }

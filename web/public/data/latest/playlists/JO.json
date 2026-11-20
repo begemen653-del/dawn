@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "JO",
   "title": "Jordan",
-  "eventIds": [
-    "ev-606a016532d2",
-    "ev-00a1fd970a41",
-    "ev-211eacd7bd50"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Jordan in the last 24 hours."
 }

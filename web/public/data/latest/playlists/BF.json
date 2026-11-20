@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "BF",
   "title": "Burkina Faso",
   "eventIds": [
-    "ev-b1e907f2330e",
-    "ev-0e1609306ff7"
+    "ev-6fe50a4c8bb2",
+    "ev-4af4043f9717",
+    "ev-e5036417d1b8",
+    "ev-7d047efb0886"
   ]
 }

@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "MA",
   "title": "Morocco",
   "eventIds": [
-    "ev-1e03716e1271"
+    "ev-cc698ac85439",
+    "ev-e178133ee337",
+    "ev-70da3e07ad7b",
+    "ev-58d5fc3e740f"
   ]
 }

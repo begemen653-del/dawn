@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "KP",
   "title": "North Korea",
   "eventIds": [
-    "ev-8b816bbe983f",
-    "ev-a87a48022105",
-    "ev-fcf5ffea9f5c"
+    "ev-2cec81d2013a",
+    "ev-7ba1f337dc7c"
   ]
 }

@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "SY",
   "title": "Syria",
-  "eventIds": [
-    "ev-f7254a7fc8c6",
-    "ev-a87a48022105"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Syria in the last 24 hours."
 }

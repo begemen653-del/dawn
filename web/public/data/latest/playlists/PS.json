@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "PS",
   "title": "Palestine",
   "eventIds": [
-    "ev-f747c621d19b",
-    "ev-1b632f24e17a",
-    "ev-2d6987a28395",
-    "ev-fe593be223ff"
+    "ev-1242a8c96a8f",
+    "ev-beb2f061dd9f",
+    "ev-4033abf53f3e"
   ]
 }

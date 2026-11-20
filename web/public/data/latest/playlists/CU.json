@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "CU",
   "title": "Cuba",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Cuba in the last 24 hours."
+  "eventIds": [
+    "ev-199acf0b90be"
+  ]
 }

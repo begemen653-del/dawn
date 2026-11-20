@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "ML",
   "title": "Mali",
   "eventIds": [
-    "ev-fb17a1406a58"
+    "ev-51277e91e4b2",
+    "ev-e5036417d1b8",
+    "ev-7f15a5aff10f"
   ]
 }

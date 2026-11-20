@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "BB",
   "title": "Barbados",
-  "eventIds": [
-    "ev-02eaa72a932e"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Barbados in the last 24 hours."
 }

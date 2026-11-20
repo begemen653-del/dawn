@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "MU",
   "title": "Mauritius",
-  "eventIds": [
-    "ev-763dbae5953d",
-    "ev-6726309bc438"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Mauritius in the last 24 hours."
 }

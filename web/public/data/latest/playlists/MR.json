@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "MR",
   "title": "Mauritania",
-  "eventIds": [
-    "ev-0e1609306ff7"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Mauritania in the last 24 hours."
 }

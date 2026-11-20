@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "ZM",
   "title": "Zambia",
-  "eventIds": [
-    "ev-07abb4c5813b",
-    "ev-8e990129a607"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Zambia in the last 24 hours."
 }

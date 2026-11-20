@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "MV",
   "title": "Maldives",
-  "eventIds": [
-    "ev-3213ccfed9fa"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Maldives in the last 24 hours."
 }

@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "GT",
   "title": "Guatemala",
   "eventIds": [
-    "ev-d9f646ef6f66",
-    "ev-8fd65a2dd15a",
-    "ev-d554d84b727c"
+    "ev-f91552b3118b",
+    "ev-95bc634e82b1",
+    "ev-27af6bfe1157",
+    "ev-f0bb0b836f75",
+    "ev-4e59824e0386"
   ]
 }

@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "SL",
   "title": "Sierra Leone",
-  "eventIds": [
-    "ev-37359633ca31",
-    "ev-a9a13166a1da"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Sierra Leone in the last 24 hours."
 }

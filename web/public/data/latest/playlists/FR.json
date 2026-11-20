@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "FR",
   "title": "France",
   "eventIds": [
-    "ev-079ceef59433",
-    "ev-b9f741496b7d",
-    "ev-a47d7b6a396c",
-    "ev-8d0774bfe2a3"
+    "ev-d3abdddcc409",
+    "ev-1a788064f5e9",
+    "ev-fac83bdba3ef"
   ]
 }

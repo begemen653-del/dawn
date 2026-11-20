@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "UZ",
   "title": "Uzbekistan",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Uzbekistan in the last 24 hours."
+  "eventIds": [
+    "ev-350aa42b45db",
+    "ev-b9faa9501441"
+  ]
 }

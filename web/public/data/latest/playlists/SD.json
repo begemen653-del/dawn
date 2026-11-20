@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "SD",
   "title": "Sudan",
-  "eventIds": [
-    "ev-c2cc134746ae"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Sudan in the last 24 hours."
 }

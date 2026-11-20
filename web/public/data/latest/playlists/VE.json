@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "VE",
   "title": "Venezuela",
   "eventIds": [
-    "ev-602f2b4db75a",
-    "ev-54da75867175"
+    "ev-ad5afe692520",
+    "ev-0978231b9bd8",
+    "ev-4fc524fec8b7"
   ]
 }
