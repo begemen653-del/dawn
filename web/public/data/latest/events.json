@@ -1,8 +1,203 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-20",
-  "generatedAt": "2026-11-20T03:31:25.359Z",
+  "generatedAt": "2026-11-20T17:01:27.707Z",
   "events": [
+    {
+      "id": "ev-0c5171b98003",
+      "headline": "Trump schedules White House address following talks with Xi and Putin",
+      "summary": "US President Donald Trump announced a White House press conference after returning to Washington from a four-day trip to Asia. In Shenzhen, China, Trump held a three-way meeting with Chinese President Xi Jinping and Russian President Vladimir Putin. The leaders discussed global relations, nuclear proliferation, and Iran.",
+      "whyItMatters": "The meeting brought together the leaders commanding the world's largest nuclear arsenals to discuss international security risks.",
+      "topic": "politics",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Shenzhen",
+          "at": [
+            111.117,
+            22.2
+          ],
+          "country": "CN"
+        },
+        {
+          "name": "White House",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "France 24",
+          "title": "Watch live: Trump holds press conference after meeting with Xi, Putin",
+          "url": "https://france24.com/en/americas/20261120-watch-live-trump-holds-press-conference-meeting-xi-putin",
+          "publishedAt": "2026-11-20T16:30:04.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "NPR",
+          "title": "Trump to hold press conference after meeting with Xi and Putin",
+          "url": "https://npr.org/2026/11/20/nx-s1-6047594/trump-asia-trip-xi-putin-press-conference",
+          "publishedAt": "2026-11-20T15:00:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Xi’s greatest power is what he chooses not to do",
+          "url": "https://aljazeera.com/opinions/2026/11/20/xis-greatest-power-is-what-he-chooses-not-to-do?traffic_source=rss",
+          "publishedAt": "2026-11-20T14:03:08.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "indiagazette.com",
+          "title": "Trump, Xi and Putin pledge to avoid nuclear war",
+          "url": "https://indiagazette.com/news/279443665/trump-xi-and-putin-pledge-to-avoid-nuclear-war",
+          "publishedAt": "2026-11-20T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "impartialreporter.com",
+          "title": "European troops take part in exercise with eye on post-war Ukraine",
+          "url": "https://impartialreporter.com/news/national/26746913.european-troops-take-part-exercise-eye-post-war-ukraine",
+          "publishedAt": "2026-11-20T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 100,
+      "countries": [
+        "US",
+        "CN",
+        "RU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 111.117,
+          "lat": 22.2,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "CN",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              111.117,
+              22.2
+            ],
+            "label": "Shenzhen",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "White House",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-203497429",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0839_%2855662874378%29_%28cropped%29.jpg/500px-Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0839_%2855662874378%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0839_(55662874378)_(cropped).jpg",
+          "provider": "wikimedia-commons",
+          "author": "The White House",
+          "license": {
+            "id": "public-domain",
+            "name": "Public domain"
+          },
+          "alt": "President of the United States Donald J. Trump participates in a trilateral meeting with Russian President Vladimir Putin and General Secretary of the Chinese Communist Party Xi Jinping at Kylin Vill…",
+          "illustrative": false
+        },
+        {
+          "id": "commons-203497384",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0901_%2855662934489%29_%28cropped%29.jpg/500px-Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0901_%2855662934489%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xi%E2%80%93Putin%E2%80%93Trump_summit_-_P20261119DT-0901_(55662934489)_(cropped).jpg",
+          "provider": "wikimedia-commons",
+          "author": "The White House",
+          "license": {
+            "id": "public-domain",
+            "name": "Public domain"
+          },
+          "alt": "President of the United States Donald J. Trump participates in a trilateral meeting with Russian President Vladimir Putin and General Secretary of the Chinese Communist Party Xi Jinping at Kylin Vill…",
+          "illustrative": false
+        }
+      ],
+      "deeper": {
+        "background": "The leaders gathered around a large wooden table at a lakeside resort in Shenzhen during the Asia-Pacific Economic Cooperation summit.",
+        "keyPlayers": [
+          {
+            "name": "Donald Trump",
+            "role": "US President"
+          },
+          {
+            "name": "Xi Jinping",
+            "role": "Chinese President"
+          },
+          {
+            "name": "Vladimir Putin",
+            "role": "Russian President"
+          }
+        ],
+        "whatNext": "Trump is scheduled to address reporters at the White House regarding the talks and trade agreements made during his Asia tour.",
+        "timeline": [
+          {
+            "date": "19 November 2026",
+            "label": "Trump, Xi, and Putin hold trilateral meeting in Shenzhen"
+          },
+          {
+            "date": "20 November 2026",
+            "label": "Trump schedules White House press conference"
+          }
+        ],
+        "simpler": "The leaders of the US, China, and Russia met in China to talk about world relations and avoiding nuclear conflict."
+      }
+    },
     {
       "id": "ev-0dd4a0741707",
       "headline": "Trump, Xi and Putin hold historic trilateral meeting in China",
@@ -178,6 +373,455 @@
           }
         ],
         "simpler": "The leaders of the US, China, and Russia met together for the very first time in China to talk about world peace, nuclear weapons, and the war in Ukraine."
+      }
+    },
+    {
+      "id": "ev-9a21009b57fe",
+      "headline": "UK Prime Minister meets EU leaders in Brussels to rebuild post-Brexit ties",
+      "summary": "UK Prime Minister Andy Burnham met European Commission President Ursula von der Leyen and European Council President António Costa in Brussels. The summit is the second formal meeting between the sides since Britain left the European Union. Burnham stated that Brexit has hurt the British economy and called for rebuilding relations.",
+      "whyItMatters": "The talks could pave the way for closer economic, trade, and youth movement agreements between the UK and the EU.",
+      "topic": "politics",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "United Kingdom",
+          "at": [
+            -2.116,
+            54.403
+          ],
+          "country": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "NPR",
+          "title": "The U.K. and EU hold a rare summit to strengthen ties",
+          "url": "https://npr.org/2026/11/20/g-s1-154576/uk-eu-summit",
+          "publishedAt": "2026-11-20T09:14:41.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "What impact has Brexit had on the UK and EU economies?",
+          "url": "https://theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies",
+          "publishedAt": "2026-11-20T07:00:26.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "UK says new deal will ‘rebuild bridges’ with EU: What’s in it?",
+          "url": "https://aljazeera.com/news/2026/11/20/uk-eu-deal-what-we-know-so-far?traffic_source=rss",
+          "publishedAt": "2026-11-20T13:59:17.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "kentonline.co.uk",
+          "title": "Burnham says UK and EU 'stronger together' ahead of deal with Brussels",
+          "url": "https://kentonline.co.uk/news/national/burnham-says-uk-and-eu-stronger-together-ahead-of-deal-with-brussels-174543",
+          "publishedAt": "2026-11-20T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "stratford-herald.com",
+          "title": "University fees row puts implementation of Burnham's EU deal in jeopardy",
+          "url": "https://stratford-herald.com/national/university-fees-row-puts-implementation-of-burnham-s-eu-deal-in-jeopardy-174547",
+          "publishedAt": "2026-11-20T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "europapress.es",
+          "title": "La UE y Reino Unido se emplazan a una \"tormenta de ideas\" sobre hasta dónde llevar el 'reset' tras el Brexit",
+          "url": "https://europapress.es/internacional/noticia-ue-reino-unido-emplazan-tormenta-ideas-donde-llevar-reset-brexit-20261120154013.html",
+          "publishedAt": "2026-11-20T15:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "diariosur.es",
+          "title": "La UE y Reino Unido se dan seis meses para llegar a un acuerdo sobre las tasas universitarias",
+          "url": "https://diariosur.es/internacional/europa/ue-reino-unido-dan-seis-meses-llegar-20261120132456-ntrc.html",
+          "publishedAt": "2026-11-20T12:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lavanguardia.com",
+          "title": "La UE y el Reino Unido se acercan con desconfianza diez años después del Brexit",
+          "url": "https://lavanguardia.com/internacional/20261120/11689003/ue-reino-unido-acercan-desconfianza-diez-anos-brexit.html",
+          "publishedAt": "2026-11-20T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "m24digital.com",
+          "title": "La Comisión Europea confirmó ciberataques impulsados por inteligencia artificial",
+          "url": "https://m24digital.com/la-comision-europea-confirmo-ciberataques-impulsados-por-inteligencia-artificial",
+          "publishedAt": "2026-11-20T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "canal26.com",
+          "title": "La Comisión Europea sufrió ciberataques con inteligencia artificial: qué sistemas fueron afectados",
+          "url": "https://canal26.com/internacionales/2026/11/19/la-comision-europea-sufrio-ciberataques-con-inteligencia-artificial-que-sistemas-fueron-afectados",
+          "publishedAt": "2026-11-20T11:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 84.3,
+      "countries": [
+        "GB",
+        "BE"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 4.33333,
+          "lat": 50.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "BE",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "A decade after British voters chose to leave the European Union, trade barriers and red tape have slowed economic growth and lowered UK GDP per head.",
+        "keyPlayers": [
+          {
+            "name": "Andy Burnham",
+            "role": "UK Prime Minister"
+          },
+          {
+            "name": "Ursula von der Leyen",
+            "role": "President of the European Commission"
+          },
+          {
+            "name": "António Costa",
+            "role": "President of the European Council"
+          }
+        ],
+        "whatNext": "UK ministers and European commissioners will join plenary sessions to negotiate deals on trade and youth mobility.",
+        "timeline": [
+          {
+            "date": "12 November 2026",
+            "label": "Burnham meets von der Leyen at EPC summit in Dublin"
+          },
+          {
+            "date": "20 November 2026",
+            "label": "UK and EU leaders meet in Brussels"
+          }
+        ],
+        "simpler": "The UK Prime Minister visited EU leaders in Brussels to work on better trade and friendship ten years after Brexit."
+      }
+    },
+    {
+      "id": "ev-68c10d98d9dd",
+      "headline": "Anthropic share price falls after record market debut",
+      "summary": "AI company Anthropic saw its shares drop toward its initial public offering price after a massive market debut on the Nasdaq exchange. The maker of the Claude chatbot had raised a record $81 billion in its initial public offering, surpassing SpaceX.",
+      "whyItMatters": "The drop reflects ongoing tech market declines and highlights the high volatility expected for major artificial intelligence firms entering the public market.",
+      "topic": "business",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "New York",
+          "at": [
+            -73.982,
+            40.752
+          ],
+          "country": "US"
+        },
+        {
+          "name": "San Francisco",
+          "at": [
+            -122.419,
+            37.7749
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Yorkville",
+          "at": [
+            -75.271,
+            43.1128
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Anthropic shares fall a day after blockbuster opening",
+          "url": "https://bbc.co.uk/news/articles/c6808ym10vzgo",
+          "publishedAt": "2026-11-20T16:27:47.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "milwaukeesun.com",
+          "title": "Anthropic tops SpaceX with biggest IPO on record",
+          "url": "https://milwaukeesun.com/news/279443921/anthropic-tops-spacex-with-biggest-ipo-on-record",
+          "publishedAt": "2026-11-20T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "businessworld.in",
+          "title": "Anthropic Debuts At $1.8 Tn Valuation After Record IPO",
+          "url": "https://businessworld.in/article/anthropic-debuts-at-1-8-tn-valuation-634439",
+          "publishedAt": "2026-11-20T05:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wdbo.com",
+          "title": "Anthropic's IPO caps an explosive growth period for the AI startup",
+          "url": "https://wdbo.com/news/business/anthropics-ipo-caps/FDWZGMUUSE63BGVH43AFKPE3KU",
+          "publishedAt": "2026-11-20T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dailycamera.com",
+          "title": "Anthropic's record IPO caps explosive growth period for AI company",
+          "url": "https://dailycamera.com/2026/11/20/anthropic-ipo-dario-amodei",
+          "publishedAt": "2026-11-20T15:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 83.7,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -73.982,
+          "lat": 40.752,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -73.982,
+              40.752
+            ],
+            "label": "New York",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -122.419,
+              37.7749
+            ],
+            "label": "San Francisco",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -75.271,
+              43.1128
+            ],
+            "label": "Yorkville",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Anthropic priced its initial public offering at $83 per share before beginning its trade on the Nasdaq stock exchange on Thursday, raising a record $81 billion and valuing the business at $1.5 trillion.",
+        "keyPlayers": [
+          {
+            "name": "Dan Ives",
+            "role": "Financial analyst at Yorkville Ives & Co."
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "18 November",
+            "label": "Anthropic priced its initial public offering"
+          },
+          {
+            "date": "Thursday",
+            "label": "Anthropic began trading on the Nasdaq"
+          },
+          {
+            "date": "Friday",
+            "label": "Anthropic's shares fell on the stock market"
+          }
+        ],
+        "simpler": "The company that makes the Claude AI tool had a huge stock market debut, raising a record $81 billion. However, its share price fell the next day as the wider tech market dropped."
+      }
+    },
+    {
+      "id": "ev-c37cea739de8",
+      "headline": "Russian missile and drone strikes damage major bridges in Kyiv",
+      "summary": "Russian military strikes targeted Kyiv, causing damage to the Podilsko-Voskresensky and Darnytsky bridges and closing traffic across the river. Kyiv Mayor Vitali Klitschko confirmed the hits as fires broke out in the Obolon and Podil districts. Russian President Vladimir Putin had pledged retaliation after strikes damaged the Crimea bridge earlier in the week.",
+      "whyItMatters": "The destruction of key infrastructure worsens transport disruptions and cuts power across Ukraine's capital city.",
+      "topic": "conflict",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Kyiv",
+          "at": [
+            30.5167,
+            50.4333
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Ukraine",
+          "at": [
+            32.141,
+            49.725
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Russian strikes damage two bridges in Kyiv: Mayor",
+          "url": "https://thehindu.com/news/international/russia-missile-strike-on-kyiv-ukraine/article71723381.ece",
+          "publishedAt": "2026-11-20T06:52:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "Ukraine updates: Russian attack 'one of largest,' Zelenskyy says",
+          "url": "https://dw.com/en/ukraine-updates-russian-attack-one-of-largest-zelenskyy-says/live-79999822?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-20T11:44:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Denmark condemns damage to Austrian, Dutch embassies in Kyiv",
+          "url": "https://aa.com.tr/en/europe/denmark-condemns-damage-to-austrian-dutch-embassies-in-kyiv/4132413",
+          "publishedAt": "2026-11-20T15:50:50.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia pummels Ukraine with massive strikes, missile hits Poland",
+          "url": "https://france24.com/en/video/20261120-russia-pummels-ukraine-with-massive-strikes-missile-hits-poland",
+          "publishedAt": "2026-11-20T14:36:48.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bournemouthecho.co.uk",
+          "title": "Deadly attacks on Kyiv damage bridges and cut power",
+          "url": "https://bournemouthecho.co.uk/news/national/26747005.deadly-attacks-kyiv-damage-bridges-cut-power",
+          "publishedAt": "2026-11-20T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 82.2,
+      "countries": [
+        "UA",
+        "RU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.5167,
+          "lat": 50.4333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "UA",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.5167,
+              50.4333
+            ],
+            "label": "Kyiv",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Ukraine conducted strikes earlier in the week that damaged the Kerch bridge connecting mainland Russia to occupied Crimea.",
+        "keyPlayers": [
+          {
+            "name": "Vitali Klitschko",
+            "role": "Mayor of Kyiv"
+          },
+          {
+            "name": "Vladimir Putin",
+            "role": "President of Russia"
+          },
+          {
+            "name": "Igor Terekhov",
+            "role": "Mayor of Kharkiv"
+          }
+        ],
+        "whatNext": "Emergency service workers are responding to fires and assessing structural damage to transportation routes across Kyiv.",
+        "timeline": [
+          {
+            "date": "20 November 2026",
+            "label": "Russian missile and drone strikes hit bridges in Kyiv"
+          }
+        ],
+        "simpler": "Russia launched missiles and drones at Kyiv, damaging several main bridges after Ukraine hit a bridge in Crimea earlier in the week."
       }
     },
     {
@@ -470,6 +1114,402 @@
       }
     },
     {
+      "id": "ev-57ad45cf3a0b",
+      "headline": "Cause of Death Confirmed for Actor Sir Patrick Stewart",
+      "summary": "Official documents show British actor Sir Patrick Stewart died from cardiopulmonary arrest and Lewy body dementia. The Star Trek and X-Men star passed away at his home in Los Angeles on October 28 at age 86.",
+      "whyItMatters": "The disclosure provides final details on the health battle of the renowned stage and screen actor.",
+      "topic": "culture",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Los Angeles",
+          "at": [
+            -118.244,
+            34.0522
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "hardenexpress.com.au",
+          "title": "Cause of death revealed for Star Trek's Patrick Stewart",
+          "url": "https://hardenexpress.com.au/story/9395635/cause-of-death-revealed-for-star-treks-patrick-stewart",
+          "publishedAt": "2026-11-20T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aol.co.uk",
+          "title": "Sir Patrick Stewart's cause of death revealed three weeks after his death",
+          "url": "https://aol.co.uk/articles/sir-patrick-stewart-cause-death-100328000.html",
+          "publishedAt": "2026-11-20T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "asiaone.com",
+          "title": "Patrick Stewart's cause of death revealed",
+          "url": "https://asiaone.com/entertainment/patrick-stewarts-cause-death-revealed",
+          "publishedAt": "2026-11-20T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "burytimes.co.uk",
+          "title": "Star Trek's Sir Patrick Stewart's cause of death confirmed",
+          "url": "https://burytimes.co.uk/news/national/uk-today/26746853.star-treks-sir-patrick-stewarts-cause-death-confirmed",
+          "publishedAt": "2026-11-20T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "attitude.co.uk",
+          "title": "Patrick Stewart's official cause of death confirmed",
+          "url": "https://attitude.co.uk/culture/patrick-stewarts-official-cause-of-death-540242",
+          "publishedAt": "2026-11-20T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 70.9,
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -118.244,
+          "lat": 34.0522,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "US",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -118.244,
+              34.0522
+            ],
+            "label": "Los Angeles",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Stewart passed away at his home in late October following a private battle with Alzheimer's disease and Lewy body dementia.",
+        "keyPlayers": [
+          {
+            "name": "Sir Patrick Stewart",
+            "role": "British actor"
+          },
+          {
+            "name": "Sunny Ozell",
+            "role": "Wife of Sir Patrick Stewart"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "28 October 2026",
+            "label": "Sir Patrick Stewart dies in Los Angeles at age 86."
+          },
+          {
+            "date": "20 November 2026",
+            "label": "Details from Stewart's death certificate are publicly reported."
+          }
+        ],
+        "simpler": "Official records showed actor Sir Patrick Stewart died from heart failure and dementia at his home."
+      }
+    },
+    {
+      "id": "ev-37a6a8aab415",
+      "headline": "Poland Calls Russian Airspace Violation an Intentional Provocation",
+      "summary": "Polish Prime Minister Donald Tusk said a Russian projectile entering Poland's airspace appeared to be an intentional provocation. The incident occurred during a massive Russian missile and drone assault on neighboring Ukraine.",
+      "whyItMatters": "Airspace violations near the conflict zone raise concerns about security and potential escalation for NATO member states.",
+      "topic": "conflict",
+      "time": "2026-11-20T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Warsaw",
+          "at": [
+            21,
+            52.25
+          ],
+          "country": "PL"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "What we know about the latest Russian missile strikes on Ukraine",
+          "url": "https://bbc.co.uk/news/videos/c65y19wy3xl8o",
+          "publishedAt": "2026-11-20T15:14:01.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Politico Europe",
+          "title": "Tusk: Russian cruise missile incursion into Poland seems ‘intentional’",
+          "url": "https://politico.eu/article/russian-missile-incursion-into-poland-seems-intentional-tusk-says",
+          "publishedAt": "2026-11-20T12:43:31.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Poland condemns Russian ‘provocation’ after airspace violations",
+          "url": "https://aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations?traffic_source=rss",
+          "publishedAt": "2026-11-20T15:18:26.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "andoveradvertiser.co.uk",
+          "title": "Russian missile strike in Poland 'utterly unacceptable', Andy Burnham says",
+          "url": "https://andoveradvertiser.co.uk/news/national/26748713.russian-missile-strike-poland-utterly-unacceptable-andy-burnham-says",
+          "publishedAt": "2026-11-20T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dumbartonreporter.co.uk",
+          "title": "Russian missile strike in Poland 'utterly unacceptable', Andy Burnham says | Dumbarton and Vale of Leven Reporter",
+          "url": "https://dumbartonreporter.co.uk/news/national/26748713.russian-missile-strike-poland-utterly-unacceptable-andy-burnham-says",
+          "publishedAt": "2026-11-20T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 66.8,
+      "countries": [
+        "PL",
+        "RU",
+        "UA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 21,
+          "lat": 52.25,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "PL",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "UA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              21,
+              52.25
+            ],
+            "label": "Warsaw",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The airspace incursion happened as Russia conducted widespread strikes across Ukraine following attacks on the Crimean Bridge.",
+        "keyPlayers": [
+          {
+            "name": "Donald Tusk",
+            "role": "Prime Minister of Poland"
+          },
+          {
+            "name": "Donald Trump",
+            "role": "President of the United States"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "20 November 2026",
+            "label": "Donald Tusk holds a news conference addressing the airspace incursion."
+          }
+        ],
+        "simpler": "Poland's leader said a Russian drone or missile entering Polish skies seemed like a deliberate test, not a mistake."
+      }
+    },
+    {
+      "id": "ev-09b6d15c9cba",
+      "headline": "Deaths and bridge damage reported in rocket attacks on capital",
+      "summary": "Russia launched rocket attacks targeting the capital, damaging multiple bridges and causing casualties. Reports differ on the exact number of dead and injured, with officials citing varying figures between 3 and 6 deaths and 15 to 23 injuries. Mayor Vitali Klitschko urged residents to work from home as emergency crews responded to the ongoing attack.",
+      "whyItMatters": "The attacks disrupt vital transport links across the river between the left and right banks of the city and put civilians at direct risk.",
+      "topic": "conflict",
+      "time": "2026-11-20T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Kiev",
+          "at": [
+            30.5167,
+            50.4333
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Crimea",
+          "at": [
+            34,
+            45
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Moscow",
+          "at": [
+            37.6156,
+            55.7522
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Tagesschau",
+          "title": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
+          "url": "https://tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+          "publishedAt": "2026-11-20T11:47:44.000Z",
+          "language": "de"
+        },
+        {
+          "outlet": "gmx.at",
+          "title": "Mehr als Waffen: Berlin will Ukraine wirtschaftlich stärken",
+          "url": "https://gmx.at/magazine/politik/us-politik/waffen-berlin-ukraine-wirtschaftlich-staerken-42964530",
+          "publishedAt": "2026-11-20T04:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "stuttgarter-nachrichten.de",
+          "title": "Russischer Angriffskrieg in der Ukraine: Tote bei russischen Angriffen auf Brücken in Kiew",
+          "url": "https://stuttgarter-nachrichten.de/politik/russischer-angriffskrieg-in-der-ukraine-tote-bei-russischen-angriffen-auf-bruecken-in-kiew-79723411.html",
+          "publishedAt": "2026-11-20T06:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "watson.ch",
+          "title": "Tote bei russischen Angriffen auf Brücken in Kiew",
+          "url": "https://watson.ch/international/russland/110081755-tote-bei-russischen-angriffen-auf-bruecken-in-kiew",
+          "publishedAt": "2026-11-20T07:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "taz.de",
+          "title": "Krieg in der Ukraine: Tote bei russischen Angriffen auf Kyjiwer Brücken",
+          "url": "https://taz.de/Krieg-in-der-Ukraine/!6231729",
+          "publishedAt": "2026-11-20T08:45:00Z",
+          "language": "de"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 65.8,
+      "countries": [
+        "UA",
+        "RU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.5167,
+          "lat": 50.4333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "UA",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.5167,
+              50.4333
+            ],
+            "label": "Kiev",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              34,
+              45
+            ],
+            "label": "Crimea",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              37.6156,
+              55.7522
+            ],
+            "label": "Moscow",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The attacks follow recent Ukrainian strikes by Ukraine on the strategically important bridge in Crimea.",
+        "keyPlayers": [
+          {
+            "name": "Vitali Klitschko",
+            "role": "Mayor of the capital"
+          },
+          {
+            "name": "Serhij Korezkyj",
+            "role": "Prime Minister"
+          },
+          {
+            "name": "Putin",
+            "role": "Kremlin leader"
+          }
+        ],
+        "whatNext": "Experts will examine the full extent of the structural damage once the air raid alerts end.",
+        "timeline": [
+          {
+            "date": "20.11.2026",
+            "label": "Rocket attacks hit bridges in the capital"
+          }
+        ],
+        "simpler": "Russia launched rocket attacks on bridges in the capital, causing deaths, injuries, and traffic disruptions while emergency teams worked to clear the damage."
+      }
+    },
+    {
       "id": "ev-aeffe5bf9afd",
       "headline": "Putin vows painful response to new Ukrainian strikes on Crimean Bridge",
       "summary": "Russian President Vladimir Putin vowed a severe retaliation after a combined missile and drone strike hit the Crimean Bridge for the third time in four days, temporarily halting rail traffic across the span. The latest attacks coincided with international diplomacy involving US, Ukrainian, and European leaders.",
@@ -629,6 +1669,249 @@
           }
         ],
         "simpler": "Ukraine struck the bridge connecting Russia to Crimea for the third time in days, prompting Russian President Vladimir Putin to promise a strong response."
+      }
+    },
+    {
+      "id": "ev-9a33a6303d3f",
+      "headline": "India's Supreme Court rejects Karnataka bike taxi ban appeal",
+      "summary": "India's Supreme Court dismissed an appeal by the Karnataka state government that sought to stop bike taxi services. The court ruled that regulating bike taxis is preferable to imposing a total ban. The verdict allows ride-hailing services such as Ola, Uber, and Rapido to operate in Karnataka under state regulatory frameworks.",
+      "whyItMatters": "The decision ensures commuters in Karnataka maintain access to lower-cost transportation options while establishing state oversight for safety.",
+      "topic": "society",
+      "time": "2026-11-20T14:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Karnataka",
+          "at": [
+            76,
+            13.5
+          ],
+          "country": "IN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "deccanchronicle.com",
+          "title": "SC Dismisses Karnataka Appeal Against Bike Taxi Services in State",
+          "url": "https://deccanchronicle.com/southern-states/karnataka/sc-dismisses-karnataka-appeal-against-bike-taxi-services-in-state-2006319",
+          "publishedAt": "2026-11-20T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thehindubusinessline.com",
+          "title": "Supreme Court dismisses Tamil Nadu pleas seeking 11 TMC of Cauvery water from Karnataka",
+          "url": "https://thehindubusinessline.com/news/cauvery-water-dispute-supreme-court-rejects-tamil-nadus-pleas-for-11-tmc-from-karnataka/article71723644.ece",
+          "publishedAt": "2026-11-20T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "coastaldigest.com",
+          "title": "'Regulate, don't ban': Supreme Court clears way for bike taxi services in Karnataka",
+          "url": "https://coastaldigest.com/regulate-dont-ban-supreme-court-clears-way-for-bike-taxi-services-in-karnataka",
+          "publishedAt": "2026-11-20T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "oneindia.com",
+          "title": "Karnataka Bike Taxi Ban: SC Verdict Brings Relief To Bengaluru Commuters, Ola, Uber And Rapido",
+          "url": "https://oneindia.com/india/karnataka-bike-taxi-ban-sc-verdict-brings-relief-to-bengaluru-commuters-ola-uber-and-rapido-8265135.html",
+          "publishedAt": "2026-11-20T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "tribuneindia.com",
+          "title": "Cauvery dispute: SC dismisses Tamil Nadu's pleas for additional water release from Karnataka",
+          "url": "https://tribuneindia.com/news/india/cauvery-dispute-sc-dismisses-tamil-nadus-pleas-for-additional-water-release-from-karnataka",
+          "publishedAt": "2026-11-20T10:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 63.3,
+      "countries": [
+        "IN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 76,
+          "lat": 13.5,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IN",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              76,
+              13.5
+            ],
+            "label": "Karnataka",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The Karnataka High Court had previously set aside a ruling that effectively blocked bike taxis, allowing vehicle owners to apply for transport permits.",
+        "keyPlayers": [
+          {
+            "name": "Satish Chandra Sharma",
+            "role": "Supreme Court Justice"
+          },
+          {
+            "name": "N. Kotiswar Singh",
+            "role": "Supreme Court Justice"
+          }
+        ],
+        "whatNext": "Regional transport authorities will process permit applications and establish conditions under state motor vehicle laws.",
+        "timeline": [
+          {
+            "date": "23 January",
+            "label": "Karnataka High Court rules in favor of bike taxi services"
+          },
+          {
+            "date": "20 November 2026",
+            "label": "Supreme Court dismisses Karnataka's appeal against the High Court decision"
+          }
+        ],
+        "simpler": "India's highest court said bike taxis are allowed to carry passengers in Karnataka. Judges ruled that setting safety rules is better than banning cheap rides."
+      }
+    },
+    {
+      "id": "ev-8ef05f3b9a82",
+      "headline": "California subpoenas Nvidia over potential chip exports to China",
+      "summary": "California Attorney General Rob Bonta served Nvidia with an investigative subpoena regarding semiconductor exports. The inquiry is examining whether Nvidia's advanced microchips or confidential data ended up in China, and if investors were misled. The action follows the resignation of former chief executive Jensen Huang after an affair with a suspected Chinese spy.",
+      "whyItMatters": "The investigation highlights increasing government scrutiny over advanced technology sales and national security export restrictions.",
+      "topic": "business",
+      "time": "2026-11-20T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "California",
+          "at": [
+            -119.746,
+            36.17
+          ],
+          "country": "US"
+        },
+        {
+          "name": "China",
+          "at": [
+            106.337,
+            32.498
+          ],
+          "country": "CN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "California investigates Nvidia over whether chip exports ended up in China",
+          "url": "https://theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+          "publishedAt": "2026-11-20T09:18:30.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "nwemail.co.uk",
+          "title": "California authorities issue probe summons to Nvidia over former chief's affair",
+          "url": "https://nwemail.co.uk/news/national/26746887.california-authorities-issue-probe-summons-nvidia-former-chiefs-affair",
+          "publishedAt": "2026-11-20T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "newsday.com",
+          "title": "California attorney general subpoenas Nvidia over chips, former CEO's affair",
+          "url": "https://newsday.com/business/nvidia-subpoena-california-bonta-china-j94439",
+          "publishedAt": "2026-11-20T03:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "guardian-series.co.uk",
+          "title": "California authorities issue probe summons to Nvidia over former chief's affair | East London and West Essex Guardian Series",
+          "url": "https://guardian-series.co.uk/news/national/26746887.california-authorities-issue-probe-summons-nvidia-former-chiefs-affair",
+          "publishedAt": "2026-11-20T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thetimes-tribune.com",
+          "title": "CA attorney general subpoenas Nvidia over chips, former CEO's affair",
+          "url": "https://thetimes-tribune.com/2026/11/20/california-attorney-general-nvidia-subpoena",
+          "publishedAt": "2026-11-20T13:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 59.1,
+      "countries": [
+        "US",
+        "CN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -119.746,
+          "lat": 36.17,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "CN",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -119.746,
+              36.17
+            ],
+            "label": "California",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Former chief executive Jensen Huang resigned after reports surfaced regarding an affair with a person linked to a Singapore company that purchased Nvidia hardware.",
+        "keyPlayers": [
+          {
+            "name": "Rob Bonta",
+            "role": "California Attorney General"
+          },
+          {
+            "name": "Jensen Huang",
+            "role": "Former Chief Executive of Nvidia"
+          },
+          {
+            "name": "Tim Teter",
+            "role": "General Counsel at Nvidia"
+          }
+        ],
+        "whatNext": "Jensen Huang is scheduled to testify before US congressional committees on 1 December, followed by general counsel Tim Teter on 2 December.",
+        "timeline": [
+          {
+            "date": "1 December 2026",
+            "label": "Jensen Huang scheduled to testify before US House committees"
+          },
+          {
+            "date": "2 December 2026",
+            "label": "Nvidia general counsel Tim Teter scheduled to testify before US House committees"
+          }
+        ],
+        "simpler": "California officials are investigating chipmaker Nvidia to check if advanced technology went to China against the law. The company's former leader recently stepped down."
       }
     },
     {
@@ -1296,6 +2579,131 @@
       }
     },
     {
+      "id": "ev-2f7c2a5250b2",
+      "headline": "Chinese President Xi praises turnaround in relations with Australia",
+      "summary": "Chinese President Xi Jinping met Australian Prime Minister Anthony Albanese in Shenzhen on the sidelines of the APEC summit. Xi stated that bilateral relations had achieved a comprehensive turnaround in recent years. The two leaders discussed expanding cooperation in green development and artificial intelligence while managing remaining differences.",
+      "whyItMatters": "The meeting marks a continued stabilization of trade and diplomatic relations between Australia and its largest trading partner.",
+      "topic": "politics",
+      "time": "2026-11-20T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Shenzhen",
+          "at": [
+            111.117,
+            22.2
+          ],
+          "country": "CN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "bluemountainsgazette.com.au",
+          "title": "Xi lauds PM for 'full turnaround' in China relationship",
+          "url": "https://bluemountainsgazette.com.au/story/9395015/xi-lauds-pm-for-full-turnaround-in-china-relationship",
+          "publishedAt": "2026-11-20T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "freemalaysiatoday.com",
+          "title": "Xi hails 'comprehensive turnaround' in China-Australia ties",
+          "url": "https://freemalaysiatoday.com/category/world/2026/11/20/xi-hails-comprehensive-turnaround-in-china-australia-ties",
+          "publishedAt": "2026-11-20T05:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bignewsnetwork.com",
+          "title": "China, Australia should focus on common interests, expand cooperation in green development, AI: Chinese premier",
+          "url": "https://bignewsnetwork.com/news/279445565/china-australia-should-focus-on-common-interests-expand-cooperation-in-green-development-ai-chinese-premier",
+          "publishedAt": "2026-11-20T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "afr.com",
+          "title": "Australia-China relationship praised by Xi Jinping, Anthony Albanese at APEC",
+          "url": "https://afr.com/politics/federal/xi-hails-full-turnaround-in-australia-china-relations-20261120-p61fv4",
+          "publishedAt": "2026-11-20T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "sydneysun.com",
+          "title": "3rd LD: Xi says China, Australia should be mutually trusted partners",
+          "url": "https://sydneysun.com/news/279444486/3rd-ld-xi-says-china-australia-should-be-mutually-trusted-partners",
+          "publishedAt": "2026-11-20T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 49.2,
+      "countries": [
+        "CN",
+        "AU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 111.117,
+          "lat": 22.2,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "CN",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "AU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              111.117,
+              22.2
+            ],
+            "label": "Shenzhen",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-203497335",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/P20261118DT-2355_%2855663169695%29_%28cropped%29.jpg/500px-P20261118DT-2355_%2855663169695%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:P20261118DT-2355_(55663169695)_(cropped).jpg",
+          "provider": "wikimedia-commons",
+          "author": "The White House",
+          "license": {
+            "id": "public-domain",
+            "name": "Public domain"
+          },
+          "alt": "President of the United States Donald J. Trump greets General Secretary of the Chinese Communist Party Xi Jinping, Madame Peng Liyuan and other officials at Shenzhen Bao’an International Airport in S…",
+          "illustrative": false
+        }
+      ],
+      "deeper": {
+        "background": "Relations between Australia and China cooled under Australia's previous government after calls for an independent inquiry into COVID-19 origins, leading to trade barriers from Beijing.",
+        "keyPlayers": [
+          {
+            "name": "Xi Jinping",
+            "role": "President of China"
+          },
+          {
+            "name": "Anthony Albanese",
+            "role": "Prime Minister of Australia"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [],
+        "simpler": "The leaders of China and Australia met in Shenzhen and said their countries are getting along much better now. They agreed to work together on green energy and technology."
+      }
+    },
+    {
       "id": "ev-463e9055136c",
       "headline": "Grand Theft Auto VI Launches in the UK After 13-Year Wait",
       "summary": "Grand Theft Auto VI has officially gone live in the UK, ending a 13-year wait for fans of Rockstar Games' franchise. Millions of Britons are expected to take time off work or call in sick to play the highly anticipated release on its opening day.",
@@ -1540,112 +2948,6 @@
               34.7001
             ],
             "label": "Union County",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-0f26611256b2",
-      "headline": "US Army Postpones Plan to Detonate Bomb-Making Chemicals in Iowa",
-      "summary": "The US Army delayed its planned controlled detonation of about 5 tons of lead azide in Middletown, Iowa, amid intense public health concerns and environmental lawsuits. Officials had previously warned residents to evacuate or shelter indoors due to the risk of a lead-containing dust plume and window-shattering vibrations.",
-      "whyItMatters": "The postponement averts immediate environmental and health risks for local residents, while questions remain regarding the safest method to dispose of the unstable chemicals.",
-      "topic": "disaster",
-      "time": "2026-11-20T03:15:00Z",
-      "developing": true,
-      "locations": [
-        {
-          "name": "Middletown",
-          "at": [
-            -91.259,
-            40.8284
-          ],
-          "country": "US"
-        },
-        {
-          "name": "Iowa",
-          "at": [
-            -93.214,
-            42.0046
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "The Guardian",
-          "title": "US army postpones plan to detonate bomb-making chemical amid outcry",
-          "url": "https://theguardian.com/us-news/2026/nov/19/iowa-lead-bomb-dust",
-          "publishedAt": "2026-11-20T02:30:10.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "abcnews.com",
-          "title": "Iowa residents brace for a lead dust cloud as Army plans to detonate 5 tons of bomb-making chemicals",
-          "url": "https://abcnews.com/US/wireStory/iowa-residents-brace-lead-dust-cloud-army-plans-138278422",
-          "publishedAt": "2026-11-19T09:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "nvdaily.com",
-          "title": "Iowans brace for a lead dust cloud as Army plans to detonate 5 tons of bomb-making chemicals",
-          "url": "https://nvdaily.com/associated_press_national/iowans-brace-for-a-lead-dust-cloud-as-army-plans-to-detonate-5-tons-of/article_44fc17f0-251e-595a-989f-2ad2772e3a6d.html",
-          "publishedAt": "2026-11-19T20:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "adn.com",
-          "title": "Iowa residents brace for lead dust cloud as Army plans to detonate 5 tons of bomb-making chemicals",
-          "url": "https://adn.com/nation-world/2026/11/19/iowa-residents-brace-for-lead-dust-cloud-as-army-plans-to-detonate-5-tons-of-bomb-making-chemicals",
-          "publishedAt": "2026-11-19T17:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "nbcnewyork.com",
-          "title": "Army plans to detonate 5 tons of bomb-making chemicals in Iowa",
-          "url": "https://nbcnewyork.com/news/national-international/iowa-lead-dust-cloud-army-bomb-making-chemicals/6574520",
-          "publishedAt": "2026-11-19T23:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 43.9,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -91.259,
-          "lat": 40.8284,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "alert"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -91.259,
-              40.8284
-            ],
-            "label": "Middletown",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              -93.214,
-              42.0046
-            ],
-            "label": "Iowa",
             "emphasis": "secondary"
           }
         ]
@@ -6873,112 +8175,6 @@
         ],
         "simpler": "British Prime Minister Andy Burnham is meeting EU leaders in Brussels to negotiate closer ties on food, energy, and immigration, though talks remain difficult."
       }
-    },
-    {
-      "id": "ev-b3cf925aa2bd",
-      "headline": "Death of 14-year-old boy in Gorakhpur sparks political clash",
-      "summary": "A 14-year-old boy died in Gorakhpur after being struck in an accident involving a JCB machine during a political event. Chief Minister Yogi Adityanath blamed a roadshow organized by Samajwadi Party chief Akhilesh Yadav, while Yadav and local police accounts offered differing details on the circumstances of the crash.",
-      "whyItMatters": "The tragedy has triggered a sharp political confrontation between major party leaders in Uttar Pradesh, leading to police investigations and calls for altered campaign practices.",
-      "topic": "politics",
-      "time": "2026-11-19T22:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Gorakhpur",
-          "at": [
-            83.3739,
-            26.755
-          ],
-          "country": "IN"
-        },
-        {
-          "name": "Lucknow",
-          "at": [
-            80.9167,
-            26.85
-          ],
-          "country": "IN"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "indiatimes.com",
-          "title": "Gorakhpur boy's death sparks political war: Yogi Adityanath blames Akhilesh's roadshow, SP hits back",
-          "url": "https://timesofindia.indiatimes.com/city/lucknow/gorakhpur-boys-death-sparks-political-war-yogi-adityanath-blames-akhileshs-roadshow-sp-hits-back/articleshow/135993699.cms",
-          "publishedAt": "2026-11-19T14:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "newindianexpress.com",
-          "title": "Akhilesh tells SP workers to keep bulldozers out of future rallies after minor's death in Gorakhpur",
-          "url": "https://newindianexpress.com/states/uttar-pradesh/2026/Nov/19/akhilesh-tells-sp-workers-to-keep-bulldozers-out-of-future-rallies-after-minors-death-in-gorakhpur",
-          "publishedAt": "2026-11-19T18:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "oneindia.com",
-          "title": "Yogi Adityanath Challenges Akhilesh Yadav To Contest Against Him In Ayodhya",
-          "url": "https://oneindia.com/india/yogi-adityanath-challenges-akhilesh-yadav-to-contest-against-him-in-ayodhya-8264707.html",
-          "publishedAt": "2026-11-19T21:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "newsx.com",
-          "title": "BJP Leader's 12-Year-Old Son Dies After Bulldozer Hits Him During Akhilesh Yadav's Roadshow In Gorakhpur, Family Left Devastated",
-          "url": "https://newsx.com/regionals/bjp-leaders-12-year-old-son-dies-after-bulldozer-hits-him-during-akhilesh-yadavs-roadshow-in-gorakhpur-family-left-devastated-293397",
-          "publishedAt": "2026-11-19T09:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "ianslive.in",
-          "title": "Akhilesh Yadav expresses sorrow, offers condolences over death of boy during roadshow; says SP will assist kin",
-          "url": "https://ianslive.in/akhilesh-yadav-expresses-condolences-over-death-of-minor-during-sp-roadshow-says-party-will-assist-family--20261119154641",
-          "publishedAt": "2026-11-19T11:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 30.7,
-      "countries": [
-        "IN"
-      ],
-      "scene": {
-        "camera": {
-          "lng": 83.3739,
-          "lat": 26.755,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "IN",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              83.3739,
-              26.755
-            ],
-            "label": "Gorakhpur",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              80.9167,
-              26.85
-            ],
-            "label": "Lucknow",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
     },
     {
       "id": "ev-ad5afe692520",
@@ -18236,63 +19432,6 @@
             ],
             "label": "Bijeljina",
             "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-1f1e7234b76d",
-      "headline": "Ash Barty elected to the International Tennis Hall of Fame",
-      "summary": "Former world number one and three-time grand slam champion Ash Barty has been elected to the International Tennis Hall of Fame. The 30-year-old Australian, who retired in 2022, expressed surprise and humility at the honor, stating she felt a sense of impostor syndrome.",
-      "whyItMatters": "Barty joins an elite group of tennis legends and will be formally inducted during a ceremony in Newport, Rhode Island, next August.",
-      "topic": "sports",
-      "time": "2026-11-19T08:13:00.000Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Australia",
-          "at": [
-            134.05,
-            -24.13
-          ],
-          "country": "AU"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "ABC News (Australia)",
-          "title": "Humble Ash Barty inducted into hall of fame",
-          "url": "https://abc.net.au/news/2026-11-19/ash-barty-to-be-inducted-into-international-tennis-hall-of-fame/107404446",
-          "publishedAt": "2026-11-19T04:23:50.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "BBC News",
-          "title": "Australia's Barty elected into Tennis Hall of Fame",
-          "url": "https://bbc.co.uk/sport/tennis/articles/c5n4eme37p4ko",
-          "publishedAt": "2026-11-19T08:13:00.000Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 21.2,
-      "countries": [
-        "AU"
-      ],
-      "scene": {
-        "camera": {
-          "lng": 134.05,
-          "lat": -24.13,
-          "zoom": 2.9
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "AU",
-            "tone": "focus"
           }
         ]
       },

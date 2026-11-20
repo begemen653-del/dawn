@@ -3,17 +3,15 @@
   "ok": true,
   "mode": "live",
   "date": "2026-11-20",
-  "startedAt": "2026-11-20T03:31:25.359Z",
-  "finishedAt": "2026-11-20T04:32:32.877Z",
+  "startedAt": "2026-11-20T17:01:27.707Z",
+  "finishedAt": "2026-11-20T17:08:19.898Z",
   "counts": {
-    "articles": 7417,
-    "events": 369,
+    "articles": 944,
+    "events": 376,
     "playlists": 240
   },
   "warnings": [
-    "AI budget reached: some lower-priority chapters have fewer stories today.",
-    "95 events dropped: 80 failed the fact check, 15 not news.",
-    "11 image searches failed."
+    "Evening update: 10 new stories added."
   ],
   "errors": []
 }
