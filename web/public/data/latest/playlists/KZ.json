@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "KZ",
   "title": "Kazakhstan",
   "eventIds": [
-    "ev-263ef437f376",
-    "ev-3cb59b5ca73e",
-    "ev-60bb396f9d07"
+    "ev-3823adfe2738",
+    "ev-496fa1c6e8bb",
+    "ev-a7bd342d864c",
+    "ev-8a53bfd2c152"
   ]
 }

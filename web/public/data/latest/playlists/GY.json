@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "GY",
   "title": "Guyana",
   "eventIds": [
-    "ev-27eecdcef66a",
-    "ev-7ab9bd9e3ab3",
-    "ev-11f0e4fd1baa",
-    "ev-8af109787b60"
+    "ev-e41a0fc497a6"
   ]
 }

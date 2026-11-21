@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "TM",
   "title": "Turkmenistan",
-  "eventIds": [
-    "ev-02ed48de76cf"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Turkmenistan in the last 24 hours."
 }

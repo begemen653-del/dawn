@@ -1,9 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "ZA",
   "title": "South Africa",
   "eventIds": [
-    "ev-ddfdfe2b74f3"
+    "ev-9cbc48a54283",
+    "ev-b54897601902",
+    "ev-6f50a1f06032",
+    "ev-17af86c04922",
+    "ev-4bd0e3d96989"
   ]
 }

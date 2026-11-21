@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "SO",
   "title": "Somalia",
   "eventIds": [
-    "ev-1dae05d8ba80",
-    "ev-219bd0af30bf",
-    "ev-1242a8c96a8f",
-    "ev-d353b63c497a"
+    "ev-0f60fc346398"
   ]
 }

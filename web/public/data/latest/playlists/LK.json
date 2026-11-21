@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "LK",
   "title": "Sri Lanka",
   "eventIds": [
-    "ev-6dd1c1876b18",
-    "ev-f4dd9552203d",
-    "ev-cd2fe4be4ef6"
+    "ev-6c65e5a275cc",
+    "ev-3198a7147ac1",
+    "ev-beb9e3759b9e",
+    "ev-e753e7ccb5bf",
+    "ev-fdcd101a706d"
   ]
 }

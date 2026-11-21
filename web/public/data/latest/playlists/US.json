@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "US",
   "title": "United States",
   "eventIds": [
-    "ev-0c5171b98003",
+    "ev-6f01355d6807",
+    "ev-81779aa127a9",
+    "ev-774b4a0098a9",
+    "ev-77be60eef039",
+    "ev-72cb36a10a5c",
+    "ev-800248654515",
     "ev-57ad45cf3a0b",
-    "ev-0dd4a0741707",
-    "ev-a5328584aa5e",
-    "ev-9bbc8053b0c9",
-    "ev-a5753d6dd908",
-    "ev-463e9055136c",
-    "ev-d4e64cdbd5ec"
+    "ev-ae6bf6677b77"
   ]
 }

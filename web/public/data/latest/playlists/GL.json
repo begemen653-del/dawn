@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "GL",
   "title": "Greenland",
   "eventIds": [
-    "ev-d8784012e363",
-    "ev-1386101eace4"
+    "ev-bad21baf45fb"
   ]
 }

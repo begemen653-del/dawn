@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "RW",
   "title": "Rwanda",
-  "eventIds": [
-    "ev-5369b375bd0e",
-    "ev-ac037a6486f2"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Rwanda in the last 24 hours."
 }

@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "TV",
   "title": "Tuvalu",
-  "eventIds": [
-    "ev-1b7d613a0ad8",
-    "ev-13a357e9dbf1"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Tuvalu in the last 24 hours."
 }

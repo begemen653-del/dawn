@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "LR",
   "title": "Liberia",
-  "eventIds": [
-    "ev-8eb3908f55a4",
-    "ev-cab02feeee17"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Liberia in the last 24 hours."
 }

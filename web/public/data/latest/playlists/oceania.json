@@ -1,15 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "oceania",
   "title": "Oceania",
   "eventIds": [
-    "ev-2f7c2a5250b2",
-    "ev-8b0ce23c4fc5",
-    "ev-e059e338777a",
-    "ev-a0ddec6a3da7",
-    "ev-1b7d613a0ad8",
-    "ev-ddfdfe2b74f3",
-    "ev-09b6dfa91a9c"
+    "ev-61de9902a6f8",
+    "ev-9cbc48a54283",
+    "ev-763f0c5034c2",
+    "ev-ad0b99fad37f",
+    "ev-4dd157a4f06d"
   ]
 }

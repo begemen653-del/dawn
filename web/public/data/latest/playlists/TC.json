@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "TC",
   "title": "Turks and Caicos Islands",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Turks and Caicos Islands in the last 24 hours."
+  "eventIds": [
+    "ev-d3abd2a4fe7d"
+  ]
 }

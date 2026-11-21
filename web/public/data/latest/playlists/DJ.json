@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "DJ",
   "title": "Djibouti",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Djibouti in the last 24 hours."
+  "eventIds": [
+    "ev-6ef7eab6e78d",
+    "ev-5abb2d3b2b1e"
+  ]
 }

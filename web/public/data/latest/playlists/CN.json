@@ -1,15 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "CN",
   "title": "China",
   "eventIds": [
-    "ev-0c5171b98003",
-    "ev-8ef05f3b9a82",
-    "ev-2f7c2a5250b2",
-    "ev-0dd4a0741707",
-    "ev-94f5be082854",
-    "ev-da9fd7b5aeb1",
-    "ev-7231dafb5098"
+    "ev-774b4a0098a9",
+    "ev-4c9c5ea627e0",
+    "ev-d93edf9db640"
   ]
 }

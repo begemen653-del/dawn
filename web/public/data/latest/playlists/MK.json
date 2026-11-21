@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "MK",
   "title": "North Macedonia",
   "eventIds": [
-    "ev-387c24bb2ece"
+    "ev-79ac21e20056",
+    "ev-9fca8ad4967f",
+    "ev-c9972ee53978"
   ]
 }

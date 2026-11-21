@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "SK",
   "title": "Slovakia",
   "eventIds": [
-    "ev-dd8e146e32dc",
-    "ev-0cf7972d575a"
+    "ev-23c868c79dff",
+    "ev-9b8d0f17e778",
+    "ev-7fb0e262317f"
   ]
 }

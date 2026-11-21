@@ -1,13 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "HT",
   "title": "Haiti",
   "eventIds": [
-    "ev-70e1303d4796",
-    "ev-d809f583646e",
-    "ev-72b1f7ff496d",
-    "ev-46ad21167254",
-    "ev-5c84a6afabae"
+    "ev-712bf08d1f2d",
+    "ev-b24939b73c6d"
   ]
 }

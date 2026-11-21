@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "global",
   "title": "Global",
   "eventIds": [
-    "ev-0c5171b98003",
-    "ev-9a21009b57fe",
-    "ev-68c10d98d9dd",
-    "ev-c37cea739de8",
-    "ev-37a6a8aab415",
-    "ev-0dd4a0741707",
-    "ev-e050db8ceb3c",
-    "ev-a96b629f7b9e"
+    "ev-6f01355d6807",
+    "ev-6d5cea42cd62",
+    "ev-c51faac55be0",
+    "ev-81779aa127a9",
+    "ev-2a0f85de4e21",
+    "ev-1813ecf96a37",
+    "ev-07272677139a"
   ]
 }

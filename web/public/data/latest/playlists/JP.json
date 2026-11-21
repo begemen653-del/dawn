@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "JP",
   "title": "Japan",
   "eventIds": [
-    "ev-8007953047a0",
-    "ev-cc698ac85439",
-    "ev-5c6d9db6ef10"
+    "ev-763f0c5034c2",
+    "ev-2f4937dab74c",
+    "ev-3bce5b9c184b",
+    "ev-2b85a9c98580",
+    "ev-bbd3d1542585"
   ]
 }

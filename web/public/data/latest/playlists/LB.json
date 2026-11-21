@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "LB",
   "title": "Lebanon",
   "eventIds": [
-    "ev-79a40cc490c0",
-    "ev-2838d2897c14"
+    "ev-5c8e9d8edaa3"
   ]
 }

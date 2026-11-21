@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "MO",
   "title": "Macau",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Macau in the last 24 hours."
+  "eventIds": [
+    "ev-697f2853cb02"
+  ]
 }

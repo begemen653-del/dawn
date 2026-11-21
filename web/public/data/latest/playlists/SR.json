@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "SR",
   "title": "Suriname",
-  "eventIds": [
-    "ev-11f0e4fd1baa"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Suriname in the last 24 hours."
 }

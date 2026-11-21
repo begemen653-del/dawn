@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "AM",
   "title": "Armenia",
   "eventIds": [
-    "ev-c5399c6a57fb",
-    "ev-55ddd86c7d03",
-    "ev-2236378d67f3"
+    "ev-cb8fe4a72b7e",
+    "ev-e3e4b633ae0d",
+    "ev-f7604b09def5",
+    "ev-4b0949e50c41"
   ]
 }

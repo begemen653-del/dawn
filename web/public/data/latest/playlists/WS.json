@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "WS",
   "title": "Samoa",
-  "eventIds": [
-    "ev-cb187d7680ff"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Samoa in the last 24 hours."
 }

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "GA",
   "title": "Gabon",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Gabon in the last 24 hours."
+  "eventIds": [
+    "ev-5d6b4b2e1367",
+    "ev-f209ff8d6880"
+  ]
 }

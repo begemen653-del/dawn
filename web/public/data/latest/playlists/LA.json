@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "LA",
   "title": "Laos",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Laos in the last 24 hours."
+  "eventIds": [
+    "ev-a756d840828d"
+  ]
 }

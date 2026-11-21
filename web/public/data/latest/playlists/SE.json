@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "scope": "SE",
   "title": "Sweden",
-  "eventIds": [
-    "ev-90fa05eff07e"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Sweden in the last 24 hours."
 }
