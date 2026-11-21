@@ -1,8 +1,182 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-21",
-  "generatedAt": "2026-11-21T03:31:33.134Z",
+  "generatedAt": "2026-11-21T17:01:19.751Z",
   "events": [
+    {
+      "id": "ev-4216b2ffd548",
+      "headline": "EU proposes Big Tech tax and signs trade deal with Indonesia",
+      "summary": "The European Union has proposed a tax on major digital companies to help fund its budget, alongside signing a free trade agreement with Indonesia. European Council President Antonio Costa unveiled a spending proposal with major cuts, while EU and Indonesian leaders celebrated their new economic partnership.",
+      "whyItMatters": "The proposed digital tax and budget reductions aim to resolve funding disagreements among member states, while the trade pact with Indonesia opens new economic opportunities across Asia.",
+      "topic": "economy",
+      "time": "2026-11-21T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "Belgium",
+          "at": [
+            4.8,
+            50.785
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "Germany",
+          "at": [
+            9.678,
+            50.962
+          ],
+          "country": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "European Union proposes tax on Big Tech to boost budget",
+          "url": "https://thehindu.com/news/international/european-union-proposes-tax-on-big-tech-to-boost-budget/article71728111.ece",
+          "publishedAt": "2026-11-21T12:33:16.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "EU and Indonesia sign trade deal",
+          "url": "https://dw.com/en/eu-and-indonesia-sign-trade-deal/a-80010099?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-21T15:21:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "South China Morning Post",
+          "title": "Indonesia, EU sign ‘ambitious’ trade deal",
+          "url": "https://scmp.com/news/asia/southeast-asia/article/3375341/indonesia-eu-sign-ambitious-trade-deal",
+          "publishedAt": "2026-11-21T13:46:13.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bournemouthecho.co.uk",
+          "title": "All options on table for UK-EU relationship including rejoining, says Miliband",
+          "url": "https://bournemouthecho.co.uk/news/national/26750349.options-table-uk-eu-relationship-including-rejoining-says-miliband",
+          "publishedAt": "2026-11-21T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "enfieldindependent.co.uk",
+          "title": "Burnham says EU and UK will spend a year 'brainstorming' future ties",
+          "url": "https://enfieldindependent.co.uk/news/national/26750300.burnham-says-eu-uk-will-spend-year-brainstorming-future-ties",
+          "publishedAt": "2026-11-21T03:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bursa.ro",
+          "title": "Antonio Costa propune reducerea bugetului UE pentru 2028-2034 cu peste 200 de miliarde de euro",
+          "url": "https://bursa.ro/antonio-costa-propune-reducerea-bugetului-ue-pentru-2028-2034-cu-peste-200-de-miliarde-de-euro-04031165",
+          "publishedAt": "2026-11-21T14:45:00Z",
+          "language": "ro"
+        },
+        {
+          "outlet": "rtve.es",
+          "title": "Costa plantea recortar un 10% la propuesta presupuestaria de la CE",
+          "url": "https://rtve.es/noticias/20261121/costa-plantea-recortar-10-propuesta-presupuestaria-ce-nuevo-impuesto-a-tecnologicas/17324760.shtml",
+          "publishedAt": "2026-11-21T15:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "observador.pt",
+          "title": "UE. Portugal com corte de 400 milhões em proposta de Costa",
+          "url": "https://observador.pt/2026/11/21/portugal-com-corte-de-400-milhoes-de-euros-em-proposta-de-costa-para-orcamento-da-ue-ate-2034",
+          "publishedAt": "2026-11-21T16:45:00Z",
+          "language": "pt"
+        },
+        {
+          "outlet": "abril.com.br",
+          "title": "UE propõe imposto de 3% sobre faturamento de big techs para financiar orçamento",
+          "url": "https://veja.abril.com.br/economia/ue-propoe-imposto-de-3-sobre-faturamento-de-big-techs-para-financiar-orcamento",
+          "publishedAt": "2026-11-21T15:45:00Z",
+          "language": "pt"
+        },
+        {
+          "outlet": "otempo.com.br",
+          "title": "UE avalia taxar big techs em 3% da receita digital",
+          "url": "https://otempo.com.br/mundo/2026/11/21/uniao-europeia-avalia-taxar-big-techs-em-3-do-faturamento-recebido-com-publicidade-e-uso-de-dados",
+          "publishedAt": "2026-11-21T12:45:00Z",
+          "language": "pt"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 100,
+      "countries": [
+        "BE",
+        "DE",
+        "FR",
+        "GB"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 4.33333,
+          "lat": 50.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "BE",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "DE",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "FR",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "EU member states have spent months arguing over the size and funding sources of the bloc's long-term budget for 2028-2034.",
+        "keyPlayers": [
+          {
+            "name": "Antonio Costa",
+            "role": "European Council President"
+          },
+          {
+            "name": "Ursula von der Leyen",
+            "role": "European Commission President"
+          }
+        ],
+        "whatNext": "The European Council aims to reach a final agreement on the budget by the end of the year.",
+        "timeline": [
+          {
+            "date": "21 November 2026",
+            "label": "EU proposes digital tax and signs Indonesia trade deal"
+          }
+        ],
+        "simpler": "The European Union wants to tax big tech companies to help pay for its budget and has also signed a major new trade deal with Indonesia."
+      }
+    },
     {
       "id": "ev-6f01355d6807",
       "headline": "Trump Holds White House Briefing After Trilateral Summit With Xi and Putin",
@@ -168,6 +342,903 @@
           }
         ],
         "simpler": "The leaders of the United States, China, and Russia met in China to talk about world security and agreed that nuclear war should never happen."
+      }
+    },
+    {
+      "id": "ev-1bf4ca72c2c9",
+      "headline": "Ballistic missile attack on Kryvyi Rih kills two as war tensions continue",
+      "summary": "A Russian strike on Ukrainian President Volodymyr Zelenskyy's hometown of Kryvyi Rih killed two people and wounded 60 others. Meanwhile, a diplomatic war of words unfolded after US President Donald Trump referred to Vladimir Putin as a friend, prompting Zelenskyy to label the Russian leader a killer.",
+      "whyItMatters": "Ongoing military strikes continue to cause civilian casualties and infrastructure damage in Ukraine, while international diplomatic positions remain heavily divided.",
+      "topic": "conflict",
+      "time": "2026-11-21T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Kyiv",
+          "at": [
+            30.5167,
+            50.4333
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Moscow",
+          "at": [
+            37.6156,
+            55.7522
+          ],
+          "country": "RU"
+        },
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Ballistic missile attack on Zelenskyy's hometown kills 2",
+          "url": "https://thehindu.com/news/international/ballistic-missile-attack-on-zelenskyys-hometown-kills-2/article71729235.ece",
+          "publishedAt": "2026-11-21T16:38:21.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+          "url": "https://bbc.co.uk/news/articles/cxnv4zvmdy0jo",
+          "publishedAt": "2026-11-21T08:10:25.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "Putin a 'killer,' Zelenskyy says after Trump calls Russian leader his 'friend'",
+          "url": "https://euronews.com/2026/11/21/putin-a-killer-zelenskyy-says-after-trump-calls-russian-leader-his-friend",
+          "publishedAt": "2026-11-21T07:07:09.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "tivysideadvertiser.co.uk",
+          "title": "Young boy one of two killed in ballistic missile attack on Zelensky's home town",
+          "url": "https://tivysideadvertiser.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town",
+          "publishedAt": "2026-11-21T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "eveningnews24.co.uk",
+          "title": "Young boy one of two killed in ballistic missile attack on Zelensky's home city",
+          "url": "https://eveningnews24.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-city",
+          "publishedAt": "2026-11-21T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 94.9,
+      "countries": [
+        "US",
+        "RU",
+        "UA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.5167,
+          "lat": 50.4333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "UA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.5167,
+              50.4333
+            ],
+            "label": "Kyiv",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              37.6156,
+              55.7522
+            ],
+            "label": "Moscow",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The attacks follow a major wave of Russian missile and drone strikes across multiple Ukrainian regions following earlier damage to the Crimean Bridge.",
+        "keyPlayers": [
+          {
+            "name": "Volodymyr Zelenskyy",
+            "role": "President of Ukraine"
+          },
+          {
+            "name": "Vladimir Putin",
+            "role": "President of Russia"
+          },
+          {
+            "name": "Donald Trump",
+            "role": "US President"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "20 November 2026",
+            "label": "Strike on Kryvyi Rih overnight"
+          },
+          {
+            "date": "21 November 2026",
+            "label": "Officials report casualties and ongoing rescue operations"
+          }
+        ],
+        "simpler": "A missile strike hit Ukrainian President Zelenskyy's hometown, killing two people, while international leaders argued over diplomatic ties with Russia."
+      }
+    },
+    {
+      "id": "ev-f66642ee8086",
+      "headline": "FBI criminal database and USDA hit by cyberattacks",
+      "summary": "The FBI is investigating a suspected breach of the National Crime Information Center database used by law enforcement agencies nationwide. The U.S. Agriculture Department was also targeted in a separate cyberattack affecting its payment systems, adding to recent cybersecurity concerns across American institutions.",
+      "whyItMatters": "The apparent compromise of sensitive federal databases highlights growing vulnerabilities in critical U.S. infrastructure following a string of recent technological disruptions.",
+      "topic": "technology",
+      "time": "2026-11-21T16:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "White House",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "FBI, U.S. Agriculture Department breached by hackers, reports say",
+          "url": "https://thehindu.com/news/international/fbis-criminal-information-database-hacked-reports-say/article71727198.ece",
+          "publishedAt": "2026-11-21T07:03:49.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US Agriculture Department and FBI hit by cyberattacks, media report",
+          "url": "https://france24.com/en/americas/20261121-us-agriculture-department-fbi-hit-by-cyberattacks-media-report",
+          "publishedAt": "2026-11-21T07:01:04.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "easternriverinachronicle.com.au",
+          "title": "FBI's criminal information database hacked: report",
+          "url": "https://easternriverinachronicle.com.au/story/9395719/fbis-criminal-information-database-hacked-report",
+          "publishedAt": "2026-11-21T04:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "cnbc.com",
+          "title": "FBI's criminal information database hacked, CNN reports",
+          "url": "https://cnbc.com/2026/11/21/fbis-criminal-information-database-hacked-cnn-reports.html",
+          "publishedAt": "2026-11-21T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "kitv.com",
+          "title": "The FBI was hacked again, this time the breach targeted its crime database",
+          "url": "https://kitv.com/news/national/the-fbi-was-hacked-again-this-time-the-breach-targeted-its-crime-database/article_70bd8801-9f91-5897-9210-e1d274b38008.html",
+          "publishedAt": "2026-11-21T10:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 94.1,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -77.0364,
+          "lat": 38.8951,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "White House",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "These cyber incidents follow a series of recent high-profile technological outages and a prior breach involving an FBI jobs website.",
+        "keyPlayers": [
+          {
+            "name": "Donald Trump",
+            "role": "U.S. President"
+          }
+        ],
+        "whatNext": "Authorities are investigating the breaches to determine responsibility and whether the incidents are connected.",
+        "timeline": [
+          {
+            "date": "20 November 2026",
+            "label": "Media report breaches at the FBI and USDA"
+          }
+        ],
+        "simpler": "Hackers breached a nationwide FBI database for sharing criminal information and also targeted the U.S. Agriculture Department's payment systems."
+      }
+    },
+    {
+      "id": "ev-c81a4da7e9c1",
+      "headline": "Princess of Wales discusses cancer recovery in upcoming BBC documentary",
+      "summary": "The Princess of Wales has opened up about her cancer diagnosis and recovery in the trailer for a forthcoming BBC documentary titled Heal. The 30-minute programme features her undertaking the Three Peaks Challenge and meeting other individuals navigating health journeys.",
+      "whyItMatters": "The documentary aims to raise funds for the Royal Marsden cancer charity while highlighting the personal and physical impacts of cancer survival.",
+      "topic": "society",
+      "time": "2026-11-21T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "London",
+          "at": [
+            -0.116667,
+            51.5
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "United Kingdom",
+          "at": [
+            -2.116,
+            54.403
+          ],
+          "country": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Princess of Wales speaks about impact of cancer diagnosis in BBC film Heal",
+          "url": "https://theguardian.com/uk-news/2026/nov/21/princess-of-wales-impact-cancer-diagnosis-bbc-film-heal",
+          "publishedAt": "2026-11-21T14:42:56.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wandsworthguardian.co.uk",
+          "title": "'It's clear we're not meant to carry life's challenges alone' says Kate",
+          "url": "https://wandsworthguardian.co.uk/news/national/26750606.its-clear-not-meant-carry-lifes-challenges-alone-says-kate",
+          "publishedAt": "2026-11-21T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "easternriverinachronicle.com.au",
+          "title": "Life challenges aren't meant to be carried alone: Kate",
+          "url": "https://easternriverinachronicle.com.au/story/9395789/life-challenges-arent-meant-to-be-carried-alone-kate",
+          "publishedAt": "2026-11-21T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dumbartonreporter.co.uk",
+          "title": "'It's clear we're not meant to carry life's challenges alone' says Kate | Dumbarton and Vale of Leven Reporter",
+          "url": "https://dumbartonreporter.co.uk/news/national/26750606.its-clear-not-meant-carry-lifes-challenges-alone-says-kate",
+          "publishedAt": "2026-11-21T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "nottinghampost.com",
+          "title": "Princess Kate shares emotional message on life after cancer diagnosis in new 'heal' update",
+          "url": "https://nottinghampost.com/news/uk-world-news/princess-kate-shares-emotional-message-11250747",
+          "publishedAt": "2026-11-21T13:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 77.8,
+      "countries": [
+        "GB"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -0.116667,
+          "lat": 51.5,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -0.116667,
+              51.5
+            ],
+            "label": "London",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The Princess of Wales was diagnosed with cancer in early 2024 and announced she was in remission by January 2025.",
+        "keyPlayers": [
+          {
+            "name": "Catherine",
+            "role": "Princess of Wales"
+          }
+        ],
+        "whatNext": "The documentary Heal is scheduled to be broadcast on BBC One on 29 November.",
+        "timeline": [
+          {
+            "date": "29 November 2026",
+            "label": "Scheduled broadcast of the documentary Heal"
+          }
+        ],
+        "simpler": "Kate, the Princess of Wales, talks about her experience recovering from cancer in a new television documentary."
+      }
+    },
+    {
+      "id": "ev-e52ee24bf157",
+      "headline": "US stock markets tumble as AI bubble fears trigger severe weekly losses",
+      "summary": "Wall Street suffered one of its worst weeks in years as growing fears about an artificial intelligence market bubble sent stocks plummeting. The tech-heavy Nasdaq dropped 10% for the week, while both the S&P 500 and Dow Jones Industrial Average entered corrections.",
+      "whyItMatters": "Fears over the financial sustainability of the AI sector, combined with higher interest rates affecting corporate borrowing for data centers, are causing widespread turbulence across financial markets.",
+      "topic": "economy",
+      "time": "2026-11-21T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "NPR",
+          "title": "The AI boom had a really bad week — and it's raising loud alarms",
+          "url": "https://npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+          "publishedAt": "2026-11-21T10:00:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wsiu.org",
+          "title": "The AI boom had a really bad week — and it's raising loud alarms",
+          "url": "https://wsiu.org/economy/2026-11-21/the-ai-boom-had-a-really-bad-week-and-its-raising-loud-alarms",
+          "publishedAt": "2026-11-21T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "kccu.org",
+          "title": "Anthropic says it will put humanity first. Will its IPO change that?",
+          "url": "https://kccu.org/business/2026-11-21/anthropic-says-it-will-put-humanity-first-will-its-ipo-change-that",
+          "publishedAt": "2026-11-21T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wsls.com",
+          "title": "A 10% drop for the stock market is unnerving, but it's not that unusual",
+          "url": "https://wsls.com/business/2026/11/21/a-10-drop-for-the-stock-market-is-unnerving-but-its-not-that-unusual",
+          "publishedAt": "2026-11-21T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "kwxx.com",
+          "title": "Anthropic stock surges 17% in Nasdaq debut following record-breaking $81 Billion IPO",
+          "url": "https://kwxx.com/2026/11/20/anthropic-stock-surges-17-in-nasdaq-debut-following-record-breaking-81-billion-ipo",
+          "publishedAt": "2026-11-21T08:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 77.5,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -97.483,
+          "lat": 39.538,
+          "zoom": 2.7
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Rising interest rates introduced by the Federal Reserve have created borrowing challenges for AI companies needing billions of dollars to build out infrastructure like data centers.",
+        "keyPlayers": [],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "November 2026",
+            "label": "Stock market drops sharply amid AI sector concerns"
+          }
+        ],
+        "simpler": "Stock markets dropped sharply as investors worried that the massive boom in artificial intelligence might be a bubble ready to burst."
+      }
+    },
+    {
+      "id": "ev-00751201c84c",
+      "headline": "Drone attack damages Russian cargo ship in the Gulf of Finland",
+      "summary": "A drone strike hit a Russian cargo vessel in international waters in the eastern Gulf of Finland on Saturday morning, causing a fire and prompting the ship to drift into Finnish territorial waters. Finland's military detected the attack, and authorities reported that the vessel is linked to Russia's armed forces.",
+      "whyItMatters": "The incident raises security concerns as war spills into the Baltic Sea region, prompting temporary airspace and maritime restrictions and a suspected airspace violation by a Russian helicopter.",
+      "topic": "conflict",
+      "time": "2026-11-21T16:51:03.000Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Suursaari",
+          "at": [
+            29.7167,
+            62.45
+          ],
+          "country": "FI"
+        },
+        {
+          "name": "Finland",
+          "at": [
+            27.276,
+            63.252
+          ],
+          "country": "FI"
+        },
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Finland detects drone attack on Russian cargo ship in Baltic",
+          "url": "https://thehindu.com/news/international/finland-detects-drone-attack-on-russian-cargo-ship-in-baltic/article71728516.ece",
+          "publishedAt": "2026-11-21T13:56:11.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
+          "url": "https://france24.com/en/europe/20261121-drone-attack-sets-russian-cargo-ship-ablaze-in-gulf-of-finland",
+          "publishedAt": "2026-11-21T12:35:54.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Politico Europe",
+          "title": "Russian ship damaged by drone attack in Gulf of Finland, Helsinki and Moscow say",
+          "url": "https://politico.eu/article/russian-ship-damaged-drone-attack-gulf-finland-helsinki-moscow-say",
+          "publishedAt": "2026-11-21T12:36:56.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Leningrad governor reports drone attack on cargo ship bound for Kaliningrad",
+          "url": "https://aa.com.tr/en/eurasia/leningrad-governor-reports-drone-attack-on-cargo-ship-bound-for-kaliningrad/4132903",
+          "publishedAt": "2026-11-21T11:46:19.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Russian crew evacuating ship hit by drones off coast of Finland",
+          "url": "https://aljazeera.com/news/2026/11/21/russia-says-kaliningrad-bound-ship-struck-by-drones-in-gulf-of-finland?traffic_source=rss",
+          "publishedAt": "2026-11-21T12:45:24.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 76.2,
+      "countries": [
+        "FI",
+        "RU",
+        "UA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 29.7167,
+          "lat": 62.45,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "FI",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "UA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              29.7167,
+              62.45
+            ],
+            "label": "Suursaari",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The strike occurs amid the ongoing Russian invasion of Ukraine, during which Ukraine has increased long-range attacks far from the front lines.",
+        "keyPlayers": [
+          {
+            "name": "Petteri Orpo",
+            "role": "Prime Minister of Finland"
+          },
+          {
+            "name": "Ilja Iljin",
+            "role": "Finnish Border Guard Commander"
+          },
+          {
+            "name": "Antti Hakkanen",
+            "role": "Defence Minister of Finland"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "November 21, 2026",
+            "label": "Drone attack detected on Russian cargo ship in the Gulf of Finland"
+          }
+        ],
+        "simpler": "A drone hit a Russian cargo ship in the sea near Finland, making it catch fire and float into Finnish waters. Finland's military noticed the attack and informed NATO."
+      }
+    },
+    {
+      "id": "ev-fa5dd4fd6ef3",
+      "headline": "Former Police Chief Gianni De Gennaro Dies by Suicide",
+      "summary": "Former Italian Police Chief Gianni De Gennaro was found dead from a gunshot wound in his country home. Sources report he was upset over a recent investigation in Caltanissetta.",
+      "whyItMatters": "The death of a prominent former law enforcement official connected to a major judicial inquiry marks a shocking development in an ongoing investigation.",
+      "topic": "society",
+      "time": "2026-11-21T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Rome",
+          "at": [
+            12.4833,
+            41.9
+          ],
+          "country": "IT"
+        },
+        {
+          "name": "Caltanissetta",
+          "at": [
+            14.0667,
+            37.4833
+          ],
+          "country": "IT"
+        },
+        {
+          "name": "Italy",
+          "at": [
+            11.077,
+            44.732
+          ],
+          "country": "IT"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "sassuolo2000.it",
+          "title": "Si è ucciso l'ex capo della Polizia Gianni De Gennaro",
+          "url": "https://sassuolo2000.it/2026/11/21/si-e-ucciso-lex-capo-della-polizia-gianni-de-gennaro",
+          "publishedAt": "2026-11-21T11:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "zazoom.it",
+          "title": "L' ex capo della polizia Gianni De Gennaro trovato morto nella sua casa di campagna",
+          "url": "https://zazoom.it/2026-11-21/lex-capo-della-polizia-gianni-de-gennaro-trovato-morto-nella-sua-casa-di-campagna/19957278",
+          "publishedAt": "2026-11-21T11:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "tgcom24.mediaset.it",
+          "title": "L'ex capo della polizia Gianni De Gennaro si è ucciso",
+          "url": "https://tgcom24.mediaset.it/cronaca/gianni-de-gennaro-suicidio_119238402-202602k.shtml",
+          "publishedAt": "2026-11-21T12:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "lagazzettadelmezzogiorno.it",
+          "title": "Morto l'ex capo della Polizia Gianni De Gennaro: si è ucciso in casa con un colpo di pistola",
+          "url": "https://lagazzettadelmezzogiorno.it/news/italia/2219893/morto-l-ex-capo-della-polizia-gianni-de-gennaro-si-e-ucciso-in-casa-con-un-colpo-di-pistola.html",
+          "publishedAt": "2026-11-21T11:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "radiortm.it",
+          "title": "Morto suicida l'ex capo della Polizia Gianni De Gennaro: era indagato per il depistaggio di via D'Amelio",
+          "url": "https://radiortm.it/2026/11/21/morto-suicida-lex-capo-della-polizia-gianni-de-gennaro-era-indagato-per-il-depistaggio-di-via-damelio",
+          "publishedAt": "2026-11-21T12:45:00Z",
+          "language": "it"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 73.5,
+      "countries": [
+        "IT"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 12.4833,
+          "lat": 41.9,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IT",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              12.4833,
+              41.9
+            ],
+            "label": "Rome",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              14.0667,
+              37.4833
+            ],
+            "label": "Caltanissetta",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Gianni De Gennaro, 78 years old, was under investigation in Caltanissetta for alleged misleading of justice concerning the Via D'Amelio bombing and the disappearance of judge Paolo Borsellino's red diary. Prosecutors had ordered searches of premises available to him and notified him of a warning notice.",
+        "keyPlayers": [
+          {
+            "name": "Gianni De Gennaro",
+            "role": "Former Police Chief"
+          },
+          {
+            "name": "Paolo Borsellino",
+            "role": "Judge"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "Last week",
+            "label": "Prosecutors ordered searches in locations linked to De Gennaro"
+          },
+          {
+            "date": "Last Thursday",
+            "label": "Magistrates notified De Gennaro of a warning notice"
+          },
+          {
+            "date": "21 November 2026",
+            "label": "Gianni De Gennaro died by suicide at his country home"
+          }
+        ],
+        "simpler": "Gianni De Gennaro, the former head of the police in Italy, died by suicide at his country house. He was 78 years old and was facing an investigation by prosecutors in Caltanissetta."
+      }
+    },
+    {
+      "id": "ev-c60187a202f6",
+      "headline": "Youth Congress Protests and Vandalizes Meta Offices in India",
+      "summary": "Members of the Indian Youth Congress staged protests and vandalized Meta's offices in Mumbai and Hyderabad. The opposition party accused Meta of political censorship and political bias toward the ruling Bharatiya Janata Party following the suspension of social media accounts belonging to youth congress leaders.",
+      "whyItMatters": "The confrontation escalates political tensions between India's ruling party and the opposition, highlighting ongoing debates over social media moderation and free speech.",
+      "topic": "politics",
+      "time": "2026-11-21T16:14:01.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Mumbai",
+          "at": [
+            72.8258,
+            18.975
+          ],
+          "country": "IN"
+        },
+        {
+          "name": "Hyderabad",
+          "at": [
+            78.4744,
+            17.3753
+          ],
+          "country": "IN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "indiatimes.com",
+          "title": "Youth Congress vandalises Meta offices in Hyderabad and Mumbai over suspension of social media accounts",
+          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
+          "publishedAt": "2026-11-21T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "India’s opposition stages protests against Meta over account removals",
+          "url": "https://aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals?traffic_source=rss",
+          "publishedAt": "2026-11-21T16:14:01.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Meta faces protests in India after accounts removed, gets 7-day ultimatum from opposition party",
+          "url": "https://aa.com.tr/en/asia-pacific/meta-faces-protests-in-india-after-accounts-removed-gets-7-day-ultimatum-from-opposition-party/4133091",
+          "publishedAt": "2026-11-21T16:13:06.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "tribuneindia.com",
+          "title": "BJP slams Congress over 'vandalism' at Meta offices, calls it 'party of goons'",
+          "url": "https://tribuneindia.com/news/india/bjp-slams-congress-over-vandalism-at-meta-offices-calls-it-party-of-goons",
+          "publishedAt": "2026-11-21T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "emirates247.com",
+          "title": "Meta's India offices hit by opposition protests over account removals",
+          "url": "https://emirates247.com/world/metas-india-offices-hit-by-opposition-protests-over-account-removals/8022",
+          "publishedAt": "2026-11-21T08:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 72.8,
+      "countries": [
+        "IN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 72.8258,
+          "lat": 18.975,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IN",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              72.8258,
+              18.975
+            ],
+            "label": "Mumbai",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              78.4744,
+              17.3753
+            ],
+            "label": "Hyderabad",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The protests followed the suspension of social media accounts belonging to Indian Youth Congress national president Uday Bhanu Chib and national in-charge Manish Sharma.",
+        "keyPlayers": [
+          {
+            "name": "Uday Bhanu Chib",
+            "role": "Indian Youth Congress National President"
+          },
+          {
+            "name": "Manish Sharma",
+            "role": "Indian Youth Congress National In-charge"
+          }
+        ],
+        "whatNext": "The Youth Congress has issued a seven-day ultimatum demanding that Meta restore the restricted accounts and posts.",
+        "timeline": [
+          {
+            "date": "21 November 2026",
+            "label": "Youth Congress protests and vandalizes Meta offices in Mumbai and Hyderabad"
+          }
+        ],
+        "simpler": "An opposition group in India protested at Meta's offices and gave the company seven days to restore blocked social media accounts."
       }
     },
     {
@@ -1156,112 +2227,6 @@
       "deeper": null
     },
     {
-      "id": "ev-800248654515",
-      "headline": "Texas execution takes over an hour after staff struggle to find veins",
-      "summary": "A Texas death-row inmate screamed and moaned about pain during his execution, which lasted more than an hour because staff had trouble finding suitable veins for the lethal injection. Prison officials denied the execution was botched and stated that standard protocols were properly followed.",
-      "whyItMatters": "The incident adds to renewed scrutiny surrounding capital punishment methods and procedures following recent execution difficulties in other states.",
-      "topic": "society",
-      "time": "2026-11-21T03:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Texas",
-          "at": [
-            -97.6475,
-            31.106
-          ],
-          "country": "US"
-        },
-        {
-          "name": "Houston",
-          "at": [
-            -95.3633,
-            29.7633
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "BBC News",
-          "title": "Texas death-row inmate screams as execution takes more than one hour",
-          "url": "https://bbc.co.uk/news/articles/ck20vl1dd8qzo",
-          "publishedAt": "2026-11-20T12:42:37.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "NPR",
-          "title": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
-          "url": "https://npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain",
-          "publishedAt": "2026-11-20T12:24:40.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "wuwf.org",
-          "title": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
-          "url": "https://wuwf.org/2026-11-20/texas-execution-took-over-an-hour-as-staff-struggled-to-find-vein-reinaldo-dennes-moaned-about-pain",
-          "publishedAt": "2026-11-20T15:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "wesh.com",
-          "title": "Texas execution took over an hour as staff struggled to find vein",
-          "url": "https://wesh.com/article/texas-execution-florida-execution/74483624",
-          "publishedAt": "2026-11-20T05:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "kfdm.com",
-          "title": "'The pain! Go! Go!' Texas execution took over an hour as staff struggled to find vein",
-          "url": "https://kfdm.com/news/local/the-pain-go-go-texas-execution-took-over-an-hour-as-staff-struggled-to-find-vein",
-          "publishedAt": "2026-11-21T00:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 59.4,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -97.6475,
-          "lat": 31.106,
-          "zoom": 5.4
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -97.6475,
-              31.106
-            ],
-            "label": "Texas",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              -95.3633,
-              29.7633
-            ],
-            "label": "Houston",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
       "id": "ev-1813ecf96a37",
       "headline": "Saudi-led coalition intercepts three Houthi missiles over Riyadh",
       "summary": "The Saudi-led coalition announced it intercepted and destroyed three ballistic missiles launched by Houthi forces toward the Saudi capital of Riyadh. Residents reported hearing explosions after a hostile aerial threat alert was issued, though civil defence later lifted the warning, stating the danger had passed.",
@@ -1551,6 +2516,126 @@
       }
     },
     {
+      "id": "ev-8951a5a04b96",
+      "headline": "Vietnamese and Azerbaijani leaders hold meeting in Hanoi",
+      "summary": "General Secretary and President To Lam welcomed Azerbaijani President Ilham Aliyev for an official visit in Hanoi. The leaders discussed strengthening ties and deep cooperation between the two nations.",
+      "whyItMatters": "This visit aims to bring a new momentum to the relationship between Vietnam and Azerbaijan, deepening their bilateral cooperation.",
+      "topic": "politics",
+      "time": "2026-11-21T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Hanoi",
+          "at": [
+            105.85,
+            21.0333
+          ],
+          "country": "VN"
+        },
+        {
+          "name": "Vietnam",
+          "at": [
+            105.387,
+            21.715
+          ],
+          "country": "VN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "baodongnai.com.vn",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm hội đàm với Tổng thống Cộng hòa Azerbaijan Ilham Aliyev",
+          "url": "https://baodongnai.com.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-thong-cong-hoa-azerbaijan-ilham-aliyev-163359.html",
+          "publishedAt": "2026-11-21T13:45:00Z",
+          "language": "vi"
+        },
+        {
+          "outlet": "thoibaotaichinhvietnam.vn",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm hội đàm với Tổng thống Azerbaijan Ilham Aliyev",
+          "url": "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-thong-azerbaijan-ilham-aliyev-207353.html",
+          "publishedAt": "2026-11-21T10:45:00Z",
+          "language": "vi"
+        },
+        {
+          "outlet": "qdnd.vn",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm hội đàm với Tổng thống Azerbaijan",
+          "url": "https://qdnd.vn/chinh-tri/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-thong-azerbaijan-1065604",
+          "publishedAt": "2026-11-21T11:45:00Z",
+          "language": "vi"
+        },
+        {
+          "outlet": "vneconomy.vn",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm đón Tổng thống Azerbaijan Ilham Aliyev tại Việt Nam",
+          "url": "https://vneconomy.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chu-tri-le-don-tong-thong-cong-hoa-azerbaijan-tham-chinh-thuc-viet-nam.htm",
+          "publishedAt": "2026-11-21T09:45:00Z",
+          "language": "vi"
+        },
+        {
+          "outlet": "vov.vn",
+          "title": "Tổng Bí thư, Chủ tịch nước chủ trì lễ đón Tổng thống Azerbaijan",
+          "url": "https://vov.vn/chinh-tri/toan-canh-tong-bi-thu-chu-tich-nuoc-chu-tri-le-don-tong-thong-azerbaijan-post1352111.vov",
+          "publishedAt": "2026-11-21T04:45:00Z",
+          "language": "vi"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 54.8,
+      "countries": [
+        "VN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 105.85,
+          "lat": 21.0333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "VN",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              105.85,
+              21.0333
+            ],
+            "label": "Hanoi",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The sources don't say.",
+        "keyPlayers": [
+          {
+            "name": "To Lam",
+            "role": "General Secretary and President of Vietnam"
+          },
+          {
+            "name": "Ilham Aliyev",
+            "role": "President of Azerbaijan"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "May 2025",
+            "label": "To Lam made a state visit to Azerbaijan"
+          },
+          {
+            "date": "21 November 2026",
+            "label": "To Lam and Ilham Aliyev held talks in Hanoi"
+          }
+        ],
+        "simpler": "The leaders of Vietnam and Azerbaijan met in Hanoi to talk about friendship and working together."
+      }
+    },
+    {
       "id": "ev-4c9c5ea627e0",
       "headline": "Pakistan climate minister arrives in Delhi for SCO forum",
       "summary": "Pakistan's Federal Minister for Climate Change and Environmental Coordination, Dr. Musadik Masood Malik, arrived in New Delhi to represent Pakistan at the Shanghai Cooperation Organisation Civilisational Dialogue Forum. Pakistan currently holds the chair of the SCO Council of Heads of State for 2026-27.",
@@ -1705,119 +2790,6 @@
       }
     },
     {
-      "id": "ev-57ad45cf3a0b",
-      "headline": "Patrick Stewart's Cause of Death Confirmed as Heart Arrest and Dementia",
-      "summary": "The official cause of death for British actor Sir Patrick Stewart has been released following his death at age 86 in Los Angeles. A death certificate lists cardiopulmonary arrest alongside Lewy body dementia and Alzheimer's disease.",
-      "whyItMatters": "Stewart had a prominent acting career spanning decades, most notably for his iconic roles in Star Trek and X-Men.",
-      "topic": "culture",
-      "time": "2026-11-21T03:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Los Angeles",
-          "at": [
-            -118.244,
-            34.0522
-          ],
-          "country": "US"
-        },
-        {
-          "name": "California",
-          "at": [
-            -119.746,
-            36.17
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "halsteadgazette.co.uk",
-          "title": "Star Trek's Sir Patrick Stewart's cause of death confirmed",
-          "url": "https://halsteadgazette.co.uk/news/national/uk-today/26746853.star-treks-sir-patrick-stewarts-cause-death-confirmed",
-          "publishedAt": "2026-11-20T08:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "abc7amarillo.com",
-          "title": "Sir Patrick Stewart's cause of death confirmed",
-          "url": "https://abc7amarillo.com/news/entertainment/sir-patrick-stewarts-cause-of-death-confirmed",
-          "publishedAt": "2026-11-20T18:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "edenmagnet.com.au",
-          "title": "Cause of death revealed for Star Trek's Patrick Stewart",
-          "url": "https://edenmagnet.com.au/story/9395635/cause-of-death-revealed-for-star-treks-patrick-stewart",
-          "publishedAt": "2026-11-20T08:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "wibw.com",
-          "title": "Actor Patrick Stewart's cause of death revealed",
-          "url": "https://wibw.com/2026/11/21/actor-patrick-stewarts-cause-death-revealed",
-          "publishedAt": "2026-11-21T01:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "whio.com",
-          "title": "Official cause of Patrick Stewart's death confirmed",
-          "url": "https://whio.com/news/trending/patrick-stewarts-cause-death-confirmed/6I36BT6QZZDUTAOVGECASTX66Y",
-          "publishedAt": "2026-11-20T18:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 52.4,
-      "countries": [
-        "US",
-        "GB"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -118.244,
-          "lat": 34.0522,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "focus"
-          },
-          {
-            "type": "highlight",
-            "id": "country-1",
-            "country": "GB",
-            "tone": "neutral"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -118.244,
-              34.0522
-            ],
-            "label": "Los Angeles",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              -119.746,
-              36.17
-            ],
-            "label": "California",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
       "id": "ev-d3f70bbf23b7",
       "headline": "Former French Prime Minister Dominique de Villepin launches 2027 presidential bid",
       "summary": "Former French Prime Minister Dominique de Villepin announced his candidacy for the 2027 presidential election during a news conference in Paris. The 73-year-old criticized current policies under President Emmanuel Macron and warned against a potential victory by far-right leader Marine Le Pen.",
@@ -1958,112 +2930,6 @@
         "timeline": [],
         "simpler": "Former French Prime Minister Dominique de Villepin said he wants to run for president in 2027, warning against political extremism and criticizing the current government."
       }
-    },
-    {
-      "id": "ev-ae6bf6677b77",
-      "headline": "Federal Court Halts US Army Plan to Detonate Chemicals in Iowa",
-      "summary": "A federal appeals court issued a stay blocking an EPA permit that allowed the U.S. Army to detonate several tons of chemical waste in Iowa. Environmental groups requested the hold over safety concerns, while military officials warned that the unstable materials pose an increasing explosion risk.",
-      "whyItMatters": "The ruling temporarily stops the planned chemical disposal while the court considers arguments on environmental and safety risks.",
-      "topic": "society",
-      "time": "2026-11-21T02:15:00Z",
-      "developing": true,
-      "locations": [
-        {
-          "name": "Iowa",
-          "at": [
-            -93.214,
-            42.0046
-          ],
-          "country": "US"
-        },
-        {
-          "name": "Des Moines",
-          "at": [
-            -93.6091,
-            41.6005
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "NPR",
-          "title": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
-          "url": "https://npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
-          "publishedAt": "2026-11-20T12:04:57.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "dailypress.com",
-          "title": "Court stay prevents Army from detonating bomb-making chemicals in Iowa",
-          "url": "https://dailypress.com/2026/11/20/iowa-lead-detonation-court-stay",
-          "publishedAt": "2026-11-20T19:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "2news.com",
-          "title": "Court stay prevents US Army from detonating bomb-making chemicals in Iowa",
-          "url": "https://2news.com/news/national/court-stay-prevents-us-army-from-detonating-bomb-making-chemicals-in-iowa/article_7ddf6733-e972-5c4e-96f5-7ceb3aa669da.html",
-          "publishedAt": "2026-11-21T01:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "sej.org",
-          "title": "Army Delays Detonation Of Bomb Chemicals In Iowa Amid Lead Safety Concerns",
-          "url": "https://sej.org/headlines/army-delays-detonation-bomb-chemicals-iowa-amid-lead-safety-concerns",
-          "publishedAt": "2026-11-20T14:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "norfolkdailynews.com",
-          "title": "Army delays detonation of bomb-making chemicals in Iowa after safety concerns",
-          "url": "https://norfolkdailynews.com/news/national/news_national/army-delays-detonation-of-bomb-making-chemicals-in-iowa-after-safety-concerns/article_3fb2576f-772c-46e2-aa2e-6b9dd7c18cb4.html",
-          "publishedAt": "2026-11-20T20:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 52.2,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -93.214,
-          "lat": 42.0046,
-          "zoom": 5.4
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -93.214,
-              42.0046
-            ],
-            "label": "Iowa",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              -93.6091,
-              41.6005
-            ],
-            "label": "Des Moines",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
     },
     {
       "id": "ev-490ec5d5f565",
@@ -8648,130 +9514,6 @@
         ],
         "simpler": "American tennis player Ben Shelton made it to the semi-finals of a major tournament in Turin after winning a tough match and getting some help from other results."
       }
-    },
-    {
-      "id": "ev-3d6a83113043",
-      "headline": "Gangster Naseem Durrani killed in police encounter in Uttar Pradesh",
-      "summary": "Gangster Naseem Durrani, an alleged associate of the Dawood Ibrahim criminal network, was killed in a joint police encounter in Bulandshahr, Uttar Pradesh. Police officers engaged Durrani after he opened fire on them near the Sikandra bypass. Durrani was wanted for a recent murder in Delhi and faced over 20 criminal charges.",
-      "whyItMatters": "Authorities stated that the operation eliminated a high-profile suspect implicated in multiple gang-related killings and contract violence.",
-      "topic": "society",
-      "time": "2026-11-20T11:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Bulandshahr",
-          "at": [
-            77.85,
-            28.4
-          ],
-          "country": "IN"
-        },
-        {
-          "name": "Uttar Pradesh",
-          "at": [
-            80.75,
-            27.25
-          ],
-          "country": "IN"
-        },
-        {
-          "name": "Delhi",
-          "at": [
-            77.2167,
-            28.6667
-          ],
-          "country": "IN"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "tribuneindia.com",
-          "title": "Gangster Naseem Durrani, accused in murder near Delhi minister's office, killed in UP encounter",
-          "url": "https://tribuneindia.com/news/delhi/gangster-naseem-durrani-who-shot-dead-man-near-delhi-ministers-office-killed-in-up-encounter",
-          "publishedAt": "2026-11-20T05:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "rediff.com",
-          "title": "Dawood Ibrahim aide Naseem Durrani shot dead in encounter",
-          "url": "https://rediff.com/news/report/gangster-naseem-durrani-killed-in-joint-police-operation/20261120.htm",
-          "publishedAt": "2026-11-20T04:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "pragativadi.com",
-          "title": "​Gangster Naseem Durrani, Linked to Dawood Ibrahim's D-Company and Wanted in Delhi Double Murder Case, Killed in Police Encounter in Bulandshahr - Pragativadi I Latest Odisha News in English I Breaking News",
-          "url": "https://pragativadi.com/gangster-naseem-durrani-linked-to-dawood-ibrahims-d-company-and-wanted-in-delhi-double-murder-case-killed-in-police-encounter-in-bulandshahr",
-          "publishedAt": "2026-11-20T07:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "freepressjournal.in",
-          "title": "Gangster Naseem Durrani, Accused In Sameer Murder Case, Killed In Joint Delhi Police-Noida STF Encounter In UP's Bulandshahr",
-          "url": "https://freepressjournal.in/india/gangster-naseem-durrani-accused-in-sameer-murder-case-killed-in-joint-delhi-police-noida-stf-encounter-in-ups-bulandshahr",
-          "publishedAt": "2026-11-20T04:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "heraldgoa.in",
-          "title": "Dawood Ibrahim-Linked Gangster Killed In UP Encounter",
-          "url": "https://heraldgoa.in/globe-nation/dawood-ibrahim-linked-gangster-killed-in-up-encounter/496254",
-          "publishedAt": "2026-11-20T11:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 30.8,
-      "countries": [
-        "IN"
-      ],
-      "scene": {
-        "camera": {
-          "lng": 77.85,
-          "lat": 28.4,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "IN",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              77.85,
-              28.4
-            ],
-            "label": "Bulandshahr",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              80.75,
-              27.25
-            ],
-            "label": "Uttar Pradesh",
-            "emphasis": "secondary"
-          },
-          {
-            "type": "marker",
-            "id": "place-2",
-            "at": [
-              77.2167,
-              28.6667
-            ],
-            "label": "Delhi",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
     },
     {
       "id": "ev-a51f28996690",
