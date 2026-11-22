@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "MD",
   "title": "Moldova",
   "eventIds": [
-    "ev-dedc416bbe79"
+    "ev-0f4c5ed458e7",
+    "ev-4deea2966eaf",
+    "ev-f2ca8f91ebb0"
   ]
 }

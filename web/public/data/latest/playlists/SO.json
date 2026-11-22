@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "SO",
   "title": "Somalia",
-  "eventIds": [
-    "ev-0f60fc346398"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Somalia in the last 24 hours."
 }

@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "LY",
   "title": "Libya",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Libya in the last 24 hours."
+  "eventIds": [
+    "ev-71ebe563f060"
+  ]
 }

@@ -1,14 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "MX",
   "title": "Mexico",
   "eventIds": [
-    "ev-827ce4406c9a",
-    "ev-5c632dcb0687",
-    "ev-93bebc5038b9",
-    "ev-e63953ca98dc",
-    "ev-1b6db4e284aa",
-    "ev-5dd37b7046f9"
+    "ev-77d6c72707bb",
+    "ev-e73b0ea61a52",
+    "ev-6311da337759",
+    "ev-fab9c4aa788a",
+    "ev-997f577ca485"
   ]
 }

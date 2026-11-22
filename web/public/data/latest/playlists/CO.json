@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "CO",
   "title": "Colombia",
   "eventIds": [
-    "ev-48d6c8b352e3",
-    "ev-ae26d06c3204",
-    "ev-1922febaa2fc",
-    "ev-b36483ec11b3",
-    "ev-c786e9bea176"
+    "ev-5c9745b1efe9",
+    "ev-b80624284b21",
+    "ev-77df89e7c07a",
+    "ev-85dfc884a636",
+    "ev-44e4f3acacb9"
   ]
 }

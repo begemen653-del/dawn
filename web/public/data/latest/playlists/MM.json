@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "MM",
   "title": "Myanmar",
-  "eventIds": [
-    "ev-bd6146ea9a43"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Myanmar in the last 24 hours."
 }

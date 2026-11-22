@@ -1,13 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "GH",
   "title": "Ghana",
   "eventIds": [
-    "ev-41486505bc0f",
-    "ev-5666843ca955",
-    "ev-59c46b190312",
-    "ev-422e579b8f97",
-    "ev-96d57bf795a1"
+    "ev-2ab21a41801c",
+    "ev-160c42a436b3",
+    "ev-5a5939645491"
   ]
 }

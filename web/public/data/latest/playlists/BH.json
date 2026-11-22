@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "BH",
   "title": "Bahrain",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Bahrain in the last 24 hours."
+  "eventIds": [
+    "ev-4c75ba67ca2f",
+    "ev-3ecf7035cc80"
+  ]
 }

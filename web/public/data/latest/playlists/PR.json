@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "PR",
   "title": "Puerto Rico",
-  "eventIds": [
-    "ev-c5893500767f",
-    "ev-a675abf09934"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Puerto Rico in the last 24 hours."
 }

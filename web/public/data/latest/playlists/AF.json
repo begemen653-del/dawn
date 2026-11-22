@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "AF",
   "title": "Afghanistan",
   "eventIds": [
-    "ev-0ba596a2677b",
-    "ev-7e238dc892e7",
-    "ev-4aa559ca4913"
+    "ev-3488b9995c7a",
+    "ev-9421ef015587"
   ]
 }

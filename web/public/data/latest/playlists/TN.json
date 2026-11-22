@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "TN",
   "title": "Tunisia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Tunisia in the last 24 hours."
+  "eventIds": [
+    "ev-0bb0b44c41c9"
+  ]
 }

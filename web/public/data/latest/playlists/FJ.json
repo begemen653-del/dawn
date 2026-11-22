@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "scope": "FJ",
   "title": "Fiji",
-  "eventIds": [
-    "ev-8702ee0bce0c"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Fiji in the last 24 hours."
 }
