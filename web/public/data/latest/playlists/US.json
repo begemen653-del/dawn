@@ -4,12 +4,13 @@
   "scope": "US",
   "title": "United States",
   "eventIds": [
+    "ev-fd1de312d162",
+    "ev-48de6ab2191e",
     "ev-494cc57b79a1",
     "ev-1dd9a6755f18",
     "ev-726eee34f369",
     "ev-77d6c72707bb",
     "ev-3bae9021cb99",
-    "ev-a285a4888449",
-    "ev-78bdff2ecdaf"
+    "ev-a285a4888449"
   ]
 }

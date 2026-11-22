@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-22",
-  "generatedAt": "2026-11-22T03:31:07.707Z",
+  "generatedAt": "2026-11-22T17:01:07.648Z",
   "sample": false,
   "scopes": [
     {
@@ -17,12 +17,12 @@
     {
       "scope": "asia",
       "file": "playlists/asia.json",
-      "count": 3
+      "count": 6
     },
     {
       "scope": "north-america",
       "file": "playlists/north-america.json",
-      "count": 6
+      "count": 8
     },
     {
       "scope": "south-america",
@@ -147,7 +147,7 @@
     {
       "scope": "BE",
       "file": "playlists/BE.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "BZ",
@@ -512,7 +512,7 @@
     {
       "scope": "ID",
       "file": "playlists/ID.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "IR",
@@ -697,7 +697,7 @@
     {
       "scope": "MX",
       "file": "playlists/MX.json",
-      "count": 5
+      "count": 6
     },
     {
       "scope": "FM",
@@ -862,7 +862,7 @@
     {
       "scope": "PH",
       "file": "playlists/PH.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "PL",
@@ -897,7 +897,7 @@
     {
       "scope": "RU",
       "file": "playlists/RU.json",
-      "count": 4
+      "count": 5
     },
     {
       "scope": "RW",
@@ -1017,7 +1017,7 @@
     {
       "scope": "KR",
       "file": "playlists/KR.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "SS",
@@ -1102,7 +1102,7 @@
     {
       "scope": "TR",
       "file": "playlists/TR.json",
-      "count": 5
+      "count": 7
     },
     {
       "scope": "TM",
@@ -1127,7 +1127,7 @@
     {
       "scope": "UA",
       "file": "playlists/UA.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "AE",
@@ -1137,12 +1137,12 @@
     {
       "scope": "GB",
       "file": "playlists/GB.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "US",
       "file": "playlists/US.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "VI",

@@ -1,8 +1,174 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-22",
-  "generatedAt": "2026-11-22T03:31:07.707Z",
+  "generatedAt": "2026-11-22T17:01:07.648Z",
   "events": [
+    {
+      "id": "ev-675f2f76093a",
+      "headline": "COP31 Climate Talks Collapse Without Agreement",
+      "summary": "UN climate negotiations in Turkey collapsed after the European Union and other allies rejected a final draft deal because it omitted any mention of fossil fuels. The breakdown marks the longest COP on record, leaving delegates unable to reach a consensus.",
+      "whyItMatters": "The failure leaves global governments without a unified path forward to address worsening climate change, raising concerns over future international cooperation.",
+      "topic": "climate",
+      "time": "2026-11-22T16:14:46.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Antalya",
+          "at": [
+            30.6956,
+            36.9081
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Türkiye (Turkey)",
+          "at": [
+            34.508,
+            39.345
+          ],
+          "country": "TR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "France 24",
+          "title": "🔴 COP31 ends without deal as EU rejects text for omitting mention of fossil fuels",
+          "url": "https://france24.com/en/environment/20261121-latest-cop31-deal-sidesteps-fossil-fuels-amid-growing-divisions",
+          "publishedAt": "2026-11-22T12:22:33.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Cop31 climate talks break down as key deal rejected",
+          "url": "https://theguardian.com/environment/2026/nov/22/cop31-climate-talks-set-to-end-in-deep-division-as-key-deal-rejected",
+          "publishedAt": "2026-11-22T16:14:46.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "COP31: Turkiye's final draft doesn't mention the words ‘fossil fuels’ that cause global warming",
+          "url": "https://thehindu.com/news/international/cop31-turkiyes-final-draft-doesnt-mention-the-words-fossil-fuels-that-cause-global-warming/article71730648.ece",
+          "publishedAt": "2026-11-22T06:51:27.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "COP31 climate deal in doubt after European Union rejects draft",
+          "url": "https://euronews.com/2026/11/22/new-cop31-draft-deal-tabled-as-countries-scramble-to-salvage-climate-talks",
+          "publishedAt": "2026-11-22T07:50:54.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "COP31: Climate deal 'not adopted,' summit president says",
+          "url": "https://dw.com/en/cop31-climate-deal-not-adopted-summit-president-says/live-79999516?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-22T12:39:00.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 100,
+      "countries": [
+        "TR",
+        "AU",
+        "SA",
+        "AE"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.6956,
+          "lat": 36.9081,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TR",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "AU",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "SA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.6956,
+              36.9081
+            ],
+            "label": "Antalya",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-39876025",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg/500px-H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Bernard Gagnon",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          },
+          "alt": "Hıdırlık Tower, Antalya, Turkey",
+          "illustrative": true
+        },
+        {
+          "id": "commons-39900925",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Tekeli_Mehmet_Pa%C5%9Fa_Mosque_02.jpg/500px-Tekeli_Mehmet_Pa%C5%9Fa_Mosque_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tekeli_Mehmet_Pa%C5%9Fa_Mosque_02.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Bernard Gagnon",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          },
+          "alt": "Dome of the Tekeli Mehmet Paşa Mosque, Antalya, Turkey",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "The talks were held as the longest COP on record, spilling two days into overtime after more than two weeks of negotiations.",
+        "keyPlayers": [
+          {
+            "name": "Murat Kurum",
+            "role": "COP31 President and Turkish Environment Minister"
+          },
+          {
+            "name": "Chris Bowen",
+            "role": "Australia's COP31 President of Negotiations"
+          },
+          {
+            "name": "Darragh O'Brien",
+            "role": "Ireland's Environment Minister, speaking for the EU"
+          }
+        ],
+        "whatNext": "The conference president confirmed he would not advance any new text following the collapse of the negotiations.",
+        "timeline": [
+          {
+            "date": "22 November 2026",
+            "label": "Talks collapse after EU and allies reject the final draft"
+          }
+        ],
+        "simpler": "UN climate talks ended without a deal because countries could not agree, and the final proposal did not mention fossil fuels."
+      }
+    },
     {
       "id": "ev-494cc57b79a1",
       "headline": "Trump Orders Federal Contractors to Coordinate With White House on Congress",
@@ -155,6 +321,148 @@
           }
         ],
         "simpler": "President Trump told companies that do business with the US government that they must check with the White House first if Congress asks them any questions."
+      }
+    },
+    {
+      "id": "ev-e4f6a4f0386b",
+      "headline": "Three Dead and Dozens Missing After Fire at Indonesian Factory",
+      "summary": "A massive fire swept through a candy-making factory in western Java, Indonesia, leaving at least three people dead and dozens of workers unaccounted for. Rescue teams and firefighters deployed to the scene to tackle remaining flames and search the damaged building.",
+      "whyItMatters": "The tragedy highlights worker safety concerns in industrial facilities, leaving families waiting for news as search operations continue.",
+      "topic": "disaster",
+      "time": "2026-11-22T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Serang",
+          "at": [
+            106.15,
+            -6.1149
+          ],
+          "country": "ID"
+        },
+        {
+          "name": "Jakarta",
+          "at": [
+            106.829,
+            -6.17444
+          ],
+          "country": "ID"
+        },
+        {
+          "name": "Indonesia",
+          "at": [
+            101.893,
+            -0.954
+          ],
+          "country": "ID"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Three killed and dozens missing after fire at Indonesian factory",
+          "url": "https://bbc.co.uk/news/articles/cw8dvg5pgm0eo",
+          "publishedAt": "2026-11-22T14:05:20.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Fire at Indonesian candy factory leaves 3 dead, dozens unaccounted for",
+          "url": "https://thehindu.com/news/international/rescuers-say-many-missing-after-indonesia-factory-fire/article71730558.ece",
+          "publishedAt": "2026-11-22T04:45:19.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "Dozens missing as deadly fire hits Indonesian candy factory",
+          "url": "https://dw.com/en/dozens-missing-as-deadly-fire-hits-indonesian-candy-factory/a-80012342?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-22T06:14:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing",
+          "url": "https://theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+          "publishedAt": "2026-11-22T07:11:17.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "24 body bags recovered after Indonesia factory fire as search for dozens missing continues",
+          "url": "https://aa.com.tr/en/asia-pacific/24-body-bags-recovered-after-indonesia-factory-fire-as-search-for-dozens-missing-continues/4133625",
+          "publishedAt": "2026-11-22T14:05:52.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 90.1,
+      "countries": [
+        "ID"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 106.15,
+          "lat": -6.1149,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "ID",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              106.15,
+              -6.1149
+            ],
+            "label": "Serang",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              106.829,
+              -6.17444
+            ],
+            "label": "Jakarta",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The fire broke out on Saturday evening at a confectionery factory belonging to PT Fonusa Agung Mulia in the Serang district of Banten province.",
+        "keyPlayers": [
+          {
+            "name": "Andra Soni",
+            "role": "Banten Governor"
+          },
+          {
+            "name": "Rizky Dwianto",
+            "role": "Banten Search and Rescue Agency Operations Official"
+          },
+          {
+            "name": "Tubagus Mahfud",
+            "role": "District Fire Department Operations Chief"
+          }
+        ],
+        "whatNext": "Search and rescue operations are set to continue as authorities conduct intensive cooling operations and sweeps of the facility.",
+        "timeline": [
+          {
+            "date": "21 November 2026",
+            "label": "Fire breaks out at the factory on Saturday evening"
+          },
+          {
+            "date": "22 November 2026",
+            "label": "Rescuers recover body bags and search for missing workers on Sunday"
+          }
+        ],
+        "simpler": "A fire at a candy factory in Indonesia left three people dead and many workers missing as firefighters and rescue teams searched the building."
       }
     },
     {
@@ -889,6 +1197,164 @@
       }
     },
     {
+      "id": "ev-fd1de312d162",
+      "headline": "ICE Officers Detain Two People on Seattle Airport Jet Bridge",
+      "summary": "Masked U.S. immigration officers detained two people on a crowded airport jet bridge in Seattle as passengers were boarding a flight to Los Angeles. The enforcement action caused distress among passengers and employees and delayed the flight, drawing strong criticism from state officials.",
+      "whyItMatters": "The incident sparked sharp political backlash regarding law enforcement tactics at public transit hubs during a busy holiday travel period.",
+      "topic": "politics",
+      "time": "2026-11-22T13:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Seattle",
+          "at": [
+            -122.332,
+            47.6062
+          ],
+          "country": "US"
+        },
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
+          "url": "https://thehindu.com/news/international/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article71730599.ece",
+          "publishedAt": "2026-11-22T06:57:34.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "US: ICE arrests 2 at Seattle airport in 'chilling' scenes",
+          "url": "https://dw.com/en/us-ice-arrests-2-at-seattle-airport-in-chilling-scenes-governor/a-80012480?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-22T07:27:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wgal.com",
+          "title": "ICE officers make arrests at Seattle airport, delaying flight",
+          "url": "https://wgal.com/article/immigration-officers-arrests-seattle-airport-flights-delayed/74499948",
+          "publishedAt": "2026-11-22T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "newsminer.com",
+          "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+          "url": "https://newsminer.com/immigration-officers-make-arrests-at-seattle-airport-in-distressing-scene-delaying-flight/article_61e4751c-5312-4394-8699-f7c9057d047b.html",
+          "publishedAt": "2026-11-22T03:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thefrontierpost.com",
+          "title": "US immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+          "url": "https://thefrontierpost.com/us-immigration-officers-make-arrests-at-seattle-airport-in-distressing-scene-delaying-flight",
+          "publishedAt": "2026-11-22T07:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 74.7,
+      "countries": [
+        "US",
+        "MX"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -122.332,
+          "lat": 47.6062,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "MX",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -122.332,
+              47.6062
+            ],
+            "label": "Seattle",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-2272408",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/SeattleI5Skyline.jpg/500px-SeattleI5Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SeattleI5Skyline.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Cacophony",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+          },
+          "alt": "The skyline of Seattle, Washington at dusk. Interstate 5 is the freeway that cuts through downtown and Puget Sound is visible to the left.",
+          "illustrative": true
+        },
+        {
+          "id": "commons-9527552",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Seattle_3.jpg/500px-Seattle_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seattle_3.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Daniel Schwen",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Seattle Skyline view from Queen Anne Hill. The Space Needle is visible on the left, the mountain in the background is Mount Rainier , on the right is the Port of Seattle on Puget Sound.",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Immigration and Customs Enforcement stated the operation targeted a Mexican national who had overstayed his visa, alongside a second person accused of assaulting federal officers.",
+        "keyPlayers": [
+          {
+            "name": "Bob Ferguson",
+            "role": "Washington State Governor"
+          },
+          {
+            "name": "Ricardo Larrondo Mendoza",
+            "role": "Target of the ICE operation"
+          },
+          {
+            "name": "Sofia Hernandez Mejia",
+            "role": "Individual arrested during the confrontation"
+          }
+        ],
+        "whatNext": "The sources do not provide details on further legal proceedings or subsequent policy changes.",
+        "timeline": [
+          {
+            "date": "22 November 2026",
+            "label": "Arrests take place during boarding of Alaska Flight 1306"
+          }
+        ],
+        "simpler": "U.S. immigration officers arrested two people on an airplane boarding bridge in Seattle, delaying a flight and causing panic among passengers."
+      }
+    },
+    {
       "id": "ev-4e7039232b4c",
       "headline": "Bezzecchi wins Portuguese Grand Prix sprint as Marc Marquez crashes",
       "summary": "Marco Bezzecchi won the MotoGP sprint race in Portimao, Portugal, after overcoming wet conditions. Championship leader Marc Marquez crashed near the end of the race, leaving the world title race open for the final event.",
@@ -1364,6 +1830,196 @@
           }
         ],
         "simpler": "A strong earthquake shook central Peru on Friday. It was felt in the capital city of Lima and even in neighboring Ecuador, but officials said there were no immediate reports of damage."
+      }
+    },
+    {
+      "id": "ev-ee2a25681658",
+      "headline": "South Korea Education Minister Resigns Over AI Exam Cheating Scandal",
+      "summary": "South Korea's Education Minister resigned following a widespread academic cheating scandal involving AI devices ahead of the country's college entrance exams. The controversy followed a high-profile confession by a top exam scorer who used hidden technology to cheat.",
+      "whyItMatters": "The scandal shook public confidence in South Korea's fiercely competitive education system and prompted emergency security measures during national exams.",
+      "topic": "politics",
+      "time": "2026-11-22T14:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Seoul",
+          "at": [
+            127,
+            37.5664
+          ],
+          "country": "KR"
+        },
+        {
+          "name": "South Korea",
+          "at": [
+            128.13,
+            36.385
+          ],
+          "country": "KR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "South Korea education minister resigns over exam cheating scandal",
+          "url": "https://bbc.co.uk/news/articles/cw3dgk29d37no",
+          "publishedAt": "2026-11-22T09:20:45.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "South Korea Education Minister resigns amid AI cheating scandal",
+          "url": "https://thehindu.com/news/international/south-korea-education-minister-resigns-amid-ai-cheating-scandal/article71730601.ece",
+          "publishedAt": "2026-11-22T07:13:03.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "South Korean education minister resigns over AI-driven exam cheating scandal",
+          "url": "https://france24.com/en/asia-pacific/20261122-south-korea-education-chief-resigns-amid-ai-cheating-scandal",
+          "publishedAt": "2026-11-22T03:46:14.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "South China Morning Post",
+          "title": "South Korea’s education minister quits amid backlash over anti-cheating exam checks",
+          "url": "https://scmp.com/news/asia/east-asia/article/3375362/south-koreas-education-minister-quits-amid-backlash-over-anti-cheating-exam-checks",
+          "publishedAt": "2026-11-22T06:36:57.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
+          "url": "https://theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+          "publishedAt": "2026-11-22T12:12:08.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "newspim.com",
+          "title": "[속보] 李대통령, 최교진 교육부 장관 사의 수락",
+          "url": "https://newspim.com/news/view/20261122000063",
+          "publishedAt": "2026-11-22T04:45:00Z",
+          "language": "ko"
+        },
+        {
+          "outlet": "insight.co.kr",
+          "title": "[속보] 최교진 교육장관, 사의 표명... \"수능 책임 통감\"",
+          "url": "https://insight.co.kr/news/583066",
+          "publishedAt": "2026-11-22T03:45:00Z",
+          "language": "ko"
+        },
+        {
+          "outlet": "fnnews.com",
+          "title": "최교진 교육부 장관, 수능 혼선 책임 사의 표명",
+          "url": "https://fnnews.com/news/202611221147272197",
+          "publishedAt": "2026-11-22T03:45:00Z",
+          "language": "ko"
+        },
+        {
+          "outlet": "edaily.co.kr",
+          "title": "李대통령, 최교진 교육부 장관 사의 수락…수능 혼란 책임(종합)",
+          "url": "https://edaily.co.kr/News/Read?newsId=01577686645648344&mediaCodeNo=257",
+          "publishedAt": "2026-11-22T06:45:00Z",
+          "language": "ko"
+        },
+        {
+          "outlet": "ichannela.com",
+          "title": "이 대통령, 최교진 사의 수락…신임 장관 인선 진행",
+          "url": "https://ichannela.com/news/detail/000000561096.do",
+          "publishedAt": "2026-11-22T07:45:00Z",
+          "language": "ko"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 72.1,
+      "countries": [
+        "KR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 127,
+          "lat": 37.5664,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "KR",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              127,
+              37.5664
+            ],
+            "label": "Seoul",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-74166237",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg/500px-Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Frank Schulenburg",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Royal Banquet Hall Gyeonghoeru (경회루) at Gyeongbokgung Palace (경복궁), Seoul",
+          "illustrative": true
+        },
+        {
+          "id": "commons-154400121",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Interior_view_of_the_Geunjeongjeon_Hall_at_Gyeongbokgung_Palace_in_Seoul.jpg/500px-Interior_view_of_the_Geunjeongjeon_Hall_at_Gyeongbokgung_Palace_in_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_view_of_the_Geunjeongjeon_Hall_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Basile Morin",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Interior view of Geunjeongjeon Hall with wooden finely painted ceiling, at Gyeongbokgung Palace in Seoul , South Korea .",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Public fears over AI-assisted cheating intensified after the top scorer in a national tax accountant exam confessed to using a microcamera and smartphone.",
+        "keyPlayers": [
+          {
+            "name": "Choi Kyo-jin",
+            "role": "Resigned South Korean Education Minister"
+          },
+          {
+            "name": "Lee Jae Myung",
+            "role": "South Korean President"
+          },
+          {
+            "name": "Han Won-seok",
+            "role": "Top tax accountancy exam scorer who confessed to cheating"
+          }
+        ],
+        "whatNext": "President Lee Jae Myung accepted the resignation as authorities evaluate the security measures taken during the Suneung exams.",
+        "timeline": [
+          {
+            "date": "15 November 2026",
+            "label": "Fears surge after a top scorer confesses to AI-assisted cheating"
+          },
+          {
+            "date": "22 November 2026",
+            "label": "Education Minister Choi Kyo-jin resigns"
+          }
+        ],
+        "simpler": "South Korea's education minister quit his job after a cheating scandal where students used artificial intelligence devices to get high scores on important tests."
       }
     },
     {
@@ -1850,6 +2506,167 @@
           }
         ],
         "simpler": "A missile attack hit the central Ukrainian city of Kryvyi Rih, killing a young boy and a young woman. Additional missiles struck the area while rescue workers were trying to help, leaving dozens injured."
+      }
+    },
+    {
+      "id": "ev-50f83026a545",
+      "headline": "EU and Spain reject COP31 climate draft over fossil fuels",
+      "summary": "The European Union, Spain, and Panama have rejected the latest draft agreement proposed by COP31 co-organizers Turkey and Australia. The draft aims to increase renewable energy and electricity use but omits explicit commitments or mentions regarding the phasing out of fossil fuels.",
+      "whyItMatters": "The deadlock leaves the final climate agreement uncertain as nearly 200 nations struggle to bridge their differences over fossil fuels during the UN summit.",
+      "topic": "climate",
+      "time": "2026-11-22T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Antalya",
+          "at": [
+            30.6956,
+            36.9081
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Türkiye (Turkey)",
+          "at": [
+            34.508,
+            39.345
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "France",
+          "at": [
+            2.552,
+            46.696
+          ],
+          "country": "FR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "ilfattonisseno.it",
+          "title": "Cop31, resta il nodo combustibili fossili: la bozza di accordo diventa un caso. Ue: \"Molto delusi\"",
+          "url": "https://ilfattonisseno.it/2026/11/cop31-resta-il-nodo-combustibili-fossili-la-bozza-di-accordo-diventa-un-caso-ue-molto-delusi",
+          "publishedAt": "2026-11-22T10:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "europapress.es",
+          "title": "España rechaza junto a la UE el borrador de la COP31 por no incluir el abandono de los combustibles fósiles",
+          "url": "https://europapress.es/sociedad/noticia-espana-rechaza-junto-ue-borrador-cop31-no-incluir-abandono-combustibles-fosiles-20261122125354.html",
+          "publishedAt": "2026-11-22T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "sinembargo.mx",
+          "title": "UE rechaza texto de la COP31 por omitir combustibles fósiles",
+          "url": "https://sinembargo.mx/4907833/la-ue-rechaza-la-declaracion-final-de-la-cop31-por-omitir-a-los-combustibles-fosiles",
+          "publishedAt": "2026-11-22T15:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lastampa.it",
+          "title": "Cop31, accordo sul clima a rischio: l'Ue boccia la bozza della Turchia",
+          "url": "https://lastampa.it/esteri/2026/11/22/news/cop31-accordo-clima-rischio-ue-boccia-turchia-combustibili-fossili-15805793",
+          "publishedAt": "2026-11-22T11:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "zazoom.it",
+          "title": "Cop31 l' Ue respinge la bozza di Cover Decision della presidenza turca",
+          "url": "https://zazoom.it/2026-11-22/cop31-lue-respinge-la-bozza-di-cover-decision-della-presidenza-turca/19961173",
+          "publishedAt": "2026-11-22T11:45:00Z",
+          "language": "it"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 69.6,
+      "countries": [
+        "TR",
+        "FR",
+        "IE",
+        "AU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.6956,
+          "lat": 36.9081,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TR",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "FR",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "IE",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.6956,
+              36.9081
+            ],
+            "label": "Antalya",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-40006081",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/H%C4%B1d%C4%B1rl%C4%B1k_Tower_04.jpg/500px-H%C4%B1d%C4%B1rl%C4%B1k_Tower_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C4%B1d%C4%B1rl%C4%B1k_Tower_04.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Bernard Gagnon",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          },
+          "alt": "Hıdırlık Tower, Antalya, Turkey",
+          "illustrative": true
+        },
+        {
+          "id": "commons-39876025",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg/500px-H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C4%B1d%C4%B1rl%C4%B1k_Tower_01.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Bernard Gagnon",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          },
+          "alt": "Hıdırlık Tower, Antalya, Turkey",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Negotiations at the UN climate summit have faced a tense stalemate driven by high energy prices and geopolitical tensions, centering heavily on the issue of fossil fuels.",
+        "keyPlayers": [],
+        "whatNext": "The proposal requires unanimous approval from nearly 200 nations during the final session.",
+        "timeline": [
+          {
+            "date": "22 November 2026",
+            "label": "Latest draft proposed and rejected by the EU and member states"
+          }
+        ],
+        "simpler": "Countries meeting at a big climate summit are arguing because the newest draft of their agreement does not mention stopping the use of coal, oil, and gas."
       }
     },
     {
@@ -2789,6 +3606,145 @@
       }
     },
     {
+      "id": "ev-940c37665273",
+      "headline": "Theresa May tells Andy Burnham to accept Brexit and move on",
+      "summary": "Former U.K. Prime Minister Theresa May expressed astonishment at reports that Prime Minister Andy Burnham might consider rejoining the European Union. Following a recent Brussels summit where new trade and mobility agreements were reached, May insisted that Brexit is finished and urged the government to focus elsewhere.",
+      "whyItMatters": "The debate highlights ongoing political divisions in the U.K. over its long-term relationship with the EU following the 2016 referendum.",
+      "topic": "politics",
+      "time": "2026-11-22T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "United Kingdom",
+          "at": [
+            -2.116,
+            54.403
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "Belgium",
+          "at": [
+            4.8,
+            50.785
+          ],
+          "country": "BE"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Politico Europe",
+          "title": "‘Brexit is done’: Theresa May tells Burnham to move on",
+          "url": "https://politico.eu/article/brexit-is-done-theresa-may-tells-burnham-move-on",
+          "publishedAt": "2026-11-22T11:32:11.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Theresa May ‘aghast’ at Andy Burnham’s talk about rejoining EU",
+          "url": "https://theguardian.com/politics/2026/nov/22/theresa-may-aghast-andy-burnham-talk-about-rejoining-eu",
+          "publishedAt": "2026-11-22T11:37:52.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thisisoxfordshire.co.uk",
+          "title": "Minister condemns Trump's embrace with 'butcher' Putin",
+          "url": "https://thisisoxfordshire.co.uk/news/national/26751515.minister-condemns-trumps-embrace-butcher-putin",
+          "publishedAt": "2026-11-22T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wiltsglosstandard.co.uk",
+          "title": "Just accept Brexit and move on, Theresa May urges Andy Burnham",
+          "url": "https://wiltsglosstandard.co.uk/news/national/26751613.just-accept-brexit-move-theresa-may-urges-andy-burnham",
+          "publishedAt": "2026-11-22T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "eadt.co.uk",
+          "title": "Tories and universities raise concerns over Burnham's Brussels deal",
+          "url": "https://eadt.co.uk/news/national/26751284.tories-universities-raise-concerns-burnhams-brussels-deal",
+          "publishedAt": "2026-11-22T03:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 64.5,
+      "countries": [
+        "GB",
+        "BE"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 4.33333,
+          "lat": 50.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "BE",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Following a U.K.-EU summit that yielded agreements on food trade and youth mobility, discussions arose regarding Britain's future alignment with the bloc.",
+        "keyPlayers": [
+          {
+            "name": "Theresa May",
+            "role": "Former British Prime Minister"
+          },
+          {
+            "name": "Andy Burnham",
+            "role": "British Prime Minister"
+          },
+          {
+            "name": "Hamish Falconer",
+            "role": "European Relations Minister"
+          }
+        ],
+        "whatNext": "The U.K. government plans to take its time setting out future options regarding its relationship with the EU.",
+        "timeline": [
+          {
+            "date": "2016",
+            "label": "Brexit referendum"
+          },
+          {
+            "date": "22 November 2026",
+            "label": "Theresa May gives BBC interview reacting to EU talks"
+          }
+        ],
+        "simpler": "Former UK Prime Minister Theresa May said she is shocked that the current leader might want to rejoin the European Union, telling him to accept the old vote to leave and move forward."
+      }
+    },
+    {
       "id": "ev-dbf865c68162",
       "headline": "Princess of Wales speaks about cancer diagnosis in BBC documentary",
       "summary": "The Princess of Wales discusses her cancer experience and recovery in a new 30-minute BBC documentary titled Heal, which features her undertaking the Three Peaks Challenge. The film, set to air later this month, aims to support the Royal Marsden Cancer Charity.",
@@ -3339,6 +4295,174 @@
       }
     },
     {
+      "id": "ev-48de6ab2191e",
+      "headline": "Miley Cyrus and Maxx Morando marry in California",
+      "summary": "Pop star Miley Cyrus married drummer Maxx Morando in a private ceremony in Palm Springs, California, on Saturday. The wedding follows a six-year relationship between the couple.",
+      "whyItMatters": "The marriage unites two figures from the music industry, with Morando playing drums for the alternative rock band Liily.",
+      "topic": "culture",
+      "time": "2026-11-22T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Palm Springs",
+          "at": [
+            -116.545,
+            33.8303
+          ],
+          "country": "US"
+        },
+        {
+          "name": "California",
+          "at": [
+            -119.746,
+            36.17
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Hollywood Bowl",
+          "at": [
+            -118.339,
+            34.1128
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Miley Cyrus weds drummer Maxx Morando in California",
+          "url": "https://theguardian.com/music/2026/nov/22/miley-cyrus-maxx-morando-wedding",
+          "publishedAt": "2026-11-22T13:49:58.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Miley Cyrus marries Maxx Morando in California ceremony",
+          "url": "https://bbc.co.uk/news/articles/cq8e0p87l89lo",
+          "publishedAt": "2026-11-22T08:46:28.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "hardenexpress.com.au",
+          "title": "Miley Cyrus and Maxx Morando are married",
+          "url": "https://hardenexpress.com.au/story/9396071/miley-cyrus-and-maxx-morando-are-married",
+          "publishedAt": "2026-11-22T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "straitstimes.com",
+          "title": "Miley Cyrus marries Maxx Morando in Palm Springs",
+          "url": "https://straitstimes.com/life/entertainment/us-singer-miley-cyrus-ties-the-knot-with-musician-maxx-morando",
+          "publishedAt": "2026-11-22T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "theglobeandmail.com",
+          "title": "Miley Cyrus marries drummer Maxx Morando in California, reports say",
+          "url": "https://theglobeandmail.com/culture/article-miley-cyrus-marries-drummer-maxx-morando-in-california-reports-say",
+          "publishedAt": "2026-11-22T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 61.6,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -116.545,
+          "lat": 33.8303,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -116.545,
+              33.8303
+            ],
+            "label": "Palm Springs",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -119.746,
+              36.17
+            ],
+            "label": "California",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -118.339,
+              34.1128
+            ],
+            "label": "Hollywood Bowl",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-147986019",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Sunny_Dunes_Barber_Shop%2C_Palm_Springs%2C_California%2C_2024.jpg/500px-Sunny_Dunes_Barber_Shop%2C_Palm_Springs%2C_California%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunny_Dunes_Barber_Shop,_Palm_Springs,_California,_2024.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Another Believer",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Sunny Dunes Barber Shop, Palm Springs, California, U.S., 2024",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "The couple had been together for six years after meeting on a blind date.",
+        "keyPlayers": [
+          {
+            "name": "Miley Cyrus",
+            "role": "Pop star and singer"
+          },
+          {
+            "name": "Maxx Morando",
+            "role": "Drummer for Liily"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "2018",
+            "label": "Miley Cyrus's previous marriage to Liam Hemsworth"
+          },
+          {
+            "date": "2019",
+            "label": "Separation from Liam Hemsworth"
+          },
+          {
+            "date": "Saturday",
+            "label": "Wedding ceremony in Palm Springs"
+          }
+        ],
+        "simpler": "Pop singer Miley Cyrus got married to her partner Maxx Morando in a private wedding in California."
+      }
+    },
+    {
       "id": "ev-7b4a6eff2d80",
       "headline": "Indian opposition youth wing protests at Meta offices over account removals",
       "summary": "Members of the youth wing of India's main opposition Congress party clashed with police outside Meta's offices in India. The protest followed Meta's removal of several party member Instagram accounts, a move critics say suppresses online dissent.",
@@ -3861,6 +4985,151 @@
           }
         ],
         "simpler": "The U.S. military has placed some new limits on how it interacts with Canada at social events and think tanks, but important defense and intelligence work between the two countries continues as normal."
+      }
+    },
+    {
+      "id": "ev-100ddee980db",
+      "headline": "Myanmar calls ASEAN peace plan review unfair",
+      "summary": "Myanmar's Ministry of Foreign Affairs criticized the recent ASEAN assessment of its peace plan implementation as unfair and imbalanced. The regional bloc decided to continue excluding Myanmar's senior leaders from summits until meaningful progress is made.",
+      "whyItMatters": "The ongoing diplomatic rift highlights tensions between the regional bloc and Myanmar's government over the implementation of the five-point peace plan agreed upon after the 2021 military takeover.",
+      "topic": "politics",
+      "time": "2026-11-22T13:25:30.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Manila",
+          "at": [
+            120.982,
+            14.6042
+          ],
+          "country": "PH"
+        },
+        {
+          "name": "Dhaka",
+          "at": [
+            90.4086,
+            23.7231
+          ],
+          "country": "BD"
+        },
+        {
+          "name": "Philippines",
+          "at": [
+            122.465,
+            11.198
+          ],
+          "country": "PH"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced'; questions bloc's treatment",
+          "url": "https://thehindu.com/news/international/myanmar-calls-asean-review-of-peace-plan-unfair-and-imbalanced-questions-blocs-treatment/article71731357.ece",
+          "publishedAt": "2026-11-22T13:25:30.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bordermail.com.au",
+          "title": "Myanmar calls ASEAN decision 'unfair and imbalanced'",
+          "url": "https://bordermail.com.au/story/9395791/myanmar-calls-asean-decision-unfair-and-imbalanced",
+          "publishedAt": "2026-11-22T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Malaysia to engage UN, OIC, ASEAN over Myanmar genocide ruling on Rohingya",
+          "url": "https://aa.com.tr/en/asia-pacific/malaysia-to-engage-un-oic-asean-over-myanmar-genocide-ruling-on-rohingya/4133471",
+          "publishedAt": "2026-11-22T10:17:10.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "asiaone.com",
+          "title": "Myanmar's army-backed government calls ASEAN decision 'unfair and imbalanced'",
+          "url": "https://asiaone.com/asia/myanmars-army-backed-government-calls-asean-decision-unfair-and-imbalanced",
+          "publishedAt": "2026-11-22T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "freemalaysiatoday.com",
+          "title": "Myanmar's army-backed govt calls Asean decision 'unfair and imbalanced'",
+          "url": "https://freemalaysiatoday.com/category/world/2026/11/22/myanmar-s-army-backed-government-calls-asean-decision-unfair-and-imbalanced",
+          "publishedAt": "2026-11-22T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 55.5,
+      "countries": [
+        "PH",
+        "BD"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 120.982,
+          "lat": 14.6042,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "PH",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "BD",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              120.982,
+              14.6042
+            ],
+            "label": "Manila",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              90.4086,
+              23.7231
+            ],
+            "label": "Dhaka",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "ASEAN agreed on a five-point consensus in April 2021 following the military takeover in Myanmar to help end the post-coup crisis.",
+        "keyPlayers": [
+          {
+            "name": "Myanmar's Ministry of Foreign Affairs",
+            "role": "Issued statement on behalf of the government"
+          }
+        ],
+        "whatNext": "Myanmar's senior leaders will remain excluded from ASEAN summits and foreign ministers' meetings until there is progress on the peace plan.",
+        "timeline": [
+          {
+            "date": "April 2021",
+            "label": "Five-point consensus agreed upon"
+          },
+          {
+            "date": "November 15, 2026",
+            "label": "ASEAN Summit held in Manila"
+          },
+          {
+            "date": "November 21, 2026",
+            "label": "Myanmar issued response statement"
+          }
+        ],
+        "simpler": "Myanmar's government says ASEAN is being unfair by continuing to ban its top leaders from meetings over a stalled peace plan."
       }
     },
     {
@@ -5421,6 +6690,168 @@
       },
       "images": [],
       "deeper": null
+    },
+    {
+      "id": "ev-9174ae8a8aa8",
+      "headline": "Russian drone attack in Kyiv region leaves at least 14 missing",
+      "summary": "A Russian drone strike caused part of a five-story residential building to collapse in Dimer, near Kyiv, leaving at least 14 people missing and two injured. Emergency crews evacuated nine residents and put out a fire caused by the impact, while rescue operations continue.",
+      "whyItMatters": "The strike and ongoing aerial attacks across multiple regions highlight the continued danger to civilians and prompted calls to speed up the reinforcement of air defenses.",
+      "topic": "conflict",
+      "time": "2026-11-22T14:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Kyiv",
+          "at": [
+            30.515,
+            50.435
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Ukraine",
+          "at": [
+            32.141,
+            49.725
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "diariosigloxxi.com",
+          "title": "Al menos 14 desaparecidos tras derrumbarse un edificio residencial por un ataque con drones rusos cerca de Kiev",
+          "url": "https://diariosigloxxi.com/texto-ep/mostrar/20261122100935/menos-14-desaparecidos-derrumbarse-edificio-residencial-ataque-drones-rusos-cerca-kiev",
+          "publishedAt": "2026-11-22T12:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "elconfidencial.com",
+          "title": "Al menos 14 desaparecidos tras derrumbarse un edificio residencial cerca de Kiev por un ataque ruso",
+          "url": "https://elconfidencial.com/mundo/europa/2026-11-22/zelenski-ataques-rusos-defensas-aereas-ucrania-1tps_4470091",
+          "publishedAt": "2026-11-22T09:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "latribunadealbacete.es",
+          "title": "Al menos 14 desaparecidos tras un ataque ruso en Kiev",
+          "url": "https://latribunadealbacete.es/noticia/z6e39d81e-dc7e-48e1-8019ea00d54e6875/202611/al-menos-14-desaparecidos-tras-un-ataque-ruso-en-kiev",
+          "publishedAt": "2026-11-22T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lanzadigital.com",
+          "title": "Al menos 14 desaparecidos tras derrumbarse un bloque residencial por un ataque con drones rusos cerca de Kiev",
+          "url": "https://lanzadigital.com/internacional/al-menos-14-desaparecidos-tras-derrumbarse-un-bloque-residencial-por-un-ataque-con-drones-rusos-cerca-de-kiev",
+          "publishedAt": "2026-11-22T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "andaluciainformacion.es",
+          "title": "Al menos dos muertos y cuatro heridos en un ataque ruso con drones a un edificio residencial cerca de Kiev",
+          "url": "https://andaluciainformacion.es/mundo/menos-dos-muertos-cuatro-heridos-ataque-ruso-drones-edificio-residencial-cerca-kiev/202611221434313544870.html",
+          "publishedAt": "2026-11-22T14:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 47.9,
+      "countries": [
+        "UA",
+        "RU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 30.515,
+          "lat": 50.435,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "UA",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              30.515,
+              50.435
+            ],
+            "label": "Kyiv",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-35955498",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/%D0%92%D0%B8%D0%B4%D1%83%D0%B1%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80-3.JPG/500px-%D0%92%D0%B8%D0%B4%D1%83%D0%B1%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80-3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4%D1%83%D0%B1%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80-3.JPG",
+          "provider": "wikimedia-commons",
+          "author": "Nick Grapsy",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Vydubychi Monastery : Saint George Cathedral (1696-1701) and bell tower (1727-1733), Kiev, Ukraine",
+          "illustrative": true
+        },
+        {
+          "id": "commons-72893926",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/2018_-_%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9F%D0%B5%D1%87%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BB%D0%B0%D0%B2%D1%80%D0%B8.jpg/500px-2018_-_%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9F%D0%B5%D1%87%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BB%D0%B0%D0%B2%D1%80%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_-_%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9F%D0%B5%D1%87%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BB%D0%B0%D0%B2%D1%80%D0%B8.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Moahim",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Kyiv Pechersk Lavra , Kyiv , Ukraine.",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "The sources report that Russia has attacked 20 Ukrainian regions over the week using thousands of drones, aerial bombs, and missiles.",
+        "keyPlayers": [
+          {
+            "name": "Timur Tkachenko",
+            "role": "Head of the Kyiv Military Administration"
+          },
+          {
+            "name": "Volodimir Zelenski",
+            "role": "President of Ukraine"
+          }
+        ],
+        "whatNext": "Rescue operations will continue to locate people who may still be trapped under the rubble.",
+        "timeline": [
+          {
+            "date": "22 November 2026",
+            "label": "Drone attack causes building collapse in Dimer"
+          }
+        ],
+        "simpler": "A drone attack in a town near Kyiv caused part of an apartment building to collapse. Two people were hurt, nine were rescued, and at least 14 people are missing while rescue workers search the rubble."
+      }
     },
     {
       "id": "ev-24a57382b968",
