@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "GE",
   "title": "Georgia",
-  "eventIds": [
-    "ev-a271cd0aefe0",
-    "ev-92c03c45e394"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Georgia in the last 24 hours."
 }

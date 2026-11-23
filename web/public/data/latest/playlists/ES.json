@@ -1,14 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "ES",
   "title": "Spain",
   "eventIds": [
-    "ev-b4ffb06872da",
-    "ev-4e7039232b4c",
-    "ev-8fd7d40587a0",
-    "ev-42d367f074b0",
-    "ev-12d885ba5860",
-    "ev-0cf3d678e47b"
+    "ev-9c7d85ce1be1",
+    "ev-8a2cd383e214",
+    "ev-c66ae8abee03",
+    "ev-70ec9850b918"
   ]
 }

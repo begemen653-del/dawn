@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "GY",
   "title": "Guyana",
-  "eventIds": [
-    "ev-991ec0c886be",
-    "ev-5a5939645491"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Guyana in the last 24 hours."
 }

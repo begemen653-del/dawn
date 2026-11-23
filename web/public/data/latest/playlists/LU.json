@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "LU",
   "title": "Luxembourg",
-  "eventIds": [
-    "ev-8bd789b2dbb2",
-    "ev-afcb2dde4ffc",
-    "ev-a310baefbcef"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Luxembourg in the last 24 hours."
 }

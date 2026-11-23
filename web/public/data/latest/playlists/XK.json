@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "XK",
   "title": "Kosovo",
   "eventIds": [
-    "ev-d6a9636ef05c",
-    "ev-66cb9cb5a256",
-    "ev-05478442ad9e",
-    "ev-53e7057c4c32",
-    "ev-d4649f7e6866"
+    "ev-0ad615f29166",
+    "ev-be1c4fda40b4",
+    "ev-fd6337eb3a16",
+    "ev-9ad5cc345b67"
   ]
 }

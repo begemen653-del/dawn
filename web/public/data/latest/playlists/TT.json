@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "TT",
   "title": "Trinidad and Tobago",
   "eventIds": [
-    "ev-f724dd21795b",
-    "ev-f3fd4ed27110",
-    "ev-9c73981c1a2f",
-    "ev-ac35b7e4290c"
+    "ev-1ba7576b8e0b"
   ]
 }

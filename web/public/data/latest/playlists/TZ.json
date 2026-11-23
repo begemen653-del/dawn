@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "TZ",
   "title": "Tanzania",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Tanzania in the last 24 hours."
+  "eventIds": [
+    "ev-c12bf4145277"
+  ]
 }

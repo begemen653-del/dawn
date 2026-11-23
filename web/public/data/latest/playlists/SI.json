@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "SI",
   "title": "Slovenia",
   "eventIds": [
-    "ev-75a62ffce4b6",
-    "ev-d436a75a9761",
-    "ev-dea5ee5ddfb1"
+    "ev-9c659a31a8a9",
+    "ev-45f80ae1754d"
   ]
 }

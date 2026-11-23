@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "BS",
   "title": "Bahamas",
-  "eventIds": [
-    "ev-76f33b20bbc1",
-    "ev-dc0ddc39411f"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Bahamas in the last 24 hours."
 }

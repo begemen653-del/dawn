@@ -1,16 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "GB",
   "title": "United Kingdom",
   "eventIds": [
-    "ev-940c37665273",
-    "ev-dbf865c68162",
-    "ev-5cfb894db3be",
-    "ev-762e2706780b",
-    "ev-9eef7c31a169",
-    "ev-01fe1ad8d249",
-    "ev-6c1e95bf0223",
-    "ev-9bdd1dc6637d"
+    "ev-0ebdbb4d87e0",
+    "ev-124b7512249d",
+    "ev-42b3731a852e",
+    "ev-ca6a7d498505"
   ]
 }

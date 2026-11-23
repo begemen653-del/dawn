@@ -2,16 +2,17 @@
   "schemaVersion": 1,
   "ok": true,
   "mode": "live",
-  "date": "2026-11-22",
-  "startedAt": "2026-11-22T17:01:07.648Z",
-  "finishedAt": "2026-11-22T17:03:28.919Z",
+  "date": "2026-11-23",
+  "startedAt": "2026-11-23T03:31:00.449Z",
+  "finishedAt": "2026-11-23T04:34:36.834Z",
   "counts": {
-    "articles": 583,
-    "events": 341,
+    "articles": 4463,
+    "events": 291,
     "playlists": 240
   },
   "warnings": [
-    "Evening update: 9 new stories added."
+    "118 events dropped: 85 failed the fact check, 31 not news, 2 incomplete.",
+    "7 image searches failed."
   ],
   "errors": []
 }

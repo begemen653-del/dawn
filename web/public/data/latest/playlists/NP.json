@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "NP",
   "title": "Nepal",
   "eventIds": [
-    "ev-c3bbb76a96d4",
-    "ev-2cdf64d052d1"
+    "ev-e2f2437938e9",
+    "ev-4535d9b93def",
+    "ev-1651ca72600d"
   ]
 }

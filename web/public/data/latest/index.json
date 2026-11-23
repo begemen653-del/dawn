@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
-  "generatedAt": "2026-11-22T17:01:07.648Z",
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T03:31:00.449Z",
   "sample": false,
   "scopes": [
     {
       "scope": "global",
       "file": "playlists/global.json",
-      "count": 8
+      "count": 6
     },
     {
       "scope": "europe",
       "file": "playlists/europe.json",
-      "count": 8
+      "count": 5
     },
     {
       "scope": "asia",
       "file": "playlists/asia.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "north-america",
       "file": "playlists/north-america.json",
-      "count": 8
+      "count": 5
     },
     {
       "scope": "south-america",
       "file": "playlists/south-america.json",
-      "count": 5
+      "count": 3
     },
     {
       "scope": "middle-east",
       "file": "playlists/middle-east.json",
-      "count": 7
+      "count": 5
     },
     {
       "scope": "africa",
@@ -42,12 +42,12 @@
     {
       "scope": "oceania",
       "file": "playlists/oceania.json",
-      "count": 3
+      "count": 5
     },
     {
       "scope": "AF",
       "file": "playlists/AF.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "AX",
@@ -57,12 +57,12 @@
     {
       "scope": "AL",
       "file": "playlists/AL.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "DZ",
       "file": "playlists/DZ.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "AS",
@@ -87,12 +87,12 @@
     {
       "scope": "AG",
       "file": "playlists/AG.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "AR",
       "file": "playlists/AR.json",
-      "count": 4
+      "count": 3
     },
     {
       "scope": "AM",
@@ -112,22 +112,22 @@
     {
       "scope": "AT",
       "file": "playlists/AT.json",
-      "count": 5
+      "count": 4
     },
     {
       "scope": "AZ",
       "file": "playlists/AZ.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "BS",
       "file": "playlists/BS.json",
-      "count": 2
+      "count": 0
     },
     {
       "scope": "BH",
       "file": "playlists/BH.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "BD",
@@ -147,17 +147,17 @@
     {
       "scope": "BE",
       "file": "playlists/BE.json",
-      "count": 4
+      "count": 6
     },
     {
       "scope": "BZ",
       "file": "playlists/BZ.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "BJ",
       "file": "playlists/BJ.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "BM",
@@ -172,22 +172,22 @@
     {
       "scope": "BO",
       "file": "playlists/BO.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "BA",
       "file": "playlists/BA.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "BW",
       "file": "playlists/BW.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "BR",
       "file": "playlists/BR.json",
-      "count": 7
+      "count": 5
     },
     {
       "scope": "IO",
@@ -217,7 +217,7 @@
     {
       "scope": "BI",
       "file": "playlists/BI.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "KH",
@@ -227,12 +227,12 @@
     {
       "scope": "CM",
       "file": "playlists/CM.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "CA",
       "file": "playlists/CA.json",
-      "count": 5
+      "count": 6
     },
     {
       "scope": "CV",
@@ -252,27 +252,27 @@
     {
       "scope": "TD",
       "file": "playlists/TD.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "CL",
       "file": "playlists/CL.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "CN",
       "file": "playlists/CN.json",
-      "count": 3
+      "count": 5
     },
     {
       "scope": "CO",
       "file": "playlists/CO.json",
-      "count": 5
+      "count": 4
     },
     {
       "scope": "KM",
       "file": "playlists/KM.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "CK",
@@ -282,17 +282,17 @@
     {
       "scope": "CR",
       "file": "playlists/CR.json",
-      "count": 2
+      "count": 0
     },
     {
       "scope": "HR",
       "file": "playlists/HR.json",
-      "count": 2
+      "count": 4
     },
     {
       "scope": "CU",
       "file": "playlists/CU.json",
-      "count": 1
+      "count": 4
     },
     {
       "scope": "CW",
@@ -302,12 +302,12 @@
     {
       "scope": "CY",
       "file": "playlists/CY.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "CZ",
       "file": "playlists/CZ.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "DK",
@@ -327,12 +327,12 @@
     {
       "scope": "DO",
       "file": "playlists/DO.json",
-      "count": 3
+      "count": 1
     },
     {
       "scope": "CD",
       "file": "playlists/CD.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "TL",
@@ -342,7 +342,7 @@
     {
       "scope": "EC",
       "file": "playlists/EC.json",
-      "count": 4
+      "count": 1
     },
     {
       "scope": "EG",
@@ -352,7 +352,7 @@
     {
       "scope": "SV",
       "file": "playlists/SV.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "GQ",
@@ -367,7 +367,7 @@
     {
       "scope": "EE",
       "file": "playlists/EE.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "SZ",
@@ -377,7 +377,7 @@
     {
       "scope": "ET",
       "file": "playlists/ET.json",
-      "count": 2
+      "count": 0
     },
     {
       "scope": "FK",
@@ -392,17 +392,17 @@
     {
       "scope": "FJ",
       "file": "playlists/FJ.json",
-      "count": 0
+      "count": 2
     },
     {
       "scope": "FI",
       "file": "playlists/FI.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "FR",
       "file": "playlists/FR.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "PF",
@@ -417,27 +417,27 @@
     {
       "scope": "GM",
       "file": "playlists/GM.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "GE",
       "file": "playlists/GE.json",
-      "count": 2
+      "count": 0
     },
     {
       "scope": "DE",
       "file": "playlists/DE.json",
-      "count": 7
+      "count": 2
     },
     {
       "scope": "GH",
       "file": "playlists/GH.json",
-      "count": 3
+      "count": 1
     },
     {
       "scope": "GR",
       "file": "playlists/GR.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "GL",
@@ -477,32 +477,32 @@
     {
       "scope": "GY",
       "file": "playlists/GY.json",
-      "count": 2
+      "count": 0
     },
     {
       "scope": "HT",
       "file": "playlists/HT.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "HN",
       "file": "playlists/HN.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "HK",
       "file": "playlists/HK.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "HU",
       "file": "playlists/HU.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "IS",
       "file": "playlists/IS.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "IN",
@@ -517,17 +517,17 @@
     {
       "scope": "IR",
       "file": "playlists/IR.json",
-      "count": 7
+      "count": 4
     },
     {
       "scope": "IQ",
       "file": "playlists/IQ.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "IE",
       "file": "playlists/IE.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "IM",
@@ -542,7 +542,7 @@
     {
       "scope": "IT",
       "file": "playlists/IT.json",
-      "count": 7
+      "count": 5
     },
     {
       "scope": "CI",
@@ -552,32 +552,32 @@
     {
       "scope": "JM",
       "file": "playlists/JM.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "JP",
       "file": "playlists/JP.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "JE",
       "file": "playlists/JE.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "JO",
       "file": "playlists/JO.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "KZ",
       "file": "playlists/KZ.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "KE",
       "file": "playlists/KE.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "KI",
@@ -587,7 +587,7 @@
     {
       "scope": "XK",
       "file": "playlists/XK.json",
-      "count": 5
+      "count": 4
     },
     {
       "scope": "KW",
@@ -612,7 +612,7 @@
     {
       "scope": "LB",
       "file": "playlists/LB.json",
-      "count": 1
+      "count": 3
     },
     {
       "scope": "LS",
@@ -622,12 +622,12 @@
     {
       "scope": "LR",
       "file": "playlists/LR.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "LY",
       "file": "playlists/LY.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "LI",
@@ -637,17 +637,17 @@
     {
       "scope": "LT",
       "file": "playlists/LT.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "LU",
       "file": "playlists/LU.json",
-      "count": 3
+      "count": 0
     },
     {
       "scope": "MO",
       "file": "playlists/MO.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "MG",
@@ -657,12 +657,12 @@
     {
       "scope": "MW",
       "file": "playlists/MW.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "MY",
       "file": "playlists/MY.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "MV",
@@ -672,12 +672,12 @@
     {
       "scope": "ML",
       "file": "playlists/ML.json",
-      "count": 3
+      "count": 0
     },
     {
       "scope": "MT",
       "file": "playlists/MT.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "MH",
@@ -687,17 +687,17 @@
     {
       "scope": "MR",
       "file": "playlists/MR.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "MU",
       "file": "playlists/MU.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "MX",
       "file": "playlists/MX.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "FM",
@@ -707,12 +707,12 @@
     {
       "scope": "MD",
       "file": "playlists/MD.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "MC",
       "file": "playlists/MC.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "MN",
@@ -732,12 +732,12 @@
     {
       "scope": "MA",
       "file": "playlists/MA.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "MZ",
       "file": "playlists/MZ.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "MM",
@@ -757,7 +757,7 @@
     {
       "scope": "NP",
       "file": "playlists/NP.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "NL",
@@ -772,7 +772,7 @@
     {
       "scope": "NZ",
       "file": "playlists/NZ.json",
-      "count": 5
+      "count": 4
     },
     {
       "scope": "NI",
@@ -802,12 +802,12 @@
     {
       "scope": "KP",
       "file": "playlists/KP.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "MK",
       "file": "playlists/MK.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "MP",
@@ -817,7 +817,7 @@
     {
       "scope": "NO",
       "file": "playlists/NO.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "OM",
@@ -827,7 +827,7 @@
     {
       "scope": "PK",
       "file": "playlists/PK.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "PW",
@@ -837,12 +837,12 @@
     {
       "scope": "PS",
       "file": "playlists/PS.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "PA",
       "file": "playlists/PA.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "PG",
@@ -852,42 +852,42 @@
     {
       "scope": "PY",
       "file": "playlists/PY.json",
-      "count": 5
+      "count": 3
     },
     {
       "scope": "PE",
       "file": "playlists/PE.json",
-      "count": 2
+      "count": 3
     },
     {
       "scope": "PH",
       "file": "playlists/PH.json",
-      "count": 4
+      "count": 3
     },
     {
       "scope": "PL",
       "file": "playlists/PL.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "PT",
       "file": "playlists/PT.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "PR",
       "file": "playlists/PR.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "QA",
       "file": "playlists/QA.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "CG",
       "file": "playlists/CG.json",
-      "count": 1
+      "count": 2
     },
     {
       "scope": "RO",
@@ -957,17 +957,17 @@
     {
       "scope": "SA",
       "file": "playlists/SA.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "SN",
       "file": "playlists/SN.json",
-      "count": 5
+      "count": 2
     },
     {
       "scope": "RS",
       "file": "playlists/RS.json",
-      "count": 2
+      "count": 5
     },
     {
       "scope": "SC",
@@ -982,7 +982,7 @@
     {
       "scope": "SG",
       "file": "playlists/SG.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "SX",
@@ -997,7 +997,7 @@
     {
       "scope": "SI",
       "file": "playlists/SI.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "SB",
@@ -1007,12 +1007,12 @@
     {
       "scope": "SO",
       "file": "playlists/SO.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "ZA",
       "file": "playlists/ZA.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "KR",
@@ -1027,7 +1027,7 @@
     {
       "scope": "ES",
       "file": "playlists/ES.json",
-      "count": 6
+      "count": 4
     },
     {
       "scope": "LK",
@@ -1037,7 +1037,7 @@
     {
       "scope": "SD",
       "file": "playlists/SD.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "SR",
@@ -1047,12 +1047,12 @@
     {
       "scope": "SE",
       "file": "playlists/SE.json",
-      "count": 3
+      "count": 0
     },
     {
       "scope": "CH",
       "file": "playlists/CH.json",
-      "count": 5
+      "count": 2
     },
     {
       "scope": "SY",
@@ -1072,12 +1072,12 @@
     {
       "scope": "TZ",
       "file": "playlists/TZ.json",
-      "count": 0
+      "count": 1
     },
     {
       "scope": "TH",
       "file": "playlists/TH.json",
-      "count": 3
+      "count": 2
     },
     {
       "scope": "TG",
@@ -1092,7 +1092,7 @@
     {
       "scope": "TT",
       "file": "playlists/TT.json",
-      "count": 4
+      "count": 1
     },
     {
       "scope": "TN",
@@ -1102,7 +1102,7 @@
     {
       "scope": "TR",
       "file": "playlists/TR.json",
-      "count": 7
+      "count": 4
     },
     {
       "scope": "TM",
@@ -1122,27 +1122,27 @@
     {
       "scope": "UG",
       "file": "playlists/UG.json",
-      "count": 0
+      "count": 2
     },
     {
       "scope": "UA",
       "file": "playlists/UA.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "AE",
       "file": "playlists/AE.json",
-      "count": 3
+      "count": 5
     },
     {
       "scope": "GB",
       "file": "playlists/GB.json",
-      "count": 8
+      "count": 4
     },
     {
       "scope": "US",
       "file": "playlists/US.json",
-      "count": 8
+      "count": 6
     },
     {
       "scope": "VI",
@@ -1152,12 +1152,12 @@
     {
       "scope": "UY",
       "file": "playlists/UY.json",
-      "count": 4
+      "count": 2
     },
     {
       "scope": "UZ",
       "file": "playlists/UZ.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "VU",
@@ -1167,17 +1167,17 @@
     {
       "scope": "VA",
       "file": "playlists/VA.json",
-      "count": 1
+      "count": 0
     },
     {
       "scope": "VE",
       "file": "playlists/VE.json",
-      "count": 3
+      "count": 4
     },
     {
       "scope": "VN",
       "file": "playlists/VN.json",
-      "count": 4
+      "count": 5
     },
     {
       "scope": "WF",
@@ -1192,7 +1192,7 @@
     {
       "scope": "YE",
       "file": "playlists/YE.json",
-      "count": 2
+      "count": 1
     },
     {
       "scope": "ZM",
@@ -1202,12 +1202,12 @@
     {
       "scope": "ZW",
       "file": "playlists/ZW.json",
-      "count": 1
+      "count": 0
     }
   ],
   "learn": {
-    "title": "How Executive Orders Work",
-    "body": "An executive order is a directive issued by the president to manage operations of the federal government. These orders carry the force of law without requiring immediate approval from Congress. However, they can be challenged in court or modified by future administrations if they exceed the president's constitutional authority.",
-    "relatedEventId": "ev-494cc57b79a1"
+    "title": "How UN climate summits work",
+    "body": "Global climate conferences bring countries together to negotiate shared goals for reducing greenhouse gas emissions. Decisions at these summits require unanimous agreement among all participating nations. This rule means that a single country or a small group of nations can block a final treaty if they object to its terms.",
+    "relatedEventId": "ev-4601fd373640"
   }
 }

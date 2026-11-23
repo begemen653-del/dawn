@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "AG",
   "title": "Antigua and Barbuda",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Antigua and Barbuda in the last 24 hours."
+  "eventIds": [
+    "ev-8971b260e757"
+  ]
 }

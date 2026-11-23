@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "PA",
   "title": "Panama",
   "eventIds": [
-    "ev-f615802b1e9a",
-    "ev-b83291462084",
-    "ev-2f0e0a5ca59b"
+    "ev-2f23dadab043",
+    "ev-1e4299e5e1b6"
   ]
 }

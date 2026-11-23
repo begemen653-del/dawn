@@ -1,15 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "IT",
   "title": "Italy",
   "eventIds": [
-    "ev-6288b55171ec",
-    "ev-fa5dd4fd6ef3",
-    "ev-89b72f51550c",
-    "ev-7747ea7b2f3b",
-    "ev-13c781a908d7",
-    "ev-750d7aceba64",
-    "ev-01fe1ad8d249"
+    "ev-9c059179fcc6",
+    "ev-89be818c1de2",
+    "ev-ab5f43bad3e3",
+    "ev-c2dae61fd5a9",
+    "ev-c63336017cdc"
   ]
 }
