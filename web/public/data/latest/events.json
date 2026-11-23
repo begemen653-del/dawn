@@ -1,8 +1,124 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-23",
-  "generatedAt": "2026-11-23T03:31:00.449Z",
+  "generatedAt": "2026-11-23T17:01:26.909Z",
   "events": [
+    {
+      "id": "ev-2b65047592b7",
+      "headline": "Nvidia reinstates Jensen Huang as chief executive",
+      "summary": "Nvidia has reinstated Jensen Huang as chief executive less than two weeks after he resigned over reports of extramarital affairs and an alleged spy scandal. The board made the decision after consulting senior United States officials, who indicated his return poses no national security risk. Shares of the chipmaker jumped 33 percent in New York following the announcement.",
+      "whyItMatters": "Huang's return restores leadership to the dominant supplier of artificial intelligence chips after a brief period of uncertainty.",
+      "topic": "business",
+      "time": "2026-11-23T16:48:01.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "New York",
+          "at": [
+            -73.982,
+            40.752
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Jensen Huang reinstated as Nvidia CEO",
+          "url": "https://theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive",
+          "publishedAt": "2026-11-23T15:23:21.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Nvidia reinstates Jensen Huang as CEO after U.S. government input",
+          "url": "https://thehindu.com/sci-tech/technology/nvidia-reinstates-jensen-huang-as-ceo-after-us-government-input/article71735341.ece",
+          "publishedAt": "2026-11-23T14:38:23.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nvidia board reinstates Jensen Huang as CEO",
+          "url": "https://aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo?traffic_source=rss",
+          "publishedAt": "2026-11-23T14:24:38.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Ars Technica",
+          "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
+          "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair",
+          "publishedAt": "2026-11-23T15:46:18.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Nvidia board reinstates Jensen Huang as president, CEO amid continued scrutiny over Chinese spy allegations",
+          "url": "https://aa.com.tr/en/science-technology/nvidia-board-reinstates-jensen-huang-as-president-ceo-amid-continued-scrutiny-over-chinese-spy-allegations/4134739",
+          "publishedAt": "2026-11-23T14:10:31.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 100,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -73.982,
+          "lat": 40.752,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -73.982,
+              40.752
+            ],
+            "label": "New York",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Jensen Huang resigned on 12 November after reports revealed extramarital affairs, including one with an alleged Chinese spy. Nvidia then launched an independent investigation into whether Huang was targeted by a Chinese intelligence operation.",
+        "keyPlayers": [
+          {
+            "name": "Jensen Huang",
+            "role": "Chief executive of Nvidia"
+          },
+          {
+            "name": "Harvey Jones",
+            "role": "Board chair of Nvidia"
+          },
+          {
+            "name": "Donald Trump",
+            "role": "President of the United States"
+          }
+        ],
+        "whatNext": "Nvidia said the independent investigation into the alleged Chinese intelligence operation remains ongoing and will proceed to its conclusion.",
+        "timeline": [
+          {
+            "date": "12 November 2026",
+            "label": "Jensen Huang resigns as CEO of Nvidia."
+          },
+          {
+            "date": "23 November 2026",
+            "label": "Nvidia board reinstates Huang as CEO after consulting US officials."
+          }
+        ],
+        "simpler": "The boss of the computer chip company Nvidia, Jensen Huang, lost his job after reports linked him to a spy scandal. After US government officials and company leaders decided he posed no safety risk, Nvidia gave him his job back."
+      }
+    },
     {
       "id": "ev-64c7d838ba1b",
       "headline": "Three dead and dozens missing after Indonesian candy factory fire",
@@ -1971,6 +2087,140 @@
       }
     },
     {
+      "id": "ev-a50ffe1ce4f9",
+      "headline": "Authorities search for escaped lioness in Istanbul's Sarıyer district",
+      "summary": "Police, gendarmerie and wildlife officials are looking for a female lion that was seen near the Uskumruköy neighbourhood of Istanbul on Sunday night. Teams are using thermal cameras and veterinarians with tranquiliser darts while roads are closed and residents are asked to stay indoors.",
+      "whyItMatters": "A wild lion in a city poses a safety risk to residents and highlights concerns about private ownership of exotic animals.",
+      "topic": "society",
+      "time": "2026-11-23T16:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Uskumrukoy",
+          "at": [
+            29.0333,
+            41.2219
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Istanbul",
+          "at": [
+            28.9647,
+            41.0186
+          ],
+          "country": "TR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "Turkey: Authorities search for lioness on the loose in Istanbul",
+          "url": "https://dw.com/en/turkey-authorities-search-for-lioness-on-the-loose-in-istanbul/a-80020913?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-23T16:05:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Hürriyet Daily News",
+          "title": "Search continues for escaped lioness in Istanbul’s Sarıyer district",
+          "url": "https://hurriyetdailynews.com/search-continues-for-escaped-lion-in-istanbuls-sariyer-district-229740",
+          "publishedAt": "2026-11-23T10:10:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "Turkish authorities search for lion spotted on outskirts of Istanbul",
+          "url": "https://euronews.com/2026/11/23/turkish-authorities-search-for-lion-spotted-on-outskirts-of-istanbul",
+          "publishedAt": "2026-11-23T07:48:49.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "TRT Haber",
+          "title": "İstanbul'da aslan alarmı: Arama çalışmaları sürüyor",
+          "url": "https://trthaber.com/haber/turkiye/istanbulda-aslan-alarmi-arama-calismalari-suruyor-964185.html",
+          "publishedAt": "2026-11-23T07:45:00.000Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "manilatimes.net",
+          "title": "Turkish authorities search for lioness spotted on outskirts of Istanbul",
+          "url": "https://manilatimes.net/2026/11/23/world/turkish-authorities-search-for-lioness-spotted-on-outskirts-of-istanbul/2476046",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 63.8,
+      "countries": [
+        "TR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 29.0333,
+          "lat": 41.2219,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TR",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              29.0333,
+              41.2219
+            ],
+            "label": "Uskumrukoy",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              28.9647,
+              41.0186
+            ],
+            "label": "Istanbul",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "A resident reported seeing a lion in Uskumruköy on the evening of 22 November. Security‑camera footage later confirmed the animal, prompting an investigation by the Istanbul governor’s office and the national parks directorate.",
+        "keyPlayers": [
+          {
+            "name": "Oktay Aksu",
+            "role": "Mayor of Sarıyer district"
+          },
+          {
+            "name": "Istanbul governor’s office",
+            "role": "Government authority coordinating the search"
+          },
+          {
+            "name": "National Parks Directorate",
+            "role": "Wildlife authority providing veterinarians and equipment"
+          }
+        ],
+        "whatNext": "Authorities plan to continue the search with thermal imaging and may attempt to sedate the lioness with tranquiliser darts. They are also investigating the animal’s owner.",
+        "timeline": [
+          {
+            "date": "22 November",
+            "label": "Lion sighted by resident in Uskumruköy"
+          },
+          {
+            "date": "23 November",
+            "label": "Search operation launched; roads closed; officials issue safety warnings"
+          }
+        ],
+        "simpler": "A lion escaped near a forest in Istanbul. Police and animal experts are looking for it with special cameras and a medicine that can make the lion sleepy. People are told to stay inside until it is caught."
+      }
+    },
+    {
       "id": "ev-aa9384112964",
       "headline": "US Army plans emergency detonation of explosives in Iowa",
       "summary": "The US Army intends to proceed with detonating five tonnes of unstable explosives at an ammunition plant in Middletown, Iowa, despite a court-ordered pause. Government lawyers argued that swift action is necessary to prevent an unplanned explosion as temperatures drop.",
@@ -3038,6 +3288,163 @@
       }
     },
     {
+      "id": "ev-fda67bec5083",
+      "headline": "Schools in Germany and Denmark receive emailed bomb threats",
+      "summary": "Hundreds of schools across Germany and Denmark received bomb threats via email on Monday morning. Police in both countries advised schools to stay open and continue normal operations, stating there was no evidence of a credible threat. Authorities believe the emails were sent to cause fear without taking action.",
+      "whyItMatters": "The widespread emails caused alarm across multiple regions and follow similar wave of security scares targeting European schools and public services.",
+      "topic": "society",
+      "time": "2026-11-23T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Germany",
+          "at": [
+            9.678,
+            50.962
+          ],
+          "country": "DE"
+        },
+        {
+          "name": "Denmark",
+          "at": [
+            9.018,
+            55.967
+          ],
+          "country": "DK"
+        },
+        {
+          "name": "Berlin",
+          "at": [
+            13.4,
+            52.5167
+          ],
+          "country": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "German police respond to multiple school bomb threats",
+          "url": "https://dw.com/en/german-police-respond-to-multiple-school-bomb-threats/a-80018842?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-23T11:01:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "newcastleherald.com.au",
+          "title": "Schools across Germany and Denmark receive bomb threats",
+          "url": "https://newcastleherald.com.au/story/9396866/schools-across-germany-and-denmark-receive-bomb-threats",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Police investigating bomb threats against schools in Germany and Denmark",
+          "url": "https://aljazeera.com/news/2026/11/23/police-investigating-bomb-threats-against-schools-in-germany-and-denmark?traffic_source=rss",
+          "publishedAt": "2026-11-23T15:07:59.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aawsat.com",
+          "title": "Schools Across Germany, Denmark Receive Bomb Threats",
+          "url": "https://english.aawsat.com/world/5344638-schools-across-germany-denmark-receive-bomb-threats",
+          "publishedAt": "2026-11-23T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "gdnonline.com",
+          "title": "World News: Schools across Germany, Denmark receive bomb threats",
+          "url": "https://gdnonline.com/Details/1413679/Schools-across-Germany,-Denmark-receive-bomb-threats",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "rhein-zeitung.de",
+          "title": "Polizei: Bombendrohungen an Schulen bundesweit",
+          "url": "https://rhein-zeitung.de/deutschland-welt/panorama/bombendrohungen-an-schulen-bundesweit_arid-4172423.html",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "nordbayern.de",
+          "title": "Bombendrohungen an Hunderten Schulen in ganz Deutschland - auch Schulen in Nürnberg und Franken betroffen",
+          "url": "https://nordbayern.de/nuernberg/polizeibericht/bombendrohungen-an-hunderten-schulen-in-ganz-deutschland-auch-in-nurnberg-gingen-drohschreiben-ein-1.15364366",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "op-online.de",
+          "title": "Bombendrohungen an Schulen bundesweit",
+          "url": "https://op-online.de/welt/bombendrohungen-an-schulen-bundesweit-zr-94603445.html",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "nordkurier.de",
+          "title": "Alle an einem Morgen: Bombendrohungen an vielen deutschen Schulen",
+          "url": "https://nordkurier.de/panorama/alle-an-einem-morgen-bombendrohungen-an-vielen-deutschen-schulen-5031299",
+          "publishedAt": "2026-11-23T13:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "bernerzeitung.ch",
+          "title": "Bombendrohungen: Schulen in Thüringen und Niedersachsen",
+          "url": "https://bernerzeitung.ch/bombendrohungen-schulen-in-thueringen-und-niedersachsen-395204723154",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "de"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 50.9,
+      "countries": [
+        "DE",
+        "DK"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 9.678,
+          "lat": 50.962,
+          "zoom": 5.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "DE",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "DK",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              13.4,
+              52.5167
+            ],
+            "label": "Berlin",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The mass emails follow similar disruption across Europe, including emailed bomb scares that led to school evacuations in Italy and Spain earlier in November.",
+        "keyPlayers": [],
+        "whatNext": "Police forces across Germany and Denmark are investigating the emails to identify the sender under laws regarding breach of the peace.",
+        "timeline": [
+          {
+            "date": "23 November 2026",
+            "label": "Hundreds of schools across Germany and Denmark receive emailed bomb threats."
+          }
+        ],
+        "simpler": "Many schools in Germany and Denmark got fake bomb threats by email. Police checked the messages, told everyone the schools were safe, and are now trying to find out who sent them."
+      }
+    },
+    {
       "id": "ev-9c7d85ce1be1",
       "headline": "Marc Marquez wins eighth MotoGP world title in Portugal",
       "summary": "Spanish rider Marc Marquez secured the 2026 MotoGP championship after placing eighth at the Portuguese Grand Prix in Portimao. The result gave him an unassailable lead in the standings with one race remaining in the season.",
@@ -3199,6 +3606,133 @@
           }
         ],
         "simpler": "Motorcycle racer Marc Marquez finished eighth in a race in Portugal, which was enough points for him to win his eighth world championship."
+      }
+    },
+    {
+      "id": "ev-c03c5474aa01",
+      "headline": "Iran says it will use all means to counter U.S. naval blockade",
+      "summary": "Iran’s foreign ministry said it will use any tools available to confront the U.S. naval blockade of its oil exports. The blockade was re‑imposed in July after a brief lift, and Iran warned it could respond with military actions.",
+      "whyItMatters": "The blockade affects global oil flows and raises the risk of further military escalation in the region.",
+      "topic": "conflict",
+      "time": "2026-11-23T16:55:54.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Tehran",
+          "at": [
+            51.5148,
+            35.75
+          ],
+          "country": "IR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Will use 'all available means' to counter U.S. blockade: Iran",
+          "url": "https://thehindu.com/news/international/will-use-all-available-means-to-counter-us-blockade-iran/article71735993.ece",
+          "publishedAt": "2026-11-23T16:55:54.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "timeslive.co.za",
+          "title": "Iran vows to use 'any available tool' to confront US naval blockade",
+          "url": "https://timeslive.co.za/news/world/2026-11-23-iran-vows-to-use-any-available-tool-to-confront-us-naval-blockade",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran says it will use ‘all available means’ to counter US blockade",
+          "url": "https://aljazeera.com/news/2026/11/23/iran-says-it-will-use-all-available-means-to-counter-us-blockade?traffic_source=rss",
+          "publishedAt": "2026-11-23T13:04:11.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dunyanews.tv",
+          "title": "Iran says it will use all its tools to confront US naval blockade",
+          "url": "https://dunyanews.tv/en/World/984455-iran-says-it-will-use-all-its-tools-to-confront-us-naval-blockade",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "hindustantimes.com",
+          "title": "'Won't tolerate such actions': Iran vows to use all available means to counter US naval blockade",
+          "url": "https://hindustantimes.com/world-news/wont-tolerate-such-actions-iran-vows-to-use-all-available-means-to-counter-us-naval-blockade-101795434563353.html",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 50.5,
+      "countries": [
+        "IR",
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 51.5148,
+          "lat": 35.75,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IR",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "US",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              51.5148,
+              35.75
+            ],
+            "label": "Tehran",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "War between Iran and the United States began on 28 February 2026 after U.S.–Israeli strikes killed Iran’s supreme leader Ayatollah Ali Khamenei. Iran then started missile and drone attacks, and the conflict spread to the region.",
+        "keyPlayers": [
+          {
+            "name": "Esmaeil Baqaei",
+            "role": "Foreign Ministry spokesperson for Iran"
+          }
+        ],
+        "whatNext": "Iran said it will use all available means to counter the blockade and will reopen the Strait of Hormuz only if the United States ends hostilities, lifts the blockade and waives sanctions.",
+        "timeline": [
+          {
+            "date": "28 February 2026",
+            "label": "War begins after U.S.–Israeli strikes"
+          },
+          {
+            "date": "13 April 2026",
+            "label": "U.S. imposes naval blockade on Iranian oil exports"
+          },
+          {
+            "date": "June 2026",
+            "label": "Blockade briefly lifted after draft agreement"
+          },
+          {
+            "date": "14 July 2026",
+            "label": "Blockade re‑imposed after agreement collapsed"
+          },
+          {
+            "date": "23 November 2026",
+            "label": "Iran vows to use all means against blockade"
+          }
+        ],
+        "simpler": "Iran says the U.S. has blocked its oil ships. Iran promises to fight back with any tools it has and will only open the important waterway again if the U.S. stops the blockade."
       }
     },
     {
@@ -4039,6 +4573,142 @@
           }
         ],
         "simpler": "Former Brazilian president Jair Bolsonaro is in intensive care at a hospital in Brasília because of a blockage in his belly. Doctors say he is stable, but he has no set date to leave the hospital and might need surgery."
+      }
+    },
+    {
+      "id": "ev-6786fe7d8d1d",
+      "headline": "Indonesian President Subianto fields two candidates for vice president",
+      "summary": "Indonesian President Prabowo Subianto nominated Agriculture Minister Andi Amran Sulaiman and former Foreign Minister Sugiono for the vacant position of vice president. The post became open when former Vice President Gibran Rakabuming Raka resigned following disputes over his educational qualifications. Under the constitution, parliament must elect a replacement within 60 days.",
+      "whyItMatters": "The parliamentary vote will select Indonesia's second-highest leader to serve out the remainder of the current presidential term.",
+      "topic": "politics",
+      "time": "2026-11-23T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Jakarta",
+          "at": [
+            106.829,
+            -6.17444
+          ],
+          "country": "ID"
+        },
+        {
+          "name": "Indonesia",
+          "at": [
+            101.893,
+            -0.954
+          ],
+          "country": "ID"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "merimbulanewsweekly.com.au",
+          "title": "Indonesia's Prabowo nominates vice president candidates",
+          "url": "https://merimbulanewsweekly.com.au/story/9396868/indonesias-prabowo-nominates-vice-president-candidates",
+          "publishedAt": "2026-11-23T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "leadertelegram.com",
+          "title": "Indonesia's Prabowo nominates 2 candidates to replace Raka as vice president",
+          "url": "https://leadertelegram.com/news/world/indonesia-s-prabowo-nominates-2-candidates-to-replace-raka-as-vice-president/article_a7f6849a-dcb2-543f-a58c-7107f4d18a16.html",
+          "publishedAt": "2026-11-23T16:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Prabowo faces deadline to submit two VP candidates on Nov 23",
+          "url": "https://en.antaranews.com/news/444595/prabowo-faces-deadline-to-submit-two-vp-candidates-on-nov-23",
+          "publishedAt": "2026-11-23T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "sindonews.com",
+          "title": "Momen Prabowo Resmi Serahkan 2 Nama Cawapres ke MPR",
+          "url": "https://nasional.sindonews.com/read/1775353/12/momen-prabowo-resmi-serahkan-2-nama-cawapres-ke-mpr-1795428692",
+          "publishedAt": "2026-11-23T11:45:00Z",
+          "language": "id"
+        },
+        {
+          "outlet": "jpnn.com",
+          "title": "MPR Ingatkan Prabowo Serahkan Usul Dua Nama Cawapres Senin Ini",
+          "url": "https://jpnn.com/news/mpr-ingatkan-prabowo-serahkan-usul-dua-nama-cawapres-senin-ini",
+          "publishedAt": "2026-11-23T09:45:00Z",
+          "language": "id"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 48.2,
+      "countries": [
+        "ID"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 106.829,
+          "lat": -6.17444,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "ID",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              106.829,
+              -6.17444
+            ],
+            "label": "Jakarta",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Former Vice President Gibran Rakabuming Raka stepped down on 12 November after court decisions led to public debate regarding his eligibility and credentials.",
+        "keyPlayers": [
+          {
+            "name": "Prabowo Subianto",
+            "role": "President of Indonesia"
+          },
+          {
+            "name": "Gibran Rakabuming Raka",
+            "role": "Former Vice President of Indonesia"
+          },
+          {
+            "name": "Andi Amran Sulaiman",
+            "role": "Agriculture Minister of Indonesia"
+          },
+          {
+            "name": "Sugiono",
+            "role": "Former Foreign Minister of Indonesia"
+          },
+          {
+            "name": "Ahmad Muzani",
+            "role": "Chairman of the People's Consultative Assembly"
+          }
+        ],
+        "whatNext": "The People's Consultative Assembly will hold a plenary session on 11 December 2026 to choose and inaugurate the new vice president.",
+        "timeline": [
+          {
+            "date": "12 November 2026",
+            "label": "Gibran Rakabuming Raka resigns from the vice presidency."
+          },
+          {
+            "date": "23 November 2026",
+            "label": "President Prabowo Subianto submits his two vice-presidential nominees to parliament."
+          },
+          {
+            "date": "11 December 2026",
+            "label": "Parliament is scheduled to elect and swear in the new vice president."
+          }
+        ],
+        "simpler": "Indonesia needs a new vice president after the last one stepped down. The president picked two candidates, and parliament will vote on 11 December to decide who gets the job."
       }
     },
     {
@@ -5434,6 +6104,142 @@
           }
         ],
         "simpler": "French President Emmanuel Macron is thinking about holding a special meeting with lawmakers in January to add a strict budget rule to the country's constitution in order to better manage public finances."
+      }
+    },
+    {
+      "id": "ev-810cabeac9be",
+      "headline": "Spain's Supreme Court applies amnesty to Carles Puigdemont",
+      "summary": "Spain's Supreme Court has applied an amnesty law to former Catalan president Carles Puigdemont and two former regional ministers, closing their criminal case after nine years. The ruling removes all criminal liability stemming from the 2017 Catalan independence attempt. Puigdemont is now free to return to Spain without risk of arrest and can run in future elections.",
+      "whyItMatters": "The decision ends the legal prosecution against key Catalan independence leaders, allowing politicians who fled the country to return to Spanish politics.",
+      "topic": "politics",
+      "time": "2026-11-23T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Spain",
+          "at": [
+            -3.465,
+            40.091
+          ],
+          "country": "ES"
+        },
+        {
+          "name": "Catalunya",
+          "at": [
+            2,
+            42
+          ],
+          "country": "ES"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "latribunadetoledo.es",
+          "title": "El Supremo aplica la amnistía a Puigdemont y cierra su causa",
+          "url": "https://latribunadetoledo.es/noticia/z8ecfedd6-0539-4a47-9e265eec5e8b8f34/202611/el-supremo-aplica-la-amnistia-a-puigdemont-y-cierra-su-causa",
+          "publishedAt": "2026-11-23T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "cope.es",
+          "title": "El Supremo aplica la amnistía a Puigdemont y cierra su causa penal nueve años después",
+          "url": "https://cope.es/actualidad/espana/noticias/supremo-aplica-amnistia-puigdemont-cierra-causa-penal-nueve-anos-20261123_3480249.html",
+          "publishedAt": "2026-11-23T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "infolibre.es",
+          "title": "El Supremo aplica la amnistía a Puigdemont y pone fin a la causa del 'proces', nueve años activa",
+          "url": "https://infolibre.es/politica/supremo-aplica-amnistia-puigdemont-pone-proceso-nueve-anos_1_2240629.html",
+          "publishedAt": "2026-11-23T15:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "diariovasco.com",
+          "title": "El Supremo aplica la amnistía completa a Puigdemont y cierra para siempre la causa del procés",
+          "url": "https://diariovasco.com/politica/supremo-aplica-amnistia-completa-puigdemont-cierra-siempre-20261123131947-ntrc.html",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "elmundo.es",
+          "title": "El Supremo aplica la amnistía a Puigdemont y archiva definitivamente la causa del procés",
+          "url": "https://elmundo.es/espana/2026/11/23/6b042ed9e4d4d8872c8b4579.html",
+          "publishedAt": "2026-11-23T12:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 45.7,
+      "countries": [
+        "ES"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -3.465,
+          "lat": 40.091,
+          "zoom": 4.9
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "ES",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              2,
+              42
+            ],
+            "label": "Catalunya",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "A criminal case was opened in 2017 following the Catalan independence referendum. Puigdemont and other leaders left Spain to avoid prosecution.",
+        "keyPlayers": [
+          {
+            "name": "Carles Puigdemont",
+            "role": "Former Catalan president"
+          },
+          {
+            "name": "Antoni Comín",
+            "role": "Former Catalan minister"
+          },
+          {
+            "name": "Lluis Puig",
+            "role": "Former Catalan minister"
+          },
+          {
+            "name": "Pablo Llarena",
+            "role": "Supreme Court judge"
+          }
+        ],
+        "whatNext": "Puigdemont can now return to Spain whenever he chooses and is eligible to run in elections.",
+        "timeline": [
+          {
+            "date": "2017",
+            "label": "Criminal case is opened against Catalan independence leaders"
+          },
+          {
+            "date": "6 October",
+            "label": "National arrest warrants against the leaders are removed"
+          },
+          {
+            "date": "3 November",
+            "label": "Judge Pablo Llarena closes the case summary and passes it to the court chamber"
+          },
+          {
+            "date": "23 November 2026",
+            "label": "Spain's Supreme Court officially applies the amnesty and closes the case"
+          }
+        ],
+        "simpler": "Spain's highest court has dropped all charges against former Catalan leader Carles Puigdemont. After nine years of living outside Spain to avoid arrest, he can now safely return home and run for office."
       }
     },
     {
