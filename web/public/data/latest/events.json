@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-24",
-  "generatedAt": "2026-11-24T03:31:23.526Z",
+  "generatedAt": "2026-11-24T17:01:18.495Z",
   "events": [
     {
       "id": "ev-2b65047592b7",
@@ -178,6 +178,167 @@
           }
         ],
         "simpler": "Nvidia's board brought back chief executive Jensen Huang less than two weeks after he quit, following talks with U.S. government officials."
+      }
+    },
+    {
+      "id": "ev-d392787781e1",
+      "headline": "Pope Francis' diary reveals he claimed three encounters with the devil",
+      "summary": "Excerpts from Pope Francis' private diary, published in a new book, say the late pontiff saw the devil three times – from a car, in a choir loft during Mass, and after a visit to Chile. The diary also mentions a vision of the \"gates of hell\" and his regret over the 2018 Chile controversy.",
+      "whyItMatters": "The revelations give insight into the late pope's personal spiritual struggles and may influence how the Catholic Church addresses internal crises and public perception.",
+      "topic": "culture",
+      "time": "2026-11-24T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Rome",
+          "at": [
+            12.4833,
+            41.9
+          ],
+          "country": "IT"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Pope Francis' diary reveals claims he saw the devil three times",
+          "url": "https://bbc.co.uk/news/articles/cm78270l4z7no",
+          "publishedAt": "2026-11-24T11:10:57.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "‘The Private Diary of Pope Francis,’ by Argentine Cardinal Fernandez: The Pope revealed in personal diary having seen devil three times",
+          "url": "https://thehindu.com/news/international/the-private-diary-of-pope-francis-by-argentine-cardinal-fernandez-the-pope-revealed-in-personal-diary-having-seen-devil-three-times/article71737371.ece",
+          "publishedAt": "2026-11-24T07:47:50.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "Pope Francis diaries recount spiritual crisis, him seeing the 'Devil'",
+          "url": "https://dw.com/en/pope-francis-diaries-recount-spiritual-crisis-him-seeing-the-devil/a-80033224?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-24T15:21:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "milfordmercury.co.uk",
+          "title": "Pope Francis' private diary details claims of three encounters with the devil",
+          "url": "https://milfordmercury.co.uk/news/national/26757976.pope-francis-private-diary-details-claims-three-encounters-devil",
+          "publishedAt": "2026-11-24T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wboc.com",
+          "title": "Pope Francis' private diary details a profound spiritual crisis and encounters with the devil",
+          "url": "https://wboc.com/news/international/pope-francis-private-diary-details-a-profound-spiritual-crisis-and-encounters-with-the-devil/article_772bdde7-0b50-542c-88c4-798c6285dc36.html",
+          "publishedAt": "2026-11-24T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "t13.cl",
+          "title": "El papa Francisco aseguró en su diario personal que vio al diablo",
+          "url": "https://t13.cl/noticia/mundo/el-papa-francisco-aseguro-su-diario-personal-vio-al-diablo-24-11-2026",
+          "publishedAt": "2026-11-24T09:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "elesquiu.com",
+          "title": "Papa Francisco: sus diarios revelan que vio al diablo tres veces",
+          "url": "https://elesquiu.com/nacionales/2026/11/24/papa-francisco-sus-diarios-revelan-que-vio-al-diablo-tres-veces-604582.html",
+          "publishedAt": "2026-11-24T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "zocalo.com.mx",
+          "title": "Aseguró el papa Francisco en su diario personal que vio al diablo en tres ocasiones",
+          "url": "https://zocalo.com.mx/aseguro-el-papa-francisco-en-su-diario-personal-que-vio-al-diablo-en-tres-ocasiones",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "nacion.com",
+          "title": "El papa Francisco relató en su diario que vio al diablo: 'No olvidaré sus ojos amenazantes'",
+          "url": "https://nacion.com/el-mundo/el-papa-francisco-relato-en-su-diario-que-vio-al/UK7V74OIRNBVDF5STEWOF3XMSI/story",
+          "publishedAt": "2026-11-24T16:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "tiemposur.com.ar",
+          "title": "El papa Francisco contó en sus diarios que vio al diablo en tres ocasiones",
+          "url": "https://tiemposur.com.ar/internacionales/el-papa-francisco-conto-en-sus-diarios-que-vio-al-diablo-en-tres-ocasiones",
+          "publishedAt": "2026-11-24T12:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 74.9,
+      "countries": [
+        "AR",
+        "IT",
+        "VA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 12.4833,
+          "lat": 41.9,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "AR",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "IT",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "VA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              12.4833,
+              41.9
+            ],
+            "label": "Rome",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The diary entries were written between 1992 and 2024 and were compiled by Argentine Cardinal Victor Manuel Fernandez for a book released on 24 November 2026.",
+        "keyPlayers": [
+          {
+            "name": "Pope Francis",
+            "role": "late Pope of the Catholic Church"
+          },
+          {
+            "name": "Cardinal Victor Manuel Fernandez",
+            "role": "Vatican official who edited and published the diary excerpts"
+          }
+        ],
+        "whatNext": "The book may shape discussions within the Church about spiritual leadership and could be referenced in future Vatican communications.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Diary excerpts published in book"
+          },
+          {
+            "date": "January 24, 2021",
+            "label": "Diary entry describing a devil encounter"
+          }
+        ],
+        "simpler": "The late Pope wrote in his private notebook that he saw the devil three times. A church leader in Argentina put those notes into a book, and people are now reading them to understand the Pope's inner thoughts."
       }
     },
     {
@@ -764,6 +925,125 @@
       }
     },
     {
+      "id": "ev-b1c2f96beae2",
+      "headline": "Israeli air strike kills Hamas internal security chief and six others in Gaza",
+      "summary": "On 24 November 2026 an Israeli air strike hit western Gaza City, killing Naeem Abu Nahel, the head of Hamas’s internal security service, and six other Palestinians. The attack also hit a police station in the al‑Mawasi area, killing two police officers and a teenager.",
+      "whyItMatters": "The death of a senior Hamas security leader could affect the group’s ability to coordinate its forces and may raise tensions during the cease‑fire that has been in place since October 2025.",
+      "topic": "conflict",
+      "time": "2026-11-24T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Gaza City",
+          "at": [
+            34.3333,
+            31.4167
+          ],
+          "country": "IL"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Israeli air strike kills Hamas internal security chief in Gaza",
+          "url": "https://bbc.co.uk/news/articles/c6rrg7ggq190o",
+          "publishedAt": "2026-11-24T15:35:53.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "Israeli strikes kill Hamas security chief and six others in Gaza",
+          "url": "https://euronews.com/2026/11/24/israeli-strike-kills-hamas-internal-security-chief-in-gaza-source-tells-afp",
+          "publishedAt": "2026-11-24T12:16:18.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israeli air strike kills senior Hamas security official in Gaza",
+          "url": "https://aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
+          "publishedAt": "2026-11-24T13:55:11.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Israeli airstrike kills senior Hamas security official in Gaza, Hamas sources say",
+          "url": "https://thehindu.com/news/international/hamas-security-official-killed-in-israel-strikes-in-gaza/article71738279.ece",
+          "publishedAt": "2026-11-24T11:10:02.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
+          "url": "https://france24.com/en/middle-east/20261124-israeli-strikes-on-gaza-kill-senior-hamas-security-official-and-six-other-people-medics-say",
+          "publishedAt": "2026-11-24T13:07:03.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 59.9,
+      "countries": [
+        "IL",
+        "PS"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 34.3333,
+          "lat": 31.4167,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IL",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "PS",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              34.3333,
+              31.4167
+            ],
+            "label": "Gaza City",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "A cease‑fire between Israel and Hamas has been in effect since October 2025 after two years of war that began with the Hamas attack on 7 October 2023. The strike targeted the senior Hamas official who had taken the post in September after his predecessor was captured.",
+        "keyPlayers": [
+          {
+            "name": "Naeem Abu Nahel",
+            "role": "Head of Hamas internal security service"
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "role": "Prime Minister of Israel"
+          },
+          {
+            "name": "Israel Katz",
+            "role": "Israeli Defence Minister"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Israeli air strike kills Hamas security chief and six others"
+          }
+        ],
+        "simpler": "An Israeli plane bombed a part of Gaza City and killed the man who runs Hamas’s security, plus six other people. This could make the fighting between Hamas and Israel harder to stop."
+      }
+    },
+    {
       "id": "ev-d4885a38997b",
       "headline": "COP31 climate summit ends in failure after deadlock over fossil fuels",
       "summary": "The COP31 climate summit in Turkey concluded without a consensus agreement after running 48 hours into overtime. The European Union and roughly 130 countries rejected the final draft because it omitted a clear requirement to phase out fossil fuels.",
@@ -1125,99 +1405,6 @@
       }
     },
     {
-      "id": "ev-410f2665f571",
-      "headline": "Marvel releases final trailer for 'Avengers: Doomsday'",
-      "summary": "Marvel dropped the final trailer for 'Avengers: Doomsday', revealing a massive crossover event featuring Steve Rogers, the Fantastic Four, and Dr. Doom. The footage connects past timeline-hopping choices from 'Avengers: Endgame' to new multiverse threats.",
-      "whyItMatters": "The upcoming film is a major cinematic release for the franchise, bringing together dozens of characters and setting up high-stakes conflict across the Marvel Cinematic Universe.",
-      "topic": "culture",
-      "time": "2026-11-24T03:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "United States",
-          "at": [
-            -97.483,
-            39.538
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "wach.com",
-          "title": "Final 'Avengers: Doomsday' trailer reveals ultimate mashup of characters",
-          "url": "https://wach.com/news/entertainment/final-avengers-doomsday-trailer-reveals-ultimate-mashup-of-characters",
-          "publishedAt": "2026-11-23T18:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "kw3.com",
-          "title": "'Avengers: Doomsday': Final Trailer Easter Egg Breakdown",
-          "url": "https://kw3.com/ixp/442/p/avengers-doomsday-final-trailer-full-easter-egg-breakdown",
-          "publishedAt": "2026-11-23T23:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "empireonline.com",
-          "title": "Fantastic Four Recruit Steve Rogers In Final Avengers: Doomsday Trailer",
-          "url": "https://empireonline.com/movies/news/avengers-doomsday-final-trailer-steve-rogers-recruited-by-fantastic-four",
-          "publishedAt": "2026-11-23T16:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "6abc.com",
-          "title": "'Avengers: Doomsday' final trailer reveals Steve Rogers' son, Cyclops' iconic 'X-Men' line and epic Marvel team-up",
-          "url": "https://6abc.com/post/avengers-doomsday-final-trailer-reveals-steve-rogers-son-cyclops-iconic-men-line-epic-marvel-team/20070629",
-          "publishedAt": "2026-11-23T22:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "ign.com",
-          "title": "Avengers: Doomsday Final Trailer Goes Heavy on Steve Rogers, as Marvel Keeps Big Reveals Under Wraps",
-          "url": "https://ign.com/articles/avengers-doomsday-final-trailer-goes-heavy-on-steve-rogers-as-marvel-keeps-big-reveals-under-wraps",
-          "publishedAt": "2026-11-23T15:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 55.4,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -97.483,
-          "lat": 39.538,
-          "zoom": 2.7
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "focus"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": {
-        "background": "The film follows previous superhero crossover events in the Marvel Cinematic Universe, building on multiverse storylines and past character arcs.",
-        "keyPlayers": [
-          {
-            "name": "Chris Evans",
-            "role": "Actor playing Steve Rogers"
-          },
-          {
-            "name": "Robert Downey Jr.",
-            "role": "Actor playing Dr. Doom"
-          }
-        ],
-        "whatNext": "The film is scheduled to hit cinemas in 24 days or slightly less in certain territories.",
-        "timeline": [],
-        "simpler": "Marvel released a new trailer for their upcoming movie 'Avengers: Doomsday', showing many superhero characters teaming up to face a new danger."
-      }
-    },
-    {
       "id": "ev-33915cdf8d3d",
       "headline": "Bomb threats hit hundreds of schools in Germany and Denmark",
       "summary": "Police in Germany and Denmark reported that hundreds of schools received email bomb threats on Monday morning. Authorities in both countries stated that their initial investigations indicate the threats are unfounded.",
@@ -1383,6 +1570,136 @@
           }
         ],
         "simpler": "Hundreds of schools in Germany and Denmark received threatening emails about bombs, but police believe the threats are fake and are investigating."
+      }
+    },
+    {
+      "id": "ev-fabc78f2fa7d",
+      "headline": "Two men arrested after break‑in at Prince William’s Norfolk country home",
+      "summary": "Police in Norfolk arrested two men on suspicion of burglary and trespassing after a reported break‑in at Anmer Hall, the country residence of Prince William and Princess Catherine on the Sandringham Estate. The house was empty at the time and officers used dogs, drones and a helicopter in the search.",
+      "whyItMatters": "The incident highlights security concerns for the royal family and has led to a police investigation that could affect future protection measures.",
+      "topic": "politics",
+      "time": "2026-11-24T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Sandringham",
+          "at": [
+            0.516667,
+            52.8333
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "London",
+          "at": [
+            -0.116667,
+            51.5
+          ],
+          "country": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "cnycentral.com",
+          "title": "2 arrested after reported break-in at Prince William and Kate's country home",
+          "url": "https://cnycentral.com/news/nation-world/2-arrested-after-reported-break-in-at-prince-william-and-kates-country-home-british-royal-family-sandringham-estate-anmer-hall-norfolk-police-drones-dogs-helicopters-kensington-palace-queen-elizabeth-ii-gift",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "cyprus-mail.com",
+          "title": "Country home of Prince William and Kate broken into, Sun says",
+          "url": "https://cyprus-mail.com/2026/11/24/country-home-of-prince-william-and-kate-broken-into-sun-says",
+          "publishedAt": "2026-11-24T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "begadistrictnews.com.au",
+          "title": "Prince William's country home broken into: report",
+          "url": "https://begadistrictnews.com.au/story/9397702/prince-williams-country-home-broken-into-report",
+          "publishedAt": "2026-11-24T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "iheart.com",
+          "title": "Two Arrested For Break-In At Prince William's Country Home",
+          "url": "https://cool102.iheart.com/content/2026-11-24-two-arrested-for-break-in-at-prince-williams-country-home",
+          "publishedAt": "2026-11-24T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "rutlandherald.com",
+          "title": "2 men arrested over suspected burglary at Prince William and Kate's country home in eastern England",
+          "url": "https://rutlandherald.com/news/world/2-men-arrested-over-suspected-burglary-at-prince-william-and-kate-s-country-home-in/article_8dc82133-d66a-5229-a4af-9aa65f7bdf91.html",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 53.2,
+      "countries": [
+        "GB"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 0.516667,
+          "lat": 52.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              0.516667,
+              52.8333
+            ],
+            "label": "Sandringham",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -0.116667,
+              51.5
+            ],
+            "label": "London",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Police were called on Monday night after a report of suspicious activity at Anmer Hall. Officers searched the estate with dogs, drones and a helicopter before arresting the two men.",
+        "keyPlayers": [
+          {
+            "name": "Prince William",
+            "role": "subject of the break‑in"
+          },
+          {
+            "name": "Princess Catherine",
+            "role": "subject of the break‑in"
+          },
+          {
+            "name": "Norfolk Constabulary",
+            "role": "investigating police force"
+          }
+        ],
+        "whatNext": "The two suspects are being held in custody while the police continue their investigation; no charges have been filed yet.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Police arrested two men after break‑in at Anmer Hall"
+          }
+        ],
+        "simpler": "Two men broke into Prince William’s house in Norfolk. Police caught them and are still looking into what happened."
       }
     },
     {
@@ -2581,6 +2898,111 @@
       "deeper": null
     },
     {
+      "id": "ev-07608bd52894",
+      "headline": "Russian night strike on Zaporizhzhia kills two civilians and wounds dozens, including children",
+      "summary": "A Russian nighttime attack on the southern Ukrainian city of Zaporizhzhia killed two civilians and injured 48 people, four of them children. The strike destroyed a private house and damaged a five‑storey apartment building. Ukrainian officials said reinforcements are being sent to the region.",
+      "whyItMatters": "The casualties add to the growing civilian toll of the war and highlight the intensity of aerial attacks as peace talks continue.",
+      "topic": "conflict",
+      "time": "2026-11-24T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Russian attack kills two people, wounds 22 in Ukraine's Zaporizhzhia, official says",
+          "url": "https://thehindu.com/news/international/russian-attack-kills-two-people-wounds-22-in-ukraines-zaporizhzhia-official-says/article71737237.ece",
+          "publishedAt": "2026-11-24T05:10:51.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "salisburyjournal.co.uk",
+          "title": "Four children among dozens wounded in fatal Russian air strike on Ukraine",
+          "url": "https://salisburyjournal.co.uk/news/national/26757291.four-children-among-dozens-wounded-fatal-russian-air-strike-ukraine",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wgauradio.com",
+          "title": "A Russian strike on Ukraine kills 2 and wounds children",
+          "url": "https://wgauradio.com/news/business/russian-strike/RO6VFAOCHE5PFNBHS6WQBP7MCY",
+          "publishedAt": "2026-11-24T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "niagarafallsreview.ca",
+          "title": "A Russian strike on Ukraine kills 2 and wounds children as Kyiv explains its attack in Libya",
+          "url": "https://niagarafallsreview.ca/business/a-russian-strike-on-ukraine-kills-2-and-wounds-children-as-kyiv-explains-its-attack-in-libya/article_44adb794-c7ca-5235-b7d5-82d8d3db4bbe.html",
+          "publishedAt": "2026-11-24T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "naharnet.com",
+          "title": "Russian strike on Ukraine kills 2, wounds children as Kyiv explains attack in Libya",
+          "url": "https://naharnet.com/stories/en/323963-russian-strike-on-ukraine-kills-2-wounds-children-as-kyiv-explains-attack-in-libya",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 46.1,
+      "countries": [
+        "RU",
+        "UA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 44.686,
+          "lat": 58.249,
+          "zoom": 1.8
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "RU",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "UA",
+            "tone": "neutral"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The attack was part of a series of escalations in aerial strikes between Russia and Ukraine, occurring as both sides discuss U.S.-mediated peace talks.",
+        "keyPlayers": [
+          {
+            "name": "Mykhailo Semikin",
+            "role": "Head of the Zaporizhzhia Regional Military Administration"
+          },
+          {
+            "name": "Volodymyr Zelenskyy",
+            "role": "President of Ukraine"
+          }
+        ],
+        "whatNext": "The Ukrainian government said it will send additional troops to the Zaporizhzhia region; no further actions were detailed in the sources.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Russian night strike kills two and wounds 48 in Zaporizhzhia"
+          }
+        ],
+        "simpler": "A Russian bomb hit a city in Ukraine, killing two adults and hurting many people, including four kids. The Ukrainian leaders said they will send more soldiers to protect the area."
+      }
+    },
+    {
       "id": "ev-3ee14cf62bd6",
       "headline": "FSSAI approves prosecution against Bisleri over unsafe water sample",
       "summary": "The Food Safety and Standards Authority of India approved prosecution against Bisleri International after a packaged drinking water sample was found unsafe. Bisleri maintained its products are safe, stating it received no formal notice and that the dispute stems from a single batch in Goa from September 2025.",
@@ -2675,6 +3097,337 @@
           }
         ],
         "simpler": "India's food safety authority is taking legal steps against Bisleri after a water sample failed safety tests, though the company says its water is safe."
+      }
+    },
+    {
+      "id": "ev-81e6a7cafb38",
+      "headline": "Bulls Yatırım Başkanı Kemal Akkaya ve Diğerleri Gözaltına Alındı",
+      "summary": "Sermaye piyasalarındaki fon soruşturması kapsamında Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya dahil 3 kişi gözaltına alındı. Ayrı bir operasyonda ise Alihan Kuriş suç örgütüne yönelik soruşturmada 21 kişi yakalandı.",
+      "whyItMatters": "Finansal piyasalar ve suç örgütlerine yönelik yürütülen bu operasyonlar, soruşturmaların genişleyerek devam ettiğini gösteriyor.",
+      "topic": "business",
+      "time": "2026-11-24T11:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Istanbul",
+          "at": [
+            28.9647,
+            41.0186
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Türkiye (Turkey)",
+          "at": [
+            34.508,
+            39.345
+          ],
+          "country": "TR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "TRT Haber",
+          "title": "Alihan Kuriş suç örgütü soruşturmasında 21 gözaltı",
+          "url": "https://trthaber.com/haber/turkiye/alihan-kuris-suc-orgutu-sorusturmasinda-21-gozalti-964261.html",
+          "publishedAt": "2026-11-24T06:41:00.000Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "ogunhaber.com",
+          "title": "Fon soruşturmasında yeni gelişme: Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya gözaltına alındı",
+          "url": "https://ogunhaber.com/asayis/fon-sorusturmasinda-yeni-gelisme-bulls-yatirim-yonetim-kurulu-baskani-kemal-akkaya-gozaltina-alindi-3004002h.html",
+          "publishedAt": "2026-11-24T11:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "yeniakit.com.tr",
+          "title": "Fon soruşturmasında yeni gelişme: Kemal Akkaya dahil 3 kişi gözaltına alındı",
+          "url": "https://yeniakit.com.tr/haber/fon-sorusturmasinda-yeni-gelisme-bulls-yatirim-baskani-kemal-akkaya-yeniden-gozaltinda-2035372.html",
+          "publishedAt": "2026-11-24T08:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "haberler.com",
+          "title": "Fon soruşturmasında Bulls Yatırım Başkanı Akkaya dahil 3 şüpheli gözaltına alındı",
+          "url": "https://haberler.com/guncel/fon-sorusturmasinda-bulls-yatirim-baskani-akkaya-20456621-haberi",
+          "publishedAt": "2026-11-24T08:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "yenikonya.com.tr",
+          "title": "Fon soruşturması | Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya gözaltında",
+          "url": "https://yenikonya.com.tr/guncel/fon_sorusturmasi_bulls_yatirim_yonetim_kurulu_baskani_kemal_akkaya_gozaltinda-1988677",
+          "publishedAt": "2026-11-24T11:45:00Z",
+          "language": "tr"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 44.6,
+      "countries": [
+        "TR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 28.9647,
+          "lat": 41.0186,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TR",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              28.9647,
+              41.0186
+            ],
+            "label": "Istanbul",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Sermaye Piyasası Kurulu (SPK), Kasım ayında Kemal Akkaya hakkında piyasa dolandırıcılığı suçlamasıyla savcılığa suç duyurusunda bulunmuştu.",
+        "keyPlayers": [
+          {
+            "name": "Kemal Akkaya",
+            "role": "Bulls Yatırım Yönetim Kurulu Başkanı"
+          },
+          {
+            "name": "Alihan Kuriş",
+            "role": "Suç örgütü lideri olduğu iddia edilen kişi"
+          }
+        ],
+        "whatNext": "Şüphelilerin yakalanmasına ve soruşturmaların yürütülmesine yönelik çalışmalar devam ediyor.",
+        "timeline": [
+          {
+            "date": "14 November",
+            "label": "SPK, Kemal Akkaya hakkında suç duyurusunda bulundu"
+          },
+          {
+            "date": "24 November",
+            "label": "Kemal Akkaya ve diğer şüpheliler yeniden gözaltına alındı"
+          }
+        ],
+        "simpler": "Yatırım işleri ve suçlarla ilgili yürütülen soruşturmalar kapsamında aralarında şirket başkanlarının da olduğu çok sayıda kişi gözaltına alındı."
+      }
+    },
+    {
+      "id": "ev-7b891c730cdf",
+      "headline": "Six killed in suspected gas blast at Hanoi eatery",
+      "summary": "An early morning explosion at a packed hot pot restaurant in Hanoi, Vietnam, killed six people and injured over a dozen others. Preliminary findings suggest a gas leak caused the blast, which collapsed part of the building and damaged nearby homes.",
+      "whyItMatters": "The explosion destroyed parts of the restaurant and damaged surrounding residential buildings, forcing authorities to relocate residents from structures deemed structurally unsafe while rescue workers search for survivors.",
+      "topic": "disaster",
+      "time": "2026-11-24T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Hanoi",
+          "at": [
+            105.85,
+            21.0333
+          ],
+          "country": "VN"
+        },
+        {
+          "name": "Vietnam",
+          "at": [
+            105.387,
+            21.715
+          ],
+          "country": "VN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Vietnam Blast: Six killed, dozens injured in a hot pot eatery blast in Hanoi",
+          "url": "https://thehindu.com/news/international/vietnam-blast-six-killed-dozens-injured-in-a-hot-pot-eatery-blast-in-hanoi/article71738306.ece",
+          "publishedAt": "2026-11-24T11:58:47.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "goskagit.com",
+          "title": "A blast at a hot pot eatery in Vietnam's capital Hanoi kills 6 and injures more than a dozen",
+          "url": "https://goskagit.com/news/world/a-blast-at-a-hot-pot-eatery-in-vietnams-capital-hanoi-kills-6-and-injures/article_b35c0838-22bc-5fda-be76-d384aa38e17b.html",
+          "publishedAt": "2026-11-24T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "naharnet.com",
+          "title": "Blast in Vietnam's capital Hanoi kills 6 and injures more than a dozen",
+          "url": "https://naharnet.com/stories/en/323965-blast-in-vietnam-s-capital-hanoi-kills-6-and-injures-more-than-a-dozen",
+          "publishedAt": "2026-11-24T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "gazettextra.com",
+          "title": "Hanoi eatery blast kills 3 and injures more than a dozen",
+          "url": "https://gazettextra.com/news/nation_world/hanoi-eatery-blast-kills-3-and-injures-more-than-a-dozen/article_987f0aa8-f665-5c4c-8ce0-ba87709d5f52.html",
+          "publishedAt": "2026-11-24T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wgauradio.com",
+          "title": "Hanoi eatery blast kills 6 and injures more than a dozen",
+          "url": "https://wgauradio.com/news/business/blast-hot-pot-eatery/K3DEPRWKTQ35HHNUAYZLH5BDMM",
+          "publishedAt": "2026-11-24T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 43.1,
+      "countries": [
+        "VN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 105.85,
+          "lat": 21.0333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "VN",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              105.85,
+              21.0333
+            ],
+            "label": "Hanoi",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The early morning explosion occurred at a crowded hot pot restaurant in Hanoi, with preliminary investigations pointing toward a gas leak.",
+        "keyPlayers": [
+          {
+            "name": "Lan Phuong",
+            "role": "Local resident living near the restaurant"
+          }
+        ],
+        "whatNext": "Police are continuing their investigation into the cause of the explosion while using detection equipment and machinery to search for anyone potentially trapped under the rubble.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Explosion occurs at a hot pot eatery in Hanoi"
+          }
+        ],
+        "simpler": "A sudden explosion, likely caused by leaking gas, happened at a restaurant in Vietnam's capital city early in the morning. It killed six people, hurt more than 14 others, and damaged nearby houses, leading police to search the rubble for survivors."
+      }
+    },
+    {
+      "id": "ev-9e66fca22fdc",
+      "headline": "Explosion damages cafe in Nea Ionia, Greece",
+      "summary": "A powerful explosion caused by an improvised device damaged a cafe on Sinopis Street in Nea Ionia early Tuesday morning. No injuries were reported, though the blast was strong enough to shake nearby homes.",
+      "whyItMatters": "Police are investigating the incident, which authorities suspect may be linked to a settling of scores, as the same business was targeted in a shooting about a year ago.",
+      "topic": "society",
+      "time": "2026-11-24T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Nea Ionia",
+          "at": [
+            23.75,
+            38.0333
+          ],
+          "country": "GR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "lykavitos.gr",
+          "title": "Νέα Ιωνία: Ισχυρή έκρηξη σε καφετέρια",
+          "url": "https://lykavitos.gr/news/greece/nea-ionia-isxyri-ekriksi-se-kafeteria-anazitountai-oi-drastes",
+          "publishedAt": "2026-11-24T09:45:00Z",
+          "language": "el"
+        },
+        {
+          "outlet": "tanea.gr",
+          "title": "Νέα Ιωνία: Ισχυρή έκρηξη σε καφετέρια τα ξημερώματα",
+          "url": "https://tanea.gr/2026/11/24/greece/nea-ionia-isxyri-ekriksi-ta-ksimeromata-se-kafeteria",
+          "publishedAt": "2026-11-24T06:45:00Z",
+          "language": "el"
+        },
+        {
+          "outlet": "inewsgr.com",
+          "title": "Νέα Ιωνία: Ισχυρή έκρηξη τα ξημερώματα σε καφετέρια",
+          "url": "https://inewsgr.com/441/nea-ionia-ischyri-ekrixi-ta-ximeromata-se-kafeteria--terasties-zimies.htm",
+          "publishedAt": "2026-11-24T05:45:00Z",
+          "language": "el"
+        },
+        {
+          "outlet": "mikrometoxos.gr",
+          "title": "Νέα Ιωνία: Ισχυρή έκρηξη σε καφετέρια τα ξημερώματα – Εκτεταμένες ζημιές στην επιχείρηση",
+          "url": "https://mikrometoxos.gr/nea-ionia-ischyri-ekrixi-se-kafeteria-ta-ximeromata-ektetamenes-zimies-stin-epicheirisi",
+          "publishedAt": "2026-11-24T06:45:00Z",
+          "language": "el"
+        },
+        {
+          "outlet": "imerazante.gr",
+          "title": "Αθήνα | Έκρηξη σε καφετέρια στη Νέα Ιωνία",
+          "url": "https://imerazante.gr/2026/11/24/406877",
+          "publishedAt": "2026-11-24T12:45:00Z",
+          "language": "el"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 42.1,
+      "countries": [
+        "GR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 23.75,
+          "lat": 38.0333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GR",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              23.75,
+              38.0333
+            ],
+            "label": "Nea Ionia",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The cafe was previously the site of a shooting incident approximately one year ago.",
+        "keyPlayers": [],
+        "whatNext": "Authorities are reviewing security camera footage to identify the perpetrators and are analyzing debris from the device to understand how it was constructed.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "The explosion occurred shortly after 4:00 AM."
+          }
+        ],
+        "simpler": "Early Tuesday morning, a bomb went off outside a cafe in Nea Ionia. The building was damaged, but nobody was hurt. Police are now looking for the people who did it."
       }
     },
     {
@@ -10002,130 +10755,6 @@
             ],
             "label": "Kolkata",
             "emphasis": "primary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-a058c698a3de",
-      "headline": "UK launches world's largest AI breast cancer screening trial",
-      "summary": "England has launched a major ten million pound trial involving around 700,000 women to test whether artificial intelligence can assist in breast screening mammograms. In the study, named Edith, AI will replace one of two specialists currently required to examine X-rays across 30 sites over three years.",
-      "whyItMatters": "The trial aims to improve early cancer detection rates, reduce waiting lists, and ease workloads for NHS staff without causing unnecessary follow-up scans.",
-      "topic": "health",
-      "time": "2026-11-24T03:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "London",
-          "at": [
-            -0.116667,
-            51.5
-          ],
-          "country": "GB"
-        },
-        {
-          "name": "Cambridge",
-          "at": [
-            0.116667,
-            52.2
-          ],
-          "country": "GB"
-        },
-        {
-          "name": "Copenhagen",
-          "at": [
-            12.5833,
-            55.6667
-          ],
-          "country": "DK"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "dungogchronicle.com.au",
-          "title": "Missed chances to give people existing cancer drugs",
-          "url": "https://dungogchronicle.com.au/story/9397096/missed-chances-to-give-people-existing-cancer-drugs",
-          "publishedAt": "2026-11-24T01:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "lbc.co.uk",
-          "title": "NHS invites first women to breast cancer screening using AI in world's largest trial",
-          "url": "https://lbc.co.uk/article/nhs-breast-cancer-screening-ai-trial-5HjdnPL_2",
-          "publishedAt": "2026-11-23T08:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "aol.co.uk",
-          "title": "World's largest AI breast cancer screening trial invites 700,000 British women to take part",
-          "url": "https://aol.co.uk/articles/worlds-largest-ai-breast-cancer-104522000.html",
-          "publishedAt": "2026-11-23T11:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "thehindu.com",
-          "title": "England launches world's largest AI-aided breast cancer screening trial",
-          "url": "https://thehindu.com/sci-tech/health/england-launches-worlds-largest-ai-aided-breast-cancer-screening-trial/article71734765.ece",
-          "publishedAt": "2026-11-23T13:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "cphpost.dk",
-          "title": "UK trial to test AI in breast cancer screening for around 700,000 women",
-          "url": "https://cphpost.dk/2026-11-23/global/uk-trial-to-test-ai-in-breast-cancer-screening-for-around-700000-women",
-          "publishedAt": "2026-11-23T19:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 30.1,
-      "countries": [
-        "GB"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -0.116667,
-          "lat": 51.5,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "GB",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -0.116667,
-              51.5
-            ],
-            "label": "London",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              0.116667,
-              52.2
-            ],
-            "label": "Cambridge",
-            "emphasis": "secondary"
-          },
-          {
-            "type": "marker",
-            "id": "place-2",
-            "at": [
-              12.5833,
-              55.6667
-            ],
-            "label": "Copenhagen",
-            "emphasis": "secondary"
           }
         ]
       },

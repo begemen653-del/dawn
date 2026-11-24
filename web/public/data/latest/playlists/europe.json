@@ -4,12 +4,13 @@
   "scope": "europe",
   "title": "Europe",
   "eventIds": [
+    "ev-d392787781e1",
+    "ev-fabc78f2fa7d",
+    "ev-07608bd52894",
+    "ev-81e6a7cafb38",
+    "ev-9e66fca22fdc",
     "ev-f34263022599",
     "ev-d4885a38997b",
-    "ev-7850b53a00df",
-    "ev-33915cdf8d3d",
-    "ev-5abd467bc3de",
-    "ev-4b2b318acf80",
-    "ev-ce99fcc54c70"
+    "ev-7850b53a00df"
   ]
 }
