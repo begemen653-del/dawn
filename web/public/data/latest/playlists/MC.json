@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "MC",
   "title": "Monaco",
-  "eventIds": [
-    "ev-7b8b151d366a"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Monaco in the last 24 hours."
 }

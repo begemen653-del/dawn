@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "JE",
   "title": "Jersey",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Jersey in the last 24 hours."
+  "eventIds": [
+    "ev-5f3587fb053f"
+  ]
 }

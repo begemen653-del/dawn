@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "EC",
   "title": "Ecuador",
   "eventIds": [
-    "ev-2bfa7e71a660"
+    "ev-e36be94314c3",
+    "ev-f7601bdb79bc",
+    "ev-52ffd7d00fef",
+    "ev-5897988efbad"
   ]
 }

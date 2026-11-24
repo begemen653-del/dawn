@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "NC",
   "title": "New Caledonia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about New Caledonia in the last 24 hours."
+  "eventIds": [
+    "ev-d9038bb18144"
+  ]
 }

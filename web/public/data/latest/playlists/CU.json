@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "CU",
   "title": "Cuba",
   "eventIds": [
-    "ev-15cba30e4725",
-    "ev-9a6cb8e53e32",
-    "ev-7b8b5a1a752d",
-    "ev-56de66a1d0c2"
+    "ev-fabc672091a6",
+    "ev-c9aed8289386",
+    "ev-48c6725c6554",
+    "ev-275b324b3880"
   ]
 }

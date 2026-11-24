@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "FJ",
   "title": "Fiji",
   "eventIds": [
-    "ev-82d9da5a04b7",
-    "ev-5e04e752e4f7"
+    "ev-7f2eb60bbabe"
   ]
 }

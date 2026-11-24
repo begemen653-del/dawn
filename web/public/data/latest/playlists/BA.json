@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "BA",
   "title": "Bosnia and Herzegovina",
   "eventIds": [
-    "ev-122c2a898505",
-    "ev-e477cb41e32e",
-    "ev-26a2a88e228b"
+    "ev-e32744f6756a",
+    "ev-9f38b1ff1c12",
+    "ev-d00c02b05235",
+    "ev-45081ce64e95"
   ]
 }

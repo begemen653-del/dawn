@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "RS",
   "title": "Serbia",
   "eventIds": [
-    "ev-6e0ad845e4d8",
-    "ev-1c61a475c74a",
-    "ev-9dedf648cb7d",
-    "ev-2f10c7942f64",
-    "ev-8a03328547d6"
+    "ev-b45a330b0fa8",
+    "ev-33f3154b9d11",
+    "ev-af58ff3ec8b5",
+    "ev-6b401a174276"
   ]
 }

@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "RW",
   "title": "Rwanda",
   "eventIds": [
-    "ev-cee5d3af11e6",
-    "ev-6cf8a6880c85"
+    "ev-4c0d55af910f"
   ]
 }

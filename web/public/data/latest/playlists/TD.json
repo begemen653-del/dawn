@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "TD",
   "title": "Chad",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Chad in the last 24 hours."
+  "eventIds": [
+    "ev-a16ca811923b"
+  ]
 }

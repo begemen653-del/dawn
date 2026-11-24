@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "BF",
   "title": "Burkina Faso",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Burkina Faso in the last 24 hours."
+  "eventIds": [
+    "ev-dfbe9c4768f8"
+  ]
 }

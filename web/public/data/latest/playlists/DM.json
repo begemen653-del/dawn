@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "DM",
   "title": "Dominica",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Dominica in the last 24 hours."
+  "eventIds": [
+    "ev-97487cbbc71f"
+  ]
 }

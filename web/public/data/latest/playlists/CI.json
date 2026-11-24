@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "CI",
   "title": "Ivory Coast",
   "eventIds": [
-    "ev-8c16c93f8627"
+    "ev-3edf81556241",
+    "ev-e0eeb8ccdbdf"
   ]
 }

@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "CY",
   "title": "Cyprus",
   "eventIds": [
-    "ev-7e741c836b7a",
-    "ev-af85610ef3d8",
-    "ev-4f16ee4676df",
-    "ev-8d624515c084"
+    "ev-ef56329c13ea",
+    "ev-b13fa7748c70",
+    "ev-30e6f7ca659e"
   ]
 }

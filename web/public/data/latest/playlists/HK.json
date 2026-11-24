@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "HK",
   "title": "Hong Kong",
   "eventIds": [
-    "ev-11dfc060d4d4",
-    "ev-f7e04d9fa3fb"
+    "ev-48caacebeaae",
+    "ev-5a59d3c9703e",
+    "ev-652ccdb452eb"
   ]
 }

@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "HR",
   "title": "Croatia",
   "eventIds": [
-    "ev-0aa6f24d6209",
-    "ev-1651ca72600d",
-    "ev-d6ccaf7c9621",
-    "ev-7f0d93e0dbf2"
+    "ev-b3ac55402104",
+    "ev-c8b856d25402",
+    "ev-c3c10a085bf0"
   ]
 }

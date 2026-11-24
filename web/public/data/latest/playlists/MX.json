@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "MX",
   "title": "Mexico",
   "eventIds": [
-    "ev-02c29d2de45f",
-    "ev-0b03b356db64",
-    "ev-3379429f50f7",
-    "ev-5a8560e94b36",
-    "ev-09c950ff6cd6",
-    "ev-f4e9a001a4d2",
-    "ev-cc330d05ea76"
+    "ev-a17607a60ce2",
+    "ev-3431c8f1d1e9",
+    "ev-4dc5e7c6ab59",
+    "ev-9f1d9be3b4b6",
+    "ev-3433324fb2b6",
+    "ev-1524ce530d09",
+    "ev-dad051fc44ae",
+    "ev-72900294a85f"
   ]
 }

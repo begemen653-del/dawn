@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "NG",
   "title": "Nigeria",
   "eventIds": [
-    "ev-8422291413f7",
-    "ev-281ed75e8c31",
-    "ev-91c027c52247",
-    "ev-2fadcb68a347",
-    "ev-049871f65a9f"
+    "ev-7bc10f30c4b2",
+    "ev-64ab22bcb2dc",
+    "ev-c5006ad6b1e0",
+    "ev-487f5401d8e0"
   ]
 }

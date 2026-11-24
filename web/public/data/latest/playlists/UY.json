@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "UY",
   "title": "Uruguay",
-  "eventIds": [
-    "ev-c5f1f660a1ae",
-    "ev-54389369ca2d"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Uruguay in the last 24 hours."
 }

@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "scope": "BY",
   "title": "Belarus",
   "eventIds": [
-    "ev-a78a340aaca0"
+    "ev-2ac1c7b08356",
+    "ev-f036b145781d"
   ]
 }
