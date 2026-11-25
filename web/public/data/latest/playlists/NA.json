@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "NA",
   "title": "Namibia",
-  "eventIds": [
-    "ev-ba9b56040c27"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Namibia in the last 24 hours."
 }

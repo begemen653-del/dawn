@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "SD",
   "title": "Sudan",
   "eventIds": [
-    "ev-8198235933a7",
-    "ev-99195368a998"
+    "ev-99701e957964"
   ]
 }

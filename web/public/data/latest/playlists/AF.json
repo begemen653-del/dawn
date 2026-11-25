@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "AF",
   "title": "Afghanistan",
-  "eventIds": [
-    "ev-18a36964f733",
-    "ev-47f6e83f198c",
-    "ev-b04ed62ab299",
-    "ev-420cc6556eae"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Afghanistan in the last 24 hours."
 }

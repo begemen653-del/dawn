@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "TJ",
   "title": "Tajikistan",
-  "eventIds": [
-    "ev-a16ca811923b"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Tajikistan in the last 24 hours."
 }

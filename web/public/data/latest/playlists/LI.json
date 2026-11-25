@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "LI",
   "title": "Liechtenstein",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Liechtenstein in the last 24 hours."
+  "eventIds": [
+    "ev-f9a31a7850ba"
+  ]
 }

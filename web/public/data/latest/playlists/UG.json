@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "UG",
   "title": "Uganda",
   "eventIds": [
-    "ev-80422adec67c"
+    "ev-8f6d89ea20a0",
+    "ev-e0faebd95edd",
+    "ev-07cc54adaadd"
   ]
 }

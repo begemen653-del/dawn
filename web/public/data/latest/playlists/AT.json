@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "AT",
   "title": "Austria",
   "eventIds": [
-    "ev-cdd27a7581e1",
-    "ev-9f85b8816adc",
-    "ev-8c0d3b0d9da8",
-    "ev-42d0d8e09809"
+    "ev-b6586f219f5c",
+    "ev-c7012652f5ca",
+    "ev-a177375224e8"
   ]
 }

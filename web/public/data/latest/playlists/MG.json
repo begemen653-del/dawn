@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "MG",
   "title": "Madagascar",
   "eventIds": [
-    "ev-a1b0369bedd3"
+    "ev-8189ac6aa50a",
+    "ev-fabc996db25b",
+    "ev-f4066ae5ee33"
   ]
 }

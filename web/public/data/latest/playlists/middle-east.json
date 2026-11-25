@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "middle-east",
   "title": "Middle East",
   "eventIds": [
-    "ev-b1c2f96beae2",
-    "ev-e2c603d1b1e3",
-    "ev-004d10ad9f84",
-    "ev-f5ece46f6a6c",
-    "ev-02fcc1294340",
-    "ev-b7d63d5aad15",
-    "ev-4029026fbfe2"
+    "ev-f479c1ff6c66",
+    "ev-9735e886d29a",
+    "ev-5a989cc1f903",
+    "ev-770de9f6a632",
+    "ev-086ce6b079ed",
+    "ev-6b73b510e863",
+    "ev-f8d58ae84a4c",
+    "ev-ae1188c9fd5f"
   ]
 }

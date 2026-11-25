@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "KR",
   "title": "South Korea",
   "eventIds": [
-    "ev-e01ffd040f26",
-    "ev-3b45cb5ec58d",
-    "ev-3ff162ce2ea9",
-    "ev-0322efe87f9e"
+    "ev-3bba31d2e9aa",
+    "ev-365ce4985dbe",
+    "ev-d2e05c34e2da"
   ]
 }

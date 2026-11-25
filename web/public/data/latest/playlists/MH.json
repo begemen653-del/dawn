@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "MH",
   "title": "Marshall Islands",
-  "eventIds": [
-    "ev-757a23755a87"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Marshall Islands in the last 24 hours."
 }

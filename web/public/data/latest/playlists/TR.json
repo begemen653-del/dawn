@@ -1,14 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "TR",
   "title": "Türkiye (Turkey)",
   "eventIds": [
-    "ev-81e6a7cafb38",
-    "ev-d4885a38997b",
-    "ev-5abd467bc3de",
-    "ev-1c1afe796a02",
-    "ev-5f589385d666",
-    "ev-535c01fa13fb"
+    "ev-88fb3959caf9",
+    "ev-2fca0cc09ffb",
+    "ev-c48f34f1c53e"
   ]
 }

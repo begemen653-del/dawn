@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "AU",
   "title": "Australia",
   "eventIds": [
-    "ev-d4885a38997b",
-    "ev-83348688c077",
-    "ev-71db3acd941b",
-    "ev-f1ec80904f6a",
-    "ev-66985a3a92e4",
-    "ev-5fdd4e227b52"
+    "ev-034d70565fe1",
+    "ev-e225ef4e164d",
+    "ev-6deeac50b986",
+    "ev-1f65a3f4db34",
+    "ev-b922eb278d3b",
+    "ev-322b8f3c3442"
   ]
 }

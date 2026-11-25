@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "PE",
   "title": "Peru",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Peru in the last 24 hours."
+  "eventIds": [
+    "ev-7f1841d45df7",
+    "ev-13a08d143790",
+    "ev-dd832c34ac78"
+  ]
 }

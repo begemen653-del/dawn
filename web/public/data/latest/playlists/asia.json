@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "asia",
   "title": "Asia",
   "eventIds": [
-    "ev-7b891c730cdf",
-    "ev-2b65047592b7",
-    "ev-87d8a170e7b9",
-    "ev-60bfb4c976b6",
-    "ev-3ee14cf62bd6",
-    "ev-de2e6be61ccf",
-    "ev-395fe5d14644"
+    "ev-d3db84e21207",
+    "ev-a01f7c281eb4",
+    "ev-44b97762e669",
+    "ev-5a989cc1f903",
+    "ev-6c9b22db0083",
+    "ev-3bba31d2e9aa",
+    "ev-e258d2367c5f",
+    "ev-034d70565fe1"
   ]
 }

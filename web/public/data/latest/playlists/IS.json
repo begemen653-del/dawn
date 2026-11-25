@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "IS",
   "title": "Iceland",
   "eventIds": [
-    "ev-35c0c84b438b"
+    "ev-b4d81328f957",
+    "ev-c4cdc5a59a03"
   ]
 }

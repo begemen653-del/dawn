@@ -1,11 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "CZ",
   "title": "Czech Republic",
   "eventIds": [
-    "ev-3c0013d9a190",
-    "ev-9ee9286c656e",
-    "ev-09b5711ec79b"
+    "ev-8d88984adf9f"
   ]
 }

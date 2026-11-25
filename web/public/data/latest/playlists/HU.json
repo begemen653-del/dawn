@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "HU",
   "title": "Hungary",
   "eventIds": [
-    "ev-9c41f435b2b5",
-    "ev-9dae6fa0362d",
-    "ev-2b14129443e1"
+    "ev-76be559fe005",
+    "ev-86332c7e2446"
   ]
 }

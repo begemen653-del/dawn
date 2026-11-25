@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "MN",
   "title": "Mongolia",
   "eventIds": [
-    "ev-0fbafb873c5e"
+    "ev-79cb6c4ae13a",
+    "ev-4a830b3f65c9"
   ]
 }

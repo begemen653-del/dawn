@@ -1,13 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "AZ",
   "title": "Azerbaijan",
   "eventIds": [
-    "ev-71799a898571",
-    "ev-a43d37fe524d",
-    "ev-2859fe1317a5",
-    "ev-45bbf76fcc42",
-    "ev-c2560fdd53f7"
+    "ev-31e6c9949643",
+    "ev-e886a35db6da",
+    "ev-f687f6ad824f"
   ]
 }

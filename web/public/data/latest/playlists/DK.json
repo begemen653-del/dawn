@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "DK",
   "title": "Denmark",
   "eventIds": [
-    "ev-33915cdf8d3d",
-    "ev-f5ece46f6a6c",
-    "ev-239a5d6cb390",
-    "ev-09dfa33f416a"
+    "ev-da21ab6f52c4",
+    "ev-a08ff056c454"
   ]
 }

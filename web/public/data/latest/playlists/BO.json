@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "BO",
   "title": "Bolivia",
   "eventIds": [
-    "ev-3d852932fd8d",
-    "ev-7f19601bb777"
+    "ev-0961874c8ee9"
   ]
 }

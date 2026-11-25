@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "UZ",
   "title": "Uzbekistan",
   "eventIds": [
-    "ev-23852f24e9c7"
+    "ev-f687f6ad824f",
+    "ev-a6d7fa5fac87",
+    "ev-d6eff6d306a1"
   ]
 }

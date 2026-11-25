@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "TH",
   "title": "Thailand",
   "eventIds": [
-    "ev-0307e70602e1"
+    "ev-fbd1c7bf8b25",
+    "ev-407fef3c3eec",
+    "ev-8182a6bd20f6"
   ]
 }

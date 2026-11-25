@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "ET",
   "title": "Ethiopia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Ethiopia in the last 24 hours."
+  "eventIds": [
+    "ev-188ed0e33aa1",
+    "ev-f65d9bfe05d7"
+  ]
 }

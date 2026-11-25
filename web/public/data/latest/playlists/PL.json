@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "scope": "PL",
   "title": "Poland",
   "eventIds": [
-    "ev-d8ff0f1493b9",
-    "ev-2289dce3dfdf",
-    "ev-4e33f5963332",
-    "ev-f40334979b3c",
-    "ev-9e0e71693567",
-    "ev-7850b53a00df"
+    "ev-d21e588d433d",
+    "ev-db99a9a52882",
+    "ev-193d5ff86c74",
+    "ev-0891836dedf4",
+    "ev-25f1ee9188d9",
+    "ev-f60f732c310c",
+    "ev-a781e3d715dd"
   ]
 }
