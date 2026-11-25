@@ -1,8 +1,121 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-25",
-  "generatedAt": "2026-11-25T03:31:17.954Z",
+  "generatedAt": "2026-11-25T17:01:25.735Z",
   "events": [
+    {
+      "id": "ev-9ffc22b2894b",
+      "headline": "U.S. proposes new tariffs of up to 20% on China, EU and 12 other economies",
+      "summary": "The United States announced a proposal to add tariffs of up to 20% on imports from 14 trading partners, including China, the European Union, Japan and Taiwan. The tariffs are intended to counter what Washington calls excessive industrial production that undercuts American manufacturers. The measures are still at the proposal stage and would be subject to a public comment period before any implementation, possibly as early as January.",
+      "whyItMatters": "Higher import duties could raise prices for U.S. consumers and affect trade flows with major partners such as China and the EU.",
+      "topic": "economy",
+      "time": "2026-11-25T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "US plans new tariffs on EU, China and 12 others",
+          "url": "https://dw.com/en/us-plans-new-tariffs-on-eu-china-and-12-others/a-80050872?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-25T14:54:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump announces new tariffs on EU, China despite US midterms defeat",
+          "url": "https://france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat",
+          "publishedAt": "2026-11-25T14:38:47.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "U.S. set to slap tariffs on China, EU and others after probe on excess industrial capacity: report",
+          "url": "https://thehindu.com/news/international/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources/article71740905.ece",
+          "publishedAt": "2026-11-25T10:09:32.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "US proposes tariffs of up to 35% on 14 economies, including China, EU, citing excess manufacturing capacity",
+          "url": "https://aa.com.tr/en/economy/us-proposes-tariffs-of-up-to-35-on-14-economies-including-china-eu-citing-excess-manufacturing-capacity/4137597",
+          "publishedAt": "2026-11-25T13:48:29.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Trump says pardon for Nvidia boss Huang ‘always an option’ after accusations of breaking export laws",
+          "url": "https://theguardian.com/us-news/live/2026/nov/25/donald-trump-jensen-huang-nvidia-pardon-senate-hearing-iowa-abdul-el-sayed-latest-news-updates",
+          "publishedAt": "2026-11-25T16:40:50.000Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 100,
+      "countries": [
+        "US",
+        "CN",
+        "JP",
+        "TW"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -97.483,
+          "lat": 39.538,
+          "zoom": 2.7
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "CN",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "JP",
+            "tone": "neutral"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The U.S. Trade Representative completed an eight‑month investigation into alleged unfair trade practices and excess industrial capacity in 16 partner economies.",
+        "keyPlayers": [
+          {
+            "name": "Jamieson Greer",
+            "role": "U.S. Trade Representative"
+          }
+        ],
+        "whatNext": "The proposal will go through a public comment period and a hearing before any tariffs could take effect, with the earliest possible start in January.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Investigation findings expected"
+          },
+          {
+            "date": "25 November 2026",
+            "label": "Tariff proposal announced"
+          }
+        ],
+        "simpler": "The U.S. wants to add taxes on goods from China, the EU, Japan, Taiwan and other countries because it says they make too many cheap products that hurt American factories. The plan is still being discussed and could start early next year."
+      }
+    },
     {
       "id": "ev-d3db84e21207",
       "headline": "Trump Says He Intervened to Reinstate Jensen Huang at Nvidia",
@@ -333,6 +446,527 @@
           }
         ],
         "simpler": "A new book containing the late Pope Francis' personal diaries shows he wrote about experiencing deep spiritual struggles and believing he saw the devil on three separate occasions."
+      }
+    },
+    {
+      "id": "ev-9cabcd4773e7",
+      "headline": "Puerto Rico's Jennifer Barreto Wins Miss Universe 2026",
+      "summary": "Jennifer Barreto of Puerto Rico was crowned Miss Universe 2026 at the pageant's 75th edition in San Juan. The 27-year-old is the first mother and married woman to win the title in the contest's history. Her victory marks Puerto Rico's sixth Miss Universe title.",
+      "whyItMatters": "The victory highlights major recent rule changes in international pageants, which began allowing married women and mothers to compete in 2023.",
+      "topic": "culture",
+      "time": "2026-11-25T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Puerto Rican",
+          "at": [
+            -66.335,
+            18.2766
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Euronews",
+          "title": "Puerto Rico's Jennifer Barreto becomes first married woman to win Miss Universe",
+          "url": "https://euronews.com/video/2026/11/25/puerto-ricos-jennifer-barreto-becomes-first-married-woman-to-win-miss-universe",
+          "publishedAt": "2026-11-25T13:05:22.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "diariolibre.com",
+          "title": "Miss Puerto Rico Jennifer Barreto es la nueva Miss Universo 2026",
+          "url": "https://diariolibre.com/revista/cultura/2026/11/25/miss-puerto-rico-jennifer-barreto-es-la-nueva-miss-universo-2026/3730831",
+          "publishedAt": "2026-11-25T07:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "sdpnoticias.com",
+          "title": "Jennifer Barreto, Miss Puerto Rico, gana Miss Universo 2026",
+          "url": "https://sdpnoticias.com/espectaculos/television/jennifer-barreto-de-puerto-rico-gana-miss-universo-2026",
+          "publishedAt": "2026-11-25T04:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "laverdad.com.mx",
+          "title": "Jennifer Barreto de Puerto Rico se coronó Miss Universo 2026",
+          "url": "https://laverdad.com.mx/2026/11/jennifer-barreto-de-puerto-rico-se-corono-miss-universo-2026",
+          "publishedAt": "2026-11-25T14:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "entrelineas.com.mx",
+          "title": "Jennifer Barreto se convierte en la primera mamá en ganar Miss Universo y da a Puerto Rico su sexta corona",
+          "url": "https://entrelineas.com.mx/jennifer-barreto-se-convierte-en-la-primera-mama-en-ganar-miss-universo-y-da-a-puerto-rico-su-sexta-corona",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 84.5,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -66.335,
+          "lat": 18.2766,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -66.335,
+              18.2766
+            ],
+            "label": "Puerto Rican",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "In 2023, Miss Universe organizers modified the competition rules to allow married women and mothers to enter. Puerto Rico last won the pageant in 2006.",
+        "keyPlayers": [
+          {
+            "name": "Jennifer Barreto",
+            "role": "Miss Universe 2026 winner from Puerto Rico"
+          },
+          {
+            "name": "Melissa Núñez",
+            "role": "First runner-up representing the Dominican Republic"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "2023",
+            "label": "Miss Universe organizers lift restrictions on married contestants and mothers"
+          },
+          {
+            "date": "24 November 2026",
+            "label": "Jennifer Barreto is crowned Miss Universe 2026 in San Juan"
+          }
+        ],
+        "simpler": "Jennifer Barreto from Puerto Rico won the Miss Universe beauty contest. She is 27 years old and has a seven-year-old daughter. She is the first mom and married woman to win the contest in its 75-year history."
+      }
+    },
+    {
+      "id": "ev-d6cfe7c7dda6",
+      "headline": "Six People Die in Small Plane Crash Off Mississippi Coast",
+      "summary": "A small plane carrying six people crashed into the Gulf of Mexico off the Mississippi coast on Tuesday afternoon. Search divers located the bodies of four adults and two children inside the plane's submerged fuselage. The flight was traveling from New Orleans to Fort Myers, Florida, when air traffic control lost contact.",
+      "whyItMatters": "Federal aviation authorities will conduct an investigation to determine why the plane went down.",
+      "topic": "disaster",
+      "time": "2026-11-25T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Mississippi",
+          "at": [
+            -89.6812,
+            32.7673
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Pascagoula",
+          "at": [
+            -88.5561,
+            30.3658
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Horn Island",
+          "at": [
+            -88.6878,
+            30.2402
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Two children among six dead after plane crash off Mississippi coast",
+          "url": "https://bbc.co.uk/news/articles/c6z74l1017zpo",
+          "publishedAt": "2026-11-25T07:08:22.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Crews search for six aboard a small plane that crashed into the Gulf of Mexico, Coast Guard says",
+          "url": "https://thehindu.com/news/international/crews-search-for-six-aboard-a-small-plane-that-crashed-into-the-gulf-of-mexico-coast-guard-says/article71741123.ece",
+          "publishedAt": "2026-11-25T05:02:16.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "fortmorgantimes.com",
+          "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
+          "url": "https://fortmorgantimes.com/2026/11/25/mississippi-plane-crash",
+          "publishedAt": "2026-11-25T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "abc7ny.com",
+          "title": "6 dead after plane crashes off Mississippi coast: US Coast Guard",
+          "url": "https://abc7ny.com/story/6-dead-plane-crashes-off-mississippi-coast-us-guard/20078779",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "news.az",
+          "title": "Six dead after plane crashes off Mississippi coast",
+          "url": "https://news.az/news/six-dead-after-plane-crashes-off-mississippi-coast",
+          "publishedAt": "2026-11-25T10:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 80.2,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -89.6812,
+          "lat": 32.7673,
+          "zoom": 5.4
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -89.6812,
+              32.7673
+            ],
+            "label": "Mississippi",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -88.5561,
+              30.3658
+            ],
+            "label": "Pascagoula",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -88.6878,
+              30.2402
+            ],
+            "label": "Horn Island",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "A Cessna 210 aircraft was traveling from New Orleans to Fort Myers, Florida, when air traffic controllers in Alabama lost contact with it around 3:45 p.m. on Tuesday.",
+        "keyPlayers": [
+          {
+            "name": "Juan Ros",
+            "role": "U.S. Coast Guard spokesperson"
+          },
+          {
+            "name": "Trevor Blount",
+            "role": "U.S. Coast Guard search and rescue coordinator"
+          }
+        ],
+        "whatNext": "The Federal Aviation Administration and the National Transportation Safety Board will investigate the crash.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "The Cessna 210 loses contact with air traffic control and crashes into the Gulf of Mexico."
+          }
+        ],
+        "simpler": "A small airplane carrying six people crashed into the sea off the coast of Mississippi. Rescue workers searched the area and found the plane underwater, but all six people on board died. Safety officials are investigating what caused the accident."
+      }
+    },
+    {
+      "id": "ev-92c380f5c589",
+      "headline": "North Korea orders Swiss diplomat to leave and closes new office",
+      "summary": "North Korea declared the head of Switzerland’s diplomatic office in Pyongyang persona non grata and gave him 48 hours to depart. The move follows Swiss sanctions on a children’s camp in Wonsan that Pyongyang says indoctrinates Ukrainian children.",
+      "whyItMatters": "The expulsion cuts off one of the few Western diplomatic links with North Korea and raises tensions over sanctions and humanitarian issues.",
+      "topic": "politics",
+      "time": "2026-11-25T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Pyongyang",
+          "at": [
+            125.755,
+            39.0194
+          ],
+          "country": "KP"
+        },
+        {
+          "name": "Wonsan",
+          "at": [
+            127.444,
+            39.1528
+          ],
+          "country": "KP"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Hürriyet Daily News",
+          "title": "North Korea expels head of Swiss diplomatic office over sanctions",
+          "url": "https://hurriyetdailynews.com/north-korea-expels-head-of-swiss-diplomatic-office-over-sanctions-229815",
+          "publishedAt": "2026-11-25T05:56:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "North Korea expels Swiss diplomat and orders Bern's new Pyongyang office to close",
+          "url": "https://euronews.com/2026/11/25/north-korea-expels-swiss-diplomat-and-orders-berns-new-pyongyang-office-to-close",
+          "publishedAt": "2026-11-25T04:50:43.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "North Korea declares a Swiss diplomat persona non grata and orders him to leave",
+          "url": "https://thehindu.com/news/international/north-korea-declares-a-swiss-diplomat-persona-non-grata-and-orders-him-to-leave/article71741084.ece",
+          "publishedAt": "2026-11-25T05:43:02.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "North Korea expels Swiss envoy over sanctions on camp accused of indoctrinating Ukrainian children",
+          "url": "https://dw.com/en/north-korea-expels-swiss-envoy-over-sanctions-on-camp-accused-of-indoctrinating-ukrainian-children/a-80043648?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-25T11:12:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "goskagit.com",
+          "title": "North Korea demands closure of Switzerland's new diplomatic office and orders diplomat to leave",
+          "url": "https://goskagit.com/news/world/north-korea-demands-closure-of-switzerlands-new-diplomatic-office-and-orders-diplomat-to-leave/article_62d7d0fb-87fd-52bc-a7b7-89b0fb4ec7be.html",
+          "publishedAt": "2026-11-25T04:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 69.4,
+      "countries": [
+        "KP",
+        "CH"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 125.755,
+          "lat": 39.0194,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "KP",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "CH",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              125.755,
+              39.0194
+            ],
+            "label": "Pyongyang",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              127.444,
+              39.1528
+            ],
+            "label": "Wonsan",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Switzerland opened a new diplomatic office in Pyongyang on 19 October after its foreign minister visited the country. In November, Switzerland placed sanctions on the Songdowon International Children’s Camp in Wonsan, accusing it of helping move children from Russian‑occupied parts of Ukraine.",
+        "keyPlayers": [
+          {
+            "name": "Kim Yo Jong",
+            "role": "Sister of North Korean leader, senior foreign policy voice"
+          },
+          {
+            "name": "Sylvain Astier",
+            "role": "Head of the Swiss diplomatic office in Pyongyang"
+          },
+          {
+            "name": "Pak Hyon Su",
+            "role": "Director general of North Korea’s Foreign Ministry European Department"
+          },
+          {
+            "name": "Ignazio Cassis",
+            "role": "Swiss foreign minister who visited North Korea"
+          }
+        ],
+        "whatNext": "The sources don't say what will happen next.",
+        "timeline": [
+          {
+            "date": "19 October 2026",
+            "label": "Swiss diplomatic office opened in Pyongyang"
+          },
+          {
+            "date": "25 November 2026",
+            "label": "North Korea declares Swiss diplomat persona non grata and orders office closure"
+          }
+        ],
+        "simpler": "Switzerland opened a small office in North Korea’s capital. After Switzerland punished a camp in the country, North Korea told the Swiss boss to leave and shut the office."
+      }
+    },
+    {
+      "id": "ev-6b871919c6c0",
+      "headline": "Bangladesh garment workers win 36% minimum wage increase",
+      "summary": "Garment workers in Bangladesh secured a 36% minimum wage increase following weeks of protests and negotiations. The wage board set the new minimum at 17,000 taka after a vote, ending a period of widespread demonstrations.",
+      "whyItMatters": "The wage increase addresses workers' concerns about rising living costs, while the previous unrest and disruptions cost the garment industry hundreds of millions of dollars in losses and shifted orders.",
+      "topic": "economy",
+      "time": "2026-11-25T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Bangladesh",
+          "at": [
+            89.685,
+            24.215
+          ],
+          "country": "BD"
+        },
+        {
+          "name": "Dhaka",
+          "at": [
+            90.4086,
+            23.7231
+          ],
+          "country": "BD"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Bangladesh garment workers win 36% wage rise",
+          "url": "https://thehindu.com/news/international/bangladesh-garment-workers-win-36-wage-rise/article71741049.ece",
+          "publishedAt": "2026-11-25T04:17:43.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Bangladesh garment workers protest over new wages",
+          "url": "https://aljazeera.com/video/newsfeed/2026/11/25/bangladesh-garment-workers-protest-over-new-wages?traffic_source=rss",
+          "publishedAt": "2026-11-25T12:23:41.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "South China Morning Post",
+          "title": "Bangladesh garment workers win 36% minimum wage rise after protests",
+          "url": "https://scmp.com/news/asia/south-asia/article/3375787/bangladesh-garment-workers-win-36-minimum-wage-rise-after-protests",
+          "publishedAt": "2026-11-25T12:11:56.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "stardem.com",
+          "title": "Bangladesh raises minimum wage for garment workers after weeks of protests",
+          "url": "https://stardem.com/ap/world/bangladesh-raises-minimum-wage-for-garment-workers-after-weeks-of-protests/article_909a2fdb-add1-5993-9407-e48c615c6c52.html",
+          "publishedAt": "2026-11-25T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wsbradio.com",
+          "title": "Bangladesh raises minimum wage for garment workers after protests",
+          "url": "https://wsbradio.com/news/world/bangladesh-raises/AKOVQQ5KYY3TDFJCHAAGX5IYTU",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 62.3,
+      "countries": [
+        "BD"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 89.685,
+          "lat": 24.215,
+          "zoom": 5.6
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "BD",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              90.4086,
+              23.7231
+            ],
+            "label": "Dhaka",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Workers staged widespread protests starting in October, demanding a higher minimum wage of 30,000 taka because their pay failed to keep pace with the rising costs of food, housing, transport, and health care. The disruptions led to millions of dollars in industry losses and shifted orders before the Christmas season.",
+        "keyPlayers": [
+          {
+            "name": "Babul Akhter",
+            "role": "Workers' representative"
+          },
+          {
+            "name": "Syed Azad Subhani",
+            "role": "Judge and chairman of the government-appointed garment industry wage board"
+          }
+        ],
+        "whatNext": "Workers' representatives urged people to return to factories following the deal.",
+        "timeline": [
+          {
+            "date": "24 November 2026",
+            "label": "Garment workers protest in Gazipur ahead of the wage board's submission."
+          },
+          {
+            "date": "25 November 2026",
+            "label": "The 36% minimum wage increase is announced after a vote early Wednesday."
+          }
+        ],
+        "simpler": "After weeks of protests over low pay, garment workers in Bangladesh won a 36% increase to their minimum wage, raising it to 17,000 taka."
       }
     },
     {
@@ -950,6 +1584,273 @@
       }
     },
     {
+      "id": "ev-3710b99e833e",
+      "headline": "UK energy bills to rise by 26% in January",
+      "summary": "Energy bills for millions of households in England, Scotland, and Wales will increase by 26% starting January 1, 2027. The regulator Ofgem says the rise is driven by a surge in wholesale gas prices caused by the war in Iran.",
+      "whyItMatters": "The increase will add roughly £37 to £60 to monthly costs during the coldest months, leading charities to warn of rising debt and a need for emergency support despite government aid.",
+      "topic": "economy",
+      "time": "2026-11-25T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "United Kingdom",
+          "at": [
+            -2.116,
+            54.403
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "Iran",
+          "at": [
+            54.931,
+            32.166
+          ],
+          "country": "IR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Energy bills to rise by 26% from January after gas prices surge",
+          "url": "https://bbc.co.uk/news/articles/cm20qnq33e90o",
+          "publishedAt": "2026-11-25T13:42:08.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "stourbridgenews.co.uk",
+          "title": "Misery for households as energy bills to jump 26% in January",
+          "url": "https://stourbridgenews.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+          "publishedAt": "2026-11-25T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "ludlowadvertiser.co.uk",
+          "title": "Households face 'nightmare before Christmas' as energy bills to soar 26%",
+          "url": "https://ludlowadvertiser.co.uk/news/national/26761555.households-face-nightmare-christmas-energy-bills-soar-26",
+          "publishedAt": "2026-11-25T16:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aol.co.uk",
+          "title": "Energy bills to soar as price cap to rise by more than £400 from January",
+          "url": "https://aol.co.uk/articles/energy-bills-soar-price-cap-074512000.html",
+          "publishedAt": "2026-11-25T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "harwichandmanningtreestandard.co.uk",
+          "title": "Ofgem energy price cap households face £2,166 bills from January",
+          "url": "https://harwichandmanningtreestandard.co.uk/news/national/uk-today/26760120.ofgem-energy-price-cap-households-face-2-166-bills-january",
+          "publishedAt": "2026-11-25T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 59.3,
+      "countries": [
+        "GB",
+        "IR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -2.116,
+          "lat": 54.403,
+          "zoom": 5
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "IR",
+            "tone": "neutral"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Wholesale gas prices have more than doubled since late 2025, with a 33% increase over the last three months alone, prompting the regulator to adjust the quarterly price cap.",
+        "keyPlayers": [
+          {
+            "name": "Ofgem",
+            "role": "UK energy industry regulator"
+          },
+          {
+            "name": "Dame Clare Moriarty",
+            "role": "Chief executive of Citizens Advice"
+          },
+          {
+            "name": "Helen Barnard",
+            "role": "Director of policy and research at Trussell"
+          }
+        ],
+        "whatNext": "The government will provide a £100 payment to millions of households starting January 4, alongside a temporary 5% VAT cut on electricity bills until June.",
+        "timeline": [
+          {
+            "date": "4 January 2027",
+            "label": "Government energy support payments begin"
+          },
+          {
+            "date": "1 January 2027",
+            "label": "New energy price cap comes into force"
+          }
+        ],
+        "simpler": "Because of the war in Iran, the cost of gas has gone up. This means that starting in January, most people in the UK will have to pay about 26% more for their home heating and electricity. The government is giving some money to help, but many families are worried about how they will afford the higher costs during the winter."
+      }
+    },
+    {
+      "id": "ev-8a1752165d62",
+      "headline": "Tamil Nadu government apologises after Supreme Court‑ordered lamp not lit at hilltop",
+      "summary": "The Tamil Nadu state government said the traditional Karthigai Deepam lamp was lit at its usual spot near the Ucchi Pillayar temple, not at the Deepathoon stone pillar on Thiruparankundram hill as ordered by the Supreme Court on 20 November. The court will hear a contempt plea over the alleged non‑compliance.",
+      "whyItMatters": "The case tests the authority of the Supreme Court and highlights tensions between the state, religious groups and national politicians over a historic festival.",
+      "topic": "politics",
+      "time": "2026-11-25T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Madras",
+          "at": [
+            80.2833,
+            13.0833
+          ],
+          "country": "IN"
+        },
+        {
+          "name": "Tamil Nadu",
+          "at": [
+            78,
+            11
+          ],
+          "country": "IN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "indiatimes.com",
+          "title": "What is Karthigai Deepam row? Why lighting a lamp has triggered a legal battle in Tamil Nadu",
+          "url": "https://timesofindia.indiatimes.com/india/what-is-karthigai-deepam-row-why-lighting-a-lamp-has-triggered-a-legal-battle-in-tamil-nadu/articleshow/136154784.cms",
+          "publishedAt": "2026-11-25T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "business-standard.com",
+          "title": "SC agrees to hear contempt plea against Tamil Nadu govt over Deepam row",
+          "url": "https://business-standard.com/india-news/sc-agrees-to-hear-contempt-plea-against-tamil-nadu-govt-over-deepam-row-126112500293_1.html",
+          "publishedAt": "2026-11-25T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "ianslive.in",
+          "title": "Thiruparankundram Deepam row: BJP asks Rahul Gandhi to explain Congress stand",
+          "url": "https://ianslive.in/thiruparankundram-deepam-row-bjp-asks-rahul-gandhi-to-explain-congress-stand--20261125161404",
+          "publishedAt": "2026-11-25T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "webindia123.com",
+          "title": "Tamil Nadu govt has insulted Judiciary, Hindu faith: VHP on Deepam row",
+          "url": "https://news.webindia123.com/news/Articles/India/20261125/4524291.html",
+          "publishedAt": "2026-11-25T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "oneindia.com",
+          "title": "Supreme Court Refuses Interim Bail To Umar Khalid, Sharjeel Imam In 2020 Delhi Riots Case",
+          "url": "https://oneindia.com/india/supreme-court-refuses-interim-bail-to-umar-khalid-sharjeel-imam-in-2020-delhi-riots-case-8269419.html",
+          "publishedAt": "2026-11-25T08:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 58.1,
+      "countries": [
+        "IN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 80.2833,
+          "lat": 13.0833,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IN",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              80.2833,
+              13.0833
+            ],
+            "label": "Madras",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              78,
+              11
+            ],
+            "label": "Tamil Nadu",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The dispute over where to light the Karthigai Deepam lamp has been ongoing for years, with Hindu groups seeking permission to use a stone pillar on Thiruparankundram hill, while the state has kept the ceremony at the customary site near the Ucchi Pillayar temple.",
+        "keyPlayers": [
+          {
+            "name": "Tamil Nadu government",
+            "role": "state authority responsible for the ceremony"
+          },
+          {
+            "name": "Supreme Court of India",
+            "role": "judicial body that ordered the lamp be lit at Deepathoon"
+          },
+          {
+            "name": "Justices Aravind Kumar and Vipul M. Pancholi",
+            "role": "bench hearing the contempt plea"
+          },
+          {
+            "name": "BJP MP Sudhanshu Trivedi",
+            "role": "politician questioning the state’s actions"
+          },
+          {
+            "name": "Rahul Gandhi",
+            "role": "Congress leader asked to comment on the issue"
+          }
+        ],
+        "whatNext": "The Supreme Court will consider the contempt plea and decide whether to initiate suo motu contempt proceedings against the Tamil Nadu authorities.",
+        "timeline": [
+          {
+            "date": "20 November 2026",
+            "label": "Supreme Court order permitting lamp at Deepathoon"
+          },
+          {
+            "date": "24 November 2026",
+            "label": "Lamp lit at customary location, not at Deepathoon"
+          },
+          {
+            "date": "25 November 2026",
+            "label": "State apologises in Supreme Court; contempt plea scheduled"
+          }
+        ],
+        "simpler": "A special lamp that is part of a Tamil festival was supposed to be lit on a hill because the top court said so. The state lit it somewhere else and said sorry. The court will now decide if the state broke the law."
+      }
+    },
+    {
       "id": "ev-f479c1ff6c66",
       "headline": "Eleven Injured in Houthi Attack on Riyadh Financial District Tower",
       "summary": "Eleven people were injured when Yemen's Houthi militia targeted a tower in the financial district of Saudi Arabia's capital, Riyadh. Those injured include citizens from Saudi Arabia, India, Nepal, and Egypt.",
@@ -1429,6 +2330,177 @@
       }
     },
     {
+      "id": "ev-a4cdf0a41ff2",
+      "headline": "Carles Puigdemont to return to Catalonia on 12 December after nine‑year exile",
+      "summary": "Former Catalan president Carles Puigdemont said he will fly from Brussels to Barcelona on 12 December and attend the Catalan Parliament at noon. The move follows a Spanish Supreme Court decision applying an amnesty law to him and other former officials.",
+      "whyItMatters": "His return ends a decade‑long political exile and could revive the Catalan independence debate in Spain’s parliament.",
+      "topic": "politics",
+      "time": "2026-11-25T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "Barcelona",
+          "at": [
+            2.18333,
+            41.3833
+          ],
+          "country": "ES"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "elprogreso.es",
+          "title": "Puigdemont anuncia su regreso a Cataluña el 12 de diciembre",
+          "url": "https://elprogreso.es/espana/puigdemont-anuncia-regreso-cataluna-12-diciembre/202611251125482016455.html",
+          "publishedAt": "2026-11-25T11:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "hoy.es",
+          "title": "Puigdemont volverá a España el 12 de diciembre",
+          "url": "https://hoy.es/nacional/puigdemont-volvera-espana-diciembre-20261125111335-ntrc.html",
+          "publishedAt": "2026-11-25T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "diariodesevilla.es",
+          "title": "Puigdemont vuelve a España el 12 de diciembre",
+          "url": "https://diariodesevilla.es/espana/puigdemont-vuelve-espana-12-diciembre_0_2008581842.html",
+          "publishedAt": "2026-11-25T14:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lagacetadesalamanca.es",
+          "title": "Puigdemont anuncia su regreso a España",
+          "url": "https://lagacetadesalamanca.es/nacional/puigdemont-anuncia-regreso-espana-20261125112456-nt.html",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "libertaddigital.com",
+          "title": "Puigdemont anuncia que volverá a España el 12 de diciembre \"sin pedir permiso ni perdón\"",
+          "url": "https://libertaddigital.com/cataluna/2026-11-25/puigdemont-anuncia-su-regreso-para-el-12-de-diciembre-y-promete-otro-plan-para-la-independencia-7497205",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "es"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 54.3,
+      "countries": [
+        "BE",
+        "ES"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 3.25833,
+          "lat": 46.1083,
+          "zoom": 4.19333896477267
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "BE",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "ES",
+            "tone": "neutral"
+          },
+          {
+            "type": "arc",
+            "id": "route",
+            "from": [
+              4.33333,
+              50.8333
+            ],
+            "to": [
+              2.18333,
+              41.3833
+            ],
+            "kind": "flight",
+            "animated": true
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              2.18333,
+              41.3833
+            ],
+            "label": "Barcelona",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-1584133",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Casa_Mil%C3%A0_-_Barcelona%2C_Spain_-_Jan_2007.jpg/500px-Casa_Mil%C3%A0_-_Barcelona%2C_Spain_-_Jan_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_Mil%C3%A0_-_Barcelona,_Spain_-_Jan_2007.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Diliff",
+          "license": {
+            "id": "cc-by",
+            "name": "CC BY 2.5",
+            "url": "https://creativecommons.org/licenses/by/2.5"
+          },
+          "alt": "Casa Milà at dusk in Barcelona, Spain. The building is known either as 'Casa Milà' (the owner's name) and popular called 'La Pedrera' because of its look. Taken by myself with a Canon 5D and 24-105mm…",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Puigdemont left Spain in October 2017 after the Catalan independence referendum and subsequent legal actions. He lived in Belgium for more than nine years while facing charges in Spain.",
+        "keyPlayers": [
+          {
+            "name": "Carles Puigdemont",
+            "role": "Former president of the Generalitat of Catalonia and leader of Junts per Catalunya"
+          },
+          {
+            "name": "Spanish Supreme Court",
+            "role": "Applied the amnesty law that cleared Puigdemont’s pending case"
+          }
+        ],
+        "whatNext": "Puigdemont plans to take his seat as a deputy in the Catalan Parliament on 12 December and will present a proposal to update the independence strategy on 17 December, according to his statements.",
+        "timeline": [
+          {
+            "date": "31 October 2017",
+            "label": "Puigdemont fled Spain after the Catalan referendum"
+          },
+          {
+            "date": "25 November 2026",
+            "label": "Puigdemont announced his return"
+          },
+          {
+            "date": "12 December 2026",
+            "label": "Scheduled flight from Brussels to Barcelona and appearance in the Catalan Parliament"
+          }
+        ],
+        "simpler": "The former leader of Catalonia, Carles Puigdemont, said he will fly back from Belgium to Spain on 12 December and go straight to the Catalan parliament. He can return because a Spanish court cleared his old case."
+      }
+    },
+    {
       "id": "ev-9735e886d29a",
       "headline": "Israel's Eisenkot Reaches First Coalition Agreement to Form Government",
       "summary": "Gadi Eisenkot, leader of Israel's center-right Yashar party, reached a coalition agreement with Avigdor Lieberman, head of the right-wing opposition party Israel Our Home. President Isaac Herzog tasked Eisenkot with forming a government following an October election that left caretaker Prime Minister Benjamin Netanyahu without a parliamentary majority.",
@@ -1733,6 +2805,144 @@
           }
         ],
         "simpler": "Armed robbers took hostages inside a busy supermarket in Colombia after a failed robbery attempt, prompting a large police response."
+      }
+    },
+    {
+      "id": "ev-245b434338bf",
+      "headline": "Eurostar cancels Paris-London trains due to surprise strike",
+      "summary": "Eurostar canceled several trains between Paris and London because of an unannounced strike by Paris-based staff. The company advised passengers to postpone travel, stay away from stations, and seek refunds or rebooking.",
+      "whyItMatters": "Travelers between Paris and London face major disruptions and cancellations, while other routes may experience knock-on delays.",
+      "topic": "business",
+      "time": "2026-11-25T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Paris",
+          "at": [
+            2.33333,
+            48.8667
+          ],
+          "country": "FR"
+        },
+        {
+          "name": "London",
+          "at": [
+            -0.116667,
+            51.5
+          ],
+          "country": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "goskagit.com",
+          "title": "Eurostar cancels Paris-London trains after staff go on unannounced strike",
+          "url": "https://goskagit.com/news/ap_business/eurostar-cancels-paris-london-trains-after-staff-go-on-unannounced-strike/article_052a79d0-5def-54ed-9283-f0d701d66dd2.html",
+          "publishedAt": "2026-11-25T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bostonherald.com",
+          "title": "Eurostar cancels Paris-London trains after staff go on strike",
+          "url": "https://bostonherald.com/2026/11/25/eurostar-paris-london-trains-canceled",
+          "publishedAt": "2026-11-25T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "hindustantimes.com",
+          "title": "Eurostar cancels Paris-London trains after unannounced staff strike, advises passengers to postpone journeys",
+          "url": "https://hindustantimes.com/world-news/eurostar-cancels-paris-london-trains-after-unannounced-staff-strike-advises-passengers-to-postpone-trips-101795603767449.html",
+          "publishedAt": "2026-11-25T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "standard.co.uk",
+          "title": "Full list of Eurostar trains cancelled between London and Paris after shock strike",
+          "url": "https://standard.co.uk/news/uk/full-list-eurostar-trains-cancelled-strike-b1306324.html",
+          "publishedAt": "2026-11-25T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thelocal.fr",
+          "title": "BREAKING: Surprise strike paralyses services on Eurostar",
+          "url": "https://thelocal.fr/20261125/breaking-surprise-strike-paralyses-services-on-eurostar",
+          "publishedAt": "2026-11-25T12:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 53.3,
+      "countries": [
+        "FR",
+        "GB"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 1.1083315,
+          "lat": 50.183350000000004,
+          "zoom": 5.835424197009462
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "FR",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "GB",
+            "tone": "neutral"
+          },
+          {
+            "type": "arc",
+            "id": "route",
+            "from": [
+              2.33333,
+              48.8667
+            ],
+            "to": [
+              -0.116667,
+              51.5
+            ],
+            "kind": "other",
+            "animated": true
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              2.33333,
+              48.8667
+            ],
+            "label": "Paris",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -0.116667,
+              51.5
+            ],
+            "label": "London",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Eurostar was notified overnight of an unannounced strike by Paris-based staff, including train drivers and managers.",
+        "keyPlayers": [],
+        "whatNext": "Discussions are ongoing between the company and the union.",
+        "timeline": [
+          {
+            "date": "2026-11-25",
+            "label": "Strike begins and causes train cancellations between Paris and London."
+          }
+        ],
+        "simpler": "Some Eurostar train workers in Paris went on strike without warning. This caused cancelled trains between Paris and London, and the company told passengers to stay home and change their travel plans."
       }
     },
     {
@@ -2927,102 +4137,6 @@
         ],
         "simpler": "People living on a South Korean island had to seek shelter briefly after Russian military planes flew very close to their airspace."
       }
-    },
-    {
-      "id": "ev-d429ee93f00f",
-      "headline": "Cybersecurity breach exposes unclassified CIA and ODNI information",
-      "summary": "The U.S. Central Intelligence Agency and the Office of the Director of National Intelligence discovered a cybersecurity breach affecting an unclassified network. The compromised system handles open-source intelligence, though officials reported no disruptions to critical or classified systems.",
-      "whyItMatters": "The incident highlights ongoing cybersecurity vulnerabilities across federal agencies following recent tech outages and hacks at other departments.",
-      "topic": "technology",
-      "time": "2026-11-25T02:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Washington",
-          "at": [
-            -77.0364,
-            38.8951
-          ],
-          "country": "US"
-        },
-        {
-          "name": "United States",
-          "at": [
-            -97.483,
-            39.538
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "The Hindu",
-          "title": "U.S. CIA, ODNI suffer cybersecurity breach of some unclassified information, NYT reports",
-          "url": "https://thehindu.com/news/international/us-cia-odni-suffer-cybersecurity-breach-of-some-unclassified-information-nyt-reports/article71740185.ece",
-          "publishedAt": "2026-11-24T21:43:34.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "wibw.com",
-          "title": "An unclassified CIA system was breached in a cyberattack, AP source says",
-          "url": "https://wibw.com/2026/11/24/an-unclassified-cia-system-was-breached-cyberattack-ap-source-says",
-          "publishedAt": "2026-11-25T00:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "Anadolu Agency",
-          "title": "Cybersecurity breach exposes unclassified data at CIA, US intelligence office: Report",
-          "url": "https://aa.com.tr/en/americas/cybersecurity-breach-exposes-unclassified-data-at-cia-us-intelligence-office-report/4136479",
-          "publishedAt": "2026-11-24T21:04:43.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "chicagotribune.com",
-          "title": "Unclassified CIA system breached in a cyberattack, source says",
-          "url": "https://chicagotribune.com/2026/11/24/unclassified-cia-system-cyberattack",
-          "publishedAt": "2026-11-25T01:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "fox23maine.com",
-          "title": "Unclassified CIA system breached in a cyberattack, sources say",
-          "url": "https://fox23maine.com/news/nation-world/unclassified-cia-system-breached-in-a-cyberattack-sources-say-ap-tech-outage",
-          "publishedAt": "2026-11-24T22:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 47.5,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -77.0364,
-          "lat": 38.8951,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -77.0364,
-              38.8951
-            ],
-            "label": "Washington",
-            "emphasis": "primary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
     },
     {
       "id": "ev-ed13a6efd714",
