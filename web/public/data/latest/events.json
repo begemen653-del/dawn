@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-26",
-  "generatedAt": "2026-11-26T03:31:13.689Z",
+  "generatedAt": "2026-11-26T17:01:24.809Z",
   "events": [
     {
       "id": "ev-9ca42ef854d7",
@@ -239,6 +239,144 @@
       }
     },
     {
+      "id": "ev-b0a092369705",
+      "headline": "SpaceX Approved to Launch Million Data Satellites for Space AI",
+      "summary": "U.S. regulators have approved SpaceX's project to deploy one million satellites into Earth's orbit to power space-based data centers for artificial intelligence. Meanwhile, Elon Musk pledged to give two shares of SpaceX to every child in the United States.",
+      "whyItMatters": "The orbital data center project aims to meet rising AI computing demands beyond terrestrial capabilities, while rival companies and astronomers have raised concerns over the impact on the night sky.",
+      "topic": "technology",
+      "time": "2026-11-26T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "White House",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Musk's plan to send a million SpaceX data satellites into space approved",
+          "url": "https://bbc.co.uk/news/articles/cwp836l8n1jgo",
+          "publishedAt": "2026-11-26T09:27:44.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Elon Musk says every child in U.S. will get two SpaceX shares",
+          "url": "https://thehindu.com/news/international/elon-musk-says-every-child-in-us-will-get-two-spacex-shares/article71745692.ece",
+          "publishedAt": "2026-11-26T08:27:03.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Elon Musk pledges to give two SpaceX shares to every child in the US",
+          "url": "https://theguardian.com/technology/2026/nov/26/elon-musk-pledges-to-give-two-spacex-shares-to-every-child-in-the-us",
+          "publishedAt": "2026-11-26T07:02:37.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "NPR",
+          "title": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
+          "url": "https://npr.org/2026/11/26/g-s1-155940/fcc-spacex-satellites-data-centers-in-space",
+          "publishedAt": "2026-11-26T06:53:09.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "lowellsun.com",
+          "title": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
+          "url": "https://lowellsun.com/2026/11/25/spacex-fcc-data-centers",
+          "publishedAt": "2026-11-26T03:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 84.3,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -77.0364,
+          "lat": 38.8951,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "White House",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "SpaceX proposed the Starmind project to use solar-powered satellites to process artificial intelligence computing outside of earth-bound data centers, while the share distribution builds on the Trump Account initiative for American youths.",
+        "keyPlayers": [
+          {
+            "name": "Elon Musk",
+            "role": "CEO and Chief Engineer of SpaceX"
+          },
+          {
+            "name": "Brendan Carr",
+            "role": "FCC Chairman"
+          }
+        ],
+        "whatNext": "SpaceX company shares are planned to be transferred next month, with Elon Musk's personal shares scheduled to follow after his lockup expires in June.",
+        "timeline": [
+          {
+            "date": "October 2026",
+            "label": "Musk announced intentions to donate shares of SpaceX stock to children"
+          },
+          {
+            "date": "25 November 2026",
+            "label": "FCC approval announced and share pledges confirmed on X"
+          }
+        ],
+        "simpler": "SpaceX got U.S. approval to launch a million satellites to run AI computers in space. Elon Musk also promised to give two SpaceX shares to every child in the U.S."
+      }
+    },
+    {
       "id": "ev-d0914af55abf",
       "headline": "Hostages rescued after Colombian forces storm Cartagena supermarket",
       "summary": "Colombian security forces raided a supermarket in Cartagena and rescued all remaining hostages held in a 17-hour siege. President Abelardo de la Espriella stated that the hostage-takers were common criminals whose initial attempt to rob an armoured vehicle had failed.",
@@ -383,6 +521,148 @@
           }
         ],
         "simpler": "Police in Colombia stormed a supermarket in Cartagena and rescued everyone being held hostage by armed criminals after a robbery went wrong."
+      }
+    },
+    {
+      "id": "ev-7d0e82e29817",
+      "headline": "Trump Urges Putin to Pull Back Military Aggression in Europe",
+      "summary": "Following talks in China and a meeting with NATO Secretary General Mark Rutte, U.S. President Donald Trump stated he pressed Russian President Vladimir Putin to pull back military aggression across European territories. Trump expressed hope that a swift deal could be made between Russia and Ukraine.",
+      "whyItMatters": "The appeals come amid heightened tensions and recent security incidents involving Russia and NATO's eastern flank, as leaders seek ways to de-escalate the ongoing war in Ukraine.",
+      "topic": "conflict",
+      "time": "2026-11-26T16:54:00.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        },
+        {
+          "name": "Ukraine",
+          "at": [
+            32.141,
+            49.725
+          ],
+          "country": "UA"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Trump says he wants Putin to ‘pull back all military aggression’ in Europe",
+          "url": "https://theguardian.com/world/live/2026/nov/26/eu-budget-summit-ukraine-russia-spain-serbia-elections-latest-news-updates",
+          "publishedAt": "2026-11-26T15:59:13.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "DW",
+          "title": "Trump says he urged Putin to 'pull back' military aggression in Europe",
+          "url": "https://dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-26T16:54:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Anadolu Agency",
+          "title": "Trump says he pressed Putin in China to pull back 'all military aggression' in Europe",
+          "url": "https://aa.com.tr/en/americas/trump-says-he-pressed-putin-in-china-to-pull-back-all-military-aggression-in-europe/4139320",
+          "publishedAt": "2026-11-26T15:32:40.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Kremlin accuses Ukraine of trying to widen conflict zone to Mediterranean and Baltic seas",
+          "url": "https://thehindu.com/news/international/kremlin-accuses-ukraine-of-trying-to-widen-conflict-zone-to-mediterranean-and-baltic-seas/article71747857.ece",
+          "publishedAt": "2026-11-26T16:44:18.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "themoscowtimes.com",
+          "title": "Trump and NATO Chief Urge Russia to Avoid Actions That Widen Ukraine War",
+          "url": "https://themoscowtimes.com/2026/11/26/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war-a812374",
+          "publishedAt": "2026-11-26T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 80.9,
+      "countries": [
+        "US",
+        "RU",
+        "UA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -77.0364,
+          "lat": 38.8951,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "UA",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The discussions follow recent security incidents and airspace violations near NATO countries, alongside ongoing discussions between international leaders regarding the conflict in Ukraine.",
+        "keyPlayers": [
+          {
+            "name": "Donald Trump",
+            "role": "U.S. President"
+          },
+          {
+            "name": "Vladimir Putin",
+            "role": "Russian President"
+          },
+          {
+            "name": "Mark Rutte",
+            "role": "NATO Secretary General"
+          }
+        ],
+        "whatNext": "Leaders hope a deal can be reached between Russia and Ukraine to stop the ongoing conflict.",
+        "timeline": [
+          {
+            "date": "26 November 2026",
+            "label": "Trump posted about his talks with Putin following meetings with NATO chief Rutte"
+          }
+        ],
+        "simpler": "U.S. President Donald Trump said he urged Russian President Vladimir Putin to stop military aggression in Europe so a peace deal with Ukraine can be reached quickly."
       }
     },
     {
@@ -822,144 +1102,6 @@
               40.314
             ],
             "label": "New Jersey",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-7cdad9627ffc",
-      "headline": "Plane crash off Mississippi coast kills six members of a Florida family",
-      "summary": "A small Cessna 210 plane carrying six members of an extended family from Florida crashed off the coast of Mississippi on Tuesday while returning home from a fishing trip. Divers recovered the bodies of four adults and two boys from the plane's fuselage in the Gulf of Mexico.",
-      "whyItMatters": "The tragedy claims the lives of three adults and three children from two related families, prompting an investigation by the National Transportation Safety Board into why the aircraft descended rapidly before losing contact.",
-      "topic": "disaster",
-      "time": "2026-11-26T03:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Horn Island",
-          "at": [
-            -88.6878,
-            30.2402
-          ],
-          "country": "US"
-        },
-        {
-          "name": "Pascagoula",
-          "at": [
-            -88.5561,
-            30.3658
-          ],
-          "country": "US"
-        },
-        {
-          "name": "Mississippi",
-          "at": [
-            -89.6812,
-            32.7673
-          ],
-          "country": "US"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "BBC News",
-          "title": "Two children among six dead after plane crash off Mississippi coast",
-          "url": "https://bbc.co.uk/news/articles/c6z74l1017zpo",
-          "publishedAt": "2026-11-25T19:26:44.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Plane crash off coast of Mississippi kills extended family of six on fishing trip",
-          "url": "https://thehindu.com/news/international/plane-crash-off-coast-of-mississippi-kills-extended-family-of-six-on-fishing-trip/article71745032.ece",
-          "publishedAt": "2026-11-26T01:54:49.000Z",
-          "language": "en"
-        },
-        {
-          "outlet": "thetimes-tribune.com",
-          "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-          "url": "https://thetimes-tribune.com/2026/11/25/mississippi-plane-crash",
-          "publishedAt": "2026-11-25T15:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "wokv.com",
-          "title": "6 dead after plane crashes off Mississippi coast: US Coast Guard",
-          "url": "https://wokv.com/news/national/6-dead-after-plane-crashes-off-mississippi-coast-us-coast-guard/5UGZYW3P5Y44RMVIRLFMM3RH34",
-          "publishedAt": "2026-11-25T13:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "jpost.com",
-          "title": "Mississippi plane crash leaves six dead, US Coast Guard confirms",
-          "url": "https://jpost.com/international/article-916047",
-          "publishedAt": "2026-11-25T09:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 74.4,
-      "countries": [
-        "US"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -85.28004999999999,
-          "lat": 28.4404,
-          "zoom": 4.646203235436074
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "US",
-            "tone": "alert"
-          },
-          {
-            "type": "arc",
-            "id": "route",
-            "from": [
-              -81.8723,
-              26.6406
-            ],
-            "to": [
-              -88.6878,
-              30.2402
-            ],
-            "kind": "flight",
-            "animated": true
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -88.6878,
-              30.2402
-            ],
-            "label": "Horn Island",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              -88.5561,
-              30.3658
-            ],
-            "label": "Pascagoula",
-            "emphasis": "secondary"
-          },
-          {
-            "type": "marker",
-            "id": "place-2",
-            "at": [
-              -89.6812,
-              32.7673
-            ],
-            "label": "Mississippi",
             "emphasis": "secondary"
           }
         ]
@@ -1885,6 +2027,302 @@
       }
     },
     {
+      "id": "ev-e0dcf0fd5870",
+      "headline": "Nvidia Halts AI Server Shipments to Four Southeast Asian Nations",
+      "summary": "Nvidia has instructed manufacturing partners to stop shipping computer servers containing its advanced AI chips to Malaysia, Singapore, Thailand, and Indonesia. The freeze follows new U.S. export controls aimed at closing loopholes used by Chinese firms to access sensitive technology.",
+      "whyItMatters": "The restrictions tighten Washington's crackdown on the grey market and third-country data centers, impacting regional tech supply chains following recent national security concerns.",
+      "topic": "business",
+      "time": "2026-11-26T16:46:20.000Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Beijing",
+          "at": [
+            116.388,
+            39.9289
+          ],
+          "country": "CN"
+        },
+        {
+          "name": "China",
+          "at": [
+            106.337,
+            32.498
+          ],
+          "country": "CN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Nvidia stops shipping AI servers to four Southeast Asian nations",
+          "url": "https://thehindu.com/news/international/nvidia-stops-shipping-ai-servers-to-four-southeast-asian-nations/article71747898.ece",
+          "publishedAt": "2026-11-26T16:46:20.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dailysabah.com",
+          "title": "Nvidia halts chip server shipments to 4 Asian nations",
+          "url": "https://dailysabah.com/business/tech/nvidia-halts-chip-server-shipments-to-4-asian-nations",
+          "publishedAt": "2026-11-26T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "moneycontrol.com",
+          "title": "Nvidia halts server shipments to four Southeast Asian countries: Report",
+          "url": "https://moneycontrol.com/world/nvidia-halts-server-shipments-to-four-southeast-asian-countries-report-2-article-14089856.html",
+          "publishedAt": "2026-11-26T16:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "gizmodo.com",
+          "title": "Nvidia Freezes AI Chip Shipments to Southeast Asian Countries",
+          "url": "https://gizmodo.com/nvidia-reportedly-freezes-ai-chip-shipments-to-southeast-asian-countries-2000845928",
+          "publishedAt": "2026-11-26T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "indiatimes.com",
+          "title": "Nvidia halts server shipments to 4 Southeast Asian countries amid chip scandal; China not on list: Report",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-halts-server-shipments-to-4-southeast-asian-countries-amid-chip-scandal-china-not-on-list-report/articleshow/136185184.cms",
+          "publishedAt": "2026-11-26T09:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "blastingnews.com",
+          "title": "Nvidia ferma le spedizioni di chip nel sud-est asiatico",
+          "url": "https://it.blastingnews.com/tecnologia/2026/11/nvidia-ferma-le-spedizioni-di-chip-nel-sud-est-asiatico-004211469.html",
+          "publishedAt": "2026-11-26T12:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "laregione.ch",
+          "title": "Per il Ft Nvidia ferma le spedizioni di server verso quattro Paesi del Sud-est asiatico",
+          "url": "https://laregione.ch/estero/estero/1965205/nvidia-cloud-server-sud-est-quattro-ft-spedizioni-paesi-ia",
+          "publishedAt": "2026-11-26T08:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "zazoom.it",
+          "title": "Nvidia sospende le spedizioni di chip nel sud-est asiatico stretta Usa sui controlli per frenare la Cina",
+          "url": "https://zazoom.it/2026-11-26/nvidia-sospende-le-spedizioni-di-chip-nel-sud-est-asiatico-stretta-usa-sui-controlli-per-frenare-la-cina/19978246",
+          "publishedAt": "2026-11-26T10:45:00Z",
+          "language": "it"
+        },
+        {
+          "outlet": "uol.com.br",
+          "title": "Nvidia orienta suspensão de envio de chips para quatro países do Sudeste Asiático",
+          "url": "https://c-level.folha.uol.com.br/ia/2026/11/nvidia-orienta-suspensao-de-envio-de-chips-para-quatro-paises-do-sudeste-asiatico.shtml",
+          "publishedAt": "2026-11-26T12:45:00Z",
+          "language": "pt"
+        },
+        {
+          "outlet": "ilsole24ore.com",
+          "title": "Nvidia: chiede ai partner stop a spedizioni di server in 4 Paesi asiatici (Ft)",
+          "url": "https://ilsole24ore.com/art/nvidia-chiede-partner-stop-spedizioni-server-4-paesi-asiatici-ft-AJBYR7SC",
+          "publishedAt": "2026-11-26T09:45:00Z",
+          "language": "it"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 65,
+      "countries": [
+        "US",
+        "CN",
+        "SG",
+        "ID"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -77.0364,
+          "lat": 38.8951,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "CN",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "SG",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              116.388,
+              39.9289
+            ],
+            "label": "Beijing",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The export curbs were introduced by Washington following an espionage controversy involving Nvidia and a cloud company connected to suspected intelligence activity.",
+        "keyPlayers": [
+          {
+            "name": "Jensen Huang",
+            "role": "CEO of Nvidia"
+          }
+        ],
+        "whatNext": "It remains unclear whether the shipment halt for the four Southeast Asian nations is temporary as companies work through compliance requirements.",
+        "timeline": [
+          {
+            "date": "22 November 2026",
+            "label": "Jensen Huang reinstated as Nvidia CEO"
+          },
+          {
+            "date": "26 November 2026",
+            "label": "Reports emerged of Nvidia halting server shipments to four Asian countries"
+          }
+        ],
+        "simpler": "Nvidia has stopped sending servers with its powerful AI chips to four Southeast Asian countries due to new U.S. rules designed to keep the technology away from China."
+      }
+    },
+    {
+      "id": "ev-1129e84da0d6",
+      "headline": "Explosion and Fire at Bangkok Oil Refinery Injures Nine",
+      "summary": "An explosion at the Bangchak Corporation oil refinery in Bangkok, Thailand, triggered a massive fire that sent thick black smoke over the capital. Nine people were injured, three of them critically, before emergency crews brought the blaze under control.",
+      "whyItMatters": "The Thai government has suspended production at the facility located in a residential area while authorities investigate the cause of the blast and ensure safety.",
+      "topic": "disaster",
+      "time": "2026-11-26T16:21:19.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Bangkok",
+          "at": [
+            100.517,
+            13.75
+          ],
+          "country": "TH"
+        },
+        {
+          "name": "Thailand",
+          "at": [
+            101.073,
+            15.46
+          ],
+          "country": "TH"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Nine injured, three critically, after Bangkok oil refinery explosion",
+          "url": "https://bbc.co.uk/news/articles/crx209kwk4kzo",
+          "publishedAt": "2026-11-26T16:21:19.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "Huge explosion at Bangkok oil depot sends black smoke over Thai capital",
+          "url": "https://euronews.com/2026/11/26/huge-explosion-at-bangkok-oil-depot-sends-black-smoke-over-thai-capital",
+          "publishedAt": "2026-11-26T09:25:01.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Massive fire at Bangkok oil refinery leaves several injured, Bangchak Corp shuts all units",
+          "url": "https://thehindu.com/news/international/bangkok-oil-refinery-fire-blast-bangchak-injured-casualties-nov-26-2026/article71745999.ece",
+          "publishedAt": "2026-11-26T10:19:37.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "netscape.com",
+          "title": "At least 9 injured by large explosion and fire at major oil facility in Bangkok",
+          "url": "https://isp.netscape.com/news/world/story/0001/20261126/e8098146bfb994dffc14448b1027c5d1",
+          "publishedAt": "2026-11-26T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "asiaone.com",
+          "title": "At least 7 injured by large explosion and fire at major oil facility in Bangkok",
+          "url": "https://asiaone.com/asia/bangkok-explosion-fire-oil-facility-thailand",
+          "publishedAt": "2026-11-26T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 64.5,
+      "countries": [
+        "TH"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 100.517,
+          "lat": 13.75,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TH",
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              100.517,
+              13.75
+            ],
+            "label": "Bangkok",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Bangchak Corporation operates two refineries in Thailand, including the Phra Khanong facility involved in the incident, which has a maximum capacity of 120,000 barrels per day.",
+        "keyPlayers": [
+          {
+            "name": "Akanat Promphan",
+            "role": "Thailand's Energy Minister"
+          }
+        ],
+        "whatNext": "Production at the refinery has been shut down while the government and company investigate the cause and evaluate safety before resuming operations.",
+        "timeline": [
+          {
+            "date": "26 November 2026",
+            "label": "Explosion and fire occurred at the Bangkok oil refinery"
+          }
+        ],
+        "simpler": "A large explosion and fire hit an oil refinery in Bangkok, leaving nine people injured. The fire has been put out, and production has been temporarily stopped."
+      }
+    },
+    {
       "id": "ev-4fc6dc4c7dbe",
       "headline": "Houthi attack on Riyadh financial district injures 11, including two Indians",
       "summary": "An attack targeted the financial district in Riyadh, Saudi Arabia, injuring 11 people, including two Indian citizens, three Nepalese, four Egyptians, and two Saudis. New Delhi strongly condemned the strike and ongoing assaults on civilian and economic infrastructure.",
@@ -2614,6 +3052,317 @@
       }
     },
     {
+      "id": "ev-f0a04aca8e86",
+      "headline": "Pablo Hernández de Cos to lead the European Central Bank",
+      "summary": "Euro area leaders reached a political agreement in Brussels to appoint Pablo Hernández de Cos as the next president of the European Central Bank. He will succeed Christine Lagarde when she leaves office at the beginning of February.",
+      "whyItMatters": "This marks the first time an individual from this country will head the monetary authority for the countries that use the euro, placing him in one of the most influential global financial positions.",
+      "topic": "economy",
+      "time": "2026-11-26T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "df.cl",
+          "title": "Pablo Hernández de Cos será el próximo presidente del Banco Central Europeo",
+          "url": "https://df.cl/internacional/ft/pablo-hernandez-de-cos-sera-el-proximo-presidente-del-banco-central-europeo",
+          "publishedAt": "2026-11-26T14:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "laverdad.es",
+          "title": "Pablo Hernández de Cos será el próximo presidente del BCE",
+          "url": "https://laverdad.es/economia/pablo-hernandez-cos-proximo-presidente-bce-20261126142431-ntrc.html",
+          "publishedAt": "2026-11-26T13:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lavanguardia.com",
+          "title": "El español Pablo Hernández de Cos será el próximo presidente del BCE",
+          "url": "https://lavanguardia.com/economia/20261126/11693870/espanol-pablo-hernandez-cos-sera-proximo-presidente-bce.html",
+          "publishedAt": "2026-11-26T14:45:00Z",
+          "language": "es"
+        },
+        {
+          "outlet": "lalsace.fr",
+          "title": "Finances. Christine Lagarde va être remplacée par Pablo Hernandez de Cos à la tête de la BCE",
+          "url": "https://lalsace.fr/economie/2026/11/26/christine-lagarde-va-etre-remplacee-par-pablo-hernandez-de-cos-a-la-tete-de-la-bce",
+          "publishedAt": "2026-11-26T14:45:00Z",
+          "language": "fr"
+        },
+        {
+          "outlet": "executivedigest.sapo.pt",
+          "title": "Espanha conquista a presidência do BCE: Hernández de Cos sucede a Lagarde já em fevereiro",
+          "url": "https://executivedigest.sapo.pt/espanha-conquista-a-presidencia-do-bce-hernandez-de-cos-sucede-a-lagarde-ja-em-fevereiro",
+          "publishedAt": "2026-11-26T15:45:00Z",
+          "language": "pt"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 60.3,
+      "countries": [
+        "FR",
+        "ES",
+        "DE",
+        "NL"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 4.33333,
+          "lat": 50.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "FR",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "ES",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "DE",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The post became open as a replacement for Christine Lagarde, with candidates competing during a European summit in Brussels.",
+        "keyPlayers": [
+          {
+            "name": "Pablo Hernández de Cos",
+            "role": "Incoming President of the European Central Bank"
+          },
+          {
+            "name": "Christine Lagarde",
+            "role": "Current President of the European Central Bank"
+          },
+          {
+            "name": "Klaas Knot",
+            "role": "Candidate from the Netherlands"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "26 November 2026",
+            "label": "Leaders reach an agreement at an extraordinary council in Brussels"
+          },
+          {
+            "date": "Early February",
+            "label": "Hernández de Cos takes over when Lagarde leaves office"
+          }
+        ],
+        "simpler": "Leaders of countries using the euro agreed that Pablo Hernández de Cos will lead the big bank that handles the euro, taking over from Christine Lagarde in February."
+      }
+    },
+    {
+      "id": "ev-60f224c90668",
+      "headline": "UniCredit seeks Commerzbank shareholder meeting for takeover",
+      "summary": "Italian bank UniCredit has requested an extraordinary general meeting at Commerzbank to install its own representatives on the supervisory board and place CEO Andrea Orcel in charge. This move follows final regulatory approval from the Polish financial authority.",
+      "whyItMatters": "The meeting sets the stage for UniCredit to potentially seize control of the German lender's board and replace executives who opposed the takeover.",
+      "topic": "business",
+      "time": "2026-11-26T14:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Frankfurt",
+          "at": [
+            14.55,
+            52.35
+          ],
+          "country": "DE"
+        },
+        {
+          "name": "Milan",
+          "at": [
+            9.2,
+            45.4667
+          ],
+          "country": "IT"
+        },
+        {
+          "name": "Warsaw",
+          "at": [
+            21,
+            52.25
+          ],
+          "country": "PL"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Tagesschau",
+          "title": "UniCredit beantragt Hauptversammlung bei Commerzbank",
+          "url": "https://tagesschau.de/wirtschaft/unternehmen/unicredit-commerzbank-hauptversammlung-100.html",
+          "publishedAt": "2026-11-26T08:54:54.000Z",
+          "language": "de"
+        },
+        {
+          "outlet": "volksstimme.de",
+          "title": "Letzte Genehmigung erteilt: Unicredit-CEO soll Aufsichtsratschef bei Commerzbank werden",
+          "url": "https://volksstimme.de/deutschland-und-welt/wirtschaft/unicredit-ceo-soll-aufsichtsratschef-bei-commerzbank-werden-4362956",
+          "publishedAt": "2026-11-26T09:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "schwaebische-post.de",
+          "title": "Unicredit-CEO soll Aufsichtsratschef bei Commerzbank werden",
+          "url": "https://schwaebische-post.de/welt/wirtschaft/unicredit-ceo-soll-aufsichtsratschef-bei-commerzbank-werden-zr-94608715.html",
+          "publishedAt": "2026-11-26T08:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "noz.de",
+          "title": "Unicredit beantragt Hauptversammlung bei Commerzbank",
+          "url": "https://noz.de/deutschland-welt/wirtschaft/artikel/unicredit-beantragt-hauptversammlung-bei-commerzbank-51806713",
+          "publishedAt": "2026-11-26T07:45:00Z",
+          "language": "de"
+        },
+        {
+          "outlet": "handelsblatt.com",
+          "title": "Letzte Genehmigung erteilt: Unicredit beantragt Hauptversammlung bei Commerzbank",
+          "url": "https://handelsblatt.com/politik/deutschland/letzte-genehmigung-erteilt-unicredit-beantragt-hauptversammlung-bei-commerzbank/100272894.html",
+          "publishedAt": "2026-11-26T07:45:00Z",
+          "language": "de"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 59.9,
+      "countries": [
+        "IT",
+        "DE",
+        "PL"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 11.875,
+          "lat": 48.90835,
+          "zoom": 4.501792803940931
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IT",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "DE",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "PL",
+            "tone": "neutral"
+          },
+          {
+            "type": "arc",
+            "id": "route",
+            "from": [
+              9.2,
+              45.4667
+            ],
+            "to": [
+              14.55,
+              52.35
+            ],
+            "kind": "other",
+            "animated": true
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              14.55,
+              52.35
+            ],
+            "label": "Frankfurt",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              9.2,
+              45.4667
+            ],
+            "label": "Milan",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              21,
+              52.25
+            ],
+            "label": "Warsaw",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "UniCredit pursued a takeover of Commerzbank, facing resistance from the German bank's management team led by Bettina Orlopp. The process advanced after obtaining all necessary regulatory approvals, concluding with clearance from Poland's financial watchdog.",
+        "keyPlayers": [
+          {
+            "name": "Andrea Orcel",
+            "role": "UniCredit CEO and candidate for Commerzbank supervisory board chairman"
+          },
+          {
+            "name": "Bettina Orlopp",
+            "role": "Commerzbank CEO"
+          },
+          {
+            "name": "Jens Weidmann",
+            "role": "Outgoing Commerzbank supervisory board chairman"
+          }
+        ],
+        "whatNext": "Commerzbank's board will review the request and, if legal requirements are met, convene the extraordinary general meeting, which UniCredit expects to take place in the first quarter of 2027.",
+        "timeline": [
+          {
+            "date": "26 November 2026",
+            "label": "UniCredit announces Polish regulatory approval and requests a shareholder meeting"
+          },
+          {
+            "date": "First quarter of 2027",
+            "label": "Expected timing for the extraordinary general meeting"
+          }
+        ],
+        "simpler": "Italian bank UniCredit has cleared its final regulatory hurdle and is asking for a shareholder meeting to take control of Germany's Commerzbank."
+      }
+    },
+    {
       "id": "ev-67d9ec7bf45d",
       "headline": "Angelina Jolie and Brad Pitt settle winery legal dispute",
       "summary": "Hollywood actors Brad Pitt and Angelina Jolie have reached an out-of-court settlement in their long-running legal battle over the French winery Chateau Miraval. The dispute began after Jolie sold her stake in the vineyard, which was followed by countersuits involving personal allegations.",
@@ -2774,6 +3523,151 @@
           }
         ],
         "simpler": "Actors Brad Pitt and Angelina Jolie have ended their long legal fight over a French winery they once owned together."
+      }
+    },
+    {
+      "id": "ev-1471fee5ad26",
+      "headline": "North Korea's Kim Jong Un calls for building more nuclear weapons",
+      "summary": "North Korean leader Kim Jong Un inspected facilities producing nuclear materials and demanded an expanded nuclear arsenal. The move comes days after Pyongyang ignored an offer to meet from U.S. President Donald Trump.",
+      "whyItMatters": "The visits reaffirm North Korea's commitment to its nuclear program as the core of its leadership and signal a rejection of future disarmament talks.",
+      "topic": "conflict",
+      "time": "2026-11-26T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "North Korea",
+          "at": [
+            126.445,
+            39.885
+          ],
+          "country": "KP"
+        },
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Yongbyon",
+          "at": [
+            125.804,
+            39.8133
+          ],
+          "country": "KP"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "url": "https://thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
+          "publishedAt": "2026-11-26T04:35:38.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "North Korea’s Kim vows to build more nuclear weapons after ignoring Trump’s overture",
+          "url": "https://euronews.com/2026/11/26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture",
+          "publishedAt": "2026-11-26T05:55:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "NPR",
+          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "url": "https://npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+          "publishedAt": "2026-11-26T13:31:28.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "kunm.org",
+          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "url": "https://kunm.org/npr-news/2026-11-26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture",
+          "publishedAt": "2026-11-26T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dw.com",
+          "title": "North Korea: Kim Jong Un vows to build more nuclear weapons",
+          "url": "https://dw.com/en/kim-jong-un-tours-nuclear-material-sites-urges-wider-use-of-tactical-nuclear-weapons/a-80055887",
+          "publishedAt": "2026-11-26T04:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 57.2,
+      "countries": [
+        "KP",
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 126.445,
+          "lat": 39.885,
+          "zoom": 5.7
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "KP",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "US",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              125.804,
+              39.8133
+            ],
+            "label": "Yongbyon",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "North Korea has previously disclosed uranium enrichment sites, such as the one at the Yongbyon nuclear complex.",
+        "keyPlayers": [
+          {
+            "name": "Kim Jong Un",
+            "role": "North Korean Leader"
+          },
+          {
+            "name": "Donald Trump",
+            "role": "US President"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "25 November 2026",
+            "label": "Kim Jong Un inspected nuclear production and research facilities."
+          },
+          {
+            "date": "26 November 2026",
+            "label": "State media reported on the inspections and calls for more weapons."
+          }
+        ],
+        "simpler": "North Korea's leader toured nuclear facilities and asked for more nuclear weapons to be built, shortly after ignoring an offer to meet from the US president."
       }
     },
     {
@@ -3143,6 +4037,164 @@
       }
     },
     {
+      "id": "ev-613583348296",
+      "headline": "Turkey opens investigations into two military helicopter crashes",
+      "summary": "The Turkish Ministry of National Defense announced that judicial and administrative processes are underway to determine the causes of recent helicopter crashes in Malatya and Eskişehir. The incidents occurred during night training exercises and resulted in military casualties.",
+      "whyItMatters": "The accidents resulted in the deaths of several service members, prompting formal investigations by military authorities to establish the causes.",
+      "topic": "disaster",
+      "time": "2026-11-26T15:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "Malatya",
+          "at": [
+            38.3167,
+            38.3502
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Eski",
+          "at": [
+            38.546,
+            38.0315
+          ],
+          "country": "TR"
+        },
+        {
+          "name": "Ankara",
+          "at": [
+            32.8644,
+            39.9272
+          ],
+          "country": "TR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "TRT Haber",
+          "title": "MSB: Malatya ve Eskişehirdeki helikopter kazalarıyla ilgili adli soruşturma başlatıldı",
+          "url": "https://trthaber.com/haber/gundem/msb-malatya-ve-eskisehirdeki-helikopter-kazalariyla-ilgili-adli-sorusturma-baslatildi-964523.html",
+          "publishedAt": "2026-11-26T09:00:00.000Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "mynet.com",
+          "title": "Eskişehir ve Malatya'da şehit vermiştik! MSB'den helikopter kazaları için açıklama",
+          "url": "https://mynet.com/haber/eskisehir-ve-malatya-da-sehit-vermistik-msb-den-helikopter-kazalari-icin-aciklama-110107322736",
+          "publishedAt": "2026-11-26T10:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "haber7.com",
+          "title": "MSB'den İsrail'e karşı somut adım çağrısı! Helikopter kazaları açıklaması...",
+          "url": "https://haber7.com/guncel/haber/3680001-msbden-israile-karsi-somut-adim-cagrisi-helikopter-kazalari-aciklamasi",
+          "publishedAt": "2026-11-26T09:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "yeniasir.com.tr",
+          "title": "Helikopter kazasında şehit olan 5 asker için tören düzenlendi",
+          "url": "https://yeniasir.com.tr/gundem/2026/11/26/helikopter-kazasinda-sehit-olan-5-asker-icin-toren-duzenlendi",
+          "publishedAt": "2026-11-26T11:45:00Z",
+          "language": "tr"
+        },
+        {
+          "outlet": "aa.com.tr",
+          "title": "Eskişehir'de kaza kırıma uğrayan helikopterde şehit olan 5 asker için tören düzenlendi",
+          "url": "https://aa.com.tr/tr/gundem/eskisehirde-kaza-kirima-ugrayan-helikopterde-sehit-olan-5-asker-icin-toren-duzenlendi/4138437",
+          "publishedAt": "2026-11-26T10:45:00Z",
+          "language": "tr"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 54.6,
+      "countries": [
+        "TR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 38.3167,
+          "lat": 38.3502,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "TR",
+            "tone": "alert"
+          },
+          {
+            "type": "area",
+            "id": "area",
+            "center": [
+              38.3167,
+              38.3502
+            ],
+            "radiusKm": 100,
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              38.3167,
+              38.3502
+            ],
+            "label": "Malatya",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              38.546,
+              38.0315
+            ],
+            "label": "Eski",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              32.8644,
+              39.9272
+            ],
+            "label": "Ankara",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The military conducted nighttime training flights in Malatya and Eskişehir, during which an S-70 and a Cougar-type helicopter suffered accidents. These incidents followed earlier security operations and border updates reported by the defense ministry.",
+        "keyPlayers": [
+          {
+            "name": "Zeki Aktürk",
+            "role": "Ministry of National Defense Spokesperson"
+          }
+        ],
+        "whatNext": "Administrative investigation boards and crash site inspection teams will continue to investigate all possibilities regarding the causes of both crashes.",
+        "timeline": [
+          {
+            "date": "21 November 2026",
+            "label": "A separate weapon accident causes a soldier's death"
+          },
+          {
+            "date": "24 November 2026",
+            "label": "A Cougar-type helicopter crashes in Eskişehir, causing multiple casualties"
+          },
+          {
+            "date": "26 November 2026",
+            "label": "Ministry of National Defense announces ongoing judicial and administrative investigations"
+          }
+        ],
+        "simpler": "Turkey's defense ministry has started investigations to find out why two military helicopters crashed during nighttime training exercises in Malatya and Eskişehir."
+      }
+    },
+    {
       "id": "ev-64e494ae2455",
       "headline": "Rescuers search for trapped miners after flood in Indonesia",
       "summary": "Rescue teams in West Java, Indonesia, are searching for dozens of miners believed trapped underground following heavy rains that flooded an unauthorized gold mine. Authorities have recovered multiple bodies as operations continue in difficult terrain.",
@@ -3319,6 +4371,332 @@
           }
         ],
         "simpler": "Rescue workers in Indonesia are searching for miners trapped in a flooded illegal gold mine after heavy rain hit the area."
+      }
+    },
+    {
+      "id": "ev-5cd9d06f1616",
+      "headline": "Norse Atlantic Airways suspends flights and faces potential bankruptcy",
+      "summary": "Norwegian long-haul carrier Norse Atlantic Airways has suspended all flights and warned it will file for bankruptcy unless it secures emergency funding. The airline cited surging jet fuel costs stemming from the US-Israel war on Iran.",
+      "whyItMatters": "The sudden suspension has left passengers stranded or scrambling to rebook flights, and also forced partner airlines like Pakistan International Airlines to alter their flight operations.",
+      "topic": "business",
+      "time": "2026-11-26T14:28:22.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Oslo",
+          "at": [
+            10.75,
+            59.9167
+          ],
+          "country": "NO"
+        },
+        {
+          "name": "Gatwick",
+          "at": [
+            -0.183333,
+            51.1667
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "Islamabad",
+          "at": [
+            73.1667,
+            33.7
+          ],
+          "country": "PK"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Norse Atlantic Airways suspends all flights as it makes urgent funding plea",
+          "url": "https://theguardian.com/business/2026/nov/26/norse-atlantic-airways-suspends-all-flights-urgent-funding-plea",
+          "publishedAt": "2026-11-26T10:15:18.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Norse Atlantic suspends all flights as it faces potential collapse",
+          "url": "https://bbc.co.uk/news/articles/c9kgmd0ldy0lo",
+          "publishedAt": "2026-11-26T14:28:22.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "nottinghampost.com",
+          "title": "Norse Atlantic suspends all flights today after 'critical' warning",
+          "url": "https://nottinghampost.com/whats-on/whats-on-news/norse-atlantic-suspends-flights-today-11256167",
+          "publishedAt": "2026-11-26T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "arabnews.com",
+          "title": "Arab News | Pakistan's PIA restores UK flight operations after Norse Atlantic disruption",
+          "url": "https://arabnews.com/world/pakistans-pia-restores-uk-flight-operations-after-norse-atlantic-disruption-3014136",
+          "publishedAt": "2026-11-26T13:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "inquisitr.com",
+          "title": "Norse Atlantic seeks short-term financing to keep operating",
+          "url": "https://inquisitr.com/norse-atlantic-critical-finances-takeover",
+          "publishedAt": "2026-11-26T04:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 52.4,
+      "countries": [
+        "NO",
+        "GB",
+        "PK"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 10.75,
+          "lat": 59.9167,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "NO",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "GB",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "PK",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              10.75,
+              59.9167
+            ],
+            "label": "Oslo",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -0.183333,
+              51.1667
+            ],
+            "label": "Gatwick",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              73.1667,
+              33.7
+            ],
+            "label": "Islamabad",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-4553891",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Akershus_festning.jpg/500px-Akershus_festning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akershus_festning.jpg",
+          "provider": "wikimedia-commons",
+          "author": "Pudelek (Marcin Szala)",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          },
+          "alt": "Akershus Castle in Oslo, Norway.",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Norse Atlantic was founded in 2021 as a low-cost, long-haul airline following the withdrawal of Norwegian from similar routes.",
+        "keyPlayers": [],
+        "whatNext": "The airline is discussing potential financing solutions and takeover options with investors, with bankruptcy intended if no deal is reached.",
+        "timeline": [
+          {
+            "date": "26 November 2026",
+            "label": "Norse Atlantic announced flight suspensions and urgent funding pleas."
+          }
+        ],
+        "simpler": "A low-cost airline has stopped flying and might go bankrupt because high fuel prices made it too expensive to operate."
+      }
+    },
+    {
+      "id": "ev-c957c25043a1",
+      "headline": "Crew member dies after diesel tanker capsizes off Ibiza",
+      "summary": "A Maltese-flagged chemical tanker carrying diesel capsized and partially sank off the coast of Ibiza, Spain, while traveling from Algeciras to Barcelona. All 17 crew members were rescued, but one later died in the hospital and others were treated for hypothermia or transported to Valencia.",
+      "whyItMatters": "Authorities have activated a high-level maritime pollution contingency plan and deployed specialized vessels to monitor the semi-submerged tanker, though officials report no signs of a significant fuel spill so far.",
+      "topic": "disaster",
+      "time": "2026-11-26T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Valencia",
+          "at": [
+            -68.0039,
+            10.1806
+          ],
+          "country": "VE"
+        },
+        {
+          "name": "Algeciras",
+          "at": [
+            -5.45051,
+            36.1333
+          ],
+          "country": "ES"
+        },
+        {
+          "name": "Madrid",
+          "at": [
+            -3.68333,
+            40.4
+          ],
+          "country": "ES"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "Crew member dies after diesel tanker sinks off Ibiza coast",
+          "url": "https://dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
+          "publishedAt": "2026-11-26T11:58:00.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "easternriverinachronicle.com.au",
+          "title": "Crew member dies after diesel tanker capsizes off Ibiza",
+          "url": "https://easternriverinachronicle.com.au/story/9399150/crew-member-dies-after-diesel-tanker-capsizes-off-ibiza",
+          "publishedAt": "2026-11-26T16:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Diesel tanker capsizes near Ibiza, killing crew member",
+          "url": "https://aljazeera.com/video/newsfeed/2026/11/26/aje-onl-nf_loaded-diesel-tanker-capsizes-off-ibiza-killing-one-261126?traffic_source=rss",
+          "publishedAt": "2026-11-26T15:56:39.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wtvbam.com",
+          "title": "Crew member dies after diesel tanker sinks off Ibiza; Spain launches pollution plan",
+          "url": "https://wtvbam.com/2026/11/26/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-spain-launches-pollution-plan",
+          "publishedAt": "2026-11-26T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "cyprus-mail.com",
+          "title": "Crew member dies after diesel tanker sinks off Ibiza",
+          "url": "https://cyprus-mail.com/2026/11/26/crew-member-dies-after-diesel-tanker-sinks-off-ibiza",
+          "publishedAt": "2026-11-26T12:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 52,
+      "countries": [
+        "ES",
+        "TR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -1.63359,
+          "lat": 38.7583,
+          "zoom": 4.4636569535369
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "ES",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "TR",
+            "tone": "neutral"
+          },
+          {
+            "type": "arc",
+            "id": "route",
+            "from": [
+              -5.45051,
+              36.1333
+            ],
+            "to": [
+              2.18333,
+              41.3833
+            ],
+            "kind": "other",
+            "animated": true
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -68.0039,
+              10.1806
+            ],
+            "label": "Valencia",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -5.45051,
+              36.1333
+            ],
+            "label": "Algeciras",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              -3.68333,
+              40.4
+            ],
+            "label": "Madrid",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The chemical tanker Med Emre was sailing from Algeciras to Barcelona carrying diesel when it capsized about 56 kilometers off Ibiza's northwestern coast.",
+        "keyPlayers": [
+          {
+            "name": "Pablo Garriz",
+            "role": "Balearic Islands' regional head of emergencies"
+          }
+        ],
+        "whatNext": "Salvage and containment operations will continue while authorities monitor the semi-submerged vessel for pollution risks.",
+        "timeline": [
+          {
+            "date": "Thursday",
+            "label": "Authorities reported the sinking and activated maritime pollution contingency plans."
+          }
+        ],
+        "simpler": "A ship carrying fuel tipped over near the Spanish island of Ibiza. Everyone on board was rescued, but sadly one crew member passed away at the hospital, and officials are watching closely to make sure fuel does not leak into the water."
       }
     },
     {

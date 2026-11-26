@@ -4,13 +4,13 @@
   "scope": "asia",
   "title": "Asia",
   "eventIds": [
+    "ev-e0dcf0fd5870",
+    "ev-1129e84da0d6",
+    "ev-1471fee5ad26",
+    "ev-5cd9d06f1616",
     "ev-9ca42ef854d7",
     "ev-8df0d08c546c",
     "ev-c2c752f7be1d",
-    "ev-b77d41fc3a3e",
-    "ev-64e494ae2455",
-    "ev-76e1a40a2f25",
-    "ev-34d9b3a2e4cd",
-    "ev-093d73f1b243"
+    "ev-b77d41fc3a3e"
   ]
 }
