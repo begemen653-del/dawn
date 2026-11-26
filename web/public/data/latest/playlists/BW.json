@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "BW",
   "title": "Botswana",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Botswana in the last 24 hours."
+  "eventIds": [
+    "ev-85a690a1d2fc",
+    "ev-5f0ebe070aba"
+  ]
 }

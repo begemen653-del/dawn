@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "SI",
   "title": "Slovenia",
-  "eventIds": [
-    "ev-d78559210c5b",
-    "ev-c2ccabbcff7d",
-    "ev-feb16b4c6c28"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Slovenia in the last 24 hours."
 }

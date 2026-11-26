@@ -1,16 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "north-america",
   "title": "North America",
   "eventIds": [
-    "ev-9ffc22b2894b",
-    "ev-9cabcd4773e7",
-    "ev-d6cfe7c7dda6",
-    "ev-d3db84e21207",
-    "ev-ae6bf6677b77",
-    "ev-5a989cc1f903",
-    "ev-570905c85947",
-    "ev-2abb6bb9a58f"
+    "ev-9ca42ef854d7",
+    "ev-e4bfe5075484",
+    "ev-8df0d08c546c",
+    "ev-67d9ec7bf45d",
+    "ev-206fd34ca141",
+    "ev-343316e00151"
   ]
 }

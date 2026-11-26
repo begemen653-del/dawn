@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "SY",
   "title": "Syria",
   "eventIds": [
-    "ev-ae1188c9fd5f",
-    "ev-2d269a467c68",
-    "ev-5c6db868e030",
-    "ev-b787a05cc0c6"
+    "ev-7cf1ec3918b2"
   ]
 }

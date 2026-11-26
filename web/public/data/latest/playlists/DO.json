@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "DO",
   "title": "Dominican Republic",
   "eventIds": [
-    "ev-72001c659766",
-    "ev-6eb40698ac23",
-    "ev-3369dad233a7",
-    "ev-18fa5a8af922"
+    "ev-d3ade8a94c32",
+    "ev-0ff644269f2e"
   ]
 }

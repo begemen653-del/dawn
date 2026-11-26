@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "EG",
   "title": "Egypt",
   "eventIds": [
-    "ev-97d3d7c86832"
+    "ev-8edb4c35c176",
+    "ev-70c17b836121"
   ]
 }

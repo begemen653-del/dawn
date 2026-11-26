@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "MG",
   "title": "Madagascar",
-  "eventIds": [
-    "ev-8189ac6aa50a",
-    "ev-fabc996db25b",
-    "ev-f4066ae5ee33"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Madagascar in the last 24 hours."
 }

@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "GB",
   "title": "United Kingdom",
   "eventIds": [
-    "ev-3710b99e833e",
-    "ev-245b434338bf",
-    "ev-24decd812c4b",
-    "ev-d472542a2747",
-    "ev-8d1cdce1f919",
-    "ev-cbac59bcf888",
-    "ev-d7893a62b316",
-    "ev-ec3bf31440d0"
+    "ev-b2c0c747b49d",
+    "ev-6eb209fe9bf6",
+    "ev-e2a297a52314",
+    "ev-073f180fd896",
+    "ev-1a9e0ebeb310",
+    "ev-d470c4df7dec",
+    "ev-5e7b651ef0e9",
+    "ev-651bca709afc"
   ]
 }

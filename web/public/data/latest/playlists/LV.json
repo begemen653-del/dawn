@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "LV",
   "title": "Latvia",
   "eventIds": [
-    "ev-0b803c0e13e1",
-    "ev-cd0e12d08a6e"
+    "ev-f895d740eade"
   ]
 }

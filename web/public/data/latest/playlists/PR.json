@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "PR",
   "title": "Puerto Rico",
   "eventIds": [
-    "ev-39717d90de48"
+    "ev-321ffd522456",
+    "ev-002f33f44aed"
   ]
 }

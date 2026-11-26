@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "DZ",
   "title": "Algeria",
   "eventIds": [
-    "ev-ead132e86c5d",
-    "ev-6920bcf64d11",
-    "ev-3776ff8483d3"
+    "ev-5ecb4882b4ff",
+    "ev-a250a2ae50d1"
   ]
 }

@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "BZ",
   "title": "Belize",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Belize in the last 24 hours."
+  "eventIds": [
+    "ev-fa3dda22254f",
+    "ev-bf239c188808",
+    "ev-361363bd4132"
+  ]
 }

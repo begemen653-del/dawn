@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "BR",
   "title": "Brazil",
   "eventIds": [
-    "ev-054303972b12",
-    "ev-b0f55a37a135",
-    "ev-8dadb7628e42",
-    "ev-43c19673525d",
-    "ev-719c74ef11e2",
-    "ev-0c601fd6da04"
+    "ev-206fd34ca141",
+    "ev-31d4bbf52ac9",
+    "ev-180049396d79",
+    "ev-ded570ac743c",
+    "ev-8df00b9e0360",
+    "ev-bc3a286ee447",
+    "ev-090baf242de3"
   ]
 }

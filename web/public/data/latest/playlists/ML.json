@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "ML",
   "title": "Mali",
-  "eventIds": [
-    "ev-703ddcecb9d2"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Mali in the last 24 hours."
 }

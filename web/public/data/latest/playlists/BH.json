@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "BH",
   "title": "Bahrain",
   "eventIds": [
-    "ev-f1bb7678a39a",
-    "ev-406f163c9b44"
+    "ev-fa9b08ff77ac"
   ]
 }

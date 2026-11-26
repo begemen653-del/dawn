@@ -1,14 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "CA",
   "title": "Canada",
   "eventIds": [
-    "ev-840728b2b36d",
-    "ev-e7b3ada4a06e",
-    "ev-e1bb2655a619",
-    "ev-ced17b00f15b",
-    "ev-9061b5e1103d",
-    "ev-cf87cf867ba0"
+    "ev-a5540a51d6c5",
+    "ev-4f14bd8f99c5",
+    "ev-19264c9cbe7c",
+    "ev-56d92164203b",
+    "ev-933b5a063ca2"
   ]
 }

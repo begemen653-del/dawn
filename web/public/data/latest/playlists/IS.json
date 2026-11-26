@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "IS",
   "title": "Iceland",
-  "eventIds": [
-    "ev-b4d81328f957",
-    "ev-c4cdc5a59a03"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Iceland in the last 24 hours."
 }

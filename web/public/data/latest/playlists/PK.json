@@ -1,13 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "PK",
   "title": "Pakistan",
   "eventIds": [
-    "ev-a01f7c281eb4",
-    "ev-44b97762e669",
-    "ev-569102f7fac8",
-    "ev-09008af216c3",
-    "ev-449d62b9a238"
+    "ev-b77d41fc3a3e",
+    "ev-34d9b3a2e4cd",
+    "ev-ba219662b3c2"
   ]
 }

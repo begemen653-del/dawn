@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "ZW",
   "title": "Zimbabwe",
   "eventIds": [
-    "ev-1e600baf2c3e"
+    "ev-55254d40c66e",
+    "ev-f79c9d9e199e",
+    "ev-8b337b502292"
   ]
 }

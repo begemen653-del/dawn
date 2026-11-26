@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "LS",
   "title": "Lesotho",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Lesotho in the last 24 hours."
+  "eventIds": [
+    "ev-c6bf91cf2721"
+  ]
 }

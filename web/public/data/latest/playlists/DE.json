@@ -1,16 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "DE",
   "title": "Germany",
   "eventIds": [
-    "ev-f85a947725ea",
-    "ev-c6f47e82efa3",
-    "ev-0e0e1f49a7b4",
-    "ev-c5b55f0172b0",
-    "ev-5bd8605cfcc4",
-    "ev-d0e12b545592",
-    "ev-c6a2bb708f09",
-    "ev-08ee8d50211e"
+    "ev-48ee2654ab1d",
+    "ev-7e7c679990b2",
+    "ev-930b23099741",
+    "ev-c01e155f1cf5",
+    "ev-f2069fd5d1a7",
+    "ev-23c22b4b0668"
   ]
 }

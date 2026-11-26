@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "scope": "GE",
   "title": "Georgia",
   "eventIds": [
-    "ev-31e6c9949643",
-    "ev-58cbfdde830b",
-    "ev-685175469b1d"
+    "ev-87b005643d1b",
+    "ev-759d6cbf5bfd",
+    "ev-8a9946aea5a0"
   ]
 }
