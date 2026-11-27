@@ -4,12 +4,13 @@
   "scope": "global",
   "title": "Global",
   "eventIds": [
+    "ev-0b293dbf31ed",
+    "ev-5fc50a793754",
+    "ev-4553f3d4aa65",
+    "ev-63d7238ea5e9",
+    "ev-239858b1304b",
     "ev-ae1798a9e16f",
     "ev-158df1262e52",
-    "ev-943499d633c3",
-    "ev-87b005643d1b",
-    "ev-c60fe1b2ba42",
-    "ev-6edb0111fe6e",
-    "ev-379ef1aab887"
+    "ev-943499d633c3"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-27",
-  "generatedAt": "2026-11-27T03:31:19.045Z",
+  "generatedAt": "2026-11-27T17:01:27.322Z",
   "sample": false,
   "scopes": [
     {
       "scope": "global",
       "file": "playlists/global.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "europe",
@@ -17,12 +17,12 @@
     {
       "scope": "asia",
       "file": "playlists/asia.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "north-america",
       "file": "playlists/north-america.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "south-america",
@@ -32,7 +32,7 @@
     {
       "scope": "middle-east",
       "file": "playlists/middle-east.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "africa",
@@ -232,7 +232,7 @@
     {
       "scope": "CA",
       "file": "playlists/CA.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "CV",
@@ -427,7 +427,7 @@
     {
       "scope": "DE",
       "file": "playlists/DE.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "GH",
@@ -827,7 +827,7 @@
     {
       "scope": "PK",
       "file": "playlists/PK.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "PW",
@@ -897,7 +897,7 @@
     {
       "scope": "RU",
       "file": "playlists/RU.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "RW",
@@ -957,7 +957,7 @@
     {
       "scope": "SA",
       "file": "playlists/SA.json",
-      "count": 4
+      "count": 5
     },
     {
       "scope": "SN",
@@ -1102,7 +1102,7 @@
     {
       "scope": "TR",
       "file": "playlists/TR.json",
-      "count": 7
+      "count": 8
     },
     {
       "scope": "TM",
@@ -1127,7 +1127,7 @@
     {
       "scope": "UA",
       "file": "playlists/UA.json",
-      "count": 4
+      "count": 5
     },
     {
       "scope": "AE",
@@ -1142,7 +1142,7 @@
     {
       "scope": "US",
       "file": "playlists/US.json",
-      "count": 6
+      "count": 7
     },
     {
       "scope": "VI",

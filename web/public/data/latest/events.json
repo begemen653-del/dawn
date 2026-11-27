@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-27",
-  "generatedAt": "2026-11-27T03:31:19.045Z",
+  "generatedAt": "2026-11-27T17:01:27.322Z",
   "events": [
     {
       "id": "ev-ae1798a9e16f",
@@ -350,6 +350,132 @@
       }
     },
     {
+      "id": "ev-0b293dbf31ed",
+      "headline": "Indian opposition parties slam proposed Delimitation Bill",
+      "summary": "Political leaders in India have criticized the Centre's proposed delimitation legislation ahead of a special Parliament session. Opposition figures argue the move is a mistake, while government critics accuse authorities of misleading the public about the session's agenda.",
+      "whyItMatters": "The proposed delimitation and legislative changes could reshape parliamentary constituencies and affect political representation across the country.",
+      "topic": "politics",
+      "time": "2026-11-27T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "New Delhi",
+          "at": [
+            77.2,
+            28.6
+          ],
+          "country": "IN"
+        },
+        {
+          "name": "Uttar Pradesh",
+          "at": [
+            80.75,
+            27.25
+          ],
+          "country": "IN"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "webindia123.com",
+          "title": "\"Biggest mistake in BJP's politics\": Akhilesh Yadav slams delimitation bill ahead of Parliament session",
+          "url": "https://news.webindia123.com/news/Articles/India/20261127/4525139.html",
+          "publishedAt": "2026-11-27T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aninews.in",
+          "title": "CPI opposes Delimitation Bill: MP P Sandosh Kumar ahead of Parliament session",
+          "url": "https://aninews.in/news/national/politics/cpi-opposes-delimitation-bill-mp-p-sandosh-kumar-ahead-of-parliament-session20261127122631",
+          "publishedAt": "2026-11-27T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bignewsnetwork.com",
+          "title": "Oppn tightens ranks ahead of delimitation push: Congress, NCP-SP summon MPs ahead of Parliament session",
+          "url": "https://bignewsnetwork.com/news/279464802/oppn-tightens-ranks-ahead-of-delimitation-push-congress-ncp-sp-summon-mps-ahead-of-parliament-session",
+          "publishedAt": "2026-11-27T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "deccanchronicle.com",
+          "title": "YSRCP To Support Delimitation Bill: Sources",
+          "url": "https://deccanchronicle.com/southern-states/andhra-pradesh/ysrcp-to-support-delimitation-bill-sources-2008424",
+          "publishedAt": "2026-11-27T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "orissapost.com",
+          "title": "Union Cabinet clears fresh delimitation-linked women quota Bill",
+          "url": "https://orissapost.com/union-cabinet-clears-fresh-delimitation-linked-women-quota-bill",
+          "publishedAt": "2026-11-27T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 87.5,
+      "countries": [
+        "IN"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 77.2,
+          "lat": 28.6,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "IN",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              77.2,
+              28.6
+            ],
+            "label": "New Delhi",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              80.75,
+              27.25
+            ],
+            "label": "Uttar Pradesh",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Parliament previously passed the Nari Shakti Vandan Adhiniyam in September 2023 to provide one-third reservation for women in legislative bodies.",
+        "keyPlayers": [
+          {
+            "name": "Akhilesh Yadav",
+            "role": "Samajwadi Party Chief"
+          },
+          {
+            "name": "Jairam Ramesh",
+            "role": "Congress General Secretary"
+          }
+        ],
+        "whatNext": "Parties are preparing for the upcoming special session of Parliament where the legislation is expected to be addressed.",
+        "timeline": [
+          {
+            "date": "September 2023",
+            "label": "Women's reservation bill passed by Parliament"
+          }
+        ],
+        "simpler": "Indian opposition parties are speaking out against a new delimitation bill proposed by the government ahead of a special session of Parliament."
+      }
+    },
+    {
       "id": "ev-943499d633c3",
       "headline": "Elon Musk pledges two SpaceX shares for every US child",
       "summary": "Elon Musk announced that every child in the United States will receive two shares in SpaceX, split between a company contribution and a personal donation from Musk. The initiative follows the Trump Account program designed to give American minors a stake in the stock market.",
@@ -473,6 +599,566 @@
           }
         ],
         "simpler": "Tech billionaire Elon Musk says he and his company SpaceX will give two shares of stock to every child in the United States."
+      }
+    },
+    {
+      "id": "ev-5fc50a793754",
+      "headline": "Pakistan hosts talks under trilateral defense pact with Saudi Arabia and Turkey",
+      "summary": "Pakistan is hosting senior diplomats, defense officials, and military leaders from Saudi Arabia and Turkey for talks under a trilateral defense pact. The agreement treats an attack on any member as an attack on all three, with discussions focusing on regional developments and security cooperation.",
+      "whyItMatters": "The pact aims to strengthen strategic security and deter threats amid ongoing regional tensions, including Houthi rebel attacks on Saudi Arabia.",
+      "topic": "conflict",
+      "time": "2026-11-27T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Islamabad",
+          "at": [
+            73.1667,
+            33.7
+          ],
+          "country": "PK"
+        },
+        {
+          "name": "Riyadh",
+          "at": [
+            46.7728,
+            24.6408
+          ],
+          "country": "SA"
+        },
+        {
+          "name": "Ankara",
+          "at": [
+            32.8644,
+            39.9272
+          ],
+          "country": "TR"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Pakistan set to host talks with Saudi Arabia, Turkey under trilateral defence pact",
+          "url": "https://thehindu.com/news/international/pakistan-set-to-host-talks-with-saudi-arabia-turkey-under-trilateral-defence-pact/article71750047.ece",
+          "publishedAt": "2026-11-27T10:21:47.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thewestmorlandgazette.co.uk",
+          "title": "Pakistan to host talks following ratification of trilateral defence pact",
+          "url": "https://thewestmorlandgazette.co.uk/news/national/26768771.pakistan-host-talks-following-ratification-trilateral-defence-pact",
+          "publishedAt": "2026-11-27T12:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "dailyexcelsior.com",
+          "title": "Pakistan set to host talks with Saudi Arabia, Turkiye under trilateral defence pact",
+          "url": "https://dailyexcelsior.com/pakistan-set-to-host-talks-with-saudi-arabia-turkiye-under-trilateral-defence-pact",
+          "publishedAt": "2026-11-27T08:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "netscape.com",
+          "title": "Pakistan set to host talks with Saudi Arabia and Turkey under trilateral defense pact",
+          "url": "https://isp.netscape.com/news/world/story/0001/20261127/6c17e4827e5aef3e69f78cdb01d597dc",
+          "publishedAt": "2026-11-27T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wgauradio.com",
+          "title": "Pakistan to host talks with Saudi Arabia and Turkey under defense pact",
+          "url": "https://wgauradio.com/news/world/pakistan-set-host/WQIIFTN6SAYZ3OTX3TB6V6R7PU",
+          "publishedAt": "2026-11-27T11:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 82.9,
+      "countries": [
+        "PK",
+        "SA",
+        "TR"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 73.1667,
+          "lat": 33.7,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "PK",
+            "tone": "alert"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "SA",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "TR",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              73.1667,
+              33.7
+            ],
+            "label": "Islamabad",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              46.7728,
+              24.6408
+            ],
+            "label": "Riyadh",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              32.8644,
+              39.9272
+            ],
+            "label": "Ankara",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The trilateral defense agreement was signed in Mecca in August and has since been ratified by Turkey's parliament and President Recep Tayyip Erdogan.",
+        "keyPlayers": [
+          {
+            "name": "Recep Tayyip Erdogan",
+            "role": "Turkish President"
+          },
+          {
+            "name": "Khawaja Muhammad Asif",
+            "role": "Pakistan Defence Minister"
+          },
+          {
+            "name": "Asim Munir",
+            "role": "Pakistan Army Chief"
+          }
+        ],
+        "whatNext": "The three countries are set to continue discussing ways to expand military cooperation, share intelligence, and strengthen defense industry ties.",
+        "timeline": [
+          {
+            "date": "August 2026",
+            "label": "Trilateral defense pact signed in Mecca"
+          },
+          {
+            "date": "27 November 2026",
+            "label": "Trilateral talks hosted in Islamabad"
+          }
+        ],
+        "simpler": "Pakistan, Saudi Arabia, and Turkey are holding defense talks in Islamabad under a pact where an attack on one is treated as an attack on all three."
+      }
+    },
+    {
+      "id": "ev-4553f3d4aa65",
+      "headline": "Canada's top court upholds most of Quebec's religious symbols law",
+      "summary": "Canada’s Supreme Court has largely upheld Quebec's secularism law, Bill 21, which bars public sector workers from wearing conspicuous religious symbols. In a 6-1 ruling, the court found that Quebec was permitted to shield the law from most charter challenges using the notwithstanding clause.",
+      "whyItMatters": "The ruling balances the power of provincial governments to override rights with protections for minorities, though civil liberties groups strongly criticized the outcome.",
+      "topic": "politics",
+      "time": "2026-11-27T16:53:46.000Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Quebec",
+          "at": [
+            -72,
+            47.5
+          ],
+          "country": "CA"
+        },
+        {
+          "name": "Ottawa",
+          "at": [
+            -75.7,
+            45.4167
+          ],
+          "country": "CA"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+          "url": "https://theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+          "publishedAt": "2026-11-27T16:13:07.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+          "url": "https://bbc.co.uk/news/articles/cq3dgpy9lem3o",
+          "publishedAt": "2026-11-27T16:53:46.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Canada’s top court largely upholds Quebec’s religious symbols ban",
+          "url": "https://aljazeera.com/news/2026/11/27/canadas-top-court-largely-upholds-quebecs-religious-symbols-ban?traffic_source=rss",
+          "publishedAt": "2026-11-27T15:15:36.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "niagarafallsreview.ca",
+          "title": "Supreme Court upholds Quebec's secularism law",
+          "url": "https://niagarafallsreview.ca/politics/federal/supreme-court-upholds-quebec-s-use-of-notwithstanding-clause-for-secularism-law/article_9bc15dd4-4c21-52b8-9da8-2971bf7a41f8.html",
+          "publishedAt": "2026-11-27T16:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "chroniclejournal.com",
+          "title": "Supreme Court ruling on Quebec's secularism law expected Friday morning",
+          "url": "https://chroniclejournal.com/news/national/supreme-court-ruling-on-quebecs-secularism-law-expected-friday-morning/article_8ca210e1-19cb-5f87-b091-6c438d9c9e1d.html",
+          "publishedAt": "2026-11-27T10:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 82.2,
+      "countries": [
+        "CA"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -72,
+          "lat": 47.5,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "CA",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -72,
+              47.5
+            ],
+            "label": "Quebec",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -75.7,
+              45.4167
+            ],
+            "label": "Ottawa",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Quebec passed Bill 21 in 2019 using Canada's notwithstanding clause, leading to years of legal challenges from affected teachers and civil rights groups.",
+        "keyPlayers": [
+          {
+            "name": "Richard Wagner",
+            "role": "Chief Justice of Canada"
+          },
+          {
+            "name": "Mark Carney",
+            "role": "Prime Minister of Canada"
+          },
+          {
+            "name": "Stephen Brown",
+            "role": "National Council of Canadian Muslims Chief Executive"
+          }
+        ],
+        "whatNext": "Federal and provincial legislatures will study the implications of the landmark Supreme Court decision.",
+        "timeline": [
+          {
+            "date": "2019",
+            "label": "Quebec passes Bill 21"
+          },
+          {
+            "date": "27 November 2026",
+            "label": "Supreme Court releases its ruling"
+          }
+        ],
+        "simpler": "Canada's highest court has mostly upheld a Quebec law that stops public workers from wearing religious symbols like hijabs and crosses."
+      }
+    },
+    {
+      "id": "ev-63d7238ea5e9",
+      "headline": "Massive U.S. storm knocks out power for nearly a million and disrupts holiday travel",
+      "summary": "A large storm stretching from the Midwest to Manhattan struck the U.S. on Thanksgiving, leaving nearly a million customers without power and causing widespread travel delays and cancellations. Heavy rain, snow, and flooding battered both coasts, leading to vehicle rescues and the postponement of Macy's Thanksgiving Day parade.",
+      "whyItMatters": "The severe weather disrupted travel for millions of holidaygoers and left hundreds of thousands without electricity during one of the busiest travel periods of the year.",
+      "topic": "disaster",
+      "time": "2026-11-27T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "United States",
+          "at": [
+            -97.483,
+            39.538
+          ],
+          "country": "US"
+        },
+        {
+          "name": "New York",
+          "at": [
+            -73.982,
+            40.752
+          ],
+          "country": "US"
+        },
+        {
+          "name": "New Jersey",
+          "at": [
+            -74.5089,
+            40.314
+          ],
+          "country": "US"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "NPR",
+          "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+          "url": "https://npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+          "publishedAt": "2026-11-27T10:59:36.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "yakimaherald.com",
+          "title": "Heavy rain, wind and flooding hit much of the US on Thanksgiving",
+          "url": "https://yakimaherald.com/news/nation_and_world/nation/heavy-rain-wind-and-flooding-hit-much-of-the-us-on-thanksgiving/article_7f646fcc-fe52-548c-9f2a-6da666a5c491.html",
+          "publishedAt": "2026-11-27T05:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wboi.org",
+          "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+          "url": "https://wboi.org/npr-news/2026-11-27/from-thanksgiving-blackouts-to-black-friday-a-holiday-hit-by-wild-weather-and-economic-woes",
+          "publishedAt": "2026-11-27T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "theitem.com",
+          "title": "Heavy rain winds down as power remains out for hundreds of thousands on the East Coast",
+          "url": "https://theitem.com/stories/heavy-rain-winds-down-as-power-remains-out-for-hundreds-of-thousands-on-the-east-coast,449119",
+          "publishedAt": "2026-11-27T15:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "ktep.org",
+          "title": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
+          "url": "https://ktep.org/u-s-news/2026-11-27/thanksgiving-storm-batters-east-coast-and-black-friday-sales-to-hit-record-levels",
+          "publishedAt": "2026-11-27T16:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 81.4,
+      "countries": [
+        "US"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -97.483,
+          "lat": 39.538,
+          "zoom": 2.7
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "alert"
+          },
+          {
+            "type": "area",
+            "id": "area",
+            "center": [
+              -97.483,
+              39.538
+            ],
+            "radiusKm": 1000,
+            "tone": "alert"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -73.982,
+              40.752
+            ],
+            "label": "New York",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -74.5089,
+              40.314
+            ],
+            "label": "New Jersey",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "The storm system developed during Thanksgiving week, bringing heavy rain, high winds, snow, and coastal flooding across the Midwest and East Coast.",
+        "keyPlayers": [
+          {
+            "name": "Zohran Mamdani",
+            "role": "Mayor of New York City"
+          }
+        ],
+        "whatNext": "More coastal flooding was forecast, with the National Weather Service issuing warnings for the Washington D.C. area.",
+        "timeline": [
+          {
+            "date": "25 November 2026",
+            "label": "High surf and tides damage structures in Pacifica, California"
+          },
+          {
+            "date": "26 November 2026",
+            "label": "Storm hits on Thanksgiving, causing blackouts and travel disruptions"
+          },
+          {
+            "date": "27 November 2026",
+            "label": "Power partially restored as warnings continue"
+          }
+        ],
+        "simpler": "A massive storm hit the United States on Thanksgiving, bringing heavy rain, snow, and strong winds that knocked out power to nearly a million people and delayed holiday travel."
+      }
+    },
+    {
+      "id": "ev-239858b1304b",
+      "headline": "UK pensions department takes systems offline following serious cyber incident",
+      "summary": "The UK Department for Work and Pensions took several online systems offline as a precaution after detecting a cyber incident. Work and Pensions Secretary Pat McFadden stated there is no evidence so far that any personal details were compromised, and regular benefit and pension payments remain unaffected.",
+      "whyItMatters": "The outage prevented people from checking state pensions, applying for disability benefits, or claiming universal credit online, raising questions about public service digital security.",
+      "topic": "technology",
+      "time": "2026-11-27T16:45:00Z",
+      "developing": true,
+      "locations": [
+        {
+          "name": "United Kingdom",
+          "at": [
+            -2.116,
+            54.403
+          ],
+          "country": "GB"
+        },
+        {
+          "name": "Gatwick",
+          "at": [
+            -0.183333,
+            51.1667
+          ],
+          "country": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "UK pensions department hit by ‘serious cyber incident’, minister says",
+          "url": "https://theguardian.com/politics/live/2026/nov/27/department-work-pensions-offline-cyber-incident-rosebank-slapps-latest-news-updates",
+          "publishedAt": "2026-11-27T16:33:28.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "greenocktelegraph.co.uk",
+          "title": "DWP removes some online services amid cyber incident",
+          "url": "https://greenocktelegraph.co.uk/news/national/26767749.dwp-removes-online-services-amid-cyber-incident",
+          "publishedAt": "2026-11-27T11:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "bristolpost.co.uk",
+          "title": "New update on Friday DWP payments after cyber incident",
+          "url": "https://bristolpost.co.uk/news/uk-world-news/new-update-friday-dwp-payments-11258740",
+          "publishedAt": "2026-11-27T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "nwemail.co.uk",
+          "title": "DWP takes online services offline after cyber incident",
+          "url": "https://nwemail.co.uk/news/26767910.dwp-cyber-incident-takes-services-offline",
+          "publishedAt": "2026-11-27T10:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "cityam.com",
+          "title": "DWP takes services offline after cyber incident",
+          "url": "https://cityam.com/dwp-takes-services-offline-after-cyber-incident",
+          "publishedAt": "2026-11-27T16:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 80.6,
+      "countries": [
+        "GB"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -2.116,
+          "lat": 54.403,
+          "zoom": 5
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "GB",
+            "tone": "focus"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -0.183333,
+              51.1667
+            ],
+            "label": "Gatwick",
+            "emphasis": "primary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Unusual activity was detected on DWP systems, prompting officials to disable certain online services as a precautionary measure.",
+        "keyPlayers": [
+          {
+            "name": "Pat McFadden",
+            "role": "Work and Pensions Secretary"
+          }
+        ],
+        "whatNext": "The department is working with the National Cyber Security Centre to investigate the incident and bring services back online.",
+        "timeline": [
+          {
+            "date": "27 November 2026",
+            "label": "DWP services taken offline and officials confirm investigation with NCSC"
+          }
+        ],
+        "simpler": "The UK government department that handles pensions and benefits had to shut down some online services after a serious cyber incident."
       }
     },
     {
@@ -631,6 +1317,160 @@
           }
         ],
         "simpler": "During a football game in Georgia between Besiktas and Hapoel Beer-Sheva, police used pepper spray on Besiktas fans over banners supporting Palestine. The game had to be stopped for a while before continuing, and Besiktas won 2-1."
+      }
+    },
+    {
+      "id": "ev-797d55aee5a8",
+      "headline": "EU budget talks stall, putting critical Ukraine loan in limbo",
+      "summary": "European Union leaders failed to reach an agreement on the 2028-2034 budget after more than 12 hours of negotiations, leaving a vital loan for Ukraine caught in the deadlock. European Council President António Costa announced that member states remain divided over spending levels and contributions, with plans to resume talks in three weeks.",
+      "whyItMatters": "The failure to finalize the budget delays financial support for Ukraine and highlights deep political divisions within the European Union over spending priorities.",
+      "topic": "economy",
+      "time": "2026-11-27T15:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "Brussels",
+          "at": [
+            4.33333,
+            50.8333
+          ],
+          "country": "BE"
+        },
+        {
+          "name": "Kyiv",
+          "at": [
+            30.5167,
+            50.4333
+          ],
+          "country": "UA"
+        },
+        {
+          "name": "Berlin",
+          "at": [
+            13.4,
+            52.5167
+          ],
+          "country": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "naharnet.com",
+          "title": "Ukraine loan is in limbo after EU budget talks stall",
+          "url": "https://naharnet.com/stories/en/324063-ukraine-loan-is-in-limbo-after-eu-budget-talks-stall",
+          "publishedAt": "2026-11-27T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "thegazette.com",
+          "title": "A Ukraine loan is in limbo after EU budget talks stall. Leaders will try again in 3 weeks",
+          "url": "https://thegazette.com/news/world/a-ukraine-loan-is-in-limbo-after-eu-budget-talks-stall-leaders-will-try-again/article_939ffc8c-36e5-520e-b581-9048922f5229.html",
+          "publishedAt": "2026-11-27T14:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "aninews.in",
+          "title": "EU divided over 45 billion euro Ukraine loan as budget talks move to December summit",
+          "url": "https://aninews.in/news/world/europe/eu-divided-over-45-billion-euro-ukraine-loan-as-budget-talks-move-to-december-summit20261127121917",
+          "publishedAt": "2026-11-27T07:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "moneycontrol.com",
+          "title": "EU leaders split over budget spending and USD 49 billion loan to Ukraine",
+          "url": "https://moneycontrol.com/world/eu-leaders-split-over-budget-spending-and-usd-49-billion-loan-to-ukraine-article-14090003.html",
+          "publishedAt": "2026-11-27T05:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "novinite.com",
+          "title": "EU Budget Summit Ends in Deadlock as Leaders Postpone Deal Until December",
+          "url": "https://novinite.com/articles/241820/EU+Budget+Summit+Ends+in+Deadlock+as+Leaders+Postpone+Deal+Until+December",
+          "publishedAt": "2026-11-27T09:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 74,
+      "countries": [
+        "UA",
+        "FR",
+        "DE"
+      ],
+      "scene": {
+        "camera": {
+          "lng": 4.33333,
+          "lat": 50.8333,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "UA",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "FR",
+            "tone": "neutral"
+          },
+          {
+            "type": "highlight",
+            "id": "country-2",
+            "country": "DE",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              4.33333,
+              50.8333
+            ],
+            "label": "Brussels",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              30.5167,
+              50.4333
+            ],
+            "label": "Kyiv",
+            "emphasis": "secondary"
+          },
+          {
+            "type": "marker",
+            "id": "place-2",
+            "at": [
+              13.4,
+              52.5167
+            ],
+            "label": "Berlin",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [],
+      "deeper": {
+        "background": "Leaders convened for high-stakes budget summits to determine the bloc's spending framework and funding packages for the upcoming years.",
+        "keyPlayers": [
+          {
+            "name": "António Costa",
+            "role": "European Council President"
+          }
+        ],
+        "whatNext": "European leaders will try again to reach a budget agreement in three weeks, aiming to finalize a deal before the end of the year.",
+        "timeline": [
+          {
+            "date": "27 November 2026",
+            "label": "EU budget summit ends in deadlock after failing to reach an agreement"
+          }
+        ],
+        "simpler": "EU leaders failed to agree on a new multi-year budget after long talks, which means a big financial loan for Ukraine is temporarily delayed."
       }
     },
     {
@@ -1364,6 +2204,175 @@
           }
         ],
         "simpler": "Spain's leading political candidates debated their platforms on television in the final days before Sunday's general election."
+      }
+    },
+    {
+      "id": "ev-5ad8f9b3e40d",
+      "headline": "Strobe Talbott, former Deputy Secretary of State and Time reporter, dies at 80",
+      "summary": "Strobe Talbott, who served as Deputy Secretary of State under President Bill Clinton and spent decades reporting for Time magazine, has died at the age of 80. His son confirmed that he passed away peacefully following a long illness at his home in East Hampton, New York. Talbott later led the Brookings Institution as president from 2002 to 2017.",
+      "whyItMatters": "Talbott was a key architect of U.S. policy toward Russia and former Soviet states during the Clinton administration and helped shape diplomatic relations.",
+      "topic": "politics",
+      "time": "2026-11-27T16:45:00Z",
+      "developing": false,
+      "locations": [
+        {
+          "name": "East Hampton",
+          "at": [
+            -72.1848,
+            40.9634
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Washington",
+          "at": [
+            -77.0364,
+            38.8951
+          ],
+          "country": "US"
+        },
+        {
+          "name": "Russia",
+          "at": [
+            44.686,
+            58.249
+          ],
+          "country": "RU"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Strobe Talbott, former Time magazine reporter and Deputy Secretary of State, has died",
+          "url": "https://thehindu.com/news/international/strobe-talbott-former-time-magazine-reporter-and-deputy-secretary-of-state-has-died/article71748303.ece",
+          "publishedAt": "2026-11-27T04:58:12.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "NPR",
+          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+          "url": "https://npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+          "publishedAt": "2026-11-27T06:12:45.000Z",
+          "language": "en"
+        },
+        {
+          "outlet": "wmuk.org",
+          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+          "url": "https://wmuk.org/npr-news/2026-11-27/strobe-talbott-former-time-magazine-reporter-and-deputy-secretary-of-state-has-died",
+          "publishedAt": "2026-11-27T06:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "post-gazette.com",
+          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, dies at 80",
+          "url": "https://post-gazette.com/obituaries/strobe-talbott-time-magazine-clinton-VMEDVZPG6ZMWYOF5TGBGIPSGVU",
+          "publishedAt": "2026-11-27T03:45:00Z",
+          "language": "en"
+        },
+        {
+          "outlet": "cp24.com",
+          "title": "Strobe Talbott has died",
+          "url": "https://cp24.com/news/world/2026/11/26/strobe-talbott-former-time-magazine-reporter-and-deputy-secretary-of-state-has-died",
+          "publishedAt": "2026-11-27T04:45:00Z",
+          "language": "en"
+        }
+      ],
+      "aiGenerated": true,
+      "importance": 62.2,
+      "countries": [
+        "US",
+        "RU"
+      ],
+      "scene": {
+        "camera": {
+          "lng": -72.1848,
+          "lat": 40.9634,
+          "zoom": 7.2
+        },
+        "elements": [
+          {
+            "type": "highlight",
+            "id": "country-0",
+            "country": "US",
+            "tone": "focus"
+          },
+          {
+            "type": "highlight",
+            "id": "country-1",
+            "country": "RU",
+            "tone": "neutral"
+          },
+          {
+            "type": "marker",
+            "id": "place-0",
+            "at": [
+              -72.1848,
+              40.9634
+            ],
+            "label": "East Hampton",
+            "emphasis": "primary"
+          },
+          {
+            "type": "marker",
+            "id": "place-1",
+            "at": [
+              -77.0364,
+              38.8951
+            ],
+            "label": "Washington",
+            "emphasis": "secondary"
+          }
+        ]
+      },
+      "images": [
+        {
+          "id": "commons-28359031",
+          "kind": "photo",
+          "thumbUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Capitol_west_side.JPG/500px-US_Capitol_west_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Capitol_west_side.JPG",
+          "provider": "wikimedia-commons",
+          "author": "Martin Falbisoner",
+          "license": {
+            "id": "cc-by-sa",
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          },
+          "alt": "US Capitol , west side",
+          "illustrative": true
+        }
+      ],
+      "deeper": {
+        "background": "Talbott began his career as a journalist for Time magazine, where he gained early recognition for translating leaked memoirs of Nikita Khrushchev before focusing on Soviet-American relations.",
+        "keyPlayers": [
+          {
+            "name": "Strobe Talbott",
+            "role": "Former U.S. Deputy Secretary of State and Time reporter"
+          },
+          {
+            "name": "Bill Clinton",
+            "role": "Former U.S. President"
+          },
+          {
+            "name": "Devin Talbott",
+            "role": "Son of Strobe Talbott"
+          }
+        ],
+        "whatNext": "The sources don't say.",
+        "timeline": [
+          {
+            "date": "1994",
+            "label": "Joined the U.S. State Department as Deputy Secretary of State"
+          },
+          {
+            "date": "2002 to 2017",
+            "label": "Served as president of the Brookings Institution"
+          },
+          {
+            "date": "November 26, 2026",
+            "label": "Passed away at age 80"
+          }
+        ],
+        "simpler": "Strobe Talbott, a former U.S. diplomat and journalist who helped manage relations with Russia, has died at 80."
       }
     },
     {
@@ -8241,137 +9250,6 @@
       }
     },
     {
-      "id": "ev-f84105faa5fe",
-      "headline": "The Diana Award charity placed into administration",
-      "summary": "The Diana Award charity, established in memory of the late Princess of Wales, has entered administration after independent advice showed it could no longer meet its obligations. Prince William expressed his sadness over the decision and praised the dedication of those involved with the organization.",
-      "whyItMatters": "The closure ends a 27-year-old organization that has recognized more than 50,000 young people for community and social contributions.",
-      "topic": "society",
-      "time": "2026-11-27T02:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Sussex",
-          "at": [
-            -0.083333,
-            50.9167
-          ],
-          "country": "GB"
-        },
-        {
-          "name": "Paris",
-          "at": [
-            2.33333,
-            48.8667
-          ],
-          "country": "FR"
-        },
-        {
-          "name": "London",
-          "at": [
-            -0.116667,
-            51.5
-          ],
-          "country": "GB"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "readingchronicle.co.uk",
-          "title": "Diana Award charity placed into administration",
-          "url": "https://readingchronicle.co.uk/news/national/26765452.diana-award-charity-placed-administration",
-          "publishedAt": "2026-11-26T13:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "perthnow.com.au",
-          "title": "Diana Award charity in UK placed into administration",
-          "url": "https://perthnow.com.au/news/human-interest/diana-award-charity-in-uk-placed-into-administration-c-23218916",
-          "publishedAt": "2026-11-26T14:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "harwichandmanningtreestandard.co.uk",
-          "title": "William expresses sadness as Diana Award charity goes into administration",
-          "url": "https://harwichandmanningtreestandard.co.uk/news/national/26765452.william-expresses-sadness-diana-award-charity-goes-administration",
-          "publishedAt": "2026-11-26T14:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "lbc.co.uk",
-          "title": "Princess Diana charity placed into administration after 27 years",
-          "url": "https://lbc.co.uk/article/princess-diana-charity-placed-into-administration-after-27-years-5HjdnbP_2",
-          "publishedAt": "2026-11-26T13:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "indiatimes.com",
-          "title": "Prince William shares emotional message as The Diana Award charity, founded in memory of Princess Diana, enters administration after 27 years: 'This is not the outcome any of us wanted'",
-          "url": "https://timesofindia.indiatimes.com/world/uk/prince-william-shares-emotional-message-as-the-diana-award-charity-founded-in-memory-of-princess-diana-enters-administration-after-27-years-of-supporting-young-changemakers/articleshow/136197552.cms",
-          "publishedAt": "2026-11-26T17:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 39.3,
-      "countries": [
-        "GB",
-        "FR"
-      ],
-      "scene": {
-        "camera": {
-          "lng": -0.083333,
-          "lat": 50.9167,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "GB",
-            "tone": "focus"
-          },
-          {
-            "type": "highlight",
-            "id": "country-1",
-            "country": "FR",
-            "tone": "neutral"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              -0.083333,
-              50.9167
-            ],
-            "label": "Sussex",
-            "emphasis": "primary"
-          },
-          {
-            "type": "marker",
-            "id": "place-1",
-            "at": [
-              2.33333,
-              48.8667
-            ],
-            "label": "Paris",
-            "emphasis": "secondary"
-          },
-          {
-            "type": "marker",
-            "id": "place-2",
-            "at": [
-              -0.116667,
-              51.5
-            ],
-            "label": "London",
-            "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
       "id": "ev-f9c011b9b460",
       "headline": "Guinea-Bissau military junta postpones elections by two years",
       "summary": "Guinea-Bissau's military government has delayed presidential and legislative elections by two years, setting them for November 26, 2028. Transitional President Horta Inta-a cited a lack of technical, material, and financial conditions to organize a credible vote.",
@@ -10073,94 +10951,6 @@
             ],
             "label": "Cologne",
             "emphasis": "secondary"
-          }
-        ]
-      },
-      "images": [],
-      "deeper": null
-    },
-    {
-      "id": "ev-cee19d985f27",
-      "headline": "Tata Trusts to Challenge Chandrasekaran Reappointment in Court",
-      "summary": "The Sir Dorabji Tata Trust and the Ratan Tata Trust are filing suits in the Bombay High Court against Tata Sons and six of its directors. They are challenging the reappointment of N Chandrasekaran as executive chairman and seeking Rs 65 crore in damages.",
-      "whyItMatters": "The legal battle highlights internal governance disputes at one of the country's largest business groups regarding board decisions and voting rights.",
-      "topic": "business",
-      "time": "2026-11-26T20:15:00Z",
-      "developing": false,
-      "locations": [
-        {
-          "name": "Mumbai",
-          "at": [
-            72.8258,
-            18.975
-          ],
-          "country": "IN"
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "dailypioneer.com",
-          "title": "Tata Trusts to move Bombay HC over Chandrasekaran reappointment",
-          "url": "https://dailypioneer.com/law-justice/tata-trusts-to-move-bombay-hc-over-chandrasekaran-reappointment",
-          "publishedAt": "2026-11-26T20:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "ianslive.in",
-          "title": "Tata Trusts move High Court against Chandrasekaran's reappointment, seek Rs 65 crore damages",
-          "url": "https://ianslive.in/tata-trusts-move-high-court-against-chandrasekhar-reappointment-seek-rs-65-crore-damages--20261126111738",
-          "publishedAt": "2026-11-26T06:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "prokerala.com",
-          "title": "Tata Trusts to move High Court against Chandrasekaran's reappointment, seeks Rs 65 crore damages",
-          "url": "https://prokerala.com/news/articles/a1841249.html",
-          "publishedAt": "2026-11-26T07:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "outlookindia.com",
-          "title": "Tata Trusts Move Bombay HC Against Chandrasekaran's Reappointment, Seek ₹65 Cr",
-          "url": "https://outlookindia.com/national/tata-trusts-challenge-chandrasekaran-third-term-tata-sons-chairman-bombay-hc-65-crore",
-          "publishedAt": "2026-11-26T10:15:00Z",
-          "language": "en"
-        },
-        {
-          "outlet": "heraldgoa.in",
-          "title": "Tata Trusts Moves Bombay High Court to Challenge N. Chandrasekaran's Reappointment",
-          "url": "https://heraldgoa.in/globe-nation/tata-trusts-moves-bombay-high-court-to-challenge-n-chandrasekarans-reappointment/496957",
-          "publishedAt": "2026-11-26T12:15:00Z",
-          "language": "en"
-        }
-      ],
-      "aiGenerated": true,
-      "importance": 37.2,
-      "countries": [
-        "IN"
-      ],
-      "scene": {
-        "camera": {
-          "lng": 72.8258,
-          "lat": 18.975,
-          "zoom": 7.2
-        },
-        "elements": [
-          {
-            "type": "highlight",
-            "id": "country-0",
-            "country": "IN",
-            "tone": "focus"
-          },
-          {
-            "type": "marker",
-            "id": "place-0",
-            "at": [
-              72.8258,
-              18.975
-            ],
-            "label": "Mumbai",
-            "emphasis": "primary"
           }
         ]
       },
