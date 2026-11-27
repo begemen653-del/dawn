@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "NO",
   "title": "Norway",
   "eventIds": [
-    "ev-a17a3a571456",
-    "ev-6e53cc47faa6",
-    "ev-f1b47e9fe791"
+    "ev-2f6749e0f327",
+    "ev-97340c2e876c",
+    "ev-6fe7e8359409",
+    "ev-6adee10e2f13"
   ]
 }

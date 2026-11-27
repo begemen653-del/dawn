@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "VN",
   "title": "Vietnam",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Vietnam in the last 24 hours."
+  "eventIds": [
+    "ev-765d29b45e22",
+    "ev-b146d9788557",
+    "ev-a4f6674e9bfc",
+    "ev-28d5eac0b944",
+    "ev-ea14bd16b345"
+  ]
 }

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "PH",
   "title": "Philippines",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Philippines in the last 24 hours."
+  "eventIds": [
+    "ev-1bfccde210df",
+    "ev-4d10ded90035"
+  ]
 }

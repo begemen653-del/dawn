@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "FI",
   "title": "Finland",
   "eventIds": [
-    "ev-3f09231de77a",
-    "ev-317df95d340e",
-    "ev-a6796c0022cc"
+    "ev-d0f7abc74574",
+    "ev-45a5c4a27d09",
+    "ev-1e4207bec34a",
+    "ev-48b2142cf424"
   ]
 }

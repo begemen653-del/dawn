@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "KZ",
   "title": "Kazakhstan",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Kazakhstan in the last 24 hours."
+  "eventIds": [
+    "ev-279d92490305",
+    "ev-eca87a1a5453",
+    "ev-d9d1a3d1d7f3",
+    "ev-c554b4620d8c"
+  ]
 }

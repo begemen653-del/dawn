@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "AD",
   "title": "Andorra",
-  "eventIds": [
-    "ev-fe3350aea0c4"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Andorra in the last 24 hours."
 }

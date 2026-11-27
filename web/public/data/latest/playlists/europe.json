@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "europe",
   "title": "Europe",
   "eventIds": [
-    "ev-7d0e82e29817",
-    "ev-f0a04aca8e86",
-    "ev-60f224c90668",
-    "ev-613583348296",
-    "ev-c957c25043a1",
-    "ev-b2c0c747b49d",
-    "ev-5a01634fd341",
-    "ev-6eb209fe9bf6"
+    "ev-ae1798a9e16f",
+    "ev-158df1262e52",
+    "ev-87b005643d1b",
+    "ev-6edb0111fe6e",
+    "ev-c60fe1b2ba42",
+    "ev-abf8742ab280",
+    "ev-caef83f0fbf1",
+    "ev-3c09e28f6462"
   ]
 }

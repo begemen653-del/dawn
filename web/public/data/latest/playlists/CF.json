@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "CF",
   "title": "Central African Republic",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Central African Republic in the last 24 hours."
+  "eventIds": [
+    "ev-3e6f164af3b9"
+  ]
 }

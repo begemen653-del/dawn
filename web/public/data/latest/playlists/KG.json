@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "KG",
   "title": "Kyrgyzstan",
   "eventIds": [
-    "ev-d01e7b540703",
-    "ev-d68db313b0e2"
+    "ev-6317cda0c5e5"
   ]
 }

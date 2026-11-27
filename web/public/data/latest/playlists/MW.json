@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "MW",
   "title": "Malawi",
   "eventIds": [
-    "ev-1b4b00a8e6db",
-    "ev-11ba8d0d65e1"
+    "ev-75acb0494a06"
   ]
 }

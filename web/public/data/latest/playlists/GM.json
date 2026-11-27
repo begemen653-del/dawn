@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "GM",
   "title": "Gambia",
-  "eventIds": [
-    "ev-7b26097a0878",
-    "ev-1d79d093c6ec",
-    "ev-71079132313e"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Gambia in the last 24 hours."
 }

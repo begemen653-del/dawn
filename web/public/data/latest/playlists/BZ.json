@@ -1,11 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "BZ",
   "title": "Belize",
   "eventIds": [
-    "ev-fa3dda22254f",
-    "ev-bf239c188808",
-    "ev-361363bd4132"
+    "ev-89e0d8d32ce1"
   ]
 }

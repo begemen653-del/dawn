@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "UY",
   "title": "Uruguay",
   "eventIds": [
-    "ev-3ccdd7cb9d99",
-    "ev-816ce367f91a",
-    "ev-34e582c38100"
+    "ev-ce1f440f9221",
+    "ev-2d6da2d8737f"
   ]
 }

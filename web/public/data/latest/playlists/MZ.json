@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "MZ",
   "title": "Mozambique",
-  "eventIds": [
-    "ev-da01819b75c0"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Mozambique in the last 24 hours."
 }

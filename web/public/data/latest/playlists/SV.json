@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "SV",
   "title": "El Salvador",
   "eventIds": [
-    "ev-7172cb8f6786",
-    "ev-b5af082b5f91"
+    "ev-70fd49841bf4",
+    "ev-12330cc2f5a2",
+    "ev-8b6c85e72774",
+    "ev-a8aab24ec780"
   ]
 }

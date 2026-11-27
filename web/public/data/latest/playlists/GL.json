@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "GL",
   "title": "Greenland",
-  "eventIds": [
-    "ev-cef67f965f10"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Greenland in the last 24 hours."
 }

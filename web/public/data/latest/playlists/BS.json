@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "BS",
   "title": "Bahamas",
   "eventIds": [
-    "ev-424f73d13fac"
+    "ev-50b375115891",
+    "ev-fa3e3c674ca2"
   ]
 }

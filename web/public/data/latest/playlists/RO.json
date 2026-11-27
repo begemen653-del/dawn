@@ -1,10 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "RO",
   "title": "Romania",
   "eventIds": [
-    "ev-d874a87f17e1",
-    "ev-eb8ae15a47bb"
+    "ev-1ce56a923933",
+    "ev-4553713ed4ec",
+    "ev-3e50ea3a964d",
+    "ev-e73f8ee0714f",
+    "ev-1c4ada430c5a"
   ]
 }

@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "GN",
   "title": "Guinea",
   "eventIds": [
-    "ev-1d79d093c6ec"
+    "ev-b36408f69694",
+    "ev-f51db22d4ba9"
   ]
 }

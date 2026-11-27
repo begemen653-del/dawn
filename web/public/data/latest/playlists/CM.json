@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "CM",
   "title": "Cameroon",
   "eventIds": [
-    "ev-4f82d0276237",
-    "ev-ef07d92d594b",
-    "ev-8c1028590ace",
-    "ev-920e7da0de52"
+    "ev-7078479d8ec1"
   ]
 }

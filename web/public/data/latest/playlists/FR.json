@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "scope": "FR",
   "title": "France",
   "eventIds": [
-    "ev-f0a04aca8e86",
-    "ev-67d9ec7bf45d",
-    "ev-1a9e0ebeb310",
-    "ev-3d83c8a56754",
-    "ev-c36d7f492c6a",
-    "ev-97a94a4914a2",
-    "ev-46ffc58093c8",
-    "ev-f301ac4fe899"
+    "ev-6edb0111fe6e",
+    "ev-c60fe1b2ba42",
+    "ev-96349ec5efce",
+    "ev-d922dbfec546",
+    "ev-b1c914efead1",
+    "ev-33d531c52965",
+    "ev-21f16ffe9673",
+    "ev-a0c387f8cb81"
   ]
 }
