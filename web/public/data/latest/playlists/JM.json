@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "JM",
   "title": "Jamaica",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Jamaica in the last 24 hours."
+  "eventIds": [
+    "ev-30870ae2f0ba",
+    "ev-6f15c4f83aae"
+  ]
 }

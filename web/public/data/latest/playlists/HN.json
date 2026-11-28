@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "HN",
   "title": "Honduras",
-  "eventIds": [
-    "ev-03a3b724223b",
-    "ev-0056db4dd68c",
-    "ev-4da6e551bdbb"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Honduras in the last 24 hours."
 }

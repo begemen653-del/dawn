@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "GR",
   "title": "Greece",
   "eventIds": [
-    "ev-e3a923676e8f",
-    "ev-afc3a2fa2176",
-    "ev-9ea956dd2a7e",
-    "ev-9933d4238fb4"
+    "ev-6f68d1de7e7e",
+    "ev-d55dac0835d4",
+    "ev-b61681daf04b",
+    "ev-93e939d53c7d"
   ]
 }

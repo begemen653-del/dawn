@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "LA",
   "title": "Laos",
   "eventIds": [
-    "ev-1468ce70bf37"
+    "ev-e2e201a7ffbc",
+    "ev-6d9226d4b65e"
   ]
 }

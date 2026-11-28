@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "ZM",
   "title": "Zambia",
   "eventIds": [
-    "ev-8b181a3051c0"
+    "ev-b2440ba3c297",
+    "ev-08d6c9c08de3",
+    "ev-eddc98914fc0"
   ]
 }

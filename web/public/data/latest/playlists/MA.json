@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "MA",
   "title": "Morocco",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Morocco in the last 24 hours."
+  "eventIds": [
+    "ev-ed661729677e",
+    "ev-d0bc2f5c4d9b"
+  ]
 }

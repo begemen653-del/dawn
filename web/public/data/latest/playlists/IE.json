@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "IE",
   "title": "Ireland",
   "eventIds": [
-    "ev-6542cd8a6fba",
-    "ev-6aab7a08920f",
-    "ev-29a2c902b867"
+    "ev-9e2263e59175",
+    "ev-85f23500b263",
+    "ev-44fc3db347e9",
+    "ev-197a67f08e87",
+    "ev-54524d5f154a"
   ]
 }

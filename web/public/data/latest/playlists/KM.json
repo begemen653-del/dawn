@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "KM",
   "title": "Comoros",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Comoros in the last 24 hours."
+  "eventIds": [
+    "ev-eddc98914fc0"
+  ]
 }

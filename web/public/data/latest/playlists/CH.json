@@ -1,16 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "CH",
   "title": "Switzerland",
   "eventIds": [
-    "ev-dc7714eb2cca",
-    "ev-aa5f5afee5e8",
-    "ev-b520a1cdea42",
-    "ev-692c5a5a5f46",
-    "ev-db3434c72feb",
-    "ev-3cf9844f7b7e",
-    "ev-fd0728f272c7",
-    "ev-758d04323235"
+    "ev-d7ac21a9d240",
+    "ev-dbd286159ead",
+    "ev-9a64b40d2ccc",
+    "ev-8bed90a5d972",
+    "ev-75134526b8e5",
+    "ev-f111cfb1fb4c"
   ]
 }

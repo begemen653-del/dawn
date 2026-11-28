@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "PG",
   "title": "Papua New Guinea",
-  "eventIds": [],
-  "emptyReason": "Almost no news about Papua New Guinea in the last 24 hours."
+  "eventIds": [
+    "ev-45ef131f191a"
+  ]
 }

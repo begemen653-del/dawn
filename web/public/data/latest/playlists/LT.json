@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "LT",
   "title": "Lithuania",
   "eventIds": [
-    "ev-743d1d254b0d",
-    "ev-5733143cb6a6",
-    "ev-9e0fab090d95"
+    "ev-d6b65c210e59",
+    "ev-cf6ae17c5d68",
+    "ev-b79202a690d8",
+    "ev-d6682bb6dccc"
   ]
 }

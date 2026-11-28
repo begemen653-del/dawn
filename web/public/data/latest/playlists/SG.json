@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "SG",
   "title": "Singapore",
   "eventIds": [
-    "ev-695ba5c343d8"
+    "ev-7b3c93f6698e",
+    "ev-75134526b8e5",
+    "ev-ca4fe1079389",
+    "ev-8a8122f6c25e"
   ]
 }

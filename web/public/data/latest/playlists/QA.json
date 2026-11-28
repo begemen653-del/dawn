@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "QA",
   "title": "Qatar",
   "eventIds": [
-    "ev-0d8549d0936d",
-    "ev-d7cd5bc0aca7",
-    "ev-2ae3640fa535",
-    "ev-d2d92132b4f9"
+    "ev-a4b059fed60c"
   ]
 }

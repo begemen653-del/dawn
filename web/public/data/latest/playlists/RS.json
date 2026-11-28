@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "RS",
   "title": "Serbia",
-  "eventIds": [
-    "ev-e15af5bce6e3",
-    "ev-33d531c52965",
-    "ev-cec09e1ca9dd"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Serbia in the last 24 hours."
 }

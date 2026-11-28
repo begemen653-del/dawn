@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "africa",
   "title": "Africa",
   "eventIds": [
-    "ev-f949cea8424c",
-    "ev-0ebf59bb48a7",
-    "ev-e3a923676e8f",
-    "ev-f9c011b9b460",
-    "ev-d2d17936f2ba"
+    "ev-68030c90224f",
+    "ev-bba1f307a6aa",
+    "ev-3174577e65fe",
+    "ev-691465254f2c",
+    "ev-176e428469fa",
+    "ev-fd5cd61ef4ea",
+    "ev-ed661729677e"
   ]
 }

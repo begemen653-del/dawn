@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "LY",
   "title": "Libya",
   "eventIds": [
-    "ev-e3a923676e8f"
+    "ev-fd5cd61ef4ea",
+    "ev-6681862e75b3",
+    "ev-6157e77f34e6"
   ]
 }

@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "CG",
   "title": "Republic of the Congo",
-  "eventIds": [
-    "ev-ab4956b73b43"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Republic of the Congo in the last 24 hours."
 }

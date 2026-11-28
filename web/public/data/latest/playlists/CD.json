@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "CD",
   "title": "DR Congo",
   "eventIds": [
-    "ev-33060cf63b62"
+    "ev-2ad9450ee5f0",
+    "ev-4f2ae7b39463",
+    "ev-f4ffb6df8721"
   ]
 }

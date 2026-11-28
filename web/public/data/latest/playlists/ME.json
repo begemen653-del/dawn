@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "ME",
   "title": "Montenegro",
   "eventIds": [
-    "ev-394b818d6bf3"
+    "ev-9125bcf34986",
+    "ev-aa5e621698e8",
+    "ev-77865349526b"
   ]
 }

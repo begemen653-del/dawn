@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "MK",
   "title": "North Macedonia",
-  "eventIds": [],
-  "emptyReason": "Almost no news about North Macedonia in the last 24 hours."
+  "eventIds": [
+    "ev-234a63ae3c99",
+    "ev-55eb9fc5a48b"
+  ]
 }

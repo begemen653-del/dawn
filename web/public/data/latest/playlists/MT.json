@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "MT",
   "title": "Malta",
   "eventIds": [
-    "ev-d8bcc146fa49"
+    "ev-bd54964e0b66",
+    "ev-e9bb0b880af5"
   ]
 }

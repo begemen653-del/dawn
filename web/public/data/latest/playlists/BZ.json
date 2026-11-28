@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "BZ",
   "title": "Belize",
-  "eventIds": [
-    "ev-89e0d8d32ce1"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Belize in the last 24 hours."
 }

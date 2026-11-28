@@ -1,9 +1,14 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "IR",
   "title": "Iran",
   "eventIds": [
-    "ev-3c09e28f6462"
+    "ev-82cc0df7f664",
+    "ev-5ac7d1f8c187",
+    "ev-bb80308f2ecc",
+    "ev-783be6c78be4",
+    "ev-c2abe331756c",
+    "ev-7aa90554d09c"
   ]
 }

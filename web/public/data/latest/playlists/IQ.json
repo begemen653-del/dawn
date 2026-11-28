@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "IQ",
   "title": "Iraq",
   "eventIds": [
-    "ev-4d09f8a86617",
-    "ev-e8cf42b5ff44",
-    "ev-ef25ab45ccf0",
-    "ev-ba7f09f03c9b"
+    "ev-feed0e16c2ed",
+    "ev-0ecc0c76604a",
+    "ev-2f0685b84cd1"
   ]
 }

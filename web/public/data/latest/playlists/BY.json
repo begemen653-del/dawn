@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "BY",
   "title": "Belarus",
-  "eventIds": [
-    "ev-3de28ef4d918",
-    "ev-8278db66f01d"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Belarus in the last 24 hours."
 }

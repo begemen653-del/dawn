@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "BN",
   "title": "Brunei",
-  "eventIds": [
-    "ev-4d10ded90035"
-  ]
+  "eventIds": [],
+  "emptyReason": "Almost no news about Brunei in the last 24 hours."
 }

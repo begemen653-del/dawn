@@ -2,16 +2,18 @@
   "schemaVersion": 1,
   "ok": true,
   "mode": "live",
-  "date": "2026-11-27",
-  "startedAt": "2026-11-27T17:01:27.322Z",
-  "finishedAt": "2026-11-27T17:02:59.958Z",
+  "date": "2026-11-28",
+  "startedAt": "2026-11-28T03:31:15.964Z",
+  "finishedAt": "2026-11-28T04:30:33.350Z",
   "counts": {
-    "articles": 811,
-    "events": 344,
+    "articles": 5532,
+    "events": 359,
     "playlists": 240
   },
   "warnings": [
-    "Evening update: 7 new stories added."
+    "AI budget reached: some lower-priority chapters have fewer stories today.",
+    "96 events dropped: 59 failed the fact check, 36 not news, 1 incomplete.",
+    "8 image searches failed."
   ],
   "errors": []
 }

@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "UA",
   "title": "Ukraine",
   "eventIds": [
-    "ev-797d55aee5a8",
-    "ev-ae1798a9e16f",
-    "ev-a49a6d690d3b",
-    "ev-b04b55fa6049",
-    "ev-1e9c2b1f8246"
+    "ev-602ef309c84a",
+    "ev-4008e82a953b",
+    "ev-fd5cd61ef4ea",
+    "ev-a21ffb2e8419"
   ]
 }

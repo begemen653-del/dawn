@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "PK",
   "title": "Pakistan",
   "eventIds": [
-    "ev-5fc50a793754",
-    "ev-2f6749e0f327",
-    "ev-23e59bc1fe53",
-    "ev-c8ef547f6260",
-    "ev-1821111f38b8",
-    "ev-c669341bd1a7",
-    "ev-6f9f3df3903a"
+    "ev-c75b4b5d0bb0",
+    "ev-97f05626dce4",
+    "ev-b775b56b0e86",
+    "ev-4eae6309d8a4",
+    "ev-4558bfd6a746",
+    "ev-69afb85aa56f",
+    "ev-ddc1a87d0fca"
   ]
 }

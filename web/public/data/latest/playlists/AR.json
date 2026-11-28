@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "AR",
   "title": "Argentina",
   "eventIds": [
-    "ev-e8634f8e30c1",
-    "ev-06628d9e1b79",
-    "ev-0fb43ee37016",
-    "ev-2085667eead2",
-    "ev-ce1f440f9221"
+    "ev-29baa3f35b01",
+    "ev-d19e1e238cbe",
+    "ev-48612657617d",
+    "ev-02ef92389082",
+    "ev-2561e627e80b"
   ]
 }

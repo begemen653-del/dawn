@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "PH",
   "title": "Philippines",
   "eventIds": [
-    "ev-1bfccde210df",
-    "ev-4d10ded90035"
+    "ev-882b3d994c64"
   ]
 }

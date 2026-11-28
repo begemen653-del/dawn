@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "scope": "YE",
   "title": "Yemen",
   "eventIds": [
-    "ev-f5daa16cfa70",
-    "ev-a23c192dcb90"
+    "ev-3174577e65fe",
+    "ev-cea4008f99aa",
+    "ev-bba1f307a6aa"
   ]
 }
